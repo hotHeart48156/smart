@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account-app/account-app.iml" filepath="$PROJECT_DIR$/account/account-app/account-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account-client/account-client.iml" filepath="$PROJECT_DIR$/account/account-client/account-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account-controller/account-controller.iml" filepath="$PROJECT_DIR$/account/account-controller/account-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account-domain/account-domain.iml" filepath="$PROJECT_DIR$/account/account-domain/account-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account-infrastructure/account-infrastructure.iml" filepath="$PROJECT_DIR$/account/account-infrastructure/account-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite.iml" filepath="$PROJECT_DIR$/activite/activite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-app/activite-app.iml" filepath="$PROJECT_DIR$/activite/activite-app/activite-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-client/activite-client.iml" filepath="$PROJECT_DIR$/activite/activite-client/activite-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" filepath="$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" filepath="$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" filepath="$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin.iml" filepath="$PROJECT_DIR$/admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin-app/admin-app.iml" filepath="$PROJECT_DIR$/admin/admin-app/admin-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin-client/admin-client.iml" filepath="$PROJECT_DIR$/admin/admin-client/admin-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin-controller/admin-controller.iml" filepath="$PROJECT_DIR$/admin/admin-controller/admin-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin-domain/admin-domain.iml" filepath="$PROJECT_DIR$/admin/admin-domain/admin-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin-infrastructure/admin-infrastructure.iml" filepath="$PROJECT_DIR$/admin/admin-infrastructure/admin-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gh-ddd-lite/gh-ddd-lite.iml" filepath="$PROJECT_DIR$/gh-ddd-lite/gh-ddd-lite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gh-ddd-lite-codegen/gh-ddd-lite-codegen.iml" filepath="$PROJECT_DIR$/gh-ddd-lite-codegen/gh-ddd-lite-codegen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gh-ddd-lite-spring/gh-ddd-lite-spring.iml" filepath="$PROJECT_DIR$/gh-ddd-lite-spring/gh-ddd-lite-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gh-ddd-parent/gh-ddd-parent.iml" filepath="$PROJECT_DIR$/gh-ddd-parent/gh-ddd-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-app/order-app.iml" filepath="$PROJECT_DIR$/order/order-app/order-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-client/order-client.iml" filepath="$PROJECT_DIR$/order/order-client/order-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-controller/order-controller.iml" filepath="$PROJECT_DIR$/order/order-controller/order-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-domain/order-domain.iml" filepath="$PROJECT_DIR$/order/order-domain/order-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-infrastructure/order-infrastructure.iml" filepath="$PROJECT_DIR$/order/order-infrastructure/order-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-app/product-app.iml" filepath="$PROJECT_DIR$/product/product-app/product-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-client/product-client.iml" filepath="$PROJECT_DIR$/product/product-client/product-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-controller/product-controller.iml" filepath="$PROJECT_DIR$/product/product-controller/product-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-domain/product-domain.iml" filepath="$PROJECT_DIR$/product/product-domain/product-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-infrastructure/product-infrastructure.iml" filepath="$PROJECT_DIR$/product/product-infrastructure/product-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side-app/product_side-app.iml" filepath="$PROJECT_DIR$/product_side/product_side-app/product_side-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side-client/product_side-client.iml" filepath="$PROJECT_DIR$/product_side/product_side-client/product_side-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side-controller/product_side-controller.iml" filepath="$PROJECT_DIR$/product_side/product_side-controller/product_side-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side-domain/product_side-domain.iml" filepath="$PROJECT_DIR$/product_side/product_side-domain/product_side-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side-infrastructure/product_side-infrastructure.iml" filepath="$PROJECT_DIR$/product_side/product_side-infrastructure/product_side-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/start/start.iml" filepath="$PROJECT_DIR$/account/start/start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/start/start (2).iml" filepath="$PROJECT_DIR$/activite/start/start (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/start/start (3).iml" filepath="$PROJECT_DIR$/admin/start/start (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/start/start (4).iml" filepath="$PROJECT_DIR$/order/start/start (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/start/start (6).iml" filepath="$PROJECT_DIR$/product/start/start (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/start/start (7).iml" filepath="$PROJECT_DIR$/product_side/start/start (7).iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/start/start (8).iml" filepath="$PROJECT_DIR$/users/start/start (8).iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/users.iml" filepath="$PROJECT_DIR$/users/users.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-app/users-app.iml" filepath="$PROJECT_DIR$/users/users-app/users-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-client/users-client.iml" filepath="$PROJECT_DIR$/users/users-client/users-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-controller/users-controller.iml" filepath="$PROJECT_DIR$/users/users-controller/users-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-domain/users-domain.iml" filepath="$PROJECT_DIR$/users/users-domain/users-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-infrastructure/users-infrastructure.iml" filepath="$PROJECT_DIR$/users/users-infrastructure/users-infrastructure.iml" />
+    </modules>
+  </component>
+</project>

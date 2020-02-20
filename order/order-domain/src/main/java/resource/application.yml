@@ -1,0 +1,15 @@
+spring:
+  aop:
+    auto: true
+  data:
+    jpa:
+      repositories:
+        enabled: true
+
+  datasource:
+    username: root
+    password: yangbiao
+    driver-class-name:
+  jpa:
+    show-sql: true
+  

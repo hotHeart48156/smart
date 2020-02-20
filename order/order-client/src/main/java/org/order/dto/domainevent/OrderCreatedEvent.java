@@ -1,0 +1,40 @@
+package org.order.dto.domainevent;
+
+import com.geekhalo.ddd.lite.domain.Aggregate;
+import com.geekhalo.ddd.lite.domain.DomainEvent;
+import com.geekhalo.ddd.lite.domain.support.AbstractAggregateEvent;
+import org.order.domain.customer.vaueobject.id.OrderId;
+import org.order.domain.customer.vaueobject.id.OrderItemId;
+
+import java.util.Date;
+
+/**
+ * @author "yangbiao"
+ */
+public class OrderCreatedEvent implements DomainEvent {
+
+    private OrderId orderId;
+    private OrderItemId orderItemId;
+
+    public OrderId getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderItemId(OrderItemId orderItemId) {
+        this.orderItemId = orderItemId;
+    }
+
+    @Override
+    public String id() {
+        return orderId.getOrderId().toString();
+    }
+
+    public void setOrderId(OrderId orderId) {
+        this.orderId = orderId;
+    }
+
+    @Override
+    public Date occurredOn() {
+        return new Date(System.currentTimeMillis());
+    }
+}
