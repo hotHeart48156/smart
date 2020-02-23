@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    hikari:
-      username: root
-      password: yangbiao
-  mail:
-  security:
-  kafka:
-  session:

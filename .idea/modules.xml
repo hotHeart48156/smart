@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
       <module fileurl="file://$PROJECT_DIR$/account/account-app/account-app.iml" filepath="$PROJECT_DIR$/account/account-app/account-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/account/account-client/account-client.iml" filepath="$PROJECT_DIR$/account/account-client/account-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/account/account-controller/account-controller.iml" filepath="$PROJECT_DIR$/account/account-controller/account-controller.iml" />

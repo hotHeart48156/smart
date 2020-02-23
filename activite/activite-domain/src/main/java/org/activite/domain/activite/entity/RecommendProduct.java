@@ -7,7 +7,7 @@ import org.activite.domain.activite.valueobject.status.RecommendStatus;
 /**
  * @author "yangbiao"
  */
-public class HomeNewProduct {
+public class RecommendProduct {
     private ProductId productId;
     private ProductName productName;
     private RecommendStatus recommendStatus;
