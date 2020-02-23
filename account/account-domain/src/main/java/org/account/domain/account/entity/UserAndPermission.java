@@ -1,8 +1,8 @@
 package org.account.domain.account.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.permission.PermissionId;
-import org.account.domain.account.valueobj.user.UserId;
+import org.account.domain.account.valueobj.id.PermissionId;
+import org.account.domain.account.valueobj.id.UserId;
 
 /**
  * @author "yangbiao"

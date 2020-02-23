@@ -1,8 +1,9 @@
 package org.account.domain.account.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.user.UserRoleId;
-import org.account.domain.account.valueobj.user.UserId;
+import org.account.domain.account.valueobj.id.RoleId;
+import org.account.domain.account.valueobj.id.UserId;
+
 
 /**
  * @author "yangbiao"
@@ -11,7 +12,7 @@ import org.account.domain.account.valueobj.user.UserId;
 public class UserAndRole {
     private Long id;
     private UserId userId;
-    private UserRoleId roleId;
+    private RoleId roleId;
 
 
 }

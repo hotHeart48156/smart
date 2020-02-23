@@ -1,7 +1,13 @@
 package org.account.domain.account.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.permission.*;
+import org.account.domain.account.valueobj.PermissionValue;
+import org.account.domain.account.valueobj.Pid;
+import org.account.domain.account.valueobj.Url;
+import org.account.domain.account.valueobj.id.PermissionId;
+import org.account.domain.account.valueobj.time.CreateTime;
+
+import javax.swing.*;
 
 /**
  * @author "yangbiao"
@@ -13,5 +19,5 @@ public class Permission {
     private PermissionId id;
     private Pid pid;
     private Url url;
-    private Value value;
+    private PermissionValue permissionValue;
 }

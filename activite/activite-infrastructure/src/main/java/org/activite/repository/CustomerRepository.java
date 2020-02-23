@@ -1,6 +1,5 @@
 package org.activite.repository;
 
-import org.activite.domain.customer.Customer;
 import org.activite.domain.gateway.CustomerGateway;
 
 import org.springframework.beans.factory.annotation.Autowired;

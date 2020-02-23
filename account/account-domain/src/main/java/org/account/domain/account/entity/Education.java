@@ -1,8 +1,9 @@
 package org.account.domain.account.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.education.*;
+import org.account.domain.account.valueobj.id.EducationId;
 
+import java.awt.*;
 /**
  * @author "yangbiao"
  */

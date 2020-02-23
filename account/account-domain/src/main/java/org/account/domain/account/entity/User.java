@@ -1,8 +1,16 @@
 package org.account.domain.account.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.user.UserRoleId;
-import org.account.domain.account.valueobj.user.*;
+import org.account.domain.account.valueobj.Email;
+import org.account.domain.account.valueobj.Note;
+import org.account.domain.account.valueobj.Password;
+import org.account.domain.account.valueobj.id.RoleId;
+import org.account.domain.account.valueobj.id.UserId;
+import org.account.domain.account.valueobj.name.UserName;
+import org.account.domain.account.valueobj.status.UserStatus;
+import org.account.domain.account.valueobj.time.CreateTime;
+import org.account.domain.account.valueobj.time.LoginTime;
+
 
 /**
  * @author "yangbiao"
@@ -11,12 +19,12 @@ import org.account.domain.account.valueobj.user.*;
 public class User {
     private UserId id;
     private UserName userName;
-    private UserPassword password;
-    private UserEmail email;
-    private UserCreateTime createTime;
-    private UserLoginTime loginTime;
-    private UserNote userNote;
+    private Password password;
+    private Email email;
+    private CreateTime createTime;
+    private LoginTime loginTime;
+    private Note note;
     private UserStatus status;
-    private UserRoleId roleId;
+    private RoleId roleId;
 
 }

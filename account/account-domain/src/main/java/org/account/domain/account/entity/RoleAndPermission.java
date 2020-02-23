@@ -1,8 +1,9 @@
 package org.account.domain.account.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.permission.PermissionId;
-import org.account.domain.account.valueobj.user.UserRoleId;
+import org.account.domain.account.valueobj.id.PermissionId;
+import org.account.domain.account.valueobj.id.RoleId;
+
 
 /**
  * @author "yangbiao"
@@ -10,6 +11,6 @@ import org.account.domain.account.valueobj.user.UserRoleId;
 @Data
 public class RoleAndPermission {
     private Long id;
-    private UserRoleId roleId;
+    private RoleId roleId;
     private PermissionId permissionId;
 }

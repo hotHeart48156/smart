@@ -3,5 +3,5 @@ package org.account.domain.account.valueobj.address;
 /**
  * @author "yangbiao"
  */
-public class AbstractAddress {
+public abstract class AbstractAddress {
 }
