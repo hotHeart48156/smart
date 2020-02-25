@@ -5,5 +5,6 @@ import org.users.domain.customer.valueobject.ValueObject;
 /**
  * @author "yangbiao"
  */
-public class AbstractCount implements ValueObject {
+public abstract class AbstractCount implements ValueObject {
+
 }

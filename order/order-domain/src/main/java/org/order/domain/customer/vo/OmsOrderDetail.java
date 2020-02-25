@@ -3,7 +3,7 @@ package org.order.domain.customer.vo;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.order.domain.customer.entity.Order;
+import org.order.domain.customer.aggregation.Order;
 import org.order.domain.customer.entity.OrderItem;
 import org.order.domain.customer.entity.OrderOperateHistory;
 

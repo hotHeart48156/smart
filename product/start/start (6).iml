@@ -54,14 +54,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="product-controller" />
-    <orderEntry type="module" module-name="product-app" />
-    <orderEntry type="module" module-name="product-client" />
+    <orderEntry type="module" module-name="activite-controller" />
+    <orderEntry type="module" module-name="activite-app" />
+    <orderEntry type="module" module-name="activite-client" />
     <orderEntry type="library" name="Maven: com.alibaba.cola:cola-common:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.12.6" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.0.Final" level="project" />
-    <orderEntry type="module" module-name="product-domain" />
-    <orderEntry type="module" module-name="product-infrastructure" />
+    <orderEntry type="module" module-name="activite-infrastructure" />
+    <orderEntry type="module" module-name="activite-domain" />
+    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-core:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.18" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.55" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-test:2.2.2.RELEASE" level="project" />
@@ -96,33 +97,10 @@
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.5.1" level="project" />
     <orderEntry type="library" name="Maven: javax.el:javax.el-api:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.web:javax.el:2.2.6" level="project" />
-    <orderEntry type="module" module-name="gh-ddd-lite" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.5" level="project" />
-    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-core:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
-    <orderEntry type="library" name="Maven: com.mysema.commons:mysema-commons-lang:0.2.4" level="project" />
-    <orderEntry type="library" name="Maven: com.infradna.tool:bridge-method-annotation:1.13" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-collections:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-codegen:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.mysema.codegen:codegen:0.6.8" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.10" level="project" />
-    <orderEntry type="library" name="Maven: org.javassist:javassist:3.19.0-GA" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:annotations:2.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-apt:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-jpa:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
-    <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8" level="project" />

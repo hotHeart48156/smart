@@ -8,20 +8,6 @@ import com.geekhalo.ddd.lite.domain.support.AbstractApplication;
 
 import java.lang.Long;
 
-import org.order.domain.customer.aggregation.CartProduct;
-import org.order.domain.customer.aggregation.CartPromotionItem;
-import org.order.domain.customer.aggregation.ConfirmOrderResult;
-import org.order.domain.customer.aggregation.GroupAndOrder;
-import org.order.domain.customer.aggregation.Market;
-import org.order.domain.customer.aggregation.MoneyInfo;
-import org.order.domain.customer.aggregation.OrderApply;
-import org.order.domain.customer.aggregation.OrderDelivery;
-import org.order.domain.customer.aggregation.OrderDetail;
-import org.order.domain.customer.aggregation.OrderGenerate;
-import org.order.domain.customer.aggregation.OrderQuery;
-import org.order.domain.customer.aggregation.OrderReason;
-import org.order.domain.customer.aggregation.ReceivedStatusUpdate;
-import org.order.domain.customer.aggregation.ReceiverInfo;
 import org.order.domain.customer.entity.OrderOperateHistory;
 import org.order.domain.customer.entity.OrderReturnApply;
 import org.order.domain.customer.vaueobject.id.OrderId;

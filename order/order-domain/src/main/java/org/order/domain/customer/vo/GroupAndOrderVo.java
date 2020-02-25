@@ -2,17 +2,7 @@ package org.order.domain.customer.vo;
 
 
 import lombok.Data;
-import org.order.domain.customer.aggregation.GroupAndOrder;
-import org.order.domain.customer.entity.CartItem;
-import org.order.domain.customer.entity.OrderItem;
-import org.order.domain.customer.vaueobject.fee.TotalFee;
 import org.order.domain.customer.vaueobject.id.AddressId;
-import org.order.domain.customer.vaueobject.id.MarketId;
-import org.order.domain.customer.vaueobject.id.MemberId;
-import org.order.domain.customer.vaueobject.id.OpenId;
-import org.order.domain.customer.vaueobject.type.OrderType;
-
-import java.util.List;
 
 
 /**

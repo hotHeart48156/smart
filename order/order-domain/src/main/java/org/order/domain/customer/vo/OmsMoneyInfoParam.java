@@ -2,7 +2,6 @@ package org.order.domain.customer.vo;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.order.domain.customer.aggregation.MoneyInfo;
 import org.order.domain.customer.vaueobject.fee.DiscountFee;
 import org.order.domain.customer.vaueobject.fee.FreightFee;
 import org.order.domain.customer.vaueobject.id.OrderId;

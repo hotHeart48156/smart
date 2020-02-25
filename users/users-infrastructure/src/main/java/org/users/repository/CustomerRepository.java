@@ -1,7 +1,5 @@
 package org.users.repository;
 
-import org.users.domain.gateway.CustomerGateway;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

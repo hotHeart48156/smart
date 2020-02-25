@@ -1,7 +1,11 @@
 package org.users.domain.customer.valueobject;
 
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class PostCode {
+@Value
+public class PostCode implements ValueObject {
+    private String postCode;
 }

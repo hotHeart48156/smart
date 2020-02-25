@@ -18,8 +18,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="users-domain" />
-    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-core:2.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-common:2.0.0" level="project" />
     <orderEntry type="module" module-name="users-client" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.12.6" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.0.Final" level="project" />

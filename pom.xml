@@ -78,7 +78,6 @@
         </pluginManagement>
     </build>
     <modules>
-        <module>account</module>
         <module>order</module>
         <module>activite</module>
         <module>product</module>

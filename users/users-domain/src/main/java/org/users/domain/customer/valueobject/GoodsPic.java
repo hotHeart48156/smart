@@ -1,7 +1,11 @@
 package org.users.domain.customer.valueobject;
 
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class GoodsPic {
+@Value
+public class GoodsPic implements ValueObject {
+    private String picUrl;
 }

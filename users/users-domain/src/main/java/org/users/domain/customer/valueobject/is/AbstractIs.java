@@ -1,7 +1,9 @@
 package org.users.domain.customer.valueobject.is;
 
+import org.users.domain.customer.valueobject.ValueObject;
+
 /**
  * @author "yangbiao"
  */
-public abstract class AbstractIs {
+public interface AbstractIs extends ValueObject {
 }

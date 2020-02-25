@@ -1,7 +1,5 @@
 package org.order.domain.customer.specification;
 
-import org.order.domain.customer.aggregation.OrderGenerate;
-
 /**
  * @author "yangbiao"
  */

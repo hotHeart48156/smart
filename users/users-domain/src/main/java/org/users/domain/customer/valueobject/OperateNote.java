@@ -1,7 +1,11 @@
 package org.users.domain.customer.valueobject;
 
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class OperateNote {
+@Value
+public class OperateNote implements ValueObject {
+    String note;
 }

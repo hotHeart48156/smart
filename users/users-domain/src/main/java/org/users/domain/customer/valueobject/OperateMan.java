@@ -1,7 +1,11 @@
 package org.users.domain.customer.valueobject;
 
+import javax.persistence.Entity;
+
 /**
  * @author "yangbiao"
  */
-public class OperateMan {
+@Entity
+public class OperateMan implements ValueObject {
+    String name;
 }

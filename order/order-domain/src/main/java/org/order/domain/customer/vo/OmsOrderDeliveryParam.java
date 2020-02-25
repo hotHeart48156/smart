@@ -1,10 +1,8 @@
 package org.order.domain.customer.vo;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.order.domain.customer.aggregation.OrderDelivery;
 import org.order.domain.customer.vaueobject.id.OrderId;
 import org.order.domain.customer.vaueobject.name.DeliveryCompanyName;
 import org.order.domain.customer.vaueobject.sn.DeliverySn;

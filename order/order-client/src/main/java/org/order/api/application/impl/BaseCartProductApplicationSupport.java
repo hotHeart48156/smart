@@ -8,7 +8,6 @@ import com.geekhalo.ddd.lite.domain.support.AbstractApplication;
 import java.lang.Long;
 
 import org.order.api.application.BaseCartProductApplication;
-import org.order.domain.customer.aggregation.CartProduct;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 

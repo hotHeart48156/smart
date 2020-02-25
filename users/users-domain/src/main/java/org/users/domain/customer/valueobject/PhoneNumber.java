@@ -1,7 +1,13 @@
 package org.users.domain.customer.valueobject;
 
+import lombok.Value;
+
+import javax.persistence.Entity;
+
 /**
  * @author "yangbiao"
  */
-public class PhoneNumber {
+@Value
+public class PhoneNumber implements ValueObject {
+    Long phoneNumber;
 }

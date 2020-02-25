@@ -1,7 +1,11 @@
 package org.users.domain.customer.valueobject;
 
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class MaxPointPerOrder {
+@Value
+public class MaxPointPerOrder implements ValueObject {
+    String point;
 }

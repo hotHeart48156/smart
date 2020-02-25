@@ -1,7 +1,6 @@
 package org.order.domain.customer.vo;
 
 import lombok.Data;
-import org.order.domain.customer.aggregation.OrderGenerate;
 import org.order.domain.customer.entity.Address;
 
 /**

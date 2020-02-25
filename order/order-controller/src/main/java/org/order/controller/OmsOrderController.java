@@ -14,7 +14,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
-import org.order.domain.customer.entity.Order;
+import org.order.domain.customer.aggregation.Order;
 import org.order.domain.customer.vo.OmsMoneyInfoParam;
 import org.order.domain.customer.vo.OmsOrderDeliveryParam;
 import org.order.domain.customer.vo.OmsReceiverInfoParam;

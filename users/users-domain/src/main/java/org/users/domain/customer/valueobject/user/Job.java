@@ -1,7 +1,12 @@
 package org.users.domain.customer.valueobject.user;
 
+import lombok.Value;
+import org.users.domain.customer.valueobject.ValueObject;
+
 /**
  * @author "yangbiao"
  */
-public class Job {
+@Value
+public class Job implements ValueObject {
+    String job;
 }

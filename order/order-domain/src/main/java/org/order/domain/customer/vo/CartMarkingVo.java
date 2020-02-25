@@ -2,12 +2,9 @@ package org.order.domain.customer.vo;
 
 
 import lombok.Data;
-import org.order.domain.customer.aggregation.CartPromotionItem;
-import org.order.domain.customer.aggregation.Market;
 import org.order.domain.customer.entity.CartItem;
 import org.order.domain.customer.entity.OrderItem;
 import org.order.domain.customer.vaueobject.Rule;
-import org.order.domain.customer.vaueobject.ValueObject;
 import org.order.domain.customer.vaueobject.code.PostCode;
 import org.order.domain.customer.vaueobject.fee.TotalFee;
 import org.order.domain.customer.vaueobject.id.MarketId;

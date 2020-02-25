@@ -1,13 +1,15 @@
 package org.users.domain.customer.entity;
 
 import org.users.domain.customer.valueobject.DeductionPerAmount;
-import org.users.domain.customer.valueobject.MaxPercentPerOrder;
+import org.users.domain.customer.valueobject.MaxPointPerOrder;
+import org.users.domain.customer.valueobject.id.Id;
+import org.users.domain.customer.valueobject.id.UserId;
 
 /**
  * @author "yangbiao"
  */
-public class IntegrationConsumeSetting {
-    private Long id;
+public class IntegrationConsumeSetting implements Entity {
+    private Id id;
     private DeductionPerAmount deductionPerAmount;
-    private MaxPercentPerOrder maxPercentPerOrder;
+    private MaxPointPerOrder maxPointPerOrder;
 }

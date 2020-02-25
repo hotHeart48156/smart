@@ -6,7 +6,7 @@ import lombok.Data;
  * @author "yangbiao"
  */
 @Data
-public class AppletSet {
+public class AppletSet implements Entity {
     private String appid;
 
     private String appsecret;

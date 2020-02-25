@@ -1,7 +1,16 @@
 package org.users.domain.customer.valueobject.name;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class UserName {
+@EqualsAndHashCode(callSuper = true)
+@AllArgsConstructor
+@Value
+public class UserName extends AbstractName {
+    private String name;
+
 }

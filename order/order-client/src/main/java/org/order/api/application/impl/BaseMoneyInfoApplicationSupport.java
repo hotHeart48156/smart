@@ -8,7 +8,6 @@ import com.geekhalo.ddd.lite.domain.support.AbstractApplication;
 import java.lang.Long;
 
 import org.order.api.application.BaseMoneyInfoApplication;
-import org.order.domain.customer.aggregation.MoneyInfo;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,7 +1,11 @@
 package org.users.domain.customer.valueobject;
 
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class MinimalPointPerOrder {
+@Value
+public class MinimalPointPerOrder implements ValueObject {
+    String point;
 }

@@ -1,7 +1,14 @@
 package org.users.domain.customer.valueobject.id;
 
+import lombok.EqualsAndHashCode;
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class GoodsId {
+@EqualsAndHashCode(callSuper = true)
+@Value
+public class GoodsId extends AbstractId {
+    private Long id;
+
 }

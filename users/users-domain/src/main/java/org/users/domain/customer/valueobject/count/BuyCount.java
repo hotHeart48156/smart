@@ -1,7 +1,15 @@
 package org.users.domain.customer.valueobject.count;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Value;
+
 /**
  * @author "yangbiao"
  */
-public class BuyCount {
+@EqualsAndHashCode(callSuper = true)
+@Value
+@AllArgsConstructor
+public class BuyCount extends AbstractCount {
+    private Long count;
 }
