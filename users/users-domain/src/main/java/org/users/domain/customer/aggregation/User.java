@@ -1,6 +1,5 @@
 package org.users.domain.customer.aggregation;
 
-import com.geekhalo.ddd.lite.domain.support.jpa.JpaAggregate;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -29,7 +28,8 @@ import java.util.List;
  * @author "yangbiao"
  */
 @Data
-public class User extends JpaAggregate {
+
+public class User {
     @NotNull
     private UserId userId;
     @NotNull
@@ -71,7 +71,7 @@ public class User extends JpaAggregate {
 
     public static User update(UserUpdateDto userUpdateDto) {
         User user = new User();
-
+        return null;
     }
 
     public void disable() {
@@ -84,12 +84,15 @@ public class User extends JpaAggregate {
     }
 
     public static User changeMemberLevel() {
+        return null;
     }
 
     public static Boolean checkUsernameAndPassword() {
+        return null;
     }
 
     public static Boolean checkOpenid() {
+        return null;
     }
 
 }

@@ -20,7 +20,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.alibaba.cola:cola-test:2.0.0" level="project" />
     <orderEntry type="module" module-name="product-client" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.12.6" level="project" />
-    <orderEntry type="module" module-name="gh-ddd-lite" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.55" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.5.RELEASE" level="project" />

@@ -80,7 +80,7 @@
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.0.Final" level="project" />
     <orderEntry type="module" module-name="users-infrastructure" />
     <orderEntry type="module" module-name="users-domain" />
-    <orderEntry type="module" module-name="gh-ddd-lite" />
+    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.1.5.RELEASE" level="project" />

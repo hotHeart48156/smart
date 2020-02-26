@@ -24,10 +24,21 @@
             <artifactId>users-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.smart.website</groupId>
-            <artifactId>gh-ddd-lite</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-spring-boot-starter</artifactId>
+            <version>4.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.axonframework</groupId>
+                    <artifactId>axon-server-connector</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava axon 依赖了 guava-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.1-jre</version>
         </dependency>
     </dependencies>
 

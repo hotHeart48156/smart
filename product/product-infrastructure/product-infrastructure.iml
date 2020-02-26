@@ -70,7 +70,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.xmlunit:xmlunit-core:2.6.3" level="project" />
-    <orderEntry type="module" module-name="gh-ddd-lite" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.1.5.RELEASE" level="project" />

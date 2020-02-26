@@ -1,5 +1,6 @@
 package org.users.domain.customer.entity;
 
+import lombok.Data;
 import org.users.domain.customer.valueobject.address.City;
 import org.users.domain.customer.valueobject.address.DetailAddress;
 import org.users.domain.customer.valueobject.address.Province;
@@ -10,6 +11,7 @@ import org.users.domain.customer.valueobject.id.UserId;
 /**
  * @author "yangbiao"
  */
+@Data
 public class Address implements Entity {
     private AddressId addressId;
     private UserId userId;

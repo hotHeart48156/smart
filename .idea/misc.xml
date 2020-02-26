@@ -10,9 +10,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/gh-ddd-lite/pom.xml" />
-        <option value="$PROJECT_DIR$/gh-ddd-lite-codegen/pom.xml" />
-        <option value="$PROJECT_DIR$/gh-ddd-lite-spring/pom.xml" />
         <option value="$PROJECT_DIR$/gh-ddd-parent/pom.xml" />
       </list>
     </option>
