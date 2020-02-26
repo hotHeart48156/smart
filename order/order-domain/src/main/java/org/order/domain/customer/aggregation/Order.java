@@ -41,6 +41,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
+
 public class Order extends JpaEntity {
 
     private Blance blance;

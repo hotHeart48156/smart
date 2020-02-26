@@ -1,6 +1,7 @@
 package org.users.domain.customer.aggregation;
 
 import com.geekhalo.ddd.lite.domain.support.jpa.JpaAggregate;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.users.domain.customer.entity.*;
@@ -20,13 +21,13 @@ import org.users.domain.customer.valueobject.user.Gender;
 import org.users.domain.customer.valueobject.user.Job;
 import org.users.domain.customer.valueobject.user.Password;
 
+import javax.persistence.Access;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
 public class User extends JpaAggregate {
     @NotNull
@@ -73,10 +74,22 @@ public class User extends JpaAggregate {
 
     }
 
-    public static User disable() {
+    public void disable() {
+        this.setUserStatus(ValueObjectFactory.newInstance(UserStatus.class, UserStatus.ENABLE.getClass()));
     }
 
-    public static User enable() {
+    public void enable() {
+        this.setUserStatus(ValueObjectFactory.newInstance(UserStatus.class, UserStatus.DISABLE.getClass()));
+
+    }
+
+    public static User changeMemberLevel() {
+    }
+
+    public static Boolean checkUsernameAndPassword() {
+    }
+
+    public static Boolean checkOpenid() {
     }
 
 }
