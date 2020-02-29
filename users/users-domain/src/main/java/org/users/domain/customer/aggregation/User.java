@@ -1,23 +1,20 @@
 package org.users.domain.customer.aggregation;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
-import org.users.domain.customer.entity.*;
-import org.users.domain.customer.valueobject.*;
+import org.users.domain.customer.valueobject.CreateTime;
+import org.users.domain.customer.valueobject.Growth;
+import org.users.domain.customer.valueobject.PhoneNumber;
+import org.users.domain.customer.valueobject.ValueObjectFactory;
 import org.users.domain.customer.valueobject.icon.UserIcon;
 import org.users.domain.customer.valueobject.id.*;
 import org.users.domain.customer.valueobject.integration.Integration;
-import org.users.domain.customer.valueobject.name.AreaName;
-import org.users.domain.customer.valueobject.name.GoodsName;
 import org.users.domain.customer.valueobject.name.NickName;
 import org.users.domain.customer.valueobject.name.UserName;
 import org.users.domain.customer.valueobject.status.UserStatus;
-import org.users.domain.customer.valueobject.type.CollectType;
 import org.users.domain.customer.valueobject.type.SourceType;
 import org.users.domain.customer.valueobject.user.Birthday;
 import org.users.domain.customer.valueobject.user.Gender;
@@ -26,7 +23,6 @@ import org.users.domain.customer.valueobject.user.Password;
 import org.users.dto.domainevent.CreateUserEvent;
 import org.users.dto.domainevent.UpdateUserEvent;
 import org.users.executor.command.CreateUserCommand;
-import sun.security.mscapi.CPublicKey;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
