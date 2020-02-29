@@ -1,10 +1,6 @@
 package org.order.domain.customer.aggregation;
 
-import com.geekhalo.ddd.lite.domain.DomainEvent;
-import com.geekhalo.ddd.lite.domain.ValidationHandler;
-import com.geekhalo.ddd.lite.domain.support.jpa.JpaEntity;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.order.domain.customer.entity.OrderItem;
 import org.order.domain.customer.vaueobject.*;
 import org.order.domain.customer.vaueobject.address.City;
@@ -28,21 +24,15 @@ import org.order.domain.customer.vaueobject.time.*;
 import org.order.domain.customer.vaueobject.type.BillType;
 import org.order.domain.customer.vaueobject.type.OrderType;
 import org.order.domain.customer.vaueobject.type.SourceType;
-
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
-@Entity
 
-public class Order extends JpaEntity {
+public class Order {
 
     private Blance blance;
     private List<OrderItem> orderItems;
@@ -104,9 +94,5 @@ public class Order extends JpaEntity {
     private GroupId groupId;
     private GoodsName goodsName;
 
-    @Override
-    public Date getCreateTime() {
-        return createTime.getCreateTime();
-    }
 
 }

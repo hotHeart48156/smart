@@ -6,6 +6,6 @@ import lombok.Data;
  * @author "yangbiao"
  */
 @Data
-public class LoginWithOpenid {
+public class LoginWithOpenidDto {
     private String openId;
 }

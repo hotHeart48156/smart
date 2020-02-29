@@ -3,6 +3,10 @@ package org.users.domain.customer.aggregation;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.eventsourcing.EventSourcingHandler;
+import org.axonframework.modelling.command.AggregateLifecycle;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 import org.users.domain.customer.entity.*;
 import org.users.domain.customer.valueobject.*;
 import org.users.domain.customer.valueobject.icon.UserIcon;
@@ -19,8 +23,11 @@ import org.users.domain.customer.valueobject.user.Birthday;
 import org.users.domain.customer.valueobject.user.Gender;
 import org.users.domain.customer.valueobject.user.Job;
 import org.users.domain.customer.valueobject.user.Password;
+import org.users.dto.domainevent.CreateUserEvent;
+import org.users.dto.domainevent.UpdateUserEvent;
+import org.users.executor.command.CreateUserCommand;
+import sun.security.mscapi.CPublicKey;
 
-import javax.persistence.Access;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -31,6 +38,7 @@ import java.util.List;
 
 public class User {
     @NotNull
+    @TargetAggregateIdentifier
     private UserId userId;
     @NotNull
     private UserName userName;
@@ -63,10 +71,18 @@ public class User {
     private Id memberStatisticsInfoId;
     private List<Id> userCollectIds;
 
-    public static User create(CreateUserDto userDto) {
-        User user = new User();
-        userDto.accept(user);
-        return user;
+    @CommandHandler
+    public User(CreateUserCommand createUserCommand) {
+        createUserCommand.getCreateUserDto().accept(this);
+        AggregateLifecycle.apply(new CreateUserEvent(createUserCommand.getCreateUserDto()));
+    }
+
+    public User() {
+    }
+
+    @EventSourcingHandler
+    public void on(UpdateUserEvent event) {
+        event.getUserUpdateDto()
     }
 
     public static User update(UserUpdateDto userUpdateDto) {

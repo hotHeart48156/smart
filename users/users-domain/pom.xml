@@ -40,6 +40,10 @@
             <artifactId>guava</artifactId>
             <version>27.1-jre</version>
         </dependency>
+        <dependency>
+            <groupId>com.smart.website</groupId>
+            <artifactId>users-app</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

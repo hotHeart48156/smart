@@ -6,7 +6,6 @@ import com.alibaba.cola.command.CommandExecutorI;
 import com.alibaba.cola.domain.DomainEventServiceI;
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.exception.BizException;
-import org.order.dto.domainmodel.ErrorCode;
 
 @Command
 public class CustomerAddCmdExe implements CommandExecutorI<Response, CustomerAddCmd> {

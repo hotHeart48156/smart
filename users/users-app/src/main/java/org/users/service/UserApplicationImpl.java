@@ -10,7 +10,7 @@ import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.aggregation.CreateUserDto;
 import org.users.domain.customer.aggregation.UserRepository;
 import org.users.domain.customer.aggregation.LoginWithNameOrNumberDto;
-import org.users.domain.customer.aggregation.LoginWithOpenid;
+import org.users.domain.customer.aggregation.LoginWithOpenidDto;
 
 /**
  * @author "yangbiao"
@@ -32,7 +32,7 @@ public class UserApplicationImpl implements UserApplication, ApplicationEventPub
     }
 
     @Override
-    public void loginWithOpenid(LoginWithOpenid openid) {
+    public void loginWithOpenid(LoginWithOpenidDto openid) {
 
     }
 

@@ -3,7 +3,6 @@ package org.order.executor.query;
 import com.alibaba.cola.command.Command;
 import com.alibaba.cola.command.QueryExecutorI;
 import com.alibaba.cola.dto.MultiResponse;
-import org.order.dto.domainmodel.Customer;
 
 import java.util.ArrayList;
 import java.util.List;

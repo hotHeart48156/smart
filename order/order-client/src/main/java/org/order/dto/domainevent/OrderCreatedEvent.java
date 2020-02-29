@@ -1,8 +1,6 @@
 package org.order.dto.domainevent;
 
-import com.geekhalo.ddd.lite.domain.Aggregate;
-import com.geekhalo.ddd.lite.domain.DomainEvent;
-import com.geekhalo.ddd.lite.domain.support.AbstractAggregateEvent;
+
 import org.order.domain.customer.vaueobject.id.OrderId;
 import org.order.domain.customer.vaueobject.id.OrderItemId;
 
@@ -11,7 +9,7 @@ import java.util.Date;
 /**
  * @author "yangbiao"
  */
-public class OrderCreatedEvent implements DomainEvent {
+public class OrderCreatedEvent {
 
     private OrderId orderId;
     private OrderItemId orderItemId;
@@ -24,7 +22,7 @@ public class OrderCreatedEvent implements DomainEvent {
         this.orderItemId = orderItemId;
     }
 
-    @Override
+
     public String id() {
         return orderId.getOrderId().toString();
     }
@@ -33,7 +31,7 @@ public class OrderCreatedEvent implements DomainEvent {
         this.orderId = orderId;
     }
 
-    @Override
+
     public Date occurredOn() {
         return new Date(System.currentTimeMillis());
     }

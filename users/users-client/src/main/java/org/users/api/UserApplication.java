@@ -3,7 +3,7 @@ package org.users.api;
 
 import org.users.domain.customer.aggregation.CreateUserDto;
 import org.users.domain.customer.aggregation.LoginWithNameOrNumberDto;
-import org.users.domain.customer.aggregation.LoginWithOpenid;
+import org.users.domain.customer.aggregation.LoginWithOpenidDto;
 
 /**
  * @author "yangbiao"
@@ -13,5 +13,5 @@ public interface UserApplication {
 
     void loginWithNameOrTelephone(LoginWithNameOrNumberDto nameOrNumberDto);
 
-    void loginWithOpenid(LoginWithOpenid openid);
+    void loginWithOpenid(LoginWithOpenidDto openid);
 }
