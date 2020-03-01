@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.users.domain.customer.aggregation.CreateUserDto;
 import org.users.domain.customer.valueobject.CommentGrowthPoint;
 import org.users.dto.*;
-import org.users.executor.command.CreateUserCommand;
+import org.users.dto.domainevent.UpdateBirthdayEvent;
+import org.users.executor.command.*;
 
 /**
  * @author "yangbiao"
@@ -36,26 +37,67 @@ public class UserController {
         }
 
     }
-
+    @PostMapping(value = "update/address")
     public void updateAddress(AddressDto addressDto) {
+        try {
+            commandGateway.sendAndWait(new UpdateAddressCommand(addressDto));
 
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
     }
-
+    @PostMapping(value = "update/password")
     public void updatePassword(PasswordDto passwordDto) {
-    }
+        try {
+            commandGateway.sendAndWait(new UpdatePasswordCommand(passwordDto));
 
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
+    }
+    @PostMapping(value = "update/nickname")
     public void updateNickname(NicknameDto nicknameDto) {
-    }
+        try {
+            commandGateway.sendAndWait(new UpdateNicknameCommand(nicknameDto));
 
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
+    }
+    @PostMapping(value = "update/phone")
     public void updatePhone(PhoneDto phoneDto) {
-    }
+        try {
+            commandGateway.sendAndWait(new UpdatePhoneCommand(phoneDto));
 
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
+    }
+    @PostMapping(value = "update/birthday")
     public void updateBirthday(BirthdayDto birthdayDto) {
-    }
+        try {
+            commandGateway.sendAndWait(new UpdateBirthdayCommand(birthdayDto));
 
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
+    }
+    @PostMapping(value = "update/job")
     public void updateJob(JobDto jobDto) {
-    }
+        try {
+            commandGateway.sendAndWait(new UpdateJobCommand(jobDto));
 
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
+    }
+    @PostMapping(value = "update/growth")
     public void updateGrowth(GrowthDto growthDto) {
+        try {
+            commandGateway.sendAndWait(new UpdateGrowthCommand(growthDto));
+
+        }catch (CommandExecutionException e){
+            log.warn("update address failure with message"+e.getMessage());
+        }
     }
 }
