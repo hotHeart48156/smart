@@ -4,6 +4,12 @@ spring:
     port: 6379
     password:
   security:
+  kafka:
+    bootstrap-servers:
+    producer:
+    consumer:
+    client-id:
+
 security:
   oauth2:
     authorization:

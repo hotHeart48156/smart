@@ -1,6 +1,7 @@
 package org.users.security.user;
 
 import com.smart.website.persistence.mybatis.service.Service;
+import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
