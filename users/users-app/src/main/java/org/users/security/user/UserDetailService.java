@@ -1,15 +1,15 @@
 package org.users.security.user;
 
-import com.smart.website.persistence.mybatis.service.Service;
-import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.util.StringUtils;
 import org.users.domain.customer.aggregation.User;
+import org.users.domain.customer.repository.UserRepository;
+import org.users.domain.customer.valueobject.ValueObjectFactory;
+import org.users.domain.customer.valueobject.name.UserName;
 import org.users.security.encode.Encode;
 
 import java.util.Collection;
@@ -24,6 +24,9 @@ import java.util.Set;
 public class UserDetailService implements DetailService {
     @Autowired
     Encode encode;
+    @Autowired
+    UserRepository repository;
+
     @Override
     public UserDetailsService detailsService() {
         UserDetailsService service = new UserDetailsService() {
@@ -32,7 +35,7 @@ public class UserDetailService implements DetailService {
                 if (StringUtils.isEmpty(s)) {
                     throw new UsernameNotFoundException("user not find");
                 }
-                User userEntity = ;
+                User userEntity = repository.findById(ValueObjectFactory.newInstance(UserName.class, s.getClass())).get();
                 Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
 
                 return new UserDetails() {
@@ -43,12 +46,12 @@ public class UserDetailService implements DetailService {
 
                     @Override
                     public String getPassword() {
-                        return encode.encoder().encode(userEntity.getPassword());
+                        return encode.encoder().encode(userEntity.getPassword().getPassword());
                     }
 
                     @Override
                     public String getUsername() {
-                        return userEntity.getName();
+                        return userEntity.getUserName().getName();
                     }
 
                     @Override
