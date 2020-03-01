@@ -2,8 +2,8 @@ package org.users.api;
 
 
 import org.users.domain.customer.aggregation.CreateUserDto;
-import org.users.domain.customer.aggregation.LoginWithNameOrNumberDto;
-import org.users.domain.customer.aggregation.LoginWithOpenidDto;
+import org.users.dto.CheckNumberDto;
+import org.users.dto.OpenidDto;
 
 /**
  * @author "yangbiao"
@@ -11,7 +11,4 @@ import org.users.domain.customer.aggregation.LoginWithOpenidDto;
 public interface UserApplication {
     void createUser(CreateUserDto createUserDto);
 
-    void loginWithNameOrTelephone(LoginWithNameOrNumberDto nameOrNumberDto);
-
-    void loginWithOpenid(LoginWithOpenidDto openid);
 }

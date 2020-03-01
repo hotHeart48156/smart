@@ -1,4 +1,7 @@
 package org.users.executor;
 
-public class AbstractCommand {
+/**
+ * @author OMEN
+ */
+public abstract class AbstractCommand {
 }

@@ -1,0 +1,15 @@
+axon:
+  serializer:
+    json
+  metrics:
+    auto-configuration:
+      enabled: true
+  distributed:
+    jgroups:
+      gossip:
+        auto-start: true
+  eventhandling:
+    processors:
+spring:
+  application:
+    name: domain

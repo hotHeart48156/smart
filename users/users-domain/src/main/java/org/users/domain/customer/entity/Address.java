@@ -6,6 +6,7 @@ import org.users.domain.customer.valueobject.address.DetailAddress;
 import org.users.domain.customer.valueobject.address.Province;
 import org.users.domain.customer.valueobject.address.Region;
 import org.users.domain.customer.valueobject.id.AddressId;
+import org.users.domain.customer.valueobject.id.Id;
 import org.users.domain.customer.valueobject.id.UserId;
 
 /**
@@ -13,6 +14,7 @@ import org.users.domain.customer.valueobject.id.UserId;
  */
 @Data
 public class Address implements Entity {
+    private Id id;
     private AddressId addressId;
     private UserId userId;
     private Province province;

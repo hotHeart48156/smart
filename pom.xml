@@ -88,5 +88,6 @@
         <module>gh-ddd-lite-spring</module>
         <module>gh-ddd-parent</module>
         <module>config-server</module>
+        <module>discover-server</module>
     </modules>
 </project>

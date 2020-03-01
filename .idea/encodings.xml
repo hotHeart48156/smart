@@ -35,7 +35,8 @@
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gh-ddd-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discover-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discover-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order/order-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order/order-app/src/main/java" charset="UTF-8" />

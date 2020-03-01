@@ -1,6 +1,7 @@
-package org.users.domain.customer.aggregation;
+package org.users.domain.customer.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.valueobject.id.UserId;
 import org.springframework.data.repository.PagingAndSortingRepository;
 

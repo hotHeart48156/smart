@@ -58,6 +58,7 @@
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.querydsl:querydsl-core:4.2.2" level="project" />
@@ -73,6 +74,7 @@
     <orderEntry type="library" name="Maven: com.querydsl:querydsl-apt:4.2.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
+    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite-spring:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.1.5.RELEASE" level="project" />
@@ -81,6 +83,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.3" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite-codegen:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.squareup:javapoet:1.11.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.auto.service:auto-service:1.0-rc5" level="project" />
     <orderEntry type="library" name="Maven: com.google.auto.service:auto-service-annotations:1.0-rc5" level="project" />
