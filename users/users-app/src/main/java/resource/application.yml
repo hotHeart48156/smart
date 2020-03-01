@@ -4,3 +4,10 @@ spring:
     port: 6379
     password:
   security:
+security:
+  oauth2:
+    authorization:
+      jwt:
+j2cache:
+
+  config-location=/j2cache-${spring.profiles.active}.properties

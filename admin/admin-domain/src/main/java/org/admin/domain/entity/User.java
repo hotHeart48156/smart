@@ -1,6 +1,9 @@
 package org.admin.domain.entity;
 
 import lombok.Data;
+import org.admin.domain.valueobj.Email;
+import org.admin.domain.valueobj.Note;
+import org.admin.domain.valueobj.Password;
 import org.admin.domain.valueobj.id.RoleId;
 import org.admin.domain.valueobj.id.UserId;
 import org.admin.domain.valueobj.name.UserName;

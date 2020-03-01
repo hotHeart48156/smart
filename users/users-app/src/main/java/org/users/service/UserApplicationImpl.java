@@ -24,14 +24,12 @@ public class UserApplicationImpl implements UserApplication {
     private CommandGateway commandGateway;
     @Autowired
     private QueryGateway queryGateway;
-    @Autowired
-    private UserRepository userRepository;
 
     @Override
     public void createUser(CreateUserDto createUserDto) {
         CreateUserCommand createUserCommand = new CreateUserCommand(createUserDto);
-        User user = new User(createUserCommand);
-        userRepository.save(user);
+        commandGateway.sendAndWait(createUserCommand);
+
     }
 
 
@@ -54,7 +52,7 @@ public class UserApplicationImpl implements UserApplication {
     public void updateJob(JobDto jobDto) {
     }
 
-    public void updateGrwoth(GrowthDto growthDto) {
+    public void updateGrowth(GrowthDto growthDto) {
     }
 
 

@@ -13,6 +13,7 @@ import org.users.domain.customer.valueobject.address.Province;
 import org.users.domain.customer.valueobject.address.Region;
 import org.users.domain.customer.valueobject.id.AddressId;
 import org.users.domain.customer.valueobject.id.UserId;
+import org.users.dto.AddressDto;
 
 /**
  * @author "yangbiao"
@@ -21,6 +22,6 @@ import org.users.domain.customer.valueobject.id.UserId;
 @Value
 @AllArgsConstructor
 public class UpdateAddressEvent extends AbstractEvent {
-
+    AddressDto addressDto;
 
 }

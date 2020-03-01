@@ -1,12 +1,10 @@
 package org.admin.domain.entity;
 
 import lombok.Data;
-import org.account.domain.account.valueobj.id.EducationId;
-import org.account.domain.account.valueobj.id.PermissionId;
-import org.account.domain.account.valueobj.id.RoleId;
-import org.account.domain.account.valueobj.id.UserId;
+import org.admin.domain.valueobj.id.EducationId;
+import org.admin.domain.valueobj.id.PermissionId;
+import org.admin.domain.valueobj.id.RoleId;
 import org.admin.domain.valueobj.id.UserId;
-
 
 /**
  * @author "yangbiao"

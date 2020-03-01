@@ -1,9 +1,8 @@
 package org.admin.domain.aggregate;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
-import org.account.domain.account.entity.*;
-import org.admin.domain.entity.User;
+import org.admin.domain.entity.*;
 
 /**
  * @author "yangbiao"

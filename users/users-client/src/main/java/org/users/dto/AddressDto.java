@@ -21,10 +21,9 @@ public class AddressDto extends AbstractDto {
     private String region;
     private String detail;
 
-    @Override
-    public void accept(User user) {
+
+    public void accept(User user, Address address) {
         if (id.equals(user.getUserId().getId())) {
-            Address address = new Address();
             Id id = ValueObjectFactory.newInstance(Id.class);
             address.setProvince(ValueObjectFactory.newInstance(Province.class, province.getClass()));
             address.setUserId(ValueObjectFactory.newInstance(UserId.class, this.id.getClass()));
@@ -34,5 +33,11 @@ public class AddressDto extends AbstractDto {
             address.setId(id);
             user.getAddressIds().add(id);
         }
+    }
+
+    @Override
+    @Deprecated
+    public void accept(User user) {
+
     }
 }
