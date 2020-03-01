@@ -12,7 +12,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.users.security.constant.ConstantKey;
-import org.users.security.filter.Filter;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -44,7 +43,7 @@ import java.util.*;
  * import org.springframework.security.access.SecurityConfig;
  * import org.springframework.security.concurrent.DelegatingSecurityContextCallable;
  */
-public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter implements Filter {
+public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
     private AuthenticationManager authenticationManager;
 
     public void jWTLoginFilter(AuthenticationManager authenticationManager) {

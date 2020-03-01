@@ -1,13 +1,15 @@
 package org.users.security.user;
+
 import com.smart.website.persistence.mybatis.service.Service;
-import com.smart.website.security.spring.encode.Encode;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.util.StringUtils;
+import org.users.domain.customer.aggregation.User;
+import org.users.security.encode.Encode;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -21,7 +23,6 @@ import java.util.Set;
 public class UserDetailService implements DetailService {
     @Autowired
     Encode encode;
-    private Service servicea;
     @Override
     public UserDetailsService detailsService() {
         UserDetailsService service = new UserDetailsService() {
@@ -30,14 +31,9 @@ public class UserDetailService implements DetailService {
                 if (StringUtils.isEmpty(s)) {
                     throw new UsernameNotFoundException("user not find");
                 }
-                UserEntity userEntity = userRespository.findByUsername(s);
-                Set<GrantedAuthority> authorities = new HashSet<>();
-                for (Object id : roleRespository.findAll(userEntity.getUserId())
-                ) {
-                    authorities.add(new SimpleGrantedAuthority(id.toString()));
+                User userEntity = ;
+                Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
 
-
-                }
                 return new UserDetails() {
                     @Override
                     public Collection<? extends GrantedAuthority> getAuthorities() {

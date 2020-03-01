@@ -20,7 +20,7 @@ import org.users.security.user.DetailService;
  */
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter implements SpringSecurityConfiguration {
+public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     @Qualifier("UserDetailService")
     DetailService detailService;

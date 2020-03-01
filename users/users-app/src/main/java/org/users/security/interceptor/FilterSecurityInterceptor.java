@@ -17,14 +17,14 @@ import java.util.logging.LogRecord;
  * @author "yangbiao"
  * @date 2019122320:34
  */
-public class FilterSecurityInterceptor extends AbstractSecurityInterceptor implements SecurityInterceptor, Filter {
+public class FilterSecurityInterceptor extends AbstractSecurityInterceptor {
     @Autowired
     FilterInvocationSecurityMetadataSource securityMetadataSource;
     @Autowired
     @Qualifier("AccountAccessDecisionManage")
     AccessDecisionManage accessDecisionManage;
 
-    @Override
+
     public boolean isLoggable(LogRecord record) {
         return true;
     }

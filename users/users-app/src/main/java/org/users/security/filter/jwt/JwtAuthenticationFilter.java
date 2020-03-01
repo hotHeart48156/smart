@@ -1,26 +1,23 @@
 package org.users.security.filter.jwt;
 
-import com.smart.website.security.spring.constant.ConstantKey;
-import com.smart.website.security.spring.filter.Filter;
+
 import io.jsonwebtoken.*;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.users.security.constant.ConstantKey;
-import org.users.security.filter.Filter;
+import org.users.security.exception.TokenException;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import
+
 /**
  * @author "yangbiao"
  * @date 2019122312:33
@@ -43,25 +40,16 @@ import
  * 如果您需要使用未加密的HTTP（即没有TLS/HTTPS），并且希望最大限度地提高身份验证过程的安全性，那么摘要式身份验证是一个更具吸引力的选项。
  * 事实上，摘要式身份验证是WebDAV协议的强制性要求，如RFC2518第17.1节所述。
  */
-public class JwtAuthenticationFilter extends BasicAuthenticationFilter implements Filter {
+public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
     public JwtAuthenticationFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);
     }
 
 
-    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
-        String header = req.getHeader("Authorization");
-        if (header == null || !header.startsWith("Bearer ")) {
-            chain.doFilter(res, req);
-            return;
-        }
-
-        UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        chain.doFilter(request, response);
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+        super.doFilterInternal(request, response, chain);
     }
-
-}
 
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
         long start = System.currentTimeMillis();
