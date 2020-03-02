@@ -1,7 +1,6 @@
 package org.product.dto;
 
 import com.geekhalo.ddd.lite.domain.AggregateEvent;
-import org.product.domain.aggragate.BuyProduct;
 
 import java.util.Date;
 

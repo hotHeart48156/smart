@@ -1,7 +1,6 @@
 package org.product.dto;
 
 import com.geekhalo.ddd.lite.domain.AggregateEvent;
-import org.product.domain.aggragate.ProductRemove;
 
 import java.util.Date;
 

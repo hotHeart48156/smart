@@ -6,13 +6,14 @@ import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.modelling.command.AggregateMember;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 import org.axonframework.spring.stereotype.Aggregate;
+import org.users.domain.customer.entity.Role;
 import org.users.domain.customer.valueobject.CreateTime;
 import org.users.domain.customer.valueobject.Growth;
 import org.users.domain.customer.valueobject.PhoneNumber;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
 import org.users.domain.customer.valueobject.icon.UserIcon;
 import org.users.domain.customer.valueobject.id.*;
 import org.users.domain.customer.valueobject.integration.Integration;
+import org.users.domain.customer.valueobject.is.AbstractIs;
 import org.users.domain.customer.valueobject.name.NickName;
 import org.users.domain.customer.valueobject.name.UserName;
 import org.users.domain.customer.valueobject.status.UserStatus;
@@ -28,12 +29,14 @@ import org.users.executor.command.*;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author "yangbiao"
  */
 @Data
 @Aggregate
+
 public class User implements Aggregation {
     @NotNull
     @TargetAggregateIdentifier
@@ -73,7 +76,7 @@ public class User implements Aggregation {
     private Id memberStatisticsInfoId;
     @AggregateMember
     private List<Id> userCollectIds;
-
+    private Set<RoleId> roleIds;
     @CommandHandler
     public User(CreateUserCommand createUserCommand) {
         createUserCommand.getCreateUserDto().accept(this);
@@ -138,5 +141,6 @@ public class User implements Aggregation {
     @CommandHandler
     public void update(AbstractDto dto, AbstractCommand command, UserId userId) {
     }
+
 
 }

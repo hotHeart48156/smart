@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/account/account-app/account-app.iml" filepath="$PROJECT_DIR$/account/account-app/account-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/account-client/account-client.iml" filepath="$PROJECT_DIR$/account/account-client/account-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/account-controller/account-controller.iml" filepath="$PROJECT_DIR$/account/account-controller/account-controller.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/account-domain/account-domain.iml" filepath="$PROJECT_DIR$/account/account-domain/account-domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/account-infrastructure/account-infrastructure.iml" filepath="$PROJECT_DIR$/account/account-infrastructure/account-infrastructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/activite.iml" filepath="$PROJECT_DIR$/activite/activite.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/activite-app/activite-app.iml" filepath="$PROJECT_DIR$/activite/activite-app/activite-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/activite-client/activite-client.iml" filepath="$PROJECT_DIR$/activite/activite-client/activite-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" filepath="$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" filepath="$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" filepath="$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/admin/admin.iml" filepath="$PROJECT_DIR$/admin/admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin/admin-app/admin-app.iml" filepath="$PROJECT_DIR$/admin/admin-app/admin-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin/admin-client/admin-client.iml" filepath="$PROJECT_DIR$/admin/admin-client/admin-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin/admin-controller/admin-controller.iml" filepath="$PROJECT_DIR$/admin/admin-controller/admin-controller.iml" />
@@ -40,7 +34,6 @@
       <module fileurl="file://$PROJECT_DIR$/product_side/product_side-controller/product_side-controller.iml" filepath="$PROJECT_DIR$/product_side/product_side-controller/product_side-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/product_side/product_side-domain/product_side-domain.iml" filepath="$PROJECT_DIR$/product_side/product_side-domain/product_side-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/product_side/product_side-infrastructure/product_side-infrastructure.iml" filepath="$PROJECT_DIR$/product_side/product_side-infrastructure/product_side-infrastructure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/start/start.iml" filepath="$PROJECT_DIR$/account/start/start.iml" />
       <module fileurl="file://$PROJECT_DIR$/activite/start/start (2).iml" filepath="$PROJECT_DIR$/activite/start/start (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/admin/start/start (3).iml" filepath="$PROJECT_DIR$/admin/start/start (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/order/start/start (4).iml" filepath="$PROJECT_DIR$/order/start/start (4).iml" />

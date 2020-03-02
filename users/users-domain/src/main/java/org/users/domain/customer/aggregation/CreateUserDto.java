@@ -39,7 +39,7 @@ public class CreateUserDto {
     /**
      * 生日
      */
-    private Date birthday;
+
 
     public void accept(User user) {
         user.setUserName(ValueObjectFactory.newInstance(UserName.class, username.getClass()));
@@ -47,7 +47,6 @@ public class CreateUserDto {
         user.setPassword(ValueObjectFactory.newInstance(Password.class, password.getClass()));
         user.setPhoneNumber(ValueObjectFactory.newInstance(PhoneNumber.class, phone.getClass()));
         user.setGender(ValueObjectFactory.newInstance(Gender.class, gender.getClass()));
-        user.setBirthday(ValueObjectFactory.newInstance(Birthday.class, birthday.getClass()));
         user.setCreateTime(ValueObjectFactory.newInstance(CreateTime.class, new Date(System.currentTimeMillis()).getClass()));
 
 
