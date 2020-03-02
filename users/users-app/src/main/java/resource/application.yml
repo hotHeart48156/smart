@@ -1,4 +1,24 @@
 spring:
+  profiles: user-domain-config
+
+  cloud:
+    stream:
+      binders:
+        local_kafka:
+          type: kafka
+          environment:
+            spring:
+              kafka:
+      bindings:
+        user_aggregate_input:
+          destination: user_aggregation
+          binder:  local_kafka
+        user_aggregate_output:
+          destination: user_aggregation
+          binder: local_kafka
+
+
+
   redis:
     url:
     port: 6379

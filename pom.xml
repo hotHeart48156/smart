@@ -83,11 +83,9 @@
         <module>product</module>
         <module>admin</module>
         <module>users</module>
-        <module>gh-ddd-lite</module>
-        <module>gh-ddd-lite-codegen</module>
-        <module>gh-ddd-lite-spring</module>
-        <module>gh-ddd-parent</module>
         <module>config-server</module>
         <module>discover-server</module>
+        <module>account</module>
+        <module>account</module>
     </modules>
 </project>

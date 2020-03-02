@@ -29,22 +29,8 @@
     <dependencyManagement>
         <dependencies>
             <!--Framework-->
-            <dependency>
-                <groupId>com.alibaba.cola</groupId>
-                <artifactId>cola-common</artifactId>
-                <version>${cola.framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.cola</groupId>
-                <artifactId>cola-core</artifactId>
-                <version>${cola.framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.cola</groupId>
-                <artifactId>cola-test</artifactId>
-                <version>${cola.framework.version}</version>
-                <scope>test</scope>
-            </dependency>
+
+
             <!--Framework End-->
             <!--Project modules-->
             <dependency>

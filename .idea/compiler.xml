@@ -9,56 +9,57 @@
         <outputRelativeToContentRoot value="true" />
         <module name="activite-domain" />
         <module name="product-controller" />
-        <module name="users-client" />
+        <module name="start" />
         <module name="product_side-app" />
         <module name="start (4)" />
-        <module name="product-domain" />
-        <module name="admin-controller" />
         <module name="admin-infrastructure" />
+        <module name="start (7)" />
         <module name="account-domain" />
         <module name="product-client" />
         <module name="activite-infrastructure" />
-        <module name="start (3)" />
-        <module name="account-controller" />
         <module name="start (6)" />
         <module name="account-infrastructure" />
         <module name="activite-app" />
         <module name="product-infrastructure" />
         <module name="account-client" />
-        <module name="discover-server" />
+        <module name="users-client" />
+        <module name="admin-app" />
         <module name="admin-domain" />
         <module name="activite-client" />
         <module name="product_side-domain" />
-        <module name="product_side-client" />
+        <module name="order-infrastructure" />
+        <module name="start (3)" />
+        <module name="users-infrastructure" />
         <module name="config-server" />
+        <module name="start (8)" />
+        <module name="discover-server" />
         <module name="order-app" />
-        <module name="product_side-infrastructure" />
-        <module name="order-domain" />
         <module name="users-domain" />
-        <module name="start" />
-        <module name="activite-controller" />
-        <module name="admin-app" />
-        <module name="users-app" />
-        <module name="product_side-controller" />
-        <module name="admin-client" />
-        <module name="account-app" />
         <module name="order-client" />
+        <module name="activite-controller" />
+        <module name="admin-controller" />
+        <module name="users-app" />
+        <module name="admin-client" />
+        <module name="product_side-controller" />
+        <module name="product-domain" />
+        <module name="account-app" />
+        <module name="account-controller" />
         <module name="users-controller" />
         <module name="product-app" />
         <module name="order-controller" />
-        <module name="start (2)" />
-        <module name="users-infrastructure" />
-        <module name="start (7)" />
-        <module name="order-infrastructure" />
+        <module name="product_side-client" />
+        <module name="product_side-infrastructure" />
+        <module name="order-domain" />
       </profile>
       <profile name="Annotation profile for demo" enabled="true">
-        <sourceOutputDir name="../../admin/start/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../admin/start/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../../users/start/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../users/start/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="start (8)" />
+        <module name="start (2)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="account" target="1.8" />
       <module name="account-app" target="1.8" />
       <module name="account-client" target="1.8" />
       <module name="account-controller" target="1.8" />
@@ -76,6 +77,9 @@
       <module name="admin-controller" target="1.8" />
       <module name="admin-domain" target="1.8" />
       <module name="admin-infrastructure" target="1.8" />
+      <module name="cola-common" target="1.8" />
+      <module name="cola-core" target="1.8" />
+      <module name="cola-test" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="discover-server" target="1.8" />

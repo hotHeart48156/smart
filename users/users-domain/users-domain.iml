@@ -92,7 +92,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.55" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:2.14.2" level="project" />
-    <orderEntry type="library" name="Maven: net.oschina.j2cache:j2cache:2.8.0-release" level="project" />
     <orderEntry type="library" name="Maven: com.github.ben-manes.caffeine:caffeine:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.7.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.1.5.RELEASE" level="project" />

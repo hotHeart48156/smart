@@ -14,7 +14,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-common:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-common:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.12.6" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite:1.0-SNAPSHOT" level="project" />
