@@ -4,11 +4,15 @@ import lombok.EqualsAndHashCode;
 import lombok.Value;
 import org.axonframework.common.IdentifierFactory;
 
+import javax.persistence.Embeddable;
+
 /**
  * @author "yangbiao"
  */
 @EqualsAndHashCode(callSuper = true)
 @Value
+@Embeddable
+
 public class UserId extends AbstractId {
     private String id;
     private final int hashCode;

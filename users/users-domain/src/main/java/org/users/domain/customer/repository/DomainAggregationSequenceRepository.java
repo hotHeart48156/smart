@@ -1,7 +1,6 @@
 package org.users.domain.customer.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.users.domain.customer.aggregation.DomainAggregationSequence;
 
 /**
  * @author "yangbiao"

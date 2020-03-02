@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Embeddable;
 import java.math.BigDecimal;
 
 /**
@@ -11,6 +12,8 @@ import java.math.BigDecimal;
  */
 @EqualsAndHashCode(callSuper = true)
 @Value
+@Embeddable
+
 @AllArgsConstructor
 public class ConsumeCount extends AbstractCount {
     private BigDecimal count;

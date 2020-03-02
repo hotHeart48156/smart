@@ -9,7 +9,6 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode(callSuper = true)
 @Value
 @Embeddable
 public class AddressId extends AbstractId {

@@ -9,15 +9,15 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode()
 @Value
 @Embeddable
 
-public class Id extends AbstractId {
+public class PermissionId {
     private String id;
     private final int hashCode;
 
-    public Id() {
+    public PermissionId() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
         this.hashCode = id.hashCode();
     }
