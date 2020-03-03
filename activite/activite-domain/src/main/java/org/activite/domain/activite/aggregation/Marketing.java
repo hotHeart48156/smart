@@ -1,4 +1,4 @@
-package org.activite.domain.activite.entity;
+package org.activite.domain.activite.aggregation;
 
 import org.activite.domain.activite.valueobject.ActivityGoods;
 import org.activite.domain.activite.valueobject.ActivityUser;

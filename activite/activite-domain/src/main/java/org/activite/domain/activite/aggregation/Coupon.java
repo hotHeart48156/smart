@@ -1,4 +1,4 @@
-package org.activite.domain.activite.aggre;
+package org.activite.domain.activite.aggregation;
 
 import org.activite.domain.activite.valueobject.CouponMinPoint;
 import org.activite.domain.activite.valueobject.Note;

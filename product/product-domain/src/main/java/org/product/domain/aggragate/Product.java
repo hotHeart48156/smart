@@ -1,8 +1,6 @@
 package org.product.domain.aggragate;
 
 import lombok.Data;
-import org.product.domain.entity.ProductDetailDesc;
-import org.product.domain.entity.ProductDetailTitle;
 import org.product.domain.valueobject.*;
 import org.product.domain.valueobject.id.*;
 import org.product.domain.valueobject.name.BrandName;
@@ -19,6 +17,7 @@ import org.product.domain.valueobject.type.ProductType;
 import org.product.domain.valueobject.type.PromotionType;
 
 import javax.persistence.Entity;
+import java.util.Set;
 
 /**
  * @author "yangbiao"
@@ -29,7 +28,11 @@ public class Product {
     private ProductId productId;
     private MemberId memberId;
     private BrandId brandId;
+    private Set<CommentId> commentIds;
+    private Set<Id> giftsIds;
+
     private ProductCategoryId productCategoryId;
+    private ProductAttributeId productAttributeId;
     private FeightTemplateId feightTemplateId;
     private ProductAttributeCategoryId productAttributeCategoryId;
     private ProductName productName;

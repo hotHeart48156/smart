@@ -17,21 +17,6 @@
     <file url="file://$PROJECT_DIR$/activite/start" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activite/start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activite/start/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-client/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-controller" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-controller/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-infrastructure" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-infrastructure/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin-infrastructure/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/start" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/start/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />

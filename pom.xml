@@ -81,11 +81,8 @@
         <module>order</module>
         <module>activite</module>
         <module>product</module>
-        <module>admin</module>
         <module>users</module>
         <module>config-server</module>
         <module>discover-server</module>
-        <module>account</module>
-        <module>account</module>
     </modules>
 </project>
