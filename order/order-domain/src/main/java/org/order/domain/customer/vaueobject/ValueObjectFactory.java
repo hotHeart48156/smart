@@ -8,25 +8,37 @@ import java.lang.reflect.Field;
 public class ValueObjectFactory {
     public static volatile ValueObject instance = null;
 
-    public static <T extends ValueObject> ValueObject getInstance(Class<T> c, Object... value) {
+    public static <T extends ValueObject> T getInstance(Class<T> c, Object v) {
 
         if (instance == null) {
             synchronized (ValueObjectFactory.class) {
                 if (instance == null) {
                     try {
-                        instance = (ValueObject) Class.forName(c.getName()).getConstructor().newInstance();
-                        Field[] field = c.getDeclaredFields();
-                        for (int i = 0; i < field.length; i++) {
-                            field[i].setAccessible(true);
-                            field[i].set(field[i], value[i]);
+                        instance = (ValueObject) Class.forName(c.getName()).getConstructor(v.getClass()).newInstance(v.getClass());
 
-                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
             }
         }
-        return instance;
+        return (T) instance;
+    }
+
+    public static <T extends ValueObject> T getInstance(Class<T> c) {
+
+        if (instance == null) {
+            synchronized (ValueObjectFactory.class) {
+                if (instance == null) {
+                    try {
+                        instance = (ValueObject) Class.forName(c.getName()).getConstructor().newInstance();
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+        return (T) instance;
     }
 }

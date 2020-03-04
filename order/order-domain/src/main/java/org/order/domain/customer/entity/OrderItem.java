@@ -37,9 +37,10 @@ import java.util.List;
 @Data
 @Entity
 public class OrderItem extends JpaEntity {
+    //基本信息
     private OrderItemId orderItemId;
     private OrderId orderId;
-    private OrderSn orderSn;
+    //产品信息
     private ProductId productId;
     private ProductPic productPic;
     private ProductName productName;
@@ -51,6 +52,7 @@ public class OrderItem extends JpaEntity {
     private ProductCategoryId productCategoryId;
     private ProductSaleAttributes productSaleAttributes;
     private ProductAttributes productAttributes;
+    //营销信息
     private PromoteName promoteName;
     private PromotionFee promotionFee;
     private CouponFee couponFee;

@@ -11,7 +11,7 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.order.domain.customer.vaueobject.id.MemberId;
+import org.order.domain.customer.vaueobject.id.UserId;
 import org.order.domain.customer.vaueobject.sn.OrderSn;
 import org.order.domain.customer.vaueobject.status.OrderStatus;
 import org.order.domain.customer.vaueobject.time.CreateTime;
@@ -74,7 +74,7 @@ public abstract class BaseOrderQueryUpdater<T extends BaseOrderQueryUpdater> {
             value = "",
             name = "memberId"
     )
-    private DataOptional<MemberId> memberId;
+    private DataOptional<UserId> memberId;
 
     public T keyWords(String keyWords) {
         this.keyWords = DataOptional.of(keyWords);
@@ -148,12 +148,12 @@ public abstract class BaseOrderQueryUpdater<T extends BaseOrderQueryUpdater> {
         return (T) this;
     }
 
-    public T memberId(MemberId memberId) {
+    public T memberId(UserId memberId) {
         this.memberId = DataOptional.of(memberId);
         return (T) this;
     }
 
-    public T acceptMemberId(Consumer<MemberId> consumer) {
+    public T acceptMemberId(Consumer<UserId> consumer) {
         if (this.memberId != null) {
             consumer.accept(this.memberId.getValue());
         }

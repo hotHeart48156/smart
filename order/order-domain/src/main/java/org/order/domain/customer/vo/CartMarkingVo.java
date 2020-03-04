@@ -9,7 +9,7 @@ import org.order.domain.customer.vaueobject.code.PostCode;
 import org.order.domain.customer.vaueobject.fee.TotalFee;
 import org.order.domain.customer.vaueobject.id.MarketId;
 import org.order.domain.customer.vaueobject.id.MemberCouponId;
-import org.order.domain.customer.vaueobject.id.MemberId;
+import org.order.domain.customer.vaueobject.id.UserId;
 import org.order.domain.customer.vaueobject.id.OpenId;
 import org.order.domain.customer.vaueobject.type.OrderType;
 
@@ -57,7 +57,7 @@ public class CartMarkingVo implements Serializable {
         target.setMarketScope(scope);
         target.setRule(new Rule(rule));
         target.setRuleId(ruleId);
-        target.setMemberId(new MemberId(memberId));
+        target.setMemberId(new UserId(memberId));
         target.setPostCode(new PostCode(code));
         target.setMarketId(new MarketId(marketingId));
         target.setMemberCouponId(new MemberCouponId(memberCouponId));

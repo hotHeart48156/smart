@@ -16,9 +16,8 @@ import org.order.domain.customer.vaueobject.id.AddressId;
 import org.order.domain.customer.vaueobject.id.CartId;
 import org.order.domain.customer.vaueobject.id.CartItemId;
 import org.order.domain.customer.vaueobject.id.CouponId;
-import org.order.domain.customer.vaueobject.id.GoodsId;
 import org.order.domain.customer.vaueobject.id.GroupId;
-import org.order.domain.customer.vaueobject.id.MemberId;
+import org.order.domain.customer.vaueobject.id.UserId;
 import org.order.domain.customer.vaueobject.id.ProductSkuId;
 import org.order.domain.customer.vaueobject.time.CreateTime;
 import org.order.domain.customer.vaueobject.type.PayType;
@@ -111,7 +110,7 @@ public abstract class BaseOrderGenerateUpdater<T extends BaseOrderGenerateUpdate
             value = "",
             name = "memberId"
     )
-    private DataOptional<MemberId> memberId;
+    private DataOptional<UserId> memberId;
 
     public T productSkuId(ProductSkuId productSkuId) {
         this.productSkuId = DataOptional.of(productSkuId);
@@ -233,12 +232,12 @@ public abstract class BaseOrderGenerateUpdater<T extends BaseOrderGenerateUpdate
         return (T) this;
     }
 
-    public T memberId(MemberId memberId) {
+    public T memberId(UserId memberId) {
         this.memberId = DataOptional.of(memberId);
         return (T) this;
     }
 
-    public T acceptMemberId(Consumer<MemberId> consumer) {
+    public T acceptMemberId(Consumer<UserId> consumer) {
         if (this.memberId != null) {
             consumer.accept(this.memberId.getValue());
         }
