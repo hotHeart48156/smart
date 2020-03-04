@@ -5,7 +5,6 @@ import com.alibaba.cola.event.EventHandler;
 import com.alibaba.cola.event.EventHandlerI;
 import com.alibaba.cola.logger.Logger;
 import com.alibaba.cola.logger.LoggerFactory;
-import org.activite.dto.domainevent.CustomerCreatedEvent;
 
 /**
  * Handle customer created event

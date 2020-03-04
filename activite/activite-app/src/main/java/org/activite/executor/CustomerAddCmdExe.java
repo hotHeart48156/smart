@@ -6,9 +6,6 @@ import com.alibaba.cola.command.CommandExecutorI;
 import com.alibaba.cola.domain.DomainEventServiceI;
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.exception.BizException;
-import org.activite.dto.CustomerAddCmd;
-import org.activite.dto.domainmodel.ErrorCode;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Command
 public class CustomerAddCmdExe implements CommandExecutorI<Response, CustomerAddCmd> {

@@ -2,7 +2,6 @@ package org.product.api;
 
 import com.alibaba.cola.dto.MultiResponse;
 import com.alibaba.cola.dto.Response;
-import org.product.dto.domainmodel.Customer;
 
 public interface CustomerServiceI {
 

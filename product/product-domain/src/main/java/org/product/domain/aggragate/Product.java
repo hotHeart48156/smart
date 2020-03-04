@@ -61,8 +61,6 @@ public class Product {
     private ProductService productService;
     private ProductKeywords productKeywords;
     private ProductNote productNote;
-    private ProductDetailTitle productDetailTitle;
-    private ProductDetailDesc productDetailDesc;
     private ProductPromotionStartTime productPromotionStartTime;
     private ProductPromotionEndTime productPromotionEndTime;
     private ProductPromotionPerLimit productPromotionPerLimit;
