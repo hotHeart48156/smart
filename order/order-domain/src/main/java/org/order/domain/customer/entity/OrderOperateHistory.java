@@ -18,7 +18,6 @@ import java.util.Date;
  * @author "yangbiao"
  */
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 public class OrderOperateHistory implements org.order.domain.customer.entity.Entity {

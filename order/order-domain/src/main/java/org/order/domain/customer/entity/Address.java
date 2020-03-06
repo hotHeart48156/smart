@@ -16,7 +16,6 @@ import javax.persistence.EmbeddedId;
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
 public class Address implements Entity{
     @EmbeddedId

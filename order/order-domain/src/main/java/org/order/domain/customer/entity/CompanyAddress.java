@@ -21,7 +21,6 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 public class CompanyAddress implements org.order.domain.customer.entity.Entity {

@@ -13,7 +13,6 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 public class OrderSetting implements org.order.domain.customer.entity.Entity {

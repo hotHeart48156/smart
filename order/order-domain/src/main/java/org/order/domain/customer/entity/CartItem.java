@@ -25,7 +25,6 @@ import java.util.Date;
  * @author "yangbiao"
  */
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 public class CartItem implements Entity {
     @Embedded

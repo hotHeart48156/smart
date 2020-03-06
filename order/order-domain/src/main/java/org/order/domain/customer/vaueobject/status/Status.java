@@ -1,7 +1,7 @@
 package org.order.domain.customer.vaueobject.status;
 
-import com.geekhalo.ddd.lite.domain.ValueObject;
-import com.geekhalo.ddd.lite.domain.support.CodeBasedEnum;
+
+import org.order.domain.customer.vaueobject.ValueObject;
 
 /**
  * @author "yangbiao"

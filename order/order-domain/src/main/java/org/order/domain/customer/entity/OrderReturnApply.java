@@ -30,7 +30,6 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 public class OrderReturnApply implements org.order.domain.customer.entity.Entity {
