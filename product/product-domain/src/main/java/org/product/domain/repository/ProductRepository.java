@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 /**
  * @author "yangbiao"
  */
-public interface ProductAddRepository extends JpaRepository<Product, ProductId>, JpaSpecificationExecutor<Product> {
+public interface ProductRepository extends JpaRepository<Product, ProductId>, JpaSpecificationExecutor<Product> {
 }
