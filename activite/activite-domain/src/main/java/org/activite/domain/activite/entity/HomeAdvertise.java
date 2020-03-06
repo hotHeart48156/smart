@@ -12,20 +12,34 @@ import org.activite.domain.activite.valueobject.time.EndTime;
 import org.activite.domain.activite.valueobject.time.StartTime;
 import org.activite.domain.activite.valueobject.type.HomeAdvertiseType;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 public class HomeAdvertise {
-    private HomeAdvertiseId homeAdvertiseId;
-    private HomeAdvertiseName homeAdvertiseName;
-    private HomeAdvertiseType homeAdvertiseType;
-    private Pic pic;
-    private StartTime startTime;
-    private EndTime endTime;
-    private HomeAdvertiseStatus homeAdvertiseStatus;
-    private HomeAdvertiseClickCount homeAdvertiseClickCount;
-    private HomeAdvertiseOrderCount homeAdvertiseOrderCount;
-    private Url url;
-    private Note note;
+    @EmbeddedId
+private  HomeAdvertiseId homeAdvertiseId;
+    @Embedded
+private  HomeAdvertiseName homeAdvertiseName;
+    @Embedded
+private  HomeAdvertiseType homeAdvertiseType;
+    @Embedded
+private  Pic pic;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  HomeAdvertiseStatus homeAdvertiseStatus;
+    @Embedded
+private  HomeAdvertiseClickCount homeAdvertiseClickCount;
+    @Embedded
+private  HomeAdvertiseOrderCount homeAdvertiseOrderCount;
+    @Embedded
+private  Url url;
+    @Embedded
+private  Note note;
 
 }

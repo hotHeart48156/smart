@@ -6,24 +6,42 @@ import org.users.domain.customer.valueobject.count.*;
 import org.users.domain.customer.valueobject.id.Id;
 import org.users.domain.customer.valueobject.id.UserId;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 @Data
 public class MemberStatisticsInfo implements Entity {
-    private Id id;
-    private UserId userId;
-    private ConsumeCount consumeCount;
-    private OrderCount orderCount;
-    private CouponCount couponCount;
-    private CommentCount commentCount;
-    private ReturnOrderCount returnOrderCount;
-    private LoginCount loginCount;
-    private AttentionCount attentionCount;
-    private FansCount fansCount;
-    private CollectSubjectCount collectSubjectCount;
-    private CollectProductCount collectProductCount;
-    private CollectTopicCount collectTopicCount;
-    private CollectCommentCount collectCommentCount;
-    private InviteFriendCount inviteFriendCount;
+    @EmbeddedId
+private  Id id;
+    @Embedded
+private  UserId userId;
+    @Embedded
+private  ConsumeCount consumeCount;
+    @Embedded
+private  OrderCount orderCount;
+    @Embedded
+private  CouponCount couponCount;
+    @Embedded
+private  CommentCount commentCount;
+    @Embedded
+private  ReturnOrderCount returnOrderCount;
+    @Embedded
+private  LoginCount loginCount;
+    @Embedded
+private  AttentionCount attentionCount;
+    @Embedded
+private  FansCount fansCount;
+    @Embedded
+private  CollectSubjectCount collectSubjectCount;
+    @Embedded
+private  CollectProductCount collectProductCount;
+    @Embedded
+private  CollectTopicCount collectTopicCount;
+    @Embedded
+private  CollectCommentCount collectCommentCount;
+    @Embedded
+private  InviteFriendCount inviteFriendCount;
 }

@@ -5,6 +5,8 @@ import org.users.domain.customer.valueobject.id.UserId;
 import org.users.domain.customer.valueobject.is.AbstractIs;
 import org.users.domain.customer.valueobject.name.RoleName;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
 import java.util.Set;
 
 /**
@@ -12,8 +14,12 @@ import java.util.Set;
  */
 
 public class Role {
-    private RoleId roleId;
-    private RoleName roleName;
-    private UserId userId;
-    private Set<AbstractIs> permissions;
+    @EmbeddedId
+private  RoleId roleId;
+    @Embedded
+private  RoleName roleName;
+    @Embedded
+private  UserId userId;
+    @Embedded
+private  Set<AbstractIs> permissions;
 }

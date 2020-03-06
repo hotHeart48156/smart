@@ -12,22 +12,37 @@ import org.users.domain.customer.valueobject.is.*;
 import org.users.domain.customer.valueobject.name.MemberLevelName;
 import org.users.domain.customer.valueobject.status.DefaultStatus;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 @Data
 public class MemberLevel implements Entity {
-    private MemberLevelId id;
-    private MemberLevelName memberLevelName;
-    private Growth growth;
-    private DefaultStatus defaultStatus;
-    private CommentGrowthPoint commentGrowthPoint;
-    private IsPrivilegedFreeFreight isPrivilegedFreeFreight;
-    private IsPrivilegedComment isPrivilegedComment;
-    private IsPrivilegedPromotion isPrivilegePromotion;
-    private IsPrivilegedMemberPrice isPrivilegeMemberPrice;
-    private IsPrivilegedBirthdays isPrivilegeBirthday;
-    private Price toMemberPrice;
-    private Note note;
+    @EmbeddedId
+private  MemberLevelId id;
+    @Embedded
+private  MemberLevelName memberLevelName;
+    @Embedded
+private  Growth growth;
+    @Embedded
+private  DefaultStatus defaultStatus;
+    @Embedded
+private  CommentGrowthPoint commentGrowthPoint;
+    @Embedded
+private  IsPrivilegedFreeFreight isPrivilegedFreeFreight;
+    @Embedded
+private  IsPrivilegedComment isPrivilegedComment;
+    @Embedded
+private  IsPrivilegedPromotion isPrivilegePromotion;
+    @Embedded
+private  IsPrivilegedMemberPrice isPrivilegeMemberPrice;
+    @Embedded
+private  IsPrivilegedBirthdays isPrivilegeBirthday;
+    @Embedded
+private  Price toMemberPrice;
+    @Embedded
+private  Note note;
 
 }

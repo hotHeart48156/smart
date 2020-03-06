@@ -7,14 +7,22 @@ import org.activite.domain.activite.valueobject.time.CreateTime;
 import org.activite.domain.activite.valueobject.time.EndTime;
 import org.activite.domain.activite.valueobject.time.StartTime;
 
+import javax.persistence.Embedded;
+
 /**
  * @author "yangbiao"
  */
 public class Promotion {
-    private Title title;
-    private StartTime startTime;
-    private EndTime endTime;
-    private CreateTime createTime;
-    private IsIndex isIndex;
-    private PromotionStatus promotionStatus;
+    @Embedded
+private  Title title;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  CreateTime createTime;
+    @Embedded
+private  IsIndex isIndex;
+    @Embedded
+private  PromotionStatus promotionStatus;
 }

@@ -12,21 +12,35 @@ import org.activite.domain.activite.valueobject.type.DiscountType;
 import org.activite.domain.activite.valueobject.type.SmallType;
 import org.activite.domain.activite.valueobject.user.UserLevel;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 public class Marketing {
-    private MarketingId marketingId;
-    private MarketingName marketingName;
-    private MarketStatus marketStatus;
-    private ActivityUser activityUser;
-    private ActivityGoods activityGoods;
-    private DiscountType discountType;
-    private SmallType smallType;
-    private StartTime startTime;
-    private EndTime endTime;
-    private UserLevel userLevel;
-    private CreateTime createTime;
+    @EmbeddedId
+private  MarketingId marketingId;
+    @Embedded
+private  MarketingName marketingName;
+    @Embedded
+private  MarketStatus marketStatus;
+    @Embedded
+private  ActivityUser activityUser;
+    @Embedded
+private  ActivityGoods activityGoods;
+    @Embedded
+private  DiscountType discountType;
+    @Embedded
+private  SmallType smallType;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  UserLevel userLevel;
+    @Embedded
+private  CreateTime createTime;
 
 
 }

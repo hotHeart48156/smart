@@ -12,20 +12,34 @@ import org.activite.domain.activite.valueobject.status.RedPacketStatus;
 import org.activite.domain.activite.valueobject.time.SendTime;
 import org.activite.domain.activite.valueobject.type.RedPacketType;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 public class RedPacket {
-    private RedPacketId redPacketId;
-    private UserId userId;
-    private RedPacketAmount redPacketAmount;
-    private SendTime sendTime;
-    private RedPacketCount redPacketCount;
-    private SingleRedPacketAmount singleRedPacketAmount;
-    private RedPacketStock redPacketStock;
-    private RedPacketType redPacketType;
-    private Note note;
-    private RedPacketStatus redPacketStatus;
-    private RedPacketReceiveAmount redPacketReceiveAmount;
+    @EmbeddedId
+private  RedPacketId redPacketId;
+    @Embedded
+private  UserId userId;
+    @Embedded
+private  RedPacketAmount redPacketAmount;
+    @Embedded
+private  SendTime sendTime;
+    @Embedded
+private  RedPacketCount redPacketCount;
+    @Embedded
+private  SingleRedPacketAmount singleRedPacketAmount;
+    @Embedded
+private  RedPacketStock redPacketStock;
+    @Embedded
+private  RedPacketType redPacketType;
+    @Embedded
+private  Note note;
+    @Embedded
+private  RedPacketStatus redPacketStatus;
+    @Embedded
+private  RedPacketReceiveAmount redPacketReceiveAmount;
 
 }

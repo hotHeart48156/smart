@@ -9,16 +9,26 @@ import org.users.domain.customer.valueobject.id.AddressId;
 import org.users.domain.customer.valueobject.id.Id;
 import org.users.domain.customer.valueobject.id.UserId;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 @Data
 public class Address implements Entity {
-    private Id id;
-    private AddressId addressId;
-    private UserId userId;
-    private Province province;
-    private City city;
-    private Region region;
-    private DetailAddress detailAddress;
+    @EmbeddedId
+private  Id id;
+    @Embedded
+private  AddressId addressId;
+    @Embedded
+private  UserId userId;
+    @Embedded
+private  Province province;
+    @Embedded
+private  City city;
+    @Embedded
+private  Region region;
+    @Embedded
+private  DetailAddress detailAddress;
 }

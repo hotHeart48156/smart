@@ -1,5 +1,6 @@
 package org.activite.domain.activite.aggregation;
 
+import lombok.Data;
 import org.activite.domain.activite.valueobject.CouponMinPoint;
 import org.activite.domain.activite.valueobject.Note;
 import org.activite.domain.activite.valueobject.Platform;
@@ -18,26 +19,48 @@ import org.activite.domain.activite.valueobject.type.CouponType;
 import org.activite.domain.activite.valueobject.type.CouponUserType;
 import org.activite.domain.activite.valueobject.user.UserLevel;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
+@Data
 public class Coupon {
-    private CouponId couponId;
-    private CouponType couponType;
-    private CouponName couponName;
-    private Platform platform;
-    private CouponCount couponCount;
-    private CouponAmount couponAmount;
-    private CouponMinPoint couponMinPoint;
-    private StartTime startTime;
-    private EndTime endTime;
-    private CouponUserType couponUserType;
-    private Note note;
-    private CouponPublishCount couponPublishCount;
-    private CouponUsedCount couponUsedCount;
-    private CouponReceiverCount couponReceiverCount;
-    private CouponEnableTime couponEnableTime;
-    private CouponCode couponCode;
-    private UserLevel userLevel;
+    @EmbeddedId
+
+private  CouponId couponId;
+    @Embedded
+private  CouponType couponType;
+    @Embedded
+private  CouponName couponName;
+    @Embedded
+private  Platform platform;
+    @Embedded
+private  CouponCount couponCount;
+    @Embedded
+private  CouponAmount couponAmount;
+    @Embedded
+private  CouponMinPoint couponMinPoint;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  CouponUserType couponUserType;
+    @Embedded
+private  Note note;
+    @Embedded
+private  CouponPublishCount couponPublishCount;
+    @Embedded
+private  CouponUsedCount couponUsedCount;
+    @Embedded
+private  CouponReceiverCount couponReceiverCount;
+    @Embedded
+private  CouponEnableTime couponEnableTime;
+    @Embedded
+private  CouponCode couponCode;
+    @Embedded
+private  UserLevel userLevel;
 
 }

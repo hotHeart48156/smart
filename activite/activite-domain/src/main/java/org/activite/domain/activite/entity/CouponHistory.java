@@ -14,22 +14,38 @@ import org.activite.domain.activite.valueobject.time.EndTime;
 import org.activite.domain.activite.valueobject.time.StartTime;
 import org.activite.domain.activite.valueobject.type.CouponGetType;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 public class CouponHistory {
-    private CouponId couponId;
-    private UserId userId;
-    private CouponCode couponCode;
-    private UserNickName userNickName;
-    private CouponGetType couponGetType;
-    private CreateTime createTime;
-    private CouponUseStatus couponUseStatus;
-    private CouponUseTime couponUseTime;
-    private OrderSn orderSn;
-    private OrderId orderId;
-    private StartTime startTime;
-    private EndTime endTime;
-    private Note note;
+    @Embedded
+private  CouponId couponId;
+    @Embedded
+private  UserId userId;
+    @EmbeddedId
+private  CouponCode couponCode;
+    @Embedded
+private  UserNickName userNickName;
+    @Embedded
+private  CouponGetType couponGetType;
+    @Embedded
+private  CreateTime createTime;
+    @Embedded
+private  CouponUseStatus couponUseStatus;
+    @Embedded
+private  CouponUseTime couponUseTime;
+    @Embedded
+private  OrderSn orderSn;
+    @Embedded
+private  OrderId orderId;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  Note note;
 
 }

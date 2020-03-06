@@ -4,12 +4,18 @@ import org.activite.domain.activite.valueobject.id.ProductId;
 import org.activite.domain.activite.valueobject.name.ProductName;
 import org.activite.domain.activite.valueobject.status.RecommendStatus;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 public class RecommendProduct {
-    private ProductId productId;
-    private ProductName productName;
-    private RecommendStatus recommendStatus;
+    @EmbeddedId
+private  ProductId productId;
+    @Embedded
+private  ProductName productName;
+    @Embedded
+private  RecommendStatus recommendStatus;
 
 }

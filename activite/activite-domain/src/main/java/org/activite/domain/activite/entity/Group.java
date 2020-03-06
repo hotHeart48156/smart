@@ -14,20 +14,35 @@ import org.activite.domain.activite.valueobject.time.CreateTime;
 import org.activite.domain.activite.valueobject.time.EndTime;
 import org.activite.domain.activite.valueobject.time.StartTime;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  */
 public class Group {
-    private GroupId groupId;
-    private ProductId productId;
-    private ProductName productName;
-    private ProductPrice productPrice;
-    private GroupPrice groupPrice;
-    private StartTime startTime;
-    private EndTime endTime;
-    private CoutinueTime coutinueTime;
-    private GroupPeopleCount groupPeopleCount;
-    private GroupStatus groupStatus;
-    private GroupPeopleMaxCount groupPeopleMaxCount;
-    private CreateTime createTime;
+    @EmbeddedId
+private  GroupId groupId;
+    @Embedded
+private  ProductId productId;
+    @Embedded
+private  ProductName productName;
+    @Embedded
+private  ProductPrice productPrice;
+    @Embedded
+private  GroupPrice groupPrice;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  CoutinueTime coutinueTime;
+    @Embedded
+private  GroupPeopleCount groupPeopleCount;
+    @Embedded
+private  GroupStatus groupStatus;
+    @Embedded
+private  GroupPeopleMaxCount groupPeopleMaxCount;
+    @Embedded
+private  CreateTime createTime;
 }

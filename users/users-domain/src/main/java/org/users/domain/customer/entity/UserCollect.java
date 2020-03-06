@@ -15,18 +15,29 @@ import org.users.domain.customer.valueobject.id.UserId;
 import org.users.domain.customer.valueobject.name.GoodsName;
 import org.users.domain.customer.valueobject.type.CollectType;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+
 /**
  * @author "yangbiao"
  * 用户收藏商品或文章。
  */
 @Data
 public class UserCollect implements Entity {
-    private Id id;
-    private UserId memberId;
-    private GoodsId goodsId;
-    private GoodsName goodsName;
-    private GoodsPrice goodsPrice;
-    private GoodsPic goodsPic;
-    private CollectType collectType;
-    private CreateTime createTime;
+    @EmbeddedId
+private  Id id;
+    @Embedded
+private  UserId memberId;
+    @Embedded
+private  GoodsId goodsId;
+    @Embedded
+private  GoodsName goodsName;
+    @Embedded
+private  GoodsPrice goodsPrice;
+    @Embedded
+private  GoodsPic goodsPic;
+    @Embedded
+private  CollectType collectType;
+    @Embedded
+private  CreateTime createTime;
 }

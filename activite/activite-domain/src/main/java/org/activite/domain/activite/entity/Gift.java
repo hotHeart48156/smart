@@ -13,23 +13,38 @@ import org.activite.domain.activite.valueobject.type.GiftType;
 import org.activite.domain.activite.valueobject.type.SmallType;
 import org.activite.domain.activite.valueobject.user.UserLevel;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
 import java.util.List;
 
 /**
  * @author "yangbiao"
  */
 public class Gift {
-    private GiftId giftId;
-    private GiftName giftName;
-    private GiftStatus giftStatus;
-    private ActivityUser activityUser;
-    private ActivityGoods activityGoods;
-    private GiftType giftType;
-    private SmallType smallType;
-    private List<GoodsId> goodsIds;
-    private UserLevel userLevel;
-    private StartTime startTime;
-    private EndTime endTime;
-    private Note note;
-    private List<GiftId> giftIds;
+    @EmbeddedId
+private  GiftId giftId;
+    @Embedded
+private  GiftName giftName;
+    @Embedded
+private  GiftStatus giftStatus;
+    @Embedded
+private  ActivityUser activityUser;
+    @Embedded
+private  ActivityGoods activityGoods;
+    @Embedded
+private  GiftType giftType;
+    @Embedded
+private  SmallType smallType;
+    @Embedded
+private  List<GoodsId> goodsIds;
+    @Embedded
+private  UserLevel userLevel;
+    @Embedded
+private  StartTime startTime;
+    @Embedded
+private  EndTime endTime;
+    @Embedded
+private  Note note;
+    @Embedded
+private  List<GiftId> giftIds;
 }

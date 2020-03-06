@@ -1,6 +1,4 @@
 package org.product.domain.entity;
 
-/**
- * @author "yangbiao"
- */
-
+public interface Entity {
+}
