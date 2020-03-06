@@ -1,7 +1,19 @@
 package org.product.domain.valueobject;
 
+import lombok.Value;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+  
+import lombok.AllArgsConstructor;
 /**
  * @author "yangbiao"
  */
-public class ProductCategoryIcon {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class ProductCategoryIcon implements ValueObject
+{
+    @Column()
+private String   productCategoryIcon;
 }

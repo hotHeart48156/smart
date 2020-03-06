@@ -1,7 +1,16 @@
 package org.product.domain.valueobject;
 
+import lombok.Value;
+import javax.persistence.Embeddable;
+  
+import lombok.AllArgsConstructor;
 /**
  * @author "yangbiao"
  */
-public class ProductSalesQualitity {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class ProductSalesQualitity implements ValueObject
+{
+private String   productSalesQualitity;
 }

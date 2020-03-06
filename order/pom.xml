@@ -152,6 +152,6 @@
         <module>order-app</module>
         <module>order-domain</module>
         <module>order-infrastructure</module>
-        <module>start</module>
+        <module>order-start</module>
     </modules>
 </project>

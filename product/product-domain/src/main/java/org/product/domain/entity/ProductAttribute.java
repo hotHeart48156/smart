@@ -1,7 +1,7 @@
 package org.product.domain.entity;
 
 import lombok.Data;
-import org.product.domain.valueobject.ProductAttributeInputeList;
+import org.product.domain.valueobject.ProductAttributeInputList;
 import org.product.domain.valueobject.id.ProductAttributeCategoryId;
 import org.product.domain.valueobject.id.ProductAttributeId;
 import org.product.domain.valueobject.name.ProductAttributeName;
@@ -22,7 +22,7 @@ public class ProductAttribute {
     private ProductAttributeName productAttributeName;
     private ProductAttributeSelectType productAttributeSelectType;
     private ProductAttributeInputType productAttributeInputType;
-    private ProductAttributeInputeList productAttributeInputeList;
+    private ProductAttributeInputList productAttributeInputeList;
     private FilterType filterType;
     private RelatesStatus relatesStatus;
     private HandAddStatus handAddStatus;

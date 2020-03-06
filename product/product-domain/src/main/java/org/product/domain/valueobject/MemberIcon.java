@@ -1,7 +1,15 @@
 package org.product.domain.valueobject;
 
+import lombok.Value;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
 /**
  * @author "yangbiao"
  */
-public class MemberIcon {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class MemberIcon implements ValueObject
+{
+private String   memberIcon;
 }

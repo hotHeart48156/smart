@@ -161,6 +161,6 @@
         <module>activite-app</module>
         <module>activite-domain</module>
         <module>activite-infrastructure</module>
-        <module>start</module>
+        <module>activity-start</module>
     </modules>
 </project>

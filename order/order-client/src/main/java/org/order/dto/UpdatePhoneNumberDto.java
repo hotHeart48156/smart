@@ -5,5 +5,6 @@ package org.order.dto;
  */
 
 public class UpdatePhoneNumberDto {
-
+private String phone;
+public void accept(){}
 }

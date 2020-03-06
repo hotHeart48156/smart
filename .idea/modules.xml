@@ -29,11 +29,11 @@
       <module fileurl="file://$PROJECT_DIR$/product_side/product_side-controller/product_side-controller.iml" filepath="$PROJECT_DIR$/product_side/product_side-controller/product_side-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/product_side/product_side-domain/product_side-domain.iml" filepath="$PROJECT_DIR$/product_side/product_side-domain/product_side-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/product_side/product_side-infrastructure/product_side-infrastructure.iml" filepath="$PROJECT_DIR$/product_side/product_side-infrastructure/product_side-infrastructure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/activite/start/start (2).iml" filepath="$PROJECT_DIR$/activite/start/start (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/order/start/start (4).iml" filepath="$PROJECT_DIR$/order/start/start (4).iml" />
-      <module fileurl="file://$PROJECT_DIR$/product/start/start (6).iml" filepath="$PROJECT_DIR$/product/start/start (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activity-start/start (2).iml" filepath="$PROJECT_DIR$/activite/activity-start/start (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-start/start (4).iml" filepath="$PROJECT_DIR$/order/order-start/start (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-start/start (6).iml" filepath="$PROJECT_DIR$/product/product-start/start (6).iml" />
       <module fileurl="file://$PROJECT_DIR$/product_side/start/start (7).iml" filepath="$PROJECT_DIR$/product_side/start/start (7).iml" />
-      <module fileurl="file://$PROJECT_DIR$/users/start/start (8).iml" filepath="$PROJECT_DIR$/users/start/start (8).iml" />
+      <module fileurl="file://$PROJECT_DIR$/users/user-start/user-start.iml" filepath="$PROJECT_DIR$/users/user-start/user-start.iml" />
       <module fileurl="file://$PROJECT_DIR$/users/users.iml" filepath="$PROJECT_DIR$/users/users.iml" />
       <module fileurl="file://$PROJECT_DIR$/users/users-app/users-app.iml" filepath="$PROJECT_DIR$/users/users-app/users-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/users/users-client/users-client.iml" filepath="$PROJECT_DIR$/users/users-client/users-client.iml" />

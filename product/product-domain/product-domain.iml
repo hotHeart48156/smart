@@ -4,6 +4,16 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping>
+          <factory-entry name="Entities" />
+        </datasource-mapping>
+        <naming-strategy-map />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -15,43 +25,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-core:unknown" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-common:unknown" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba.cola:cola-test:unknown" level="project" />
-    <orderEntry type="module" module-name="product-client" />
-    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.55" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.29" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.5" level="project" />
-    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-core:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
-    <orderEntry type="library" name="Maven: com.mysema.commons:mysema-commons-lang:0.2.4" level="project" />
-    <orderEntry type="library" name="Maven: com.infradna.tool:bridge-method-annotation:1.13" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-collections:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-codegen:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.mysema.codegen:codegen:0.6.8" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.10" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:annotations:2.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-apt:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.querydsl:querydsl-jpa:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.12.6" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
-    <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.3.2" level="project" />
-    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite-codegen:unknown" level="project" />
-    <orderEntry type="library" name="Maven: com.smart.website:gh-ddd-lite-parent:unknown" level="project" />
-    <orderEntry type="library" name="Maven: jakarta.persistence:jakarta.persistence-api:2.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.2.2.RELEASE" level="project" />
@@ -65,6 +38,7 @@
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.yaml:snakeyaml:1.25" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.1" level="project" />
@@ -89,6 +63,14 @@
     <orderEntry type="library" name="Maven: org.jvnet.staxex:stax-ex:1.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.20" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.1.Final" level="project" />
@@ -96,13 +78,7 @@
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.geekhalo:gh-ddd-lite-codegen:1.0.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.geekhalo:gh-ddd-lite:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.squareup:javapoet:1.8.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service:1.0-rc2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auto:auto-common:0.3" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest:2.1" level="project" />

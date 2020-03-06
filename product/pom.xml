@@ -152,6 +152,6 @@
         <module>product-app</module>
         <module>product-domain</module>
         <module>product-infrastructure</module>
-        <module>start</module>
+        <module>product-start</module>
     </modules>
 </project>

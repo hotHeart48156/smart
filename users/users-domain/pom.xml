@@ -19,10 +19,7 @@
         <!-- COLA Framework -->
 
         <!-- COLA Framework End-->
-        <dependency>
-            <groupId>com.smart.website</groupId>
-            <artifactId>users-client</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.axonframework</groupId>
             <artifactId>axon-spring-boot-starter</artifactId>
@@ -40,10 +37,7 @@
             <artifactId>guava</artifactId>
             <version>27.1-jre</version>
         </dependency>
-        <dependency>
-            <groupId>com.smart.website</groupId>
-            <artifactId>users-app</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations-java5</artifactId>

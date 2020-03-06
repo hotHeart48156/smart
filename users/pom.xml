@@ -220,6 +220,6 @@
         <module>users-app</module>
         <module>users-domain</module>
         <module>users-infrastructure</module>
-        <module>start</module>
+        <module>user-start</module>
     </modules>
 </project>

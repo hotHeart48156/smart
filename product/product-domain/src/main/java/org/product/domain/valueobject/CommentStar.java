@@ -1,7 +1,17 @@
 package org.product.domain.valueobject;
 
+import lombok.Value;
+
+import lombok.Value;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
 /**
  * @author "yangbiao"
  */
-public class CommentStar {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class CommentStar implements ValueObject
+{
+private String   commentStar;
 }

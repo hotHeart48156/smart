@@ -1,7 +1,15 @@
 package org.product.domain.valueobject;
 
+import lombok.Value;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
 /**
  * @author "yangbiao"
  */
-public class ProductSubtitle {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class ProductSubtitle implements ValueObject
+{
+private String   productSubtitle;
 }
