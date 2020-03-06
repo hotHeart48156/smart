@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
@@ -11,6 +12,7 @@ import lombok.Value;
 @AllArgsConstructor
 @Value
 public class MemberLevelName extends AbstractName {
-    private String name;
+@Column(name ="   memberLevelName")
+private String name;
 
 }

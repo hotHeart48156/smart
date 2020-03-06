@@ -1,7 +1,17 @@
 package org.activite.domain.activite.valueobject.type;
 
+import javax.persistence.Column;
+import lombok.Value;
+import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-public enum HomeAdvertiseType {
+@Value
+@Embeddable
+@AllArgsConstructor
+public enum HomeAdvertiseType implements Type
+{
+@Column(type ="   homeAdvertiseType")
+private  int   homeAdvertiseType;
 }

@@ -1,13 +1,10 @@
 package org.users.domain.customer.aggregation;
 
-import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.valueobject.CreateTime;
 import org.users.domain.customer.valueobject.PhoneNumber;
-import org.users.domain.customer.valueobject.ValueObject;
 import org.users.domain.customer.valueobject.ValueObjectFactory;
 import org.users.domain.customer.valueobject.name.NickName;
 import org.users.domain.customer.valueobject.name.UserName;
-import org.users.domain.customer.valueobject.user.Birthday;
 import org.users.domain.customer.valueobject.user.Gender;
 import org.users.domain.customer.valueobject.user.Password;
 

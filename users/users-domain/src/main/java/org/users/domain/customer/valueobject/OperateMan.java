@@ -2,10 +2,14 @@ package org.users.domain.customer.valueobject;
 
 import javax.persistence.Entity;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
 @Entity
+@Embeddable
 public class OperateMan implements ValueObject {
-    String name;
+    @Column(name ="   operateMan")
+private   String name;
 }

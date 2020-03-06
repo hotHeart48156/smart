@@ -1,7 +1,17 @@
 package org.activite.domain.activite.valueobject;
 
+import javax.persistence.Column;
+import lombok.Value;
+import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-public enum ActivityUser {
+@Value
+@Embeddable
+@AllArgsConstructor
+public enum ActivityUser implements  ValueObject
+{
+@Column(name ="   activityUser")
+private  int  activityUser;
 }

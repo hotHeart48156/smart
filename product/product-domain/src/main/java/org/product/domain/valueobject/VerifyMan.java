@@ -1,6 +1,8 @@
 package org.product.domain.valueobject;
 
 import lombok.Value;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
   
 import lombok.AllArgsConstructor;
@@ -14,5 +16,6 @@ import lombok.AllArgsConstructor;
 public class VerifyMan implements ValueObject
 {
 
+@Column(name ="   verifyMan")
 private String   verifyMan;
 }

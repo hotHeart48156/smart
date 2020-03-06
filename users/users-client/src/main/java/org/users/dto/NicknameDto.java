@@ -2,7 +2,6 @@ package org.users.dto;
 
 import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.id.UserId;
 import org.users.domain.customer.valueobject.name.NickName;
 
 /**

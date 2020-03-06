@@ -1,6 +1,8 @@
 package org.users.domain.customer.valueobject.type;
 
-import org.checkerframework.checker.units.qual.A;
+import org.users.domain.customer.valueobject.is.AbstractType;
+
+import javax.persistence.Column;
 
 /**
  * @author "yangbiao"
@@ -8,7 +10,8 @@ import org.checkerframework.checker.units.qual.A;
 
 public enum RoleType implements AbstractType {
     USER(1), BUSINESS(2), ADMIN(3);
-    private int index;
+    @Column(name ="   roleType")
+private int index;
 
     RoleType(int i) {
         this.index = i;

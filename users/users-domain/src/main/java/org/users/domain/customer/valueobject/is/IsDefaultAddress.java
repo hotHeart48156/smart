@@ -1,7 +1,6 @@
 package org.users.domain.customer.valueobject.is;
 
-import lombok.Value;
-
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
@@ -9,7 +8,8 @@ import lombok.Value;
 public enum IsDefaultAddress implements AbstractIs {
     IS(1), NOTIS(0);
 
-    private int index;
+    @Column(name ="   isDefaultAddress")
+private int index;
 
     IsDefaultAddress(int i) {
         this.index = i;

@@ -1,11 +1,13 @@
 package org.users.domain.customer.valueobject;
 
-import lombok.Value;
-
+import javax.persistence.Embeddable;
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-@Value
+
+@Embeddable
 public class ContinueSignPoint implements ValueObject {
-    Long point;
+@Column(name ="   continueSignPoint")
+private Long continueSignPoint;
 }

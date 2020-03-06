@@ -1,7 +1,17 @@
 package org.activite.domain.activite.valueobject.name;
 
+import javax.persistence.Column;
+import lombok.Value;
+import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-public class MarketingName {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class MarketingName extends AbstractName
+{
+@Column(name ="   marketingName")
+private  Long   marketingName;
 }

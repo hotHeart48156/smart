@@ -3,6 +3,7 @@ package org.users.domain.customer.valueobject.count;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -13,5 +14,8 @@ import javax.persistence.Embeddable;
 @Embeddable
 
 public class CollectProductCount extends AbstractCount {
-    private Long count;
+
+@Column(name ="   collectProductCount")
+@Column(name ="   collectProductCount")
+private Long count;
 }

@@ -3,6 +3,7 @@ package org.product.domain.aggragate;
 import lombok.Data;
 import org.product.domain.valueobject.*;
 import org.product.domain.valueobject.id.Id;
+import org.product.domain.valueobject.name.BrandName;
 import org.product.domain.valueobject.name.Name;
 import org.product.domain.valueobject.status.FactoryStatus;
 import org.product.domain.valueobject.status.ShowStatus;
@@ -22,7 +23,7 @@ public class Brand {
     @EmbeddedId
     private Id brandId;
     @Embedded
-    private Name brandName;
+    private BrandName brandName;
     @Embedded
     private Letter firstLetter;
     @Embedded

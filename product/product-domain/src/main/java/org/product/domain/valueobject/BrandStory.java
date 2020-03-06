@@ -13,7 +13,6 @@ import lombok.AllArgsConstructor;
  * @author "yangbiao"
  */
 @Value
-
 @Embeddable
 @AllArgsConstructor
 public class BrandStory implements ValueObject

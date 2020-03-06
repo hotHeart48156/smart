@@ -1,7 +1,17 @@
 package org.activite.domain.activite.valueobject.status;
 
+import javax.persistence.Column;
+import lombok.Value;
+import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-public enum PromotionStatus {
+@Value
+@Embeddable
+@AllArgsConstructor
+public enum PromotionStatus implements Status
+{
+@Column(status ="   promotionStatus")
+private  int   promotionStatus;
 }

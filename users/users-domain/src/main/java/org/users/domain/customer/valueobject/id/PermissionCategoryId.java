@@ -6,6 +6,7 @@ import org.axonframework.common.IdentifierFactory;
 
 import javax.persistence.Embeddable;
 
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
@@ -14,7 +15,8 @@ import javax.persistence.Embeddable;
 @Embeddable
 
 public class PermissionCategoryId {
-    private String id;
+    @Column(name ="   permissionCategoryId")
+private String id;
     private final int hashCode;
 
     public PermissionCategoryId() {

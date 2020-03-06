@@ -27,7 +27,6 @@ import java.util.Set;
  */
 @Entity
 @Data
-@Table(name = "")
 public class Product {
     @EmbeddedId
     private ProductId productId;

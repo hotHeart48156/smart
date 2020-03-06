@@ -1,18 +1,19 @@
 package org.users.domain.customer.valueobject.id;
 
-import lombok.EqualsAndHashCode;
 import lombok.Value;
 import org.axonframework.common.IdentifierFactory;
 
 import javax.persistence.Embeddable;
 
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
 @Value
 @Embeddable
 public class AddressId extends AbstractId {
-    private String id;
+    @Column(name ="   addressId")
+private String id;
     private final int hashCode;
 
     public AddressId() {

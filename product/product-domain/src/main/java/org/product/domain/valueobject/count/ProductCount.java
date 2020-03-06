@@ -3,6 +3,7 @@ package org.product.domain.valueobject.count;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -12,5 +13,6 @@ import javax.persistence.Embeddable;
 @Value
 @Embeddable
 public class ProductCount extends AbstractCount {
+    @Column(name = "productCount")
 private int productCount;
 }

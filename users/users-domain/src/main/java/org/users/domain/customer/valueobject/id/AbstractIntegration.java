@@ -1,4 +1,4 @@
-package org.users.domain.customer.valueobject.integration;
+package org.users.domain.customer.valueobject.id;
 
 import org.users.domain.customer.valueobject.ValueObject;
 

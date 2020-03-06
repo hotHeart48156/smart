@@ -1,4 +1,4 @@
-package org.users.domain.customer.valueobject.type;
+package org.users.domain.customer.valueobject.is;
 
 import org.users.domain.customer.valueobject.ValueObject;
 

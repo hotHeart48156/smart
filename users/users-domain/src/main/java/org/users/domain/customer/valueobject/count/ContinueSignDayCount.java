@@ -15,6 +15,11 @@ import javax.persistence.Embeddable;
 
 @AllArgsConstructor
 public class ContinueSignDayCount extends AbstractCount {
-    private Long count;
+    @Column(name ="   continueSignDayCount")
+@Column(name ="   continueSignDayCount")
+@Column(name ="   continueSignDayCount")
+@Column(name ="   continueSignDayCount")
+@Column(name ="   continueSignDayCount")
+private Long count;
 
 }

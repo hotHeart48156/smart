@@ -5,10 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.id.UserId;
 import org.users.domain.customer.valueobject.user.Birthday;
 
-import javax.validation.ValidatorFactory;
 import java.util.Date;
 
 /**

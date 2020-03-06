@@ -2,7 +2,6 @@ package org.users.dto;
 
 import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.entity.Address;
-import org.users.domain.customer.valueobject.ValueObject;
 import org.users.domain.customer.valueobject.ValueObjectFactory;
 import org.users.domain.customer.valueobject.address.City;
 import org.users.domain.customer.valueobject.address.DetailAddress;

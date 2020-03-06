@@ -3,7 +3,9 @@ package org.users.domain.customer.valueobject.integration;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
+import org.users.domain.customer.valueobject.id.AbstractIntegration;
 
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
@@ -11,5 +13,6 @@ import lombok.Value;
 @AllArgsConstructor
 @Value
 public class HistoryIntegration extends AbstractIntegration {
-    private Long integration;
+    @Column(name ="   historyIntegration")
+private Long integration;
 }

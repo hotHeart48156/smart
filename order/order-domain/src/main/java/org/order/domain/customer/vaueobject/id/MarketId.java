@@ -1,7 +1,6 @@
 package org.order.domain.customer.vaueobject.id;
 
 import org.axonframework.common.IdentifierFactory;
-import org.order.domain.customer.vaueobject.MarketScope;
 
 /**
  * @author "yangbiao"

@@ -1,6 +1,8 @@
 package org.product.domain.valueobject;
 
 import lombok.Value;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 /**
@@ -11,5 +13,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class LowStock implements ValueObject
 {
+@Column(name ="   lowStock")
+
 private String   lowStock;
 }

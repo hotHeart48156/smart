@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 import org.users.domain.customer.aggregation.User;
 import org.users.domain.customer.repository.UserRepository;
 import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.id.WeixinOpenId;
 import org.users.domain.customer.valueobject.name.UserName;
 
 /**

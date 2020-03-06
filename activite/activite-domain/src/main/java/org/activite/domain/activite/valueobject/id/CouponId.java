@@ -1,7 +1,17 @@
 package org.activite.domain.activite.valueobject.id;
 
+import javax.persistence.Column;
+import lombok.Value;
+import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-public class CouponId {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class CouponId extends AbstractId
+{
+@Column(name ="   couponId")
+private  Long   couponId;
 }

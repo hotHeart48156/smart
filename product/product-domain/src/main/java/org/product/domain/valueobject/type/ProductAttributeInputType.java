@@ -1,7 +1,17 @@
 package org.product.domain.valueobject.type;
 
+import javax.persistence.Column;
+import lombok.Value;
+import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-public class ProductAttributeInputType {
+@Value
+@Embeddable
+@AllArgsConstructor
+public enum  ProductAttributeInputType implements AbstractType
+{
+@Column(name ="   productAttributeInputType")
+private  int   productAttributeInputType;
 }

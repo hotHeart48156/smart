@@ -1,8 +1,10 @@
 package org.product.domain.valueobject;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
-@AllArgsConstructor
 import lombok.AllArgsConstructor;
 /**
  * @author "yangbiao"
@@ -12,5 +14,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class ProductNote implements ValueObject
 {
+@Column(name ="   productNote")
 private String   productNote;
 }

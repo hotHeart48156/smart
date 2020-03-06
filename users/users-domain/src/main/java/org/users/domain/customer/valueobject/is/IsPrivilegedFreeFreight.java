@@ -1,12 +1,14 @@
 package org.users.domain.customer.valueobject.is;
 
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
 public enum IsPrivilegedFreeFreight implements AbstractIs {
     IS(1), NOTIS(0);
 
-    private int index;
+    @Column(name ="   isPrivilegedFreeFreight")
+private int index;
 
     IsPrivilegedFreeFreight(int i) {
         this.index = i;

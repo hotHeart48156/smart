@@ -1,7 +1,20 @@
 package org.product.domain.valueobject.id;
 
+import lombok.Value;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+
 /**
  * @author "yangbiao"
  */
-public class FeightTemplateId {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class FeightTemplateId extends AbstractId
+{
+    @Column(name = "")
+@Column(name ="   feightTemplateId")
+private String   feightTemplateId;
 }

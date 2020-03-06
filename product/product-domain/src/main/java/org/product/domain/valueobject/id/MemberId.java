@@ -1,7 +1,18 @@
 package org.product.domain.valueobject.id;
 
+import lombok.Value;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-public class MemberId {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class MemberId extends AbstractId
+{
+@Column(name ="   memberId")
+private String   memberId;
 }

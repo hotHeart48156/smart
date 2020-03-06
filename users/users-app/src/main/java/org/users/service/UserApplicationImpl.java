@@ -6,15 +6,8 @@ import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.users.api.UserApplication;
 import org.users.domain.customer.aggregation.CreateUserDto;
-import org.users.domain.customer.aggregation.User;
-import org.users.domain.customer.repository.UserRepository;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.id.UserId;
 import org.users.dto.*;
-import org.users.executor.AbstractCommand;
 import org.users.executor.command.CreateUserCommand;
-
-import java.util.Optional;
 
 /**
  * @author "yangbiao"

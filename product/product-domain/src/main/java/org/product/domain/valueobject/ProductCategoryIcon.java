@@ -14,6 +14,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class ProductCategoryIcon implements ValueObject
 {
-    @Column()
+
+@Column(name ="   productCategoryIcon")
 private String   productCategoryIcon;
 }

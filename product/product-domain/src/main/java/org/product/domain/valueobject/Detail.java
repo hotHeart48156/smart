@@ -16,6 +16,7 @@ import lombok.AllArgsConstructor;
 public class Detail implements ValueObject
 {
 @Column(name = "detail")
+
 private String   detail;
 
 

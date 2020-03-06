@@ -5,6 +5,7 @@ import lombok.Value;
 
 import lombok.Value;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 import javax.persistence.Embeddable;
@@ -17,5 +18,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class CollectCount implements ValueObject
 {
+@Column(name ="   collectCount")
 private String   collectCount;
 }

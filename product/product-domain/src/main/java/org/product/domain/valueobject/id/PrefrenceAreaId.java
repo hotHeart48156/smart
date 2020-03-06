@@ -1,7 +1,18 @@
 package org.product.domain.valueobject.id;
 
+import lombok.Value;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-public class PrefrenceAreaId {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class PrefrenceAreaId extends AbstractId
+{
+@Column(name ="   prefrenceAreaId")
+private String   prefrenceAreaId;
 }

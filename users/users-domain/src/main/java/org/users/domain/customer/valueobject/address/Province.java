@@ -3,6 +3,7 @@ package org.users.domain.customer.valueobject.address;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -13,6 +14,8 @@ import javax.persistence.Embeddable;
 @Embeddable
 
 public class Province extends AbstractAddress {
+    @Column(name ="   province")
+
     private String province;
 
 }

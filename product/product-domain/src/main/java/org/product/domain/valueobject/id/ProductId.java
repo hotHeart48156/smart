@@ -1,7 +1,18 @@
 package org.product.domain.valueobject.id;
 
+import lombok.Value;
+import javax.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+
+import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-public class ProductId {
+@Value
+@Embeddable
+@AllArgsConstructor
+public class ProductId extends AbstractId
+{
+@Column(name ="   productId")
+private String   productId;
 }

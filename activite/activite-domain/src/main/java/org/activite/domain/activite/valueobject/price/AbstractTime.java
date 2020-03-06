@@ -1,4 +1,4 @@
-package org.activite.domain.activite.valueobject.time;
+package org.activite.domain.activite.valueobject.price;
 
 /**
  * @author "yangbiao"

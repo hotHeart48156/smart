@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.math.BigDecimal;
 
@@ -16,6 +17,7 @@ import java.math.BigDecimal;
 
 @AllArgsConstructor
 public class ConsumeCount extends AbstractCount {
+    @Column(name = "consumeCount")
     private BigDecimal count;
 
 }

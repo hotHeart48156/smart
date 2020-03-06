@@ -1,6 +1,8 @@
 package org.product.domain.valueobject;
 
 import lombok.Value;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
   
 import lombok.AllArgsConstructor;
@@ -12,5 +14,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class UsePointLimit implements ValueObject
 {
+@Column(name ="   usePointLimit")
 private String   usePointLimit;
 }
