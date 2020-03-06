@@ -1,13 +1,9 @@
 package org.order.domain.customer.entity;
 
-import com.geekhalo.ddd.lite.domain.DomainEvent;
-import com.geekhalo.ddd.lite.domain.ValidationHandler;
-import com.geekhalo.ddd.lite.domain.support.jpa.JpaEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.order.domain.customer.vaueobject.Growth;
 import org.order.domain.customer.vaueobject.Integration;
-import org.order.domain.customer.vaueobject.product.ProductBrand;
 import org.order.domain.customer.vaueobject.ProductPic;
 import org.order.domain.customer.vaueobject.attr.ProductAttributes;
 import org.order.domain.customer.vaueobject.attr.ProductSaleAttributes;
@@ -20,14 +16,13 @@ import org.order.domain.customer.vaueobject.id.*;
 import org.order.domain.customer.vaueobject.name.ProductName;
 import org.order.domain.customer.vaueobject.name.PromoteName;
 import org.order.domain.customer.vaueobject.price.ProductPrice;
-import org.order.domain.customer.vaueobject.sn.OrderSn;
+import org.order.domain.customer.vaueobject.product.ProductBrand;
 import org.order.domain.customer.vaueobject.sn.ProductSn;
 import org.order.domain.customer.vaueobject.time.CreateTime;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import java.sql.Timestamp;
-import java.util.Date;
-import java.util.List;
 
 /**
  * @author "yangbiao"
@@ -36,36 +31,54 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class OrderItem extends JpaEntity {
+public class OrderItem implements org.order.domain.customer.entity.Entity {
     //基本信息
-    private OrderItemId orderItemId;
-    private OrderId orderId;
+    @EmbeddedId
+private  OrderItemId orderItemId;
+    @Embedded
+private  OrderId orderId;
     //产品信息
-    private ProductId productId;
-    private ProductPic productPic;
-    private ProductName productName;
-    private ProductBrand productBrand;
-    private ProductSn productSn;
-    private ProductPrice productPrice;
-    private ProductSkuId productSkuId;
-    private ProductSkuCode productSkuCode;
-    private ProductCategoryId productCategoryId;
-    private ProductSaleAttributes productSaleAttributes;
-    private ProductAttributes productAttributes;
+    @Embedded
+private  ProductId productId;
+    @Embedded
+private  ProductPic productPic;
+    @Embedded
+private  ProductName productName;
+    @Embedded
+private  ProductBrand productBrand;
+    @Embedded
+private  ProductSn productSn;
+    @Embedded
+private  ProductPrice productPrice;
+    @Embedded
+private  ProductSkuId productSkuId;
+    @Embedded
+private  ProductSkuCode productSkuCode;
+    @Embedded
+private  ProductCategoryId productCategoryId;
+    @Embedded
+private  ProductSaleAttributes productSaleAttributes;
+    @Embedded
+private  ProductAttributes productAttributes;
     //营销信息
-    private PromoteName promoteName;
-    private PromotionFee promotionFee;
-    private CouponFee couponFee;
-    private IntegrationFee integrationFee;
-    private RealFee realFee;
-    private Integration giftIntegration;
-    private Growth giftGrowth;
-    private CreateTime createTime;
+    @Embedded
+private  PromoteName promoteName;
+    @Embedded
+private  PromotionFee promotionFee;
+    @Embedded
+private  CouponFee couponFee;
+    @Embedded
+private  IntegrationFee integrationFee;
+    @Embedded
+private  RealFee realFee;
+    @Embedded
+private  Integration giftIntegration;
+    @Embedded
+private  Growth giftGrowth;
+    @Embedded
+private  CreateTime createTime;
 
 
-    @Override
-    public Date getCreateTime() {
-        return createTime.getCreateTime();
-    }
+  
 
 }

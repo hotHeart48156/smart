@@ -1,8 +1,5 @@
 package org.order.domain.customer.entity;
 
-import com.geekhalo.ddd.lite.domain.DomainEvent;
-import com.geekhalo.ddd.lite.domain.ValidationHandler;
-import com.geekhalo.ddd.lite.domain.support.jpa.JpaEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.order.domain.customer.vaueobject.*;
@@ -25,10 +22,9 @@ import org.order.domain.customer.vaueobject.time.CreateTime;
 import org.order.domain.customer.vaueobject.time.HandleTime;
 import org.order.domain.customer.vaueobject.time.ReceiverTime;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import java.sql.Timestamp;
-import java.util.Date;
-import java.util.List;
 
 /**
  * @author "yangbiao"
@@ -37,38 +33,62 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class OrderReturnApply extends JpaEntity {
-    private OrderReturnApplyId orderReturnApplyId;
-    private OrderId orderId;
-    private AddressId companyAddressId;
-    private ProductId productId;
-    private OrderSn orderSn;
-    private CreateTime createTime;
-    private UserName memberUserName;
-    private ReturnFee returnFee;
-    private UserName returnName;
-    private PhoneNumber returnPhone;
-    private ReturnStatus returnStatus;
-    private HandleTime handleTime;
-    private ProductPic productPic;
-    private ProductName productName;
-    private ProductBrand productBrand;
-    private ProductAttributes productAttributes;
-    private ReturnQuantity returnQuantity;
-    private ProductPrice productPrice;
-    private RealPrice productRealPrice;
-    private Reason reason;
-    private Description description;
-    private ProofPics proofPics;
-    private Note handleNote;
-    private OperateMan handleMan;
-    private ReceiverPerson receiverPerson;
-    private ReceiverTime receiverTime;
-    private Note receiverNote;
+public class OrderReturnApply implements org.order.domain.customer.entity.Entity {
+    @EmbeddedId
+private  OrderReturnApplyId orderReturnApplyId;
+    @Embedded
+private  OrderId orderId;
+    @Embedded
+private  AddressId companyAddressId;
+    @Embedded
+private  ProductId productId;
+    @Embedded
+private  OrderSn orderSn;
+    @Embedded
+private  CreateTime createTime;
+    @Embedded
+private  UserName memberUserName;
+    @Embedded
+private  ReturnFee returnFee;
+    @Embedded
+private  UserName returnName;
+    @Embedded
+private  PhoneNumber returnPhone;
+    @Embedded
+private  ReturnStatus returnStatus;
+    @Embedded
+private  HandleTime handleTime;
+    @Embedded
+private  ProductPic productPic;
+    @Embedded
+private  ProductName productName;
+    @Embedded
+private  ProductBrand productBrand;
+    @Embedded
+private  ProductAttributes productAttributes;
+    @Embedded
+private  ReturnQuantity returnQuantity;
+    @Embedded
+private  ProductPrice productPrice;
+    @Embedded
+private  RealPrice productRealPrice;
+    @Embedded
+private  Reason reason;
+    @Embedded
+private  Description description;
+    @Embedded
+private  ProofPics proofPics;
+    @Embedded
+private  Note handleNote;
+    @Embedded
+private  OperateMan handleMan;
+    @Embedded
+private  ReceiverPerson receiverPerson;
+    @Embedded
+private  ReceiverTime receiverTime;
+    @Embedded
+private  Note receiverNote;
 
-    @Override
-    public Date getCreateTime() {
-        return createTime.getCreateTime();
-    }
+
 
 }

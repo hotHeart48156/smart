@@ -26,6 +26,7 @@ import org.order.domain.customer.vaueobject.type.OrderType;
 import org.order.domain.customer.vaueobject.type.SourceType;
 
 import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
 import java.util.List;
 
 /**
@@ -33,15 +34,11 @@ import java.util.List;
  */
 @Data
 public class Order {
-
     //基本信息
- 
-    
-     
 
     @Embedded
     private List<OrderItem> orderItems;
-    @Embedded
+    @EmbeddedId
     private OrderId orderId;
     @Embedded
     private UserId userId;

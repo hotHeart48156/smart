@@ -1,11 +1,7 @@
 package org.order.domain.customer.entity;
 
-import com.geekhalo.ddd.lite.domain.DomainEvent;
-import com.geekhalo.ddd.lite.domain.ValidationHandler;
-import com.geekhalo.ddd.lite.domain.support.jpa.JpaEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.order.domain.customer.vaueobject.phone.PhoneNumber;
 import org.order.domain.customer.vaueobject.address.City;
 import org.order.domain.customer.vaueobject.address.DetailAddress;
 import org.order.domain.customer.vaueobject.address.Province;
@@ -13,14 +9,13 @@ import org.order.domain.customer.vaueobject.address.Region;
 import org.order.domain.customer.vaueobject.id.AddressId;
 import org.order.domain.customer.vaueobject.name.AddressName;
 import org.order.domain.customer.vaueobject.name.ReceiverName;
+import org.order.domain.customer.vaueobject.phone.PhoneNumber;
 import org.order.domain.customer.vaueobject.status.ReceiveStatus;
 import org.order.domain.customer.vaueobject.status.SendAddressStatus;
 import org.order.domain.customer.vaueobject.time.CreateTime;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import java.sql.Timestamp;
-import java.util.Date;
-import java.util.List;
 
 /**
  * @author "yangbiao"
@@ -29,22 +24,30 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class CompanyAddress extends JpaEntity {
-    private AddressId addressId;
-    private AddressName addressName;
-    private SendAddressStatus sendAddressStatus;
-    private ReceiveStatus receiveStatus;
-    private ReceiverName receiverName;
-    private PhoneNumber receivePhone;
-    private Province province;
-    private City city;
-    private Region region;
-    private DetailAddress detailAddress;
-    private CreateTime createTime;
+public class CompanyAddress implements org.order.domain.customer.entity.Entity {
+    @Embedded
+private  AddressId addressId;
+    @Embedded
+private  AddressName addressName;
+    @Embedded
+private  SendAddressStatus sendAddressStatus;
+    @Embedded
+private  ReceiveStatus receiveStatus;
+    @Embedded
+private  ReceiverName receiverName;
+    @Embedded
+private  PhoneNumber receivePhone;
+    @Embedded
+private  Province province;
+    @Embedded
+private  City city;
+    @Embedded
+private  Region region;
+    @Embedded
+private  DetailAddress detailAddress;
+    @Embedded
+private  CreateTime createTime;
 
-    @Override
-    public Date getCreateTime() {
-        return createTime.getCreateTime();
-    }
+
 
 }
