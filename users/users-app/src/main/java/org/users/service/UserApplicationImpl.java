@@ -5,7 +5,7 @@ import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.users.api.UserApplication;
-import org.users.domain.customer.aggregation.CreateUserDto;
+import org.users.domain.aggregation.CreateUserDto;
 import org.users.dto.*;
 import org.users.executor.command.CreateUserCommand;
 

@@ -5,8 +5,8 @@ import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.users.domain.customer.repository.AddressRepository;
-import org.users.domain.customer.repository.UserRepository;
+import org.users.domain.repository.AddressRepository;
+import org.users.domain.repository.UserRepository;
 import org.users.dto.domainevent.UpdateAddressEvent;
 
 /**

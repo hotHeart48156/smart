@@ -1,8 +1,8 @@
 package org.order.executor.command;
 
 
-import org.order.domain.customer.vaueobject.id.OrderId;
-import org.order.domain.customer.vaueobject.id.OrderItemId;
+import org.order.domain.vaueobject.id.OrderId;
+import org.order.domain.vaueobject.id.OrderItemId;
 
 import java.util.Date;
 

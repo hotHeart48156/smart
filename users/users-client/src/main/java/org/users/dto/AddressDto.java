@@ -1,14 +1,14 @@
 package org.users.dto;
 
-import org.users.domain.customer.aggregation.User;
-import org.users.domain.customer.entity.Address;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.address.City;
-import org.users.domain.customer.valueobject.address.DetailAddress;
-import org.users.domain.customer.valueobject.address.Province;
-import org.users.domain.customer.valueobject.address.Region;
-import org.users.domain.customer.valueobject.id.Id;
-import org.users.domain.customer.valueobject.id.UserId;
+import org.users.domain.aggregation.User;
+import org.users.domain.entity.Address;
+import org.users.domain.valueobject.ValueObjectFactory;
+import org.users.domain.valueobject.address.City;
+import org.users.domain.valueobject.address.DetailAddress;
+import org.users.domain.valueobject.address.Province;
+import org.users.domain.valueobject.address.Region;
+import org.users.domain.valueobject.id.Id;
+import org.users.domain.valueobject.id.UserId;
 
 /**
  * @author "yangbiao"

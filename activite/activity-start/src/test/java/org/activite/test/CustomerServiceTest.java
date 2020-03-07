@@ -1,11 +1,10 @@
 package org.activite.test;
 
 import com.alibaba.cola.dto.Response;
-import org.activite.api.CustomerServiceI;
 import org.activite.common.BizCode;
-import org.activite.dto.CustomerAddCmd;
-import org.activite.dto.domainmodel.Customer;
-import org.activite.dto.domainmodel.ErrorCode;
+import org.activite.api.CustomerAddCmd;
+import org.activite.api.domainmodel.Customer;
+import org.activite.api.domainmodel.ErrorCode;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

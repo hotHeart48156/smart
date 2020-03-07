@@ -1,6 +1,6 @@
 package org.users.dto;
 
-import org.users.domain.customer.aggregation.User;
+import org.users.domain.aggregation.User;
 
 /**
  * @author "yangbiao"

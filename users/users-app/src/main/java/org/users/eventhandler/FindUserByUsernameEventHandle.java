@@ -7,10 +7,10 @@ import org.axonframework.config.ProcessingGroup;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.users.domain.customer.aggregation.User;
-import org.users.domain.customer.repository.UserRepository;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.name.UserName;
+import org.users.domain.aggregation.User;
+import org.users.domain.repository.UserRepository;
+import org.users.domain.valueobject.ValueObjectFactory;
+import org.users.domain.valueobject.name.UserName;
 
 /**
  * @author "yangbiao"

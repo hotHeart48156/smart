@@ -2,7 +2,7 @@ package org.users.commandhandle;
 
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
-import org.users.domain.customer.valueobject.id.UserId;
+import org.users.domain.valueobject.id.UserId;
 import org.users.dto.domainevent.CreateUserEvent;
 import org.users.executor.command.CreateUserCommand;
 

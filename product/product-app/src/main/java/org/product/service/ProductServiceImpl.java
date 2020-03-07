@@ -1,6 +1,5 @@
 package org.product.service;
 
-import org.product.api.ProductService;
 import org.product.dto.*;
 
 import java.util.List;

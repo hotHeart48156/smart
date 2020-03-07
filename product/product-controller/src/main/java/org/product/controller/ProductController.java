@@ -1,6 +1,5 @@
 package org.product.controller;
 
-import org.product.api.ProductService;
 import org.springframework.web.bind.annotation.RestController;
 
 /**

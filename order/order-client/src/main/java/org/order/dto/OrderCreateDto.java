@@ -1,20 +1,20 @@
 package org.order.dto;
 
-import org.order.domain.customer.aggregation.Order;
-import org.order.domain.customer.entity.Address;
-import org.order.domain.customer.vaueobject.ValueObjectFactory;
-import org.order.domain.customer.vaueobject.address.City;
-import org.order.domain.customer.vaueobject.address.DetailAddress;
-import org.order.domain.customer.vaueobject.address.Province;
-import org.order.domain.customer.vaueobject.code.PostCode;
-import org.order.domain.customer.vaueobject.id.AddressId;
-import org.order.domain.customer.vaueobject.id.UserId;
-import org.order.domain.customer.vaueobject.name.ReceiverName;
-import org.order.domain.customer.vaueobject.name.UserName;
-import org.order.domain.customer.vaueobject.phone.PhoneNumber;
-import org.order.domain.customer.vaueobject.time.CreateTime;
-import org.order.domain.customer.vaueobject.type.OrderType;
-import org.order.domain.customer.vaueobject.type.SourceType;
+import org.order.domain.aggregation.Order;
+import org.order.domain.entity.Address;
+import org.order.domain.vaueobject.ValueObjectFactory;
+import org.order.domain.vaueobject.address.City;
+import org.order.domain.vaueobject.address.DetailAddress;
+import org.order.domain.vaueobject.address.Province;
+import org.order.domain.vaueobject.code.PostCode;
+import org.order.domain.vaueobject.id.AddressId;
+import org.order.domain.vaueobject.id.UserId;
+import org.order.domain.vaueobject.name.ReceiverName;
+import org.order.domain.vaueobject.name.UserName;
+import org.order.domain.vaueobject.phone.PhoneNumber;
+import org.order.domain.vaueobject.time.CreateTime;
+import org.order.domain.vaueobject.type.OrderType;
+import org.order.domain.vaueobject.type.SourceType;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;

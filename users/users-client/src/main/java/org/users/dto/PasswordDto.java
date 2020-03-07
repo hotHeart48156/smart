@@ -1,8 +1,8 @@
 package org.users.dto;
 
-import org.users.domain.customer.aggregation.User;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.user.Password;
+import org.users.domain.aggregation.User;
+import org.users.domain.valueobject.ValueObjectFactory;
+import org.users.domain.valueobject.user.Password;
 
 /**
  * @author "yangbiao"

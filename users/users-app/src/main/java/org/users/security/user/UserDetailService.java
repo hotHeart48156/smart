@@ -6,10 +6,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.util.StringUtils;
-import org.users.domain.customer.aggregation.User;
-import org.users.domain.customer.repository.UserRepository;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
-import org.users.domain.customer.valueobject.name.UserName;
+import org.users.domain.aggregation.User;
+import org.users.domain.repository.UserRepository;
+import org.users.domain.valueobject.ValueObjectFactory;
+import org.users.domain.valueobject.name.UserName;
 import org.users.security.encode.Encode;
 
 import java.util.Collection;

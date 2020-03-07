@@ -1,9 +1,8 @@
 package org.users.executor.command;
 
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
-import org.users.domain.customer.aggregation.CreateUserDto;
+import org.users.domain.aggregation.CreateUserDto;
 import org.users.executor.AbstractCommand;
 
 /**

@@ -1,8 +1,8 @@
 package org.users.dto;
 
-import org.users.domain.customer.aggregation.User;
-import org.users.domain.customer.valueobject.Growth;
-import org.users.domain.customer.valueobject.ValueObjectFactory;
+import org.users.domain.aggregation.User;
+import org.users.domain.valueobject.Growth;
+import org.users.domain.valueobject.ValueObjectFactory;
 
 /**
  * @author "yangbiao"
