@@ -3,6 +3,7 @@ package org.users.commandhandle;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.users.domain.customer.valueobject.id.UserId;
+import org.users.dto.domainevent.CreateUserEvent;
 import org.users.executor.command.CreateUserCommand;
 
 /**
@@ -11,9 +12,9 @@ import org.users.executor.command.CreateUserCommand;
 
 public class UserCommandHandle {
     @CommandHandler
-    public User(CreateUserCommand createUserCommand) {
-        createUserCommand.getCreateUserDto().accept(this);
-        AggregateLifecycle.apply(new CreateUserEvent(createUserCommand.getCreateUserDto()));
+    public UserCommandHandle(CreateUserCommand createUserCommand) {
+        AggregateLifecycle.apply(new CreateUserEvent(createUserCommand));
+        createUserCommand.
     }
 
     public User() {
