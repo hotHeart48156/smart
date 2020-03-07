@@ -14,7 +14,7 @@ public class JobDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (id.equals(user.getUserId().getId())) {
-            user.setJob(ValueObjectFactory.newInstance(Job.class, job.getClass()));
+            user.setJob(ValueObjectFactory.newInstance(Job.class, job ));
         }
     }
 

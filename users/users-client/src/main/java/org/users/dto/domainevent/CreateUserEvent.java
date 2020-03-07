@@ -3,7 +3,7 @@ package org.users.dto.domainevent;
 
 import lombok.EqualsAndHashCode;
 import lombok.Value;
-import org.users.domain.aggregation.CreateUserDto;
+import org.users.dto.CreateUserDto;
 
 /**
  * @author "yangbiao"

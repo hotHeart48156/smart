@@ -15,17 +15,11 @@ import javax.persistence.Column;
 @Embeddable
 
 public class Id extends AbstractId {
-    @Column(name ="   id")
-private String id;
-    private final int hashCode;
+    @Column(name = "   id")
+    private String id;
 
     public Id() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
-        this.hashCode = id.hashCode();
     }
 
-    @Override
-    public int hashCode() {
-        return hashCode;
-    }
 }

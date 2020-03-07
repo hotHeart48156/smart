@@ -18,7 +18,6 @@ import javax.persistence.Embeddable;
 public class CommentCount extends AbstractCount {
 
 @Column(name ="   commentCount")
-@Column(name ="   commentCount")
 private Long count;
 
 }

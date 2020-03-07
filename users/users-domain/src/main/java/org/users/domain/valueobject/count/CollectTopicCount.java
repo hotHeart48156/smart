@@ -16,6 +16,5 @@ import javax.persistence.Embeddable;
 public class CollectTopicCount extends AbstractCount {
 
 @Column(name ="   collectTopicCount")
-@Column(name ="   collectTopicCount")
 private Long count;
 }

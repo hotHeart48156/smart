@@ -14,7 +14,7 @@ public class IntegrationDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (id.equals(user.getUserId().getId())) {
-            user.setGrowth(ValueObjectFactory.newInstance(Growth.class, integer.getClass()));
+            user.setGrowth(ValueObjectFactory.newInstance(Growth.class, integer ));
         }
     }
 

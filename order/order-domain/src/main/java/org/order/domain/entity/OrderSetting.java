@@ -2,7 +2,6 @@ package org.order.domain.entity;
 
 import lombok.Data;
 import org.order.domain.vaueobject.id.OrderSettingId;
-import org.order.domain.customer.vaueobject.time.*;
 import org.order.domain.vaueobject.time.*;
 
 import javax.persistence.Embedded;

@@ -1,5 +1,6 @@
 package org.users.domain.entity;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -7,16 +8,18 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class EntityFactory {
 
-    public static <T extends Entity> T newInstance(Class<T> t) {
+    public static <T extends Entity,V extends Object> T newInstance(Class<T> c,V ...v) {
         T entity = null;
         try {
-            entity = (T) Class.forName(t.getName()).getConstructor().newInstance();
+            Class a =  c.forName(c.getName());
+            for ( Constructor constructor : a.getConstructors()){
+                entity=(T)constructor.newInstance(v);
+            }
+
 
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();

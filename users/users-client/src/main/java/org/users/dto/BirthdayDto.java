@@ -22,7 +22,7 @@ public class BirthdayDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (this.userId.equals(user.getUserId().getId())) {
-            user.setBirthday(ValueObjectFactory.newInstance(Birthday.class, this.birthday.getClass()));
+            user.setBirthday(ValueObjectFactory.newInstance(Birthday.class, this.birthday ));
         }
     }
 }

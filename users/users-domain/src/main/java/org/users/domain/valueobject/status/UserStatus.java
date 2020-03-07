@@ -1,7 +1,5 @@
 package org.users.domain.valueobject.status;
 
-import org.users.domain.valueobject.is.AbstractStatus;
-
 import javax.persistence.Column;
 /**
  * @author "yangbiao"

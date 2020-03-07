@@ -14,15 +14,10 @@ import javax.persistence.Column;
 public class AddressId extends AbstractId {
     @Column(name ="   addressId")
 private String id;
-    private final int hashCode;
 
     public AddressId() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
-        this.hashCode = id.hashCode();
     }
 
-    @Override
-    public int hashCode() {
-        return hashCode;
-    }
+
 }

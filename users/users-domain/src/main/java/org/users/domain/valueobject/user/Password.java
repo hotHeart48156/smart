@@ -12,7 +12,6 @@ import javax.persistence.Embeddable;
 @Value
 @Embeddable
 public class Password implements ValueObject {
-    @Column(name = "password")
     @Column(name ="   password")
 private String password;
 }

@@ -1,12 +1,6 @@
 package org.users.message.configuration.consume.container.factory;
 
-import com.smart.website.security.shiro.message.kakfa.consume.container.converter.Converter;
-import com.smart.website.security.shiro.message.kakfa.consume.container.properties.ContainProperties;
-import com.smart.website.security.shiro.message.kakfa.consume.factory.ConsumeFactory;
-import com.smart.website.security.shiro.message.kakfa.consume.fliter.Filter;
-import com.smart.website.security.shiro.message.kakfa.consume.hand.batch.BatchErrorHandle;
-import com.smart.website.security.shiro.message.kakfa.consume.transaction.TransactionManage;
-import com.smart.website.security.shiro.message.kakfa.product.template.ReplyTemplate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.listener.ContainerProperties;
+import org.users.message.configuration.consume.container.converter.Converter;
+import org.users.message.configuration.consume.factory.ConsumeFactory;
+import org.users.message.configuration.consume.fliter.Filter;
+import org.users.message.configuration.consume.hand.batch.BatchErrorHandle;
 
 /**
  * @author "yangbiao"

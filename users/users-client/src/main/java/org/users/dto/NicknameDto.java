@@ -14,7 +14,7 @@ public class NicknameDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (id.equals(user.getUserId().getId())) {
-            user.setNickName(ValueObjectFactory.newInstance(NickName.class, nickname.getClass()));
+            user.setNickName(ValueObjectFactory.newInstance(NickName.class, nickname ));
         }
     }
 

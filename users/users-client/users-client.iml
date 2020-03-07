@@ -85,7 +85,6 @@
     <orderEntry type="library" name="Maven: org.axonframework:axon-spring-boot-starter:4.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.axonframework:axon-spring-boot-autoconfigure:4.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.axonframework:axon-spring:4.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: org.axonframework:axon-configuration:4.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.axonframework:axon-disruptor:4.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.lmax:disruptor:3.4.2" level="project" />
@@ -94,6 +93,11 @@
     <orderEntry type="library" name="Maven: org.axonframework:axon-messaging:4.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.10" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3:1.1.4c" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.luben:zstd-jni:1.4.0-1" level="project" />
+    <orderEntry type="library" name="Maven: org.lz4:lz4-java:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7.3" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.29" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest:2.1" level="project" />

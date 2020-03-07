@@ -3,22 +3,14 @@ package org.users.commandhandle;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.users.domain.valueobject.id.UserId;
-import org.users.dto.domainevent.CreateUserEvent;
-import org.users.executor.command.CreateUserCommand;
+import org.users.dto.domainevent.*;
+import org.users.executor.command.*;
 
 /**
  * @author yangbiao
  */
 
 public class UserCommandHandle {
-    @CommandHandler
-    public UserCommandHandle(CreateUserCommand createUserCommand) {
-        AggregateLifecycle.apply(new CreateUserEvent(createUserCommand));
-        createUserCommand.
-    }
-
-    public User() {
-    }
 
 
     @CommandHandler
@@ -29,8 +21,9 @@ public class UserCommandHandle {
     @CommandHandler
     public void changeAddress(UpdateAddressEvent addressEvent) {
         AggregateLifecycle.apply(addressEvent);
-    }
 
+    }
+    @CommandHandler
     public void updatePassword(UpdatePasswordCommand updatePasswordCommand) {
         updatePasswordCommand.getPasswordDto().accept(this);
         AggregateLifecycle.apply(new UpdatePasswordEvent(updatePasswordCommand.getPasswordDto()));
@@ -72,7 +65,5 @@ public class UserCommandHandle {
         AggregateLifecycle.apply(new UpdateGrowthEvent(updateGrowthCommand.getGrowthDto()));
     }
 
-    @CommandHandler
-    public void update(AbstractDto dto, AbstractCommand command, UserId userId) {
-    }
+
 }

@@ -1,6 +1,5 @@
 package org.users.domain.valueobject.type;
 
-import javafx.css.Rule;
 
 import javax.persistence.Column;
 

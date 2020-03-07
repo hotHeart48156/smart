@@ -1,7 +1,6 @@
 package org.users.domain.entity;
 
 import lombok.Data;
-import org.users.domain.customer.valueobject.count.*;
 import org.users.domain.valueobject.id.Id;
 import org.users.domain.valueobject.id.UserId;
 import org.users.domain.valueobject.count.*;

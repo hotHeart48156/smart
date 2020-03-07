@@ -1,7 +1,7 @@
 package org.users.api;
 
 
-import org.users.domain.aggregation.CreateUserDto;
+import org.users.dto.CreateUserDto;
 
 /**
  * @author "yangbiao"

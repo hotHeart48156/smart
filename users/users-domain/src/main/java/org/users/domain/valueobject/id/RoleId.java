@@ -14,18 +14,13 @@ import javax.persistence.Column;
 @Value
 @Embeddable
 
-public class RoleId {
+public class RoleId extends AbstractId{
     @Column(name ="   roleId")
 private String id;
-    private final int hashCode;
 
     public RoleId() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
-        this.hashCode = id.hashCode();
     }
 
-    @Override
-    public int hashCode() {
-        return hashCode;
-    }
+
 }

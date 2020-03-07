@@ -17,15 +17,10 @@ import javax.persistence.Column;
 public class PermissionId {
     @Column(name ="   permissionId")
 private String id;
-    private final int hashCode;
 
     public PermissionId() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
-        this.hashCode = id.hashCode();
     }
 
-    @Override
-    public int hashCode() {
-        return hashCode;
-    }
+
 }

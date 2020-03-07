@@ -3,7 +3,6 @@ package org.order.domain.aggregation;
 import lombok.Data;
 import org.order.domain.entity.Address;
 import org.order.domain.entity.OrderItem;
-import org.order.domain.customer.vaueobject.fee.*;
 import org.order.domain.vaueobject.*;
 import org.order.domain.vaueobject.fee.*;
 import org.order.domain.vaueobject.id.GroupId;

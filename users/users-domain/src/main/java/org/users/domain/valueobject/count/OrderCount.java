@@ -18,7 +18,6 @@ import javax.persistence.Embeddable;
 public class OrderCount extends AbstractCount {
 
 @Column(name ="   orderCount")
-@Column(name ="   orderCount")
 private Long count;
 
 }

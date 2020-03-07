@@ -24,11 +24,11 @@ public class AddressDto extends AbstractDto {
     public void accept(User user, Address address) {
         if (id.equals(user.getUserId().getId())) {
             Id id = ValueObjectFactory.newInstance(Id.class);
-            address.setProvince(ValueObjectFactory.newInstance(Province.class, province.getClass()));
-            address.setUserId(ValueObjectFactory.newInstance(UserId.class, this.id.getClass()));
-            address.setCity(ValueObjectFactory.newInstance(City.class, city.getClass()));
-            address.setRegion(ValueObjectFactory.newInstance(Region.class, region.getClass()));
-            address.setDetailAddress(ValueObjectFactory.newInstance(DetailAddress.class, detail.getClass()));
+            address.setProvince(ValueObjectFactory.newInstance(Province.class, province ));
+            address.setUserId(ValueObjectFactory.newInstance(UserId.class, id ));
+            address.setCity(ValueObjectFactory.newInstance(City.class, city ));
+            address.setRegion(ValueObjectFactory.newInstance(Region.class, region ));
+            address.setDetailAddress(ValueObjectFactory.newInstance(DetailAddress.class, detail ));
             address.setId(id);
             user.getAddressIds().add(id);
         }

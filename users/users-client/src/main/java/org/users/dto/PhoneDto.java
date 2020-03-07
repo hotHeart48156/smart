@@ -14,7 +14,7 @@ public class PhoneDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (id.equals(user.getUserId().getId())) {
-            user.setPhoneNumber(ValueObjectFactory.newInstance(PhoneNumber.class, phone.getClass()));
+            user.setPhoneNumber(ValueObjectFactory.newInstance(PhoneNumber.class, phone ));
         }
     }
 

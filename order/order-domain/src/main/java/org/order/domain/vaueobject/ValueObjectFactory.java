@@ -1,42 +1,52 @@
 package org.order.domain.vaueobject;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * @author "yangbiao"
  */
 public class ValueObjectFactory {
-    public static volatile ValueObject instance = null;
+    public static <T extends ValueObject, V extends Object> T newInstance(Class<T> c, V ...v) {
+        T t = null;
 
-    public static <T extends ValueObject> T getInstance(Class<T> c, Object v) {
+        try {
 
-        if (instance == null) {
-            synchronized (ValueObjectFactory.class) {
-                if (instance == null) {
-                    try {
-                        instance = (ValueObject) Class.forName(c.getName()).getConstructor(v.getClass()).newInstance(v.getClass());
-
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+            Class a =  c.forName(c.getName());
+            for ( Constructor constructor : a.getConstructors()){
+                t=(T)constructor.newInstance(v);
             }
+
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
         }
-        return (T) instance;
+        return t;
     }
 
-    public static <T extends ValueObject> T getInstance(Class<T> c) {
-
-        if (instance == null) {
-            synchronized (ValueObjectFactory.class) {
-                if (instance == null) {
-                    try {
-                        instance = (ValueObject) Class.forName(c.getName()).getConstructor().newInstance();
-
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+    public static <T extends ValueObject> T newInstance(Class<T> c) {
+        T t = null;
+        try {
+            Class a =  c.forName(c.getName());
+            for ( Constructor constructor : a.getConstructors()){
+                t=(T)constructor.newInstance();
             }
+
+
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
-        return (T) instance;
+        return t;
     }
 }

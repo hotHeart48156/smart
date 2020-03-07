@@ -16,6 +16,5 @@ import javax.persistence.Embeddable;
 public class CollectProductCount extends AbstractCount {
 
 @Column(name ="   collectProductCount")
-@Column(name ="   collectProductCount")
 private Long count;
 }

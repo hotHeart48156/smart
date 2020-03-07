@@ -2,7 +2,6 @@ package org.users.dto.domainevent;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.kafka.common.protocol.types.Field;
 
 @Getter
 @Setter

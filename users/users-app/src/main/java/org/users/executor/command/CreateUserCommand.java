@@ -2,7 +2,7 @@ package org.users.executor.command;
 
 import lombok.EqualsAndHashCode;
 import lombok.Value;
-import org.users.domain.aggregation.CreateUserDto;
+import org.users.dto.CreateUserDto;
 import org.users.executor.AbstractCommand;
 
 /**
@@ -13,7 +13,4 @@ import org.users.executor.AbstractCommand;
 public class CreateUserCommand extends AbstractCommand {
     CreateUserDto createUserDto;
 
-    public CreateUserCommand(CreateUserDto createUserDto) {
-        this.createUserDto = createUserDto;
-    }
 }

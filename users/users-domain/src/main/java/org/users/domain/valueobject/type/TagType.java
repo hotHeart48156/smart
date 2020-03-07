@@ -1,7 +1,5 @@
 package org.users.domain.valueobject.type;
 
-import org.users.domain.valueobject.is.AbstractType;
-
 import javax.persistence.Column;
 
 /**

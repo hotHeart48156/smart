@@ -17,16 +17,11 @@ import javax.persistence.Column;
 public class UserId extends AbstractId {
     @Column(name ="   userId")
 private String id;
-    private final int hashCode;
 
     public UserId() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
-        this.hashCode = id.hashCode();
     }
 
-    @Override
-    public int hashCode() {
-        return hashCode;
-    }
+
 
 }

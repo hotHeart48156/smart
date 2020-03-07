@@ -14,7 +14,7 @@ public class PasswordDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (id.equals(user.getUserId().getId())) {
-            user.setPassword(ValueObjectFactory.newInstance(Password.class, password.getClass()));
+            user.setPassword(ValueObjectFactory.newInstance(Password.class, password ));
         }
     }
 

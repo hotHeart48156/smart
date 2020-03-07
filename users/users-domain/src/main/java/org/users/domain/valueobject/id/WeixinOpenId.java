@@ -17,16 +17,11 @@ import javax.persistence.Column;
 public class WeixinOpenId extends AbstractId {
     @Column(name ="   weixinOpenId")
 private String id;
-    private final int hashCode;
 
     public WeixinOpenId() {
         this.id = IdentifierFactory.getInstance().generateIdentifier();
-        this.hashCode = id.hashCode();
     }
 
-    @Override
-    public int hashCode() {
-        return hashCode;
-    }
+
 
 }

@@ -1,40 +1,52 @@
 package org.users.domain.valueobject;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.users.domain.valueobject.name.UserName;
+
+import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author "yangbiao"
  */
 public class ValueObjectFactory {
-    public static <T extends ValueObject, V extends Object> T newInstance(Class<T> c, Class<V> v) {
-        T t = null;
-        try {
-            t = (T) Class.forName(c.getName()).getConstructor(v).newInstance();
 
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
+    public static <T extends ValueObject, V extends Object> T newInstance(Class<T> c, V ...v) {
+        T t = null;
+
+        try {
+
+          Class a =  c.forName(c.getName());
+            for ( Constructor constructor : a.getConstructors()){
+                t=(T)constructor.newInstance(v);
+            }
+
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
             e.printStackTrace();
         }
         return t;
     }
 
-    public static <T extends ValueObject, V extends Object> T newInstance(Class<T> c) {
+    public static <T extends ValueObject> T newInstance(Class<T> c) {
         T t = null;
         try {
-            t = (T) Class.forName(c.getName()).getConstructor().newInstance();
+            Class a =  c.forName(c.getName());
+            for ( Constructor constructor : a.getConstructors()){
+                t=(T)constructor.newInstance();
+            }
+
 
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();

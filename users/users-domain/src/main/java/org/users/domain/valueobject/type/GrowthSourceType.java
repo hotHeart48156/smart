@@ -5,7 +5,7 @@ import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-public enum GrowthSourceType {
+public enum GrowthSourceType implements AbstractType{
     SHOOPINT(0), MANAGE(1);
     @Column(name ="   growthSourceType")
 private int inedex;

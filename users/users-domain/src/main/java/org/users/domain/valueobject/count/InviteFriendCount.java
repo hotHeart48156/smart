@@ -3,6 +3,7 @@ package org.users.domain.valueobject.count;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -13,5 +14,6 @@ import javax.persistence.Embeddable;
 @Embeddable
 
 public class InviteFriendCount extends AbstractCount {
+    @Column(name ="   inviteFriendCount")
     private Long count;
 }

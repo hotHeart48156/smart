@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -15,6 +16,7 @@ import javax.persistence.Embeddable;
 
 @AllArgsConstructor
 public class LoginCount extends AbstractCount {
+    @Column(name ="   LoginCount")
     private Long count;
 
 }

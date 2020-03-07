@@ -14,7 +14,7 @@ public class GrowthDto extends AbstractDto {
     @Override
     public void accept(User user) {
         if (userId.equals(user.getUserId().getId())) {
-            user.setGrowth(ValueObjectFactory.newInstance(Growth.class, growth.getClass()));
+            user.setGrowth(ValueObjectFactory.newInstance(Growth.class, growth ));
         }
     }
 

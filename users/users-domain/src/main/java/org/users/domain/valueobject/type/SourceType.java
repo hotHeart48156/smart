@@ -5,7 +5,7 @@ import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-public enum SourceType {
+public enum SourceType implements AbstractType {
     APPlETS(1), OFFCIAANOUNT(2), WEBSITE(3);
     @Column(name ="   sourceType")
 private int index;
