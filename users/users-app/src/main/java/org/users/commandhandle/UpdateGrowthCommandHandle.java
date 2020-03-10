@@ -12,7 +12,6 @@ import org.users.executor.command.UpdateGrowthCommand;
 public class UpdateGrowthCommandHandle {
     @CommandHandler
     public void growth(UpdateGrowthCommand updateGrowthCommand) {
-        updateGrowthCommand.getGrowthDto().accept(this);
         AggregateLifecycle.apply(new UpdateGrowthEvent(updateGrowthCommand.getGrowthDto()));
     }
 }

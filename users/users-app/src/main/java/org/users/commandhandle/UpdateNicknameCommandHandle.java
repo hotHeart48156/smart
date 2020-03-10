@@ -12,7 +12,6 @@ import org.users.executor.command.UpdateNicknameCommand;
 public class UpdateNicknameCommandHandle {
     @CommandHandler
     public void updateNickname(UpdateNicknameCommand updateNicknameCommand) {
-        updateNicknameCommand.getNicknameDto().accept(this);
         AggregateLifecycle.apply(new UpdateNicknameEvent(updateNicknameCommand.getNicknameDto()));
     }
 

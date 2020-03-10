@@ -1,5 +1,6 @@
 spring:
   profiles: user-domain-config
+  jpa:
 
   cloud:
     stream:
@@ -17,8 +18,6 @@ spring:
           destination: user_aggregation
           binder: local_kafka
 
-
-
   redis:
     url:
     port: 6379
@@ -35,5 +34,4 @@ security:
     authorization:
       jwt:
 j2cache:
-
-  config-location=/j2cache-${spring.profiles.active}.properties
+  config-location:/j2cache-${spring.profiles.active}.properties

@@ -1,5 +1,6 @@
 package org.users.domain.valueobject;
 
+import lombok.Synchronized;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.users.domain.valueobject.name.UserName;
 
@@ -7,14 +8,15 @@ import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author "yangbiao"
  */
-public class ValueObjectFactory {
+public class ValueObjectFactory implements Cloneable{
 
-    public static <T extends ValueObject, V extends Object> T newInstance(Class<T> c, V ...v) {
-        T t = null;
+    public static  <T extends ValueObject, V extends Object> T newInstance(Class<T> c, V ...v) {
+       T t = null;
 
         try {
 
@@ -34,7 +36,6 @@ public class ValueObjectFactory {
         }
         return t;
     }
-
     public static <T extends ValueObject> T newInstance(Class<T> c) {
         T t = null;
         try {

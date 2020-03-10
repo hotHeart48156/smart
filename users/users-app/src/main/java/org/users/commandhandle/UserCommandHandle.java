@@ -13,10 +13,7 @@ import org.users.executor.command.*;
 public class UserCommandHandle {
 
 
-    @CommandHandler
-    public void changeMemberLevel() {
 
-    }
 
     @CommandHandler
     public void changeAddress(UpdateAddressEvent addressEvent) {

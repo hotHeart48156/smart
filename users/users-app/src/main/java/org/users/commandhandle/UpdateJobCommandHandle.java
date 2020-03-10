@@ -13,7 +13,6 @@ public class UpdateJobCommandHandle {
 
     @CommandHandler
     public void updateJob(UpdateJobCommand updateJobCommand) {
-        updateJobCommand.getJobDto().accept(this);
         AggregateLifecycle.apply(new UpdateJobEvent(updateJobCommand.getJobDto()));
     }
 

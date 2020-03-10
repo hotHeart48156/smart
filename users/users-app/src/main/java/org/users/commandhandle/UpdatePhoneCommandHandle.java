@@ -11,7 +11,6 @@ import org.users.executor.command.UpdatePhoneCommand;
 public class UpdatePhoneCommandHandle {
     @CommandHandler
     public void updatePhone(UpdatePhoneCommand updatePhoneCommand) {
-        updatePhoneCommand.getPhoneDto().accept(this);
         AggregateLifecycle.apply(new UpdatePhoneCommand(updatePhoneCommand.getPhoneDto()));
     }
 

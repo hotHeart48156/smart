@@ -12,7 +12,6 @@ import org.users.executor.command.UpdateIntegrationCommand;
 public class UpdateIntegrationCommandHandle {
     @CommandHandler
     public void integration(UpdateIntegrationCommand updateIntegrationCommand) {
-        updateIntegrationCommand.getIntegrationDto().accept(this);
         AggregateLifecycle.apply(new UpdateIntegrationEvent(updateIntegrationCommand.getIntegrationDto()));
     }
 }

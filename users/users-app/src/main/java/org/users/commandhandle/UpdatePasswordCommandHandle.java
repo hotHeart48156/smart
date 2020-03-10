@@ -12,7 +12,6 @@ import org.users.executor.command.UpdatePasswordCommand;
 public class UpdatePasswordCommandHandle {
     @CommandHandler
     public void updatePassword(UpdatePasswordCommand updatePasswordCommand) {
-        updatePasswordCommand.getPasswordDto().accept(this);
         AggregateLifecycle.apply(new UpdatePasswordEvent(updatePasswordCommand.getPasswordDto()));
     }
 }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.users.dto.CreateUserDto;
 import org.users.dto.*;
 import org.users.executor.command.*;
+import org.users.service.UserApplicationImpl;
 
 /**
  * @author "yangbiao"
@@ -18,14 +19,11 @@ import org.users.executor.command.*;
 @RequestMapping("/user")
 @Slf4j
 public class UserController {
-    @Autowired
-    private CommandGateway commandGateway;
-
+    private UserApplicationImpl application=new UserApplicationImpl();
     @PostMapping(value = "create")
     public void create(CreateUserDto createUserDto) {
         try {
-            CreateUserCommand createUserCommand = new CreateUserCommand(createUserDto);
-            commandGateway.sendAndWait(createUserCommand);
+          application.createUser(createUserDto);
 
 
         } catch (CommandExecutionException ecp) {
@@ -37,7 +35,7 @@ public class UserController {
     @PostMapping(value = "update/address")
     public void updateAddress(AddressDto addressDto) {
         try {
-            commandGateway.sendAndWait(new UpdateAddressCommand(addressDto));
+            application.updateAddress(addressDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
@@ -46,7 +44,7 @@ public class UserController {
     @PostMapping(value = "update/password")
     public void updatePassword(PasswordDto passwordDto) {
         try {
-            commandGateway.sendAndWait(new UpdatePasswordCommand(passwordDto));
+            application.updatePassword(passwordDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
@@ -55,7 +53,7 @@ public class UserController {
     @PostMapping(value = "update/nickname")
     public void updateNickname(NicknameDto nicknameDto) {
         try {
-            commandGateway.sendAndWait(new UpdateNicknameCommand(nicknameDto));
+            application.updateNickname(nicknameDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
@@ -64,7 +62,7 @@ public class UserController {
     @PostMapping(value = "update/phone")
     public void updatePhone(PhoneDto phoneDto) {
         try {
-            commandGateway.sendAndWait(new UpdatePhoneCommand(phoneDto));
+            application.updatePhone(phoneDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
@@ -73,7 +71,7 @@ public class UserController {
     @PostMapping(value = "update/birthday")
     public void updateBirthday(BirthdayDto birthdayDto) {
         try {
-            commandGateway.sendAndWait(new UpdateBirthdayCommand(birthdayDto));
+            application.updateBirthday(birthdayDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
@@ -82,7 +80,7 @@ public class UserController {
     @PostMapping(value = "update/job")
     public void updateJob(JobDto jobDto) {
         try {
-            commandGateway.sendAndWait(new UpdateJobCommand(jobDto));
+            application.updateJob(jobDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
@@ -91,7 +89,7 @@ public class UserController {
     @PostMapping(value = "update/growth")
     public void updateGrowth(GrowthDto growthDto) {
         try {
-            commandGateway.sendAndWait(new UpdateGrowthCommand(growthDto));
+            application.updateGrowth(growthDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());
