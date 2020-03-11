@@ -11,6 +11,6 @@ public class MemberPrice {
     private MemberPriceId memberPriceId;
     private ProductId productId;
     private MemberlLevel memberlLevel;
-    private org.product.domain.valueobject.MemberPrice memberPrice;
+    private MemberPrice memberPrice;
 
 }

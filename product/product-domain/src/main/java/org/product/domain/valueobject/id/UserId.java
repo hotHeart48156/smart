@@ -11,7 +11,7 @@ import javax.persistence.Column;
 @Value
 @Embeddable
 @AllArgsConstructor
-public class MemberId extends AbstractId
+public class UserId extends AbstractId
 {
 @Column(name ="   memberId")
 private String   memberId;

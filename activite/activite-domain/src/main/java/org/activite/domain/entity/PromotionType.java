@@ -14,7 +14,7 @@ import javax.persistence.EmbeddedId;
 /**
  * @author "yangbiao"
  */
-public class Promotion {
+public class PromotionType {
     @EmbeddedId
     private Id id;
     @Embedded

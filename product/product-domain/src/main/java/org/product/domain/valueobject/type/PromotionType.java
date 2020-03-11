@@ -7,7 +7,7 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
+
 @Embeddable
 @AllArgsConstructor
 public enum  PromotionType implements AbstractType

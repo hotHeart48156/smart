@@ -4,8 +4,12 @@ import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
 
 /**
- * @author "yangbiao"
+ * @author yangbiao
  */
-public class Gifts {
+
+public class GiftAndProductRelationship {
     private Id id;
+    private Id giftId;
+    private ProductId productId;
+
 }

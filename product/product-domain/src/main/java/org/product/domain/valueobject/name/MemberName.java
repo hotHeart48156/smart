@@ -1,10 +1,14 @@
 package org.product.domain.valueobject.name;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
 /**
  * @author "yangbiao"
  */
-public class MemberName {
+@Embeddable
+
+public class MemberName  extends AbstractName{
 @Column(name ="   memberName")
 private   String memberName;
 }

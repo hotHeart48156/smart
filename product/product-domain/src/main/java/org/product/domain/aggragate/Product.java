@@ -19,7 +19,7 @@ import org.product.domain.valueobject.type.PromotionType;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Table;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -31,11 +31,11 @@ public class Product {
     @EmbeddedId
     private ProductId productId;
     @Embedded
-    private MemberId memberId;
+    private UserId userId;
     @Embedded
     private BrandId brandId;
     @Embedded
-    private Set<CommentId> commentIds;
+    private List<CommentId> commentIds;
     @Embedded
     private Set<Id> giftsIds;
 
@@ -51,6 +51,7 @@ public class Product {
     private ProductName productName;
     @Embedded
     private ProductPic productPic;
+
     @Embedded
     private ProductType productType;
     @Embedded
@@ -80,17 +81,14 @@ public class Product {
     @Embedded
     private ProductSubtitle productSubtitle;
     @Embedded
+    private Title title;
+    @Embedded
     private ProductDescription productDescription;
     @Embedded
     private ProductOriginalPrice originalPrice;
     @Embedded
     private ProductStock productStock;
-    @Embedded
-    private ProductStock lowStock;
-    @Embedded
-    private ProductUnit unit;
-    @Embedded
-    private ProductWeight productWeight;
+
     @Embedded
     private PreviewStatus previewStatus;
     @Embedded
@@ -107,8 +105,6 @@ public class Product {
     private ProductPromotionPerLimit productPromotionPerLimit;
     @Embedded
     private PromotionType promotionType;
-    @Embedded
-    private BrandName brandName;
     @Embedded
     private ProductCategoryName productCategoryName;
 

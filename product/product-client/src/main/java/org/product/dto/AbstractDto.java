@@ -4,6 +4,6 @@ package org.product.dto;
  * @author yangbiao
  */
 
-public class AbstractDto
+public abstract class AbstractDto
 {
 }
