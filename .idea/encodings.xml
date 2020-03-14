@@ -20,11 +20,7 @@
     <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/discover-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/discover-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/discover-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order/order-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order/order-app/src/main/java" charset="UTF-8" />
