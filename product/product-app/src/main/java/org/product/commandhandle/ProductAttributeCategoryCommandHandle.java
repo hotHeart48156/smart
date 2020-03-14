@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class ProductAttributeCategoryCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class ProductAttributeCategoryCommandHandle {
+    @CommandHandler
+    public void on(ProductAttributeCategoryCommand Command) {
+        AggregateLifecycle.apply(new ProductAttributeCategoryEvent(Command.getProductAttributeCategoryDto()));
+    }
+}

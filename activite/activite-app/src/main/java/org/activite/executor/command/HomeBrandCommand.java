@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class HomeBrandCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class HomeBrandCommand {
+    private HomeBrandDto HomeBrandDto;
+}

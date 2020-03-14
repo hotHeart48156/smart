@@ -1,3 +1,11 @@
 package org.activite.commandhandle;
-public class PromotionLogCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class PromotionLogCommandHandle {
+    @CommandHandler
+    public void on(PromotionLogCommand Command) {
+        AggregateLifecycle.apply(new PromotionLogEvent(Command.getPromotionLogDto()));
+    }
+}

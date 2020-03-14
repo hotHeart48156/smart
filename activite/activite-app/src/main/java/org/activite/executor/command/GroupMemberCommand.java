@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class GroupMemberCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class GroupMemberCommand {
+    private GroupMemberDto GroupMemberDto;
+}

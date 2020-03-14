@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class GiftsCategoryCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class GiftsCategoryCommandHandle {
+    @CommandHandler
+    public void on(GiftsCategoryCommand Command) {
+        AggregateLifecycle.apply(new GiftsCategoryEvent(Command.getGiftsCategoryDto()));
+    }
+}

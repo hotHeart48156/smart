@@ -1,3 +1,11 @@
 package org.activite.commandhandle;
-public class RecommendProductCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class RecommendProductCommandHandle {
+    @CommandHandler
+    public void on(RecommendProductCommand Command) {
+        AggregateLifecycle.apply(new RecommendProductEvent(Command.getRecommendProductDto()));
+    }
+}

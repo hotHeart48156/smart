@@ -1,3 +1,11 @@
 package org.activite.commandhandle;
-public class CouponHistoryCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class CouponHistoryCommandHandle {
+    @CommandHandler
+    public void on(CouponHistoryCommand Command) {
+        AggregateLifecycle.apply(new CouponHistoryEvent(Command.getCouponHistoryDto()));
+    }
+}

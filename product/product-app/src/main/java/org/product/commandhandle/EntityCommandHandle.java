@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class EntityCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class EntityCommandHandle {
+    @CommandHandler
+    public void on(EntityCommand Command) {
+        AggregateLifecycle.apply(new EntityEvent(Command.getEntityDto()));
+    }
+}

@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class RecommendProductCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class RecommendProductCommand {
+    private RecommendProductDto RecommendProductDto;
+}

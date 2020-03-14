@@ -16,7 +16,6 @@
         <module name="product-client" />
         <module name="activite-infrastructure" />
         <module name="commons" />
-        <module name="start (6)" />
         <module name="discover-server" />
         <module name="product-infrastructure" />
         <module name="users-controller" />
@@ -44,6 +43,12 @@
         <module name="product_side-client" />
         <module name="start (7)" />
         <module name="order-domain" />
+      </profile>
+      <profile name="Annotation profile for demo" enabled="true">
+        <sourceOutputDir name="../../users/user-start/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../users/user-start/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="start (6)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

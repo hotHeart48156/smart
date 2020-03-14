@@ -12,7 +12,7 @@ import javax.persistence.Embeddable;
 @Value
 @EqualsAndHashCode
 @Embeddable
-public class ReceiverPerson {
+public class ReceiverPerson implements ValueObject {
     @Column(name = "receiver_person")
     private Long receiverPerson;
 }

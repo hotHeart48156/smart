@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class CommentCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class CommentCommandHandle {
+    @CommandHandler
+    public void on(CommentCommand Command) {
+        AggregateLifecycle.apply(new CommentEvent(Command.getCommentDto()));
+    }
+}

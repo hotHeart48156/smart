@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class HomeAdvertiseCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class HomeAdvertiseCommand {
+    private HomeAdvertiseDto HomeAdvertiseDto;
+}

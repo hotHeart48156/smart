@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class GiftCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class GiftCommand {
+    private GiftDto GiftDto;
+}

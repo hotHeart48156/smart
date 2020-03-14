@@ -1,3 +1,11 @@
 package org.activite.commandhandle;
-public class GroupMemberCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class GroupMemberCommandHandle {
+    @CommandHandler
+    public void on(GroupMemberCommand Command) {
+        AggregateLifecycle.apply(new GroupMemberEvent(Command.getGroupMemberDto()));
+    }
+}

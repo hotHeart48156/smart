@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class PromotionLogCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class PromotionLogCommand {
+    private PromotionLogDto PromotionLogDto;
+}

@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class ProductSkuStockCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class ProductSkuStockCommandHandle {
+    @CommandHandler
+    public void on(ProductSkuStockCommand Command) {
+        AggregateLifecycle.apply(new ProductSkuStockEvent(Command.getProductSkuStockDto()));
+    }
+}

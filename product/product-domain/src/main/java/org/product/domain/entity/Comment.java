@@ -1,5 +1,6 @@
 package org.product.domain.entity;
 
+import lombok.Data;
 import org.product.domain.valueobject.*;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
@@ -12,6 +13,7 @@ import java.util.List;
 /**
  * @author "yangbiao"
  */
+@Data
 public class Comment {
     private Id id;
     private ProductId productId;

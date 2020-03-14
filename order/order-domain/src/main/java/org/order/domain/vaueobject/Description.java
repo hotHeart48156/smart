@@ -12,7 +12,7 @@ import javax.persistence.Embeddable;
 @Value
 @EqualsAndHashCode
 @Embeddable
-public class Description {
+public class Description implements ValueObject {
     @Column(name = "description")
     private String description;
 

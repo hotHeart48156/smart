@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class FreightTemplateCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class FreightTemplateCommandHandle {
+    @CommandHandler
+    public void on(FreightTemplateCommand Command) {
+        AggregateLifecycle.apply(new FreightTemplateEvent(Command.getFreightTemplateDto()));
+    }
+}

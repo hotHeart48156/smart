@@ -1,3 +1,8 @@
 package org.activite.executor.command;
-public class CouponHistoryCommand  extends AbstractCommand
-{}
+
+import lombok.Value;
+
+@Value
+public class CouponHistoryCommand {
+    private CouponHistoryDto CouponHistoryDto;
+}

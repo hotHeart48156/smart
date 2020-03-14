@@ -1,3 +1,11 @@
 package org.product.commandhandle;
-public class MemberPriceCommandHandle  extends AbstractCommandHandle
-{}
+
+import lombok.Value;
+
+@Value
+public class MemberPriceCommandHandle {
+    @CommandHandler
+    public void on(MemberPriceCommand Command) {
+        AggregateLifecycle.apply(new MemberPriceEvent(Command.getMemberPriceDto()));
+    }
+}
