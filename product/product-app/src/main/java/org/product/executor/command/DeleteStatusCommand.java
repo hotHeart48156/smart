@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class DeleteStatusCommand {
-    private org.product.dto.aggdto.DeleteStatusDto DeleteStatusDto;
+    private DeleteStatusDto DeleteStatusDto;
 }

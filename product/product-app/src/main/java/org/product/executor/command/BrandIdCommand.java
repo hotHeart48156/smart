@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class BrandIdCommand {
-    private org.product.dto.aggdto.BrandIdDto BrandIdDto;
+    private BrandIdDto BrandIdDto;
 }

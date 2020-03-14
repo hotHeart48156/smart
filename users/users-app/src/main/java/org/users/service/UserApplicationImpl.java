@@ -7,8 +7,6 @@ import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.users.api.UserApplication;
-import org.users.dto.CreateUserDto;
-import org.users.dto.*;
 import org.users.executor.command.*;
 /**
  * @author "yangbiao"

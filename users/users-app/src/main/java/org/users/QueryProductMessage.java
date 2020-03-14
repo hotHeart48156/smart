@@ -2,7 +2,7 @@ package org.users;
 
 import org.axonframework.eventhandling.EventMessage;
 import org.axonframework.eventhandling.GenericDomainEventMessage;
-import org.users.dto.domainevent.CreateUserEvent;
+import org.users.domainevent.CreateUserEvent;
 
 /**
  * @author "yangbiao"

@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class RecommandStatusCommand {
-    private org.product.dto.aggdto.RecommandStatusDto RecommandStatusDto;
+    private RecommandStatusDto RecommandStatusDto;
 }

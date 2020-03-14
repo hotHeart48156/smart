@@ -3,8 +3,7 @@ package org.users.commandhandle;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.stereotype.Component;
-import org.users.dto.domainevent.UpdateNicknameEvent;
-import org.users.executor.command.UpdateNicknameCommand;
+import org.users.domainevent.UpdateNicknameEvent;
 
 /**
  * @author yangbiao

@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class FeightTemplateIdCommand {
-    private org.product.dto.aggdto.FeightTemplateIdDto FeightTemplateIdDto;
+    private FeightTemplateIdDto FeightTemplateIdDto;
 }

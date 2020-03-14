@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.users.domain.aggregation.User;
 import org.users.domain.repository.UserRepository;
-import org.users.dto.domainevent.CreateUserEvent;
+import org.users.domainevent.CreateUserEvent;
 
 /**
  * @author "yangbiao"

@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class ShowStatusCommand {
-    private org.product.dto.aggdto.ShowStatusDto ShowStatusDto;
+    private ShowStatusDto ShowStatusDto;
 }

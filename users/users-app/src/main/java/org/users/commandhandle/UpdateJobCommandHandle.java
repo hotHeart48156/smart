@@ -3,8 +3,7 @@ package org.users.commandhandle;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.stereotype.Component;
-import org.users.dto.domainevent.UpdateJobEvent;
-import org.users.executor.command.UpdateJobCommand;
+import org.users.domainevent.UpdateJobEvent;
 
 /**
  * @author yangbiao

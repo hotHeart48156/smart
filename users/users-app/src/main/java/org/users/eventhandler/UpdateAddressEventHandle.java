@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.users.domain.repository.AddressRepository;
 import org.users.domain.repository.UserRepository;
-import org.users.dto.domainevent.UpdateAddressEvent;
+import org.users.domainevent.UpdateAddressEvent;
 
 /**
  * @author "yangbiao"

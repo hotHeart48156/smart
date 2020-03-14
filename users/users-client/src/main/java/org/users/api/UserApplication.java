@@ -1,8 +1,6 @@
 package org.users.api;
 
 
-import org.users.dto.CreateUserDto;
-
 /**
  * @author "yangbiao"
  */

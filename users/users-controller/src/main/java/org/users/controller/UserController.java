@@ -2,14 +2,9 @@ package org.users.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.CommandExecutionException;
-import org.axonframework.commandhandling.gateway.CommandGateway;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.users.dto.CreateUserDto;
-import org.users.dto.*;
-import org.users.executor.command.*;
 import org.users.service.UserApplicationImpl;
 
 /**

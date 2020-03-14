@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class AddressCommand {
-    private org.product.dto.dto.AddressDto AddressDto;
+    private AddressDto AddressDto;
 }

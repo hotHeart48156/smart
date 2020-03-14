@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class CommentReplyCommand {
-    private org.product.dto.dto.CommentReplyDto CommentReplyDto;
+    private CommentReplyDto CommentReplyDto;
 }
