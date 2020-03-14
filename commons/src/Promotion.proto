@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.smart.website.commons.lib";
+option java_outer_classname = "PromotionProto";
+
+service OrderGetPromotionMessage {
+    rpc GetOrderToPromotion(OrderToPromotionRequest)returns(OrderGetPromotionReply){}
+}
+message OrderToPromotionRequest {
+    string userId=1;
+    string productId=2;
+}
+message OrderGetPromotionReply{
+    string PromotionId=1;
+    string PromotionAmount=2;
+    string PromotionName=3;
+}

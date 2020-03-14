@@ -6,12 +6,12 @@ option java_outer_classname = "ProductProto";
 
 
 service OrderGetProductMessage {
-    rpc Get (OrderToProductRequest) returns (OrderGetProductReply) {
+    rpc GetOrderToProduct (OrderToProductRequest) returns (OrderGetProductReply) {
     }
 
 }
-service CouponGetProductMessage {
-    rpc Get (CouponToProductRequest) returns (CouponGetProductReply) {
+service CouponGetProduct {
+    rpc GetCouponToProductMessage (CouponToProductRequest) returns (CouponGetProductReply) {
     }
 
 }

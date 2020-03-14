@@ -9,7 +9,6 @@ import org.users.domain.valueobject.CreateTime;
 import org.users.domain.valueobject.GoodsPic;
 import org.users.domain.valueobject.GoodsPrice;
 import org.users.domain.valueobject.id.GoodsId;
-import org.users.domain.valueobject.id.Id;
 import org.users.domain.valueobject.id.UserId;
 import org.users.domain.valueobject.name.GoodsName;
 import org.users.domain.valueobject.type.CollectType;
@@ -26,7 +25,7 @@ import javax.persistence.EmbeddedId;
 
 public class UserCollect implements Entity {
     @EmbeddedId
-private Id id;
+private UserCollect id;
     @Embedded
 private UserId memberId;
     @Embedded

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.smart.website.commons.lib";
+option java_outer_classname = "GroupProto";
+
+service OrderGetGroupMessage {
+    rpc GetOrderToGroup(OrderToGroupRequest)returns(OrderGetGroupReply){}
+}
+message OrderToGroupRequest {
+    string userId=1;
+    string productId=2;
+}
+message OrderGetGroupReply{
+    string GroupId=1;
+    string GroupAmount=2;
+    string GroupName=3;
+}

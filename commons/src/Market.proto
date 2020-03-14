@@ -3,3 +3,16 @@ syntax = "proto3";
 option java_multiple_files = true;
 option java_package = "com.smart.website.commons.lib";
 option java_outer_classname = "MarketProto";
+
+service OrderGetMarketMessage {
+    rpc GetOrderToMarket(OrderToMarketRequest)returns(OrderGetMarketReply){}
+}
+message OrderToMarketRequest {
+    string userId=1;
+    string productId=2;
+}
+message OrderGetMarketReply{
+    string MarketId=1;
+    string MarketAmount=2;
+    string MarketName=3;
+}
