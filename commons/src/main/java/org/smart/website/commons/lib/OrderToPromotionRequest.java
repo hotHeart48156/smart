@@ -69,14 +69,14 @@ public  final class OrderToPromotionRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return PromotionProto.internal_static_OrderToPromotionRequest_descriptor;
+    return org.smart.website.commons.lib.PromotionProto.internal_static_OrderToPromotionRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return PromotionProto.internal_static_OrderToPromotionRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            OrderToPromotionRequest.class, OrderToPromotionRequest.Builder.class);
+    return org.smart.website.commons.lib.PromotionProto.internal_static_OrderToPromotionRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.OrderToPromotionRequest.class, org.smart.website.commons.lib.OrderToPromotionRequest.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -186,12 +186,12 @@ public  final class OrderToPromotionRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof OrderToPromotionRequest)) {
+    if (!(obj instanceof org.smart.website.commons.lib.OrderToPromotionRequest)) {
       return super.equals(obj);
     }
-    OrderToPromotionRequest other = (OrderToPromotionRequest) obj;
+    org.smart.website.commons.lib.OrderToPromotionRequest other = (org.smart.website.commons.lib.OrderToPromotionRequest) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -217,75 +217,87 @@ public  final class OrderToPromotionRequest extends
     return hash;
   }
 
-  public static OrderToPromotionRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderToPromotionRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderToPromotionRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderToPromotionRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderToPromotionRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderToPromotionRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderToPromotionRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static OrderToPromotionRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderToPromotionRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderToPromotionRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToPromotionRequest parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(OrderToPromotionRequest prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.OrderToPromotionRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -294,26 +306,27 @@ public  final class OrderToPromotionRequest extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code OrderToPromotionRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:OrderToPromotionRequest)
-          OrderToPromotionRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:OrderToPromotionRequest)
+          org.smart.website.commons.lib.OrderToPromotionRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return PromotionProto.internal_static_OrderToPromotionRequest_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.PromotionProto.internal_static_OrderToPromotionRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return PromotionProto.internal_static_OrderToPromotionRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              OrderToPromotionRequest.class, OrderToPromotionRequest.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.PromotionProto.internal_static_OrderToPromotionRequest_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.OrderToPromotionRequest.class, org.smart.website.commons.lib.OrderToPromotionRequest.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.OrderToPromotionRequest.newBuilder()
+    // Construct using org.smart.website.commons.lib.OrderToPromotionRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -338,24 +351,24 @@ public  final class OrderToPromotionRequest extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return PromotionProto.internal_static_OrderToPromotionRequest_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.PromotionProto.internal_static_OrderToPromotionRequest_descriptor;
     }
 
-    public OrderToPromotionRequest getDefaultInstanceForType() {
-      return OrderToPromotionRequest.getDefaultInstance();
+    public org.smart.website.commons.lib.OrderToPromotionRequest getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.OrderToPromotionRequest.getDefaultInstance();
     }
 
-    public OrderToPromotionRequest build() {
-      OrderToPromotionRequest result = buildPartial();
+    public org.smart.website.commons.lib.OrderToPromotionRequest build() {
+      org.smart.website.commons.lib.OrderToPromotionRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public OrderToPromotionRequest buildPartial() {
-      OrderToPromotionRequest result = new OrderToPromotionRequest(this);
+    public org.smart.website.commons.lib.OrderToPromotionRequest buildPartial() {
+      org.smart.website.commons.lib.OrderToPromotionRequest result = new org.smart.website.commons.lib.OrderToPromotionRequest(this);
       result.userId_ = userId_;
       result.productId_ = productId_;
       onBuilt();
@@ -365,6 +378,7 @@ public  final class OrderToPromotionRequest extends
     public Builder clone() {
       return (Builder) super.clone();
     }
+
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
@@ -388,17 +402,18 @@ public  final class OrderToPromotionRequest extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof OrderToPromotionRequest) {
-        return mergeFrom((OrderToPromotionRequest)other);
+      if (other instanceof org.smart.website.commons.lib.OrderToPromotionRequest) {
+        return mergeFrom((org.smart.website.commons.lib.OrderToPromotionRequest) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(OrderToPromotionRequest other) {
-      if (other == OrderToPromotionRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.OrderToPromotionRequest other) {
+      if (other == org.smart.website.commons.lib.OrderToPromotionRequest.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -419,11 +434,11 @@ public  final class OrderToPromotionRequest extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      OrderToPromotionRequest parsedMessage = null;
+      org.smart.website.commons.lib.OrderToPromotionRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (OrderToPromotionRequest) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.OrderToPromotionRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -585,12 +600,12 @@ public  final class OrderToPromotionRequest extends
   }
 
   // @@protoc_insertion_point(class_scope:OrderToPromotionRequest)
-  private static final OrderToPromotionRequest DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.OrderToPromotionRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new OrderToPromotionRequest();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.OrderToPromotionRequest();
   }
 
-  public static OrderToPromotionRequest getDefaultInstance() {
+  public static org.smart.website.commons.lib.OrderToPromotionRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -613,7 +628,7 @@ public  final class OrderToPromotionRequest extends
     return PARSER;
   }
 
-  public OrderToPromotionRequest getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.OrderToPromotionRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

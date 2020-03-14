@@ -76,14 +76,14 @@ public  final class OrderGetMarketReply extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return MarketProto.internal_static_OrderGetMarketReply_descriptor;
+    return org.smart.website.commons.lib.MarketProto.internal_static_OrderGetMarketReply_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return MarketProto.internal_static_OrderGetMarketReply_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            OrderGetMarketReply.class, OrderGetMarketReply.Builder.class);
+    return org.smart.website.commons.lib.MarketProto.internal_static_OrderGetMarketReply_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.OrderGetMarketReply.class, org.smart.website.commons.lib.OrderGetMarketReply.Builder.class);
   }
 
   public static final int MARKETID_FIELD_NUMBER = 1;
@@ -233,12 +233,12 @@ public  final class OrderGetMarketReply extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof OrderGetMarketReply)) {
+    if (!(obj instanceof org.smart.website.commons.lib.OrderGetMarketReply)) {
       return super.equals(obj);
     }
-    OrderGetMarketReply other = (OrderGetMarketReply) obj;
+    org.smart.website.commons.lib.OrderGetMarketReply other = (org.smart.website.commons.lib.OrderGetMarketReply) obj;
 
     boolean result = true;
     result = result && getMarketId()
@@ -268,75 +268,87 @@ public  final class OrderGetMarketReply extends
     return hash;
   }
 
-  public static OrderGetMarketReply parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderGetMarketReply parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderGetMarketReply parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderGetMarketReply parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderGetMarketReply parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderGetMarketReply parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderGetMarketReply parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static OrderGetMarketReply parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderGetMarketReply parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderGetMarketReply parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetMarketReply parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(OrderGetMarketReply prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.OrderGetMarketReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -345,26 +357,27 @@ public  final class OrderGetMarketReply extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code OrderGetMarketReply}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:OrderGetMarketReply)
-          OrderGetMarketReplyOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:OrderGetMarketReply)
+          org.smart.website.commons.lib.OrderGetMarketReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return MarketProto.internal_static_OrderGetMarketReply_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.MarketProto.internal_static_OrderGetMarketReply_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return MarketProto.internal_static_OrderGetMarketReply_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              OrderGetMarketReply.class, OrderGetMarketReply.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.MarketProto.internal_static_OrderGetMarketReply_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.OrderGetMarketReply.class, org.smart.website.commons.lib.OrderGetMarketReply.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.OrderGetMarketReply.newBuilder()
+    // Construct using org.smart.website.commons.lib.OrderGetMarketReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -391,24 +404,24 @@ public  final class OrderGetMarketReply extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return MarketProto.internal_static_OrderGetMarketReply_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.MarketProto.internal_static_OrderGetMarketReply_descriptor;
     }
 
-    public OrderGetMarketReply getDefaultInstanceForType() {
-      return OrderGetMarketReply.getDefaultInstance();
+    public org.smart.website.commons.lib.OrderGetMarketReply getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.OrderGetMarketReply.getDefaultInstance();
     }
 
-    public OrderGetMarketReply build() {
-      OrderGetMarketReply result = buildPartial();
+    public org.smart.website.commons.lib.OrderGetMarketReply build() {
+      org.smart.website.commons.lib.OrderGetMarketReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public OrderGetMarketReply buildPartial() {
-      OrderGetMarketReply result = new OrderGetMarketReply(this);
+    public org.smart.website.commons.lib.OrderGetMarketReply buildPartial() {
+      org.smart.website.commons.lib.OrderGetMarketReply result = new org.smart.website.commons.lib.OrderGetMarketReply(this);
       result.marketId_ = marketId_;
       result.marketAmount_ = marketAmount_;
       result.marketName_ = marketName_;
@@ -442,17 +455,18 @@ public  final class OrderGetMarketReply extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof OrderGetMarketReply) {
-        return mergeFrom((OrderGetMarketReply)other);
+      if (other instanceof org.smart.website.commons.lib.OrderGetMarketReply) {
+        return mergeFrom((org.smart.website.commons.lib.OrderGetMarketReply) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(OrderGetMarketReply other) {
-      if (other == OrderGetMarketReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.OrderGetMarketReply other) {
+      if (other == org.smart.website.commons.lib.OrderGetMarketReply.getDefaultInstance()) return this;
       if (!other.getMarketId().isEmpty()) {
         marketId_ = other.marketId_;
         onChanged();
@@ -477,11 +491,11 @@ public  final class OrderGetMarketReply extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      OrderGetMarketReply parsedMessage = null;
+      org.smart.website.commons.lib.OrderGetMarketReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (OrderGetMarketReply) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.OrderGetMarketReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -712,12 +726,12 @@ public  final class OrderGetMarketReply extends
   }
 
   // @@protoc_insertion_point(class_scope:OrderGetMarketReply)
-  private static final OrderGetMarketReply DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.OrderGetMarketReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new OrderGetMarketReply();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.OrderGetMarketReply();
   }
 
-  public static OrderGetMarketReply getDefaultInstance() {
+  public static org.smart.website.commons.lib.OrderGetMarketReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -740,7 +754,7 @@ public  final class OrderGetMarketReply extends
     return PARSER;
   }
 
-  public OrderGetMarketReply getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.OrderGetMarketReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

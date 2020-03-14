@@ -34,13 +34,13 @@ public final class CouponProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\014Coupon.proto\"9\n\024OrderToCouponRequest\022\016" +
-      "\n\006userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"Q\n\023Ord" +
-      "erGetCouponReply\022\020\n\010couponId\030\001 \001(\t\022\024\n\014co" +
-      "uponAmount\030\002 \001(\t\022\022\n\ncouponName\030\003 \001(\t2Z\n\025" +
-      "OrderGetCouponMessage\022A\n\020GetOrderToCoupo" +
-      "n\022\025.OrderToCouponRequest\032\024.OrderGetCoupo" +
-      "nReply\"\000B.\n\035com.smart.website.commons.li" +
-      "bB\013CouponProtoP\001b\006proto3"
+              "\n\006userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"Q\n\023Ord" +
+              "erGetCouponReply\022\020\n\010couponId\030\001 \001(\t\022\024\n\014co" +
+              "uponAmount\030\002 \001(\t\022\022\n\ncouponName\030\003 \001(\t2Z\n\025" +
+              "OrderGetCouponMessage\022A\n\020GetOrderToCoupo" +
+              "n\022\025.OrderToCouponRequest\032\024.OrderGetCoupo" +
+              "nReply\"\000B.\n\035org.smart.website.commons.li" +
+              "bB\013CouponProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

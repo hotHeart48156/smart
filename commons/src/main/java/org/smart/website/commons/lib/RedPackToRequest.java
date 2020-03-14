@@ -62,14 +62,14 @@ public  final class RedPackToRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return UserProto.internal_static_RedPackToRequest_descriptor;
+    return org.smart.website.commons.lib.UserProto.internal_static_RedPackToRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return UserProto.internal_static_RedPackToRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            RedPackToRequest.class, RedPackToRequest.Builder.class);
+    return org.smart.website.commons.lib.UserProto.internal_static_RedPackToRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.RedPackToRequest.class, org.smart.website.commons.lib.RedPackToRequest.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -139,12 +139,12 @@ public  final class RedPackToRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof RedPackToRequest)) {
+    if (!(obj instanceof org.smart.website.commons.lib.RedPackToRequest)) {
       return super.equals(obj);
     }
-    RedPackToRequest other = (RedPackToRequest) obj;
+    org.smart.website.commons.lib.RedPackToRequest other = (org.smart.website.commons.lib.RedPackToRequest) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -166,75 +166,87 @@ public  final class RedPackToRequest extends
     return hash;
   }
 
-  public static RedPackToRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RedPackToRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RedPackToRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RedPackToRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RedPackToRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static RedPackToRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RedPackToRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static RedPackToRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RedPackToRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static RedPackToRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackToRequest parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(RedPackToRequest prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.RedPackToRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -243,26 +255,27 @@ public  final class RedPackToRequest extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code RedPackToRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:RedPackToRequest)
-          RedPackToRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:RedPackToRequest)
+          org.smart.website.commons.lib.RedPackToRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return UserProto.internal_static_RedPackToRequest_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.UserProto.internal_static_RedPackToRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return UserProto.internal_static_RedPackToRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              RedPackToRequest.class, RedPackToRequest.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.UserProto.internal_static_RedPackToRequest_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.RedPackToRequest.class, org.smart.website.commons.lib.RedPackToRequest.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.RedPackToRequest.newBuilder()
+    // Construct using org.smart.website.commons.lib.RedPackToRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -285,24 +298,24 @@ public  final class RedPackToRequest extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return UserProto.internal_static_RedPackToRequest_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.UserProto.internal_static_RedPackToRequest_descriptor;
     }
 
-    public RedPackToRequest getDefaultInstanceForType() {
-      return RedPackToRequest.getDefaultInstance();
+    public org.smart.website.commons.lib.RedPackToRequest getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.RedPackToRequest.getDefaultInstance();
     }
 
-    public RedPackToRequest build() {
-      RedPackToRequest result = buildPartial();
+    public org.smart.website.commons.lib.RedPackToRequest build() {
+      org.smart.website.commons.lib.RedPackToRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public RedPackToRequest buildPartial() {
-      RedPackToRequest result = new RedPackToRequest(this);
+    public org.smart.website.commons.lib.RedPackToRequest buildPartial() {
+      org.smart.website.commons.lib.RedPackToRequest result = new org.smart.website.commons.lib.RedPackToRequest(this);
       result.userId_ = userId_;
       onBuilt();
       return result;
@@ -311,8 +324,9 @@ public  final class RedPackToRequest extends
     public Builder clone() {
       return (Builder) super.clone();
     }
+
     public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
+            com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
       return (Builder) super.setField(field, value);
     }
@@ -334,17 +348,18 @@ public  final class RedPackToRequest extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof RedPackToRequest) {
-        return mergeFrom((RedPackToRequest)other);
+      if (other instanceof org.smart.website.commons.lib.RedPackToRequest) {
+        return mergeFrom((org.smart.website.commons.lib.RedPackToRequest) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(RedPackToRequest other) {
-      if (other == RedPackToRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.RedPackToRequest other) {
+      if (other == org.smart.website.commons.lib.RedPackToRequest.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -361,11 +376,11 @@ public  final class RedPackToRequest extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      RedPackToRequest parsedMessage = null;
+      org.smart.website.commons.lib.RedPackToRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (RedPackToRequest) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.RedPackToRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -458,12 +473,12 @@ public  final class RedPackToRequest extends
   }
 
   // @@protoc_insertion_point(class_scope:RedPackToRequest)
-  private static final RedPackToRequest DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.RedPackToRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new RedPackToRequest();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.RedPackToRequest();
   }
 
-  public static RedPackToRequest getDefaultInstance() {
+  public static org.smart.website.commons.lib.RedPackToRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -486,7 +501,7 @@ public  final class RedPackToRequest extends
     return PARSER;
   }
 
-  public RedPackToRequest getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.RedPackToRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

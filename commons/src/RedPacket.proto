@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "com.smart.website.commons.lib";
+option java_package = "org.smart.website.commons.lib";
 option java_outer_classname = "RedPacketProto";
 
 service OrderGetRedPacketMessage {
     rpc GetOrderToRedPacket(OrderToRedPacketRequest)returns(OrderGetRedPacketRequest){}
 }
-message OrderToRedPacketRequest{
+message OrderToRedPacketRequest {
     string userId=1;
     string productId=2;
 }
-message OrderGetRedPacketRequest{
+message OrderGetRedPacketRequest {
     string redPacketId=1;
     string redPacketAmount=2;
     string redPacketName=3;

@@ -34,13 +34,13 @@ public final class GroupProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\013Group.proto\"8\n\023OrderToGroupRequest\022\016\n\006" +
-      "userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"M\n\022Order" +
-      "GetGroupReply\022\017\n\007GroupId\030\001 \001(\t\022\023\n\013GroupA" +
-      "mount\030\002 \001(\t\022\021\n\tGroupName\030\003 \001(\t2V\n\024OrderG" +
-      "etGroupMessage\022>\n\017GetOrderToGroup\022\024.Orde" +
-      "rToGroupRequest\032\023.OrderGetGroupReply\"\000B-" +
-      "\n\035com.smart.website.commons.libB\nGroupPr" +
-      "otoP\001b\006proto3"
+              "userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"M\n\022Order" +
+              "GetGroupReply\022\017\n\007GroupId\030\001 \001(\t\022\023\n\013GroupA" +
+              "mount\030\002 \001(\t\022\021\n\tGroupName\030\003 \001(\t2V\n\024OrderG" +
+              "etGroupMessage\022>\n\017GetOrderToGroup\022\024.Orde" +
+              "rToGroupRequest\032\023.OrderGetGroupReply\"\000B-" +
+              "\n\035org.smart.website.commons.libB\nGroupPr" +
+              "otoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

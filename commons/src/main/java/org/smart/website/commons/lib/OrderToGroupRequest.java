@@ -69,14 +69,14 @@ public  final class OrderToGroupRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GroupProto.internal_static_OrderToGroupRequest_descriptor;
+    return org.smart.website.commons.lib.GroupProto.internal_static_OrderToGroupRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GroupProto.internal_static_OrderToGroupRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            OrderToGroupRequest.class, OrderToGroupRequest.Builder.class);
+    return org.smart.website.commons.lib.GroupProto.internal_static_OrderToGroupRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.OrderToGroupRequest.class, org.smart.website.commons.lib.OrderToGroupRequest.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -186,12 +186,12 @@ public  final class OrderToGroupRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof OrderToGroupRequest)) {
+    if (!(obj instanceof org.smart.website.commons.lib.OrderToGroupRequest)) {
       return super.equals(obj);
     }
-    OrderToGroupRequest other = (OrderToGroupRequest) obj;
+    org.smart.website.commons.lib.OrderToGroupRequest other = (org.smart.website.commons.lib.OrderToGroupRequest) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -217,75 +217,87 @@ public  final class OrderToGroupRequest extends
     return hash;
   }
 
-  public static OrderToGroupRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderToGroupRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderToGroupRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderToGroupRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderToGroupRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderToGroupRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderToGroupRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static OrderToGroupRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderToGroupRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderToGroupRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToGroupRequest parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(OrderToGroupRequest prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.OrderToGroupRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -294,26 +306,27 @@ public  final class OrderToGroupRequest extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code OrderToGroupRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:OrderToGroupRequest)
-          OrderToGroupRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:OrderToGroupRequest)
+          org.smart.website.commons.lib.OrderToGroupRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return GroupProto.internal_static_OrderToGroupRequest_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.GroupProto.internal_static_OrderToGroupRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return GroupProto.internal_static_OrderToGroupRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              OrderToGroupRequest.class, OrderToGroupRequest.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.GroupProto.internal_static_OrderToGroupRequest_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.OrderToGroupRequest.class, org.smart.website.commons.lib.OrderToGroupRequest.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.OrderToGroupRequest.newBuilder()
+    // Construct using org.smart.website.commons.lib.OrderToGroupRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -338,24 +351,24 @@ public  final class OrderToGroupRequest extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return GroupProto.internal_static_OrderToGroupRequest_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.GroupProto.internal_static_OrderToGroupRequest_descriptor;
     }
 
-    public OrderToGroupRequest getDefaultInstanceForType() {
-      return OrderToGroupRequest.getDefaultInstance();
+    public org.smart.website.commons.lib.OrderToGroupRequest getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.OrderToGroupRequest.getDefaultInstance();
     }
 
-    public OrderToGroupRequest build() {
-      OrderToGroupRequest result = buildPartial();
+    public org.smart.website.commons.lib.OrderToGroupRequest build() {
+      org.smart.website.commons.lib.OrderToGroupRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public OrderToGroupRequest buildPartial() {
-      OrderToGroupRequest result = new OrderToGroupRequest(this);
+    public org.smart.website.commons.lib.OrderToGroupRequest buildPartial() {
+      org.smart.website.commons.lib.OrderToGroupRequest result = new org.smart.website.commons.lib.OrderToGroupRequest(this);
       result.userId_ = userId_;
       result.productId_ = productId_;
       onBuilt();
@@ -365,6 +378,7 @@ public  final class OrderToGroupRequest extends
     public Builder clone() {
       return (Builder) super.clone();
     }
+
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
@@ -388,17 +402,18 @@ public  final class OrderToGroupRequest extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof OrderToGroupRequest) {
-        return mergeFrom((OrderToGroupRequest)other);
+      if (other instanceof org.smart.website.commons.lib.OrderToGroupRequest) {
+        return mergeFrom((org.smart.website.commons.lib.OrderToGroupRequest) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(OrderToGroupRequest other) {
-      if (other == OrderToGroupRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.OrderToGroupRequest other) {
+      if (other == org.smart.website.commons.lib.OrderToGroupRequest.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -419,11 +434,11 @@ public  final class OrderToGroupRequest extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      OrderToGroupRequest parsedMessage = null;
+      org.smart.website.commons.lib.OrderToGroupRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (OrderToGroupRequest) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.OrderToGroupRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -585,12 +600,12 @@ public  final class OrderToGroupRequest extends
   }
 
   // @@protoc_insertion_point(class_scope:OrderToGroupRequest)
-  private static final OrderToGroupRequest DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.OrderToGroupRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new OrderToGroupRequest();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.OrderToGroupRequest();
   }
 
-  public static OrderToGroupRequest getDefaultInstance() {
+  public static org.smart.website.commons.lib.OrderToGroupRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -613,7 +628,7 @@ public  final class OrderToGroupRequest extends
     return PARSER;
   }
 
-  public OrderToGroupRequest getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.OrderToGroupRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

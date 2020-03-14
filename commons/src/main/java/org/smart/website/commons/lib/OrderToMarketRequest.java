@@ -69,14 +69,14 @@ public  final class OrderToMarketRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return MarketProto.internal_static_OrderToMarketRequest_descriptor;
+    return org.smart.website.commons.lib.MarketProto.internal_static_OrderToMarketRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return MarketProto.internal_static_OrderToMarketRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            OrderToMarketRequest.class, OrderToMarketRequest.Builder.class);
+    return org.smart.website.commons.lib.MarketProto.internal_static_OrderToMarketRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.OrderToMarketRequest.class, org.smart.website.commons.lib.OrderToMarketRequest.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -186,12 +186,12 @@ public  final class OrderToMarketRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof OrderToMarketRequest)) {
+    if (!(obj instanceof org.smart.website.commons.lib.OrderToMarketRequest)) {
       return super.equals(obj);
     }
-    OrderToMarketRequest other = (OrderToMarketRequest) obj;
+    org.smart.website.commons.lib.OrderToMarketRequest other = (org.smart.website.commons.lib.OrderToMarketRequest) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -217,75 +217,87 @@ public  final class OrderToMarketRequest extends
     return hash;
   }
 
-  public static OrderToMarketRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderToMarketRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderToMarketRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderToMarketRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderToMarketRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderToMarketRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderToMarketRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static OrderToMarketRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderToMarketRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderToMarketRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderToMarketRequest parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(OrderToMarketRequest prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.OrderToMarketRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -294,26 +306,27 @@ public  final class OrderToMarketRequest extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code OrderToMarketRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:OrderToMarketRequest)
-          OrderToMarketRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:OrderToMarketRequest)
+          org.smart.website.commons.lib.OrderToMarketRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return MarketProto.internal_static_OrderToMarketRequest_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.MarketProto.internal_static_OrderToMarketRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return MarketProto.internal_static_OrderToMarketRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              OrderToMarketRequest.class, OrderToMarketRequest.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.MarketProto.internal_static_OrderToMarketRequest_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.OrderToMarketRequest.class, org.smart.website.commons.lib.OrderToMarketRequest.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.OrderToMarketRequest.newBuilder()
+    // Construct using org.smart.website.commons.lib.OrderToMarketRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -338,24 +351,24 @@ public  final class OrderToMarketRequest extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return MarketProto.internal_static_OrderToMarketRequest_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.MarketProto.internal_static_OrderToMarketRequest_descriptor;
     }
 
-    public OrderToMarketRequest getDefaultInstanceForType() {
-      return OrderToMarketRequest.getDefaultInstance();
+    public org.smart.website.commons.lib.OrderToMarketRequest getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.OrderToMarketRequest.getDefaultInstance();
     }
 
-    public OrderToMarketRequest build() {
-      OrderToMarketRequest result = buildPartial();
+    public org.smart.website.commons.lib.OrderToMarketRequest build() {
+      org.smart.website.commons.lib.OrderToMarketRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public OrderToMarketRequest buildPartial() {
-      OrderToMarketRequest result = new OrderToMarketRequest(this);
+    public org.smart.website.commons.lib.OrderToMarketRequest buildPartial() {
+      org.smart.website.commons.lib.OrderToMarketRequest result = new org.smart.website.commons.lib.OrderToMarketRequest(this);
       result.userId_ = userId_;
       result.productId_ = productId_;
       onBuilt();
@@ -365,6 +378,7 @@ public  final class OrderToMarketRequest extends
     public Builder clone() {
       return (Builder) super.clone();
     }
+
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
@@ -388,17 +402,18 @@ public  final class OrderToMarketRequest extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof OrderToMarketRequest) {
-        return mergeFrom((OrderToMarketRequest)other);
+      if (other instanceof org.smart.website.commons.lib.OrderToMarketRequest) {
+        return mergeFrom((org.smart.website.commons.lib.OrderToMarketRequest) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(OrderToMarketRequest other) {
-      if (other == OrderToMarketRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.OrderToMarketRequest other) {
+      if (other == org.smart.website.commons.lib.OrderToMarketRequest.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -419,11 +434,11 @@ public  final class OrderToMarketRequest extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      OrderToMarketRequest parsedMessage = null;
+      org.smart.website.commons.lib.OrderToMarketRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (OrderToMarketRequest) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.OrderToMarketRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -585,12 +600,12 @@ public  final class OrderToMarketRequest extends
   }
 
   // @@protoc_insertion_point(class_scope:OrderToMarketRequest)
-  private static final OrderToMarketRequest DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.OrderToMarketRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new OrderToMarketRequest();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.OrderToMarketRequest();
   }
 
-  public static OrderToMarketRequest getDefaultInstance() {
+  public static org.smart.website.commons.lib.OrderToMarketRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -613,7 +628,7 @@ public  final class OrderToMarketRequest extends
     return PARSER;
   }
 
-  public OrderToMarketRequest getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.OrderToMarketRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

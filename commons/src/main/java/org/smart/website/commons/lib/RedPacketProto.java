@@ -34,14 +34,14 @@ public final class RedPacketProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\017RedPacket.proto\"<\n\027OrderToRedPacketReq" +
-      "uest\022\016\n\006userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"" +
-      "_\n\030OrderGetRedPacketRequest\022\023\n\013redPacket" +
-      "Id\030\001 \001(\t\022\027\n\017redPacketAmount\030\002 \001(\t\022\025\n\rred" +
-      "PacketName\030\003 \001(\t2h\n\030OrderGetRedPacketMes" +
-      "sage\022L\n\023GetOrderToRedPacket\022\030.OrderToRed" +
-      "PacketRequest\032\031.OrderGetRedPacketRequest" +
-      "\"\000B1\n\035com.smart.website.commons.libB\016Red" +
-      "PacketProtoP\001b\006proto3"
+              "uest\022\016\n\006userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"" +
+              "_\n\030OrderGetRedPacketRequest\022\023\n\013redPacket" +
+              "Id\030\001 \001(\t\022\027\n\017redPacketAmount\030\002 \001(\t\022\025\n\rred" +
+              "PacketName\030\003 \001(\t2h\n\030OrderGetRedPacketMes" +
+              "sage\022L\n\023GetOrderToRedPacket\022\030.OrderToRed" +
+              "PacketRequest\032\031.OrderGetRedPacketRequest" +
+              "\"\000B1\n\035org.smart.website.commons.libB\016Red" +
+              "PacketProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -54,13 +54,13 @@ public final class ProductProto {
       "est\022\021\n\tproductId\030\001 \001(\t\"Z\n\025CouponGetProdu" +
       "ctReply\022\021\n\tproductId\030\001 \001(\t\022\023\n\013productNam",
       "e\030\002 \001(\t\022\031\n\021productAttributes\030\003 \001(\t2^\n\026Or" +
-      "derGetProductMessage\022D\n\021GetOrderToProduc" +
-      "t\022\026.OrderToProductRequest\032\025.OrderGetProd" +
-      "uctReply\"\0002b\n\020CouponGetProduct\022N\n\031GetCou" +
-      "ponToProductMessage\022\027.CouponToProductReq" +
-      "uest\032\026.CouponGetProductReply\"\000B/\n\035com.sm" +
-      "art.website.commons.libB\014ProductProtoP\001b" +
-      "\006proto3"
+              "derGetProductMessage\022D\n\021GetOrderToProduc" +
+              "t\022\026.OrderToProductRequest\032\025.OrderGetProd" +
+              "uctReply\"\0002b\n\020CouponGetProduct\022N\n\031GetCou" +
+              "ponToProductMessage\022\027.CouponToProductReq" +
+              "uest\032\026.CouponGetProductReply\"\000B/\n\035org.sm" +
+              "art.website.commons.libB\014ProductProtoP\001b" +
+              "\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

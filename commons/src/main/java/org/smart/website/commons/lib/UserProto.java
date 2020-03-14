@@ -124,12 +124,12 @@ public final class UserProto {
       "y\"\0002V\n\027RedPacketGetUserMessage\022;\n\022GetRed" +
       "PacketToUser\022\021.RedPackToRequest\032\020.RedPac",
       "kGetReply\"\0002Z\n\025CommentGetUserMessage\022A\n\020" +
-      "GetCommentToUser\022\025.CommentToUserRequest\032" +
-      "\024.CommentGetUserReply\"\0002]\n\026RedPacketGetU" +
-      "serPacket\022C\n\022GetRedPacketToUser\022\025.Commen" +
-      "tToUserRequest\032\024.CommentGetUserReply\"\000B," +
-      "\n\035com.smart.website.commons.libB\tUserPro" +
-      "toP\001b\006proto3"
+              "GetCommentToUser\022\025.CommentToUserRequest\032" +
+              "\024.CommentGetUserReply\"\0002]\n\026RedPacketGetU" +
+              "serPacket\022C\n\022GetRedPacketToUser\022\025.Commen" +
+              "tToUserRequest\032\024.CommentGetUserReply\"\000B," +
+              "\n\035org.smart.website.commons.libB\tUserPro" +
+              "toP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

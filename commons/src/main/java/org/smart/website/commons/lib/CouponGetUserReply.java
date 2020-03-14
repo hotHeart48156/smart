@@ -69,14 +69,14 @@ public  final class CouponGetUserReply extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return UserProto.internal_static_CouponGetUserReply_descriptor;
+    return org.smart.website.commons.lib.UserProto.internal_static_CouponGetUserReply_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return UserProto.internal_static_CouponGetUserReply_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            CouponGetUserReply.class, CouponGetUserReply.Builder.class);
+    return org.smart.website.commons.lib.UserProto.internal_static_CouponGetUserReply_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.CouponGetUserReply.class, org.smart.website.commons.lib.CouponGetUserReply.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -186,12 +186,12 @@ public  final class CouponGetUserReply extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof CouponGetUserReply)) {
+    if (!(obj instanceof org.smart.website.commons.lib.CouponGetUserReply)) {
       return super.equals(obj);
     }
-    CouponGetUserReply other = (CouponGetUserReply) obj;
+    org.smart.website.commons.lib.CouponGetUserReply other = (org.smart.website.commons.lib.CouponGetUserReply) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -217,75 +217,87 @@ public  final class CouponGetUserReply extends
     return hash;
   }
 
-  public static CouponGetUserReply parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CouponGetUserReply parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CouponGetUserReply parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CouponGetUserReply parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CouponGetUserReply parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static CouponGetUserReply parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CouponGetUserReply parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static CouponGetUserReply parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CouponGetUserReply parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static CouponGetUserReply parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CouponGetUserReply parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(CouponGetUserReply prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.CouponGetUserReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -294,26 +306,27 @@ public  final class CouponGetUserReply extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code CouponGetUserReply}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:CouponGetUserReply)
-          CouponGetUserReplyOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:CouponGetUserReply)
+          org.smart.website.commons.lib.CouponGetUserReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return UserProto.internal_static_CouponGetUserReply_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.UserProto.internal_static_CouponGetUserReply_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return UserProto.internal_static_CouponGetUserReply_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              CouponGetUserReply.class, CouponGetUserReply.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.UserProto.internal_static_CouponGetUserReply_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.CouponGetUserReply.class, org.smart.website.commons.lib.CouponGetUserReply.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.CouponGetUserReply.newBuilder()
+    // Construct using org.smart.website.commons.lib.CouponGetUserReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -338,24 +351,24 @@ public  final class CouponGetUserReply extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return UserProto.internal_static_CouponGetUserReply_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.UserProto.internal_static_CouponGetUserReply_descriptor;
     }
 
-    public CouponGetUserReply getDefaultInstanceForType() {
-      return CouponGetUserReply.getDefaultInstance();
+    public org.smart.website.commons.lib.CouponGetUserReply getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.CouponGetUserReply.getDefaultInstance();
     }
 
-    public CouponGetUserReply build() {
-      CouponGetUserReply result = buildPartial();
+    public org.smart.website.commons.lib.CouponGetUserReply build() {
+      org.smart.website.commons.lib.CouponGetUserReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public CouponGetUserReply buildPartial() {
-      CouponGetUserReply result = new CouponGetUserReply(this);
+    public org.smart.website.commons.lib.CouponGetUserReply buildPartial() {
+      org.smart.website.commons.lib.CouponGetUserReply result = new org.smart.website.commons.lib.CouponGetUserReply(this);
       result.userId_ = userId_;
       result.username_ = username_;
       onBuilt();
@@ -365,6 +378,7 @@ public  final class CouponGetUserReply extends
     public Builder clone() {
       return (Builder) super.clone();
     }
+
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
@@ -388,17 +402,18 @@ public  final class CouponGetUserReply extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof CouponGetUserReply) {
-        return mergeFrom((CouponGetUserReply)other);
+      if (other instanceof org.smart.website.commons.lib.CouponGetUserReply) {
+        return mergeFrom((org.smart.website.commons.lib.CouponGetUserReply) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(CouponGetUserReply other) {
-      if (other == CouponGetUserReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.CouponGetUserReply other) {
+      if (other == org.smart.website.commons.lib.CouponGetUserReply.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -419,11 +434,11 @@ public  final class CouponGetUserReply extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      CouponGetUserReply parsedMessage = null;
+      org.smart.website.commons.lib.CouponGetUserReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (CouponGetUserReply) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.CouponGetUserReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -585,12 +600,12 @@ public  final class CouponGetUserReply extends
   }
 
   // @@protoc_insertion_point(class_scope:CouponGetUserReply)
-  private static final CouponGetUserReply DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.CouponGetUserReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new CouponGetUserReply();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.CouponGetUserReply();
   }
 
-  public static CouponGetUserReply getDefaultInstance() {
+  public static org.smart.website.commons.lib.CouponGetUserReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -613,7 +628,7 @@ public  final class CouponGetUserReply extends
     return PARSER;
   }
 
-  public CouponGetUserReply getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.CouponGetUserReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

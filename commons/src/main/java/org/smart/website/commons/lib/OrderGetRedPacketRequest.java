@@ -76,14 +76,14 @@ public  final class OrderGetRedPacketRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return RedPacketProto.internal_static_OrderGetRedPacketRequest_descriptor;
+    return org.smart.website.commons.lib.RedPacketProto.internal_static_OrderGetRedPacketRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return RedPacketProto.internal_static_OrderGetRedPacketRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            OrderGetRedPacketRequest.class, OrderGetRedPacketRequest.Builder.class);
+    return org.smart.website.commons.lib.RedPacketProto.internal_static_OrderGetRedPacketRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.OrderGetRedPacketRequest.class, org.smart.website.commons.lib.OrderGetRedPacketRequest.Builder.class);
   }
 
   public static final int REDPACKETID_FIELD_NUMBER = 1;
@@ -233,12 +233,12 @@ public  final class OrderGetRedPacketRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof OrderGetRedPacketRequest)) {
+    if (!(obj instanceof org.smart.website.commons.lib.OrderGetRedPacketRequest)) {
       return super.equals(obj);
     }
-    OrderGetRedPacketRequest other = (OrderGetRedPacketRequest) obj;
+    org.smart.website.commons.lib.OrderGetRedPacketRequest other = (org.smart.website.commons.lib.OrderGetRedPacketRequest) obj;
 
     boolean result = true;
     result = result && getRedPacketId()
@@ -268,75 +268,87 @@ public  final class OrderGetRedPacketRequest extends
     return hash;
   }
 
-  public static OrderGetRedPacketRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderGetRedPacketRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderGetRedPacketRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderGetRedPacketRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderGetRedPacketRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderGetRedPacketRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderGetRedPacketRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static OrderGetRedPacketRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderGetRedPacketRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderGetRedPacketRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(OrderGetRedPacketRequest prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.OrderGetRedPacketRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -345,26 +357,27 @@ public  final class OrderGetRedPacketRequest extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code OrderGetRedPacketRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:OrderGetRedPacketRequest)
-          OrderGetRedPacketRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:OrderGetRedPacketRequest)
+          org.smart.website.commons.lib.OrderGetRedPacketRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return RedPacketProto.internal_static_OrderGetRedPacketRequest_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.RedPacketProto.internal_static_OrderGetRedPacketRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return RedPacketProto.internal_static_OrderGetRedPacketRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              OrderGetRedPacketRequest.class, OrderGetRedPacketRequest.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.RedPacketProto.internal_static_OrderGetRedPacketRequest_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.OrderGetRedPacketRequest.class, org.smart.website.commons.lib.OrderGetRedPacketRequest.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.OrderGetRedPacketRequest.newBuilder()
+    // Construct using org.smart.website.commons.lib.OrderGetRedPacketRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -391,24 +404,24 @@ public  final class OrderGetRedPacketRequest extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return RedPacketProto.internal_static_OrderGetRedPacketRequest_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.RedPacketProto.internal_static_OrderGetRedPacketRequest_descriptor;
     }
 
-    public OrderGetRedPacketRequest getDefaultInstanceForType() {
-      return OrderGetRedPacketRequest.getDefaultInstance();
+    public org.smart.website.commons.lib.OrderGetRedPacketRequest getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.OrderGetRedPacketRequest.getDefaultInstance();
     }
 
-    public OrderGetRedPacketRequest build() {
-      OrderGetRedPacketRequest result = buildPartial();
+    public org.smart.website.commons.lib.OrderGetRedPacketRequest build() {
+      org.smart.website.commons.lib.OrderGetRedPacketRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public OrderGetRedPacketRequest buildPartial() {
-      OrderGetRedPacketRequest result = new OrderGetRedPacketRequest(this);
+    public org.smart.website.commons.lib.OrderGetRedPacketRequest buildPartial() {
+      org.smart.website.commons.lib.OrderGetRedPacketRequest result = new org.smart.website.commons.lib.OrderGetRedPacketRequest(this);
       result.redPacketId_ = redPacketId_;
       result.redPacketAmount_ = redPacketAmount_;
       result.redPacketName_ = redPacketName_;
@@ -442,17 +455,18 @@ public  final class OrderGetRedPacketRequest extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof OrderGetRedPacketRequest) {
-        return mergeFrom((OrderGetRedPacketRequest)other);
+      if (other instanceof org.smart.website.commons.lib.OrderGetRedPacketRequest) {
+        return mergeFrom((org.smart.website.commons.lib.OrderGetRedPacketRequest) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(OrderGetRedPacketRequest other) {
-      if (other == OrderGetRedPacketRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.OrderGetRedPacketRequest other) {
+      if (other == org.smart.website.commons.lib.OrderGetRedPacketRequest.getDefaultInstance()) return this;
       if (!other.getRedPacketId().isEmpty()) {
         redPacketId_ = other.redPacketId_;
         onChanged();
@@ -477,11 +491,11 @@ public  final class OrderGetRedPacketRequest extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      OrderGetRedPacketRequest parsedMessage = null;
+      org.smart.website.commons.lib.OrderGetRedPacketRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (OrderGetRedPacketRequest) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.OrderGetRedPacketRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -712,12 +726,12 @@ public  final class OrderGetRedPacketRequest extends
   }
 
   // @@protoc_insertion_point(class_scope:OrderGetRedPacketRequest)
-  private static final OrderGetRedPacketRequest DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.OrderGetRedPacketRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new OrderGetRedPacketRequest();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.OrderGetRedPacketRequest();
   }
 
-  public static OrderGetRedPacketRequest getDefaultInstance() {
+  public static org.smart.website.commons.lib.OrderGetRedPacketRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -740,7 +754,7 @@ public  final class OrderGetRedPacketRequest extends
     return PARSER;
   }
 
-  public OrderGetRedPacketRequest getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.OrderGetRedPacketRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

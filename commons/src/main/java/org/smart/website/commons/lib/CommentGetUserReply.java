@@ -76,14 +76,14 @@ public  final class CommentGetUserReply extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return UserProto.internal_static_CommentGetUserReply_descriptor;
+    return org.smart.website.commons.lib.UserProto.internal_static_CommentGetUserReply_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return UserProto.internal_static_CommentGetUserReply_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            CommentGetUserReply.class, CommentGetUserReply.Builder.class);
+    return org.smart.website.commons.lib.UserProto.internal_static_CommentGetUserReply_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.CommentGetUserReply.class, org.smart.website.commons.lib.CommentGetUserReply.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -233,12 +233,12 @@ public  final class CommentGetUserReply extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof CommentGetUserReply)) {
+    if (!(obj instanceof org.smart.website.commons.lib.CommentGetUserReply)) {
       return super.equals(obj);
     }
-    CommentGetUserReply other = (CommentGetUserReply) obj;
+    org.smart.website.commons.lib.CommentGetUserReply other = (org.smart.website.commons.lib.CommentGetUserReply) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -268,75 +268,87 @@ public  final class CommentGetUserReply extends
     return hash;
   }
 
-  public static CommentGetUserReply parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommentGetUserReply parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommentGetUserReply parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommentGetUserReply parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommentGetUserReply parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static CommentGetUserReply parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CommentGetUserReply parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static CommentGetUserReply parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CommentGetUserReply parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static CommentGetUserReply parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.CommentGetUserReply parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(CommentGetUserReply prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.CommentGetUserReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -345,26 +357,27 @@ public  final class CommentGetUserReply extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code CommentGetUserReply}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:CommentGetUserReply)
-          CommentGetUserReplyOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:CommentGetUserReply)
+          org.smart.website.commons.lib.CommentGetUserReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return UserProto.internal_static_CommentGetUserReply_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.UserProto.internal_static_CommentGetUserReply_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return UserProto.internal_static_CommentGetUserReply_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              CommentGetUserReply.class, CommentGetUserReply.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.UserProto.internal_static_CommentGetUserReply_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.CommentGetUserReply.class, org.smart.website.commons.lib.CommentGetUserReply.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.CommentGetUserReply.newBuilder()
+    // Construct using org.smart.website.commons.lib.CommentGetUserReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -391,24 +404,24 @@ public  final class CommentGetUserReply extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return UserProto.internal_static_CommentGetUserReply_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.UserProto.internal_static_CommentGetUserReply_descriptor;
     }
 
-    public CommentGetUserReply getDefaultInstanceForType() {
-      return CommentGetUserReply.getDefaultInstance();
+    public org.smart.website.commons.lib.CommentGetUserReply getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.CommentGetUserReply.getDefaultInstance();
     }
 
-    public CommentGetUserReply build() {
-      CommentGetUserReply result = buildPartial();
+    public org.smart.website.commons.lib.CommentGetUserReply build() {
+      org.smart.website.commons.lib.CommentGetUserReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public CommentGetUserReply buildPartial() {
-      CommentGetUserReply result = new CommentGetUserReply(this);
+    public org.smart.website.commons.lib.CommentGetUserReply buildPartial() {
+      org.smart.website.commons.lib.CommentGetUserReply result = new org.smart.website.commons.lib.CommentGetUserReply(this);
       result.userId_ = userId_;
       result.username_ = username_;
       result.icon_ = icon_;
@@ -442,17 +455,18 @@ public  final class CommentGetUserReply extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof CommentGetUserReply) {
-        return mergeFrom((CommentGetUserReply)other);
+      if (other instanceof org.smart.website.commons.lib.CommentGetUserReply) {
+        return mergeFrom((org.smart.website.commons.lib.CommentGetUserReply) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(CommentGetUserReply other) {
-      if (other == CommentGetUserReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.CommentGetUserReply other) {
+      if (other == org.smart.website.commons.lib.CommentGetUserReply.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -477,11 +491,11 @@ public  final class CommentGetUserReply extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      CommentGetUserReply parsedMessage = null;
+      org.smart.website.commons.lib.CommentGetUserReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (CommentGetUserReply) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.CommentGetUserReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -712,12 +726,12 @@ public  final class CommentGetUserReply extends
   }
 
   // @@protoc_insertion_point(class_scope:CommentGetUserReply)
-  private static final CommentGetUserReply DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.CommentGetUserReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new CommentGetUserReply();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.CommentGetUserReply();
   }
 
-  public static CommentGetUserReply getDefaultInstance() {
+  public static org.smart.website.commons.lib.CommentGetUserReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -740,7 +754,7 @@ public  final class CommentGetUserReply extends
     return PARSER;
   }
 
-  public CommentGetUserReply getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.CommentGetUserReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

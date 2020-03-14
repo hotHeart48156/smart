@@ -76,14 +76,14 @@ public  final class RedPackGetReply extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return UserProto.internal_static_RedPackGetReply_descriptor;
+    return org.smart.website.commons.lib.UserProto.internal_static_RedPackGetReply_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return UserProto.internal_static_RedPackGetReply_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            RedPackGetReply.class, RedPackGetReply.Builder.class);
+    return org.smart.website.commons.lib.UserProto.internal_static_RedPackGetReply_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.RedPackGetReply.class, org.smart.website.commons.lib.RedPackGetReply.Builder.class);
   }
 
   public static final int USERID_FIELD_NUMBER = 1;
@@ -233,12 +233,12 @@ public  final class RedPackGetReply extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof RedPackGetReply)) {
+    if (!(obj instanceof org.smart.website.commons.lib.RedPackGetReply)) {
       return super.equals(obj);
     }
-    RedPackGetReply other = (RedPackGetReply) obj;
+    org.smart.website.commons.lib.RedPackGetReply other = (org.smart.website.commons.lib.RedPackGetReply) obj;
 
     boolean result = true;
     result = result && getUserId()
@@ -268,75 +268,87 @@ public  final class RedPackGetReply extends
     return hash;
   }
 
-  public static RedPackGetReply parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RedPackGetReply parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RedPackGetReply parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RedPackGetReply parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RedPackGetReply parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static RedPackGetReply parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RedPackGetReply parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static RedPackGetReply parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RedPackGetReply parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static RedPackGetReply parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.RedPackGetReply parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(RedPackGetReply prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.RedPackGetReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -345,26 +357,27 @@ public  final class RedPackGetReply extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code RedPackGetReply}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:RedPackGetReply)
-          RedPackGetReplyOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:RedPackGetReply)
+          org.smart.website.commons.lib.RedPackGetReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return UserProto.internal_static_RedPackGetReply_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.UserProto.internal_static_RedPackGetReply_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return UserProto.internal_static_RedPackGetReply_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              RedPackGetReply.class, RedPackGetReply.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.UserProto.internal_static_RedPackGetReply_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.RedPackGetReply.class, org.smart.website.commons.lib.RedPackGetReply.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.RedPackGetReply.newBuilder()
+    // Construct using org.smart.website.commons.lib.RedPackGetReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -391,24 +404,24 @@ public  final class RedPackGetReply extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return UserProto.internal_static_RedPackGetReply_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.UserProto.internal_static_RedPackGetReply_descriptor;
     }
 
-    public RedPackGetReply getDefaultInstanceForType() {
-      return RedPackGetReply.getDefaultInstance();
+    public org.smart.website.commons.lib.RedPackGetReply getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.RedPackGetReply.getDefaultInstance();
     }
 
-    public RedPackGetReply build() {
-      RedPackGetReply result = buildPartial();
+    public org.smart.website.commons.lib.RedPackGetReply build() {
+      org.smart.website.commons.lib.RedPackGetReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public RedPackGetReply buildPartial() {
-      RedPackGetReply result = new RedPackGetReply(this);
+    public org.smart.website.commons.lib.RedPackGetReply buildPartial() {
+      org.smart.website.commons.lib.RedPackGetReply result = new org.smart.website.commons.lib.RedPackGetReply(this);
       result.userId_ = userId_;
       result.username_ = username_;
       result.phone_ = phone_;
@@ -442,17 +455,18 @@ public  final class RedPackGetReply extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof RedPackGetReply) {
-        return mergeFrom((RedPackGetReply)other);
+      if (other instanceof org.smart.website.commons.lib.RedPackGetReply) {
+        return mergeFrom((org.smart.website.commons.lib.RedPackGetReply) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(RedPackGetReply other) {
-      if (other == RedPackGetReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.RedPackGetReply other) {
+      if (other == org.smart.website.commons.lib.RedPackGetReply.getDefaultInstance()) return this;
       if (!other.getUserId().isEmpty()) {
         userId_ = other.userId_;
         onChanged();
@@ -477,11 +491,11 @@ public  final class RedPackGetReply extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      RedPackGetReply parsedMessage = null;
+      org.smart.website.commons.lib.RedPackGetReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (RedPackGetReply) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.RedPackGetReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -712,12 +726,12 @@ public  final class RedPackGetReply extends
   }
 
   // @@protoc_insertion_point(class_scope:RedPackGetReply)
-  private static final RedPackGetReply DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.RedPackGetReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new RedPackGetReply();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.RedPackGetReply();
   }
 
-  public static RedPackGetReply getDefaultInstance() {
+  public static org.smart.website.commons.lib.RedPackGetReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -740,7 +754,7 @@ public  final class RedPackGetReply extends
     return PARSER;
   }
 
-  public RedPackGetReply getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.RedPackGetReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

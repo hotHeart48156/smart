@@ -34,14 +34,14 @@ public final class PromotionProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\017Promotion.proto\"<\n\027OrderToPromotionReq" +
-      "uest\022\016\n\006userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"" +
-      "]\n\026OrderGetPromotionReply\022\023\n\013PromotionId" +
-      "\030\001 \001(\t\022\027\n\017PromotionAmount\030\002 \001(\t\022\025\n\rPromo" +
-      "tionName\030\003 \001(\t2f\n\030OrderGetPromotionMessa" +
-      "ge\022J\n\023GetOrderToPromotion\022\030.OrderToPromo" +
-      "tionRequest\032\027.OrderGetPromotionReply\"\000B1" +
-      "\n\035com.smart.website.commons.libB\016Promoti" +
-      "onProtoP\001b\006proto3"
+              "uest\022\016\n\006userId\030\001 \001(\t\022\021\n\tproductId\030\002 \001(\t\"" +
+              "]\n\026OrderGetPromotionReply\022\023\n\013PromotionId" +
+              "\030\001 \001(\t\022\027\n\017PromotionAmount\030\002 \001(\t\022\025\n\rPromo" +
+              "tionName\030\003 \001(\t2f\n\030OrderGetPromotionMessa" +
+              "ge\022J\n\023GetOrderToPromotion\022\030.OrderToPromo" +
+              "tionRequest\032\027.OrderGetPromotionReply\"\000B1" +
+              "\n\035org.smart.website.commons.libB\016Promoti" +
+              "onProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

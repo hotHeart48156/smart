@@ -76,14 +76,14 @@ public  final class OrderGetPromotionReply extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return PromotionProto.internal_static_OrderGetPromotionReply_descriptor;
+    return org.smart.website.commons.lib.PromotionProto.internal_static_OrderGetPromotionReply_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return PromotionProto.internal_static_OrderGetPromotionReply_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            OrderGetPromotionReply.class, OrderGetPromotionReply.Builder.class);
+    return org.smart.website.commons.lib.PromotionProto.internal_static_OrderGetPromotionReply_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    org.smart.website.commons.lib.OrderGetPromotionReply.class, org.smart.website.commons.lib.OrderGetPromotionReply.Builder.class);
   }
 
   public static final int PROMOTIONID_FIELD_NUMBER = 1;
@@ -233,12 +233,12 @@ public  final class OrderGetPromotionReply extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
-    if (!(obj instanceof OrderGetPromotionReply)) {
+    if (!(obj instanceof org.smart.website.commons.lib.OrderGetPromotionReply)) {
       return super.equals(obj);
     }
-    OrderGetPromotionReply other = (OrderGetPromotionReply) obj;
+    org.smart.website.commons.lib.OrderGetPromotionReply other = (org.smart.website.commons.lib.OrderGetPromotionReply) obj;
 
     boolean result = true;
     result = result && getPromotionId()
@@ -268,75 +268,87 @@ public  final class OrderGetPromotionReply extends
     return hash;
   }
 
-  public static OrderGetPromotionReply parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderGetPromotionReply parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderGetPromotionReply parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static OrderGetPromotionReply parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static OrderGetPromotionReply parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderGetPromotionReply parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderGetPromotionReply parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
-  public static OrderGetPromotionReply parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static OrderGetPromotionReply parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
-  public static OrderGetPromotionReply parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+
+  public static org.smart.website.commons.lib.OrderGetPromotionReply parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public Builder newBuilderForType() { return newBuilder(); }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(OrderGetPromotionReply prototype) {
+
+  public static Builder newBuilder(org.smart.website.commons.lib.OrderGetPromotionReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
@@ -345,26 +357,27 @@ public  final class OrderGetPromotionReply extends
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    * Protobuf type {@code OrderGetPromotionReply}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:OrderGetPromotionReply)
-          OrderGetPromotionReplyOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:OrderGetPromotionReply)
+          org.smart.website.commons.lib.OrderGetPromotionReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return PromotionProto.internal_static_OrderGetPromotionReply_descriptor;
+    getDescriptor() {
+      return org.smart.website.commons.lib.PromotionProto.internal_static_OrderGetPromotionReply_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return PromotionProto.internal_static_OrderGetPromotionReply_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              OrderGetPromotionReply.class, OrderGetPromotionReply.Builder.class);
+    internalGetFieldAccessorTable() {
+      return org.smart.website.commons.lib.PromotionProto.internal_static_OrderGetPromotionReply_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      org.smart.website.commons.lib.OrderGetPromotionReply.class, org.smart.website.commons.lib.OrderGetPromotionReply.Builder.class);
     }
 
-    // Construct using com.smart.website.commons.lib.OrderGetPromotionReply.newBuilder()
+    // Construct using org.smart.website.commons.lib.OrderGetPromotionReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -391,24 +404,24 @@ public  final class OrderGetPromotionReply extends
     }
 
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return PromotionProto.internal_static_OrderGetPromotionReply_descriptor;
+    getDescriptorForType() {
+      return org.smart.website.commons.lib.PromotionProto.internal_static_OrderGetPromotionReply_descriptor;
     }
 
-    public OrderGetPromotionReply getDefaultInstanceForType() {
-      return OrderGetPromotionReply.getDefaultInstance();
+    public org.smart.website.commons.lib.OrderGetPromotionReply getDefaultInstanceForType() {
+      return org.smart.website.commons.lib.OrderGetPromotionReply.getDefaultInstance();
     }
 
-    public OrderGetPromotionReply build() {
-      OrderGetPromotionReply result = buildPartial();
+    public org.smart.website.commons.lib.OrderGetPromotionReply build() {
+      org.smart.website.commons.lib.OrderGetPromotionReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public OrderGetPromotionReply buildPartial() {
-      OrderGetPromotionReply result = new OrderGetPromotionReply(this);
+    public org.smart.website.commons.lib.OrderGetPromotionReply buildPartial() {
+      org.smart.website.commons.lib.OrderGetPromotionReply result = new org.smart.website.commons.lib.OrderGetPromotionReply(this);
       result.promotionId_ = promotionId_;
       result.promotionAmount_ = promotionAmount_;
       result.promotionName_ = promotionName_;
@@ -442,17 +455,18 @@ public  final class OrderGetPromotionReply extends
         Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof OrderGetPromotionReply) {
-        return mergeFrom((OrderGetPromotionReply)other);
+      if (other instanceof org.smart.website.commons.lib.OrderGetPromotionReply) {
+        return mergeFrom((org.smart.website.commons.lib.OrderGetPromotionReply) other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(OrderGetPromotionReply other) {
-      if (other == OrderGetPromotionReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(org.smart.website.commons.lib.OrderGetPromotionReply other) {
+      if (other == org.smart.website.commons.lib.OrderGetPromotionReply.getDefaultInstance()) return this;
       if (!other.getPromotionId().isEmpty()) {
         promotionId_ = other.promotionId_;
         onChanged();
@@ -477,11 +491,11 @@ public  final class OrderGetPromotionReply extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      OrderGetPromotionReply parsedMessage = null;
+      org.smart.website.commons.lib.OrderGetPromotionReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (OrderGetPromotionReply) e.getUnfinishedMessage();
+        parsedMessage = (org.smart.website.commons.lib.OrderGetPromotionReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -712,12 +726,12 @@ public  final class OrderGetPromotionReply extends
   }
 
   // @@protoc_insertion_point(class_scope:OrderGetPromotionReply)
-  private static final OrderGetPromotionReply DEFAULT_INSTANCE;
+  private static final org.smart.website.commons.lib.OrderGetPromotionReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new OrderGetPromotionReply();
+    DEFAULT_INSTANCE = new org.smart.website.commons.lib.OrderGetPromotionReply();
   }
 
-  public static OrderGetPromotionReply getDefaultInstance() {
+  public static org.smart.website.commons.lib.OrderGetPromotionReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -740,7 +754,7 @@ public  final class OrderGetPromotionReply extends
     return PARSER;
   }
 
-  public OrderGetPromotionReply getDefaultInstanceForType() {
+  public org.smart.website.commons.lib.OrderGetPromotionReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

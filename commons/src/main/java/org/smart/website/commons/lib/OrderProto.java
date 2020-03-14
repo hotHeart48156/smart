@@ -23,8 +23,8 @@ public final class OrderProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\013Order.protoB-\n\035com.smart.website.commo" +
-      "ns.libB\nOrderProtoP\001b\006proto3"
+      "\n\013Order.protoB-\n\035org.smart.website.commo" +
+              "ns.libB\nOrderProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
