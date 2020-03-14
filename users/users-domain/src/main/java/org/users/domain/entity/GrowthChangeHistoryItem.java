@@ -18,6 +18,8 @@ import javax.persistence.EmbeddedId;
  * 成长值变化历史记录表
  */
 @Data
+@javax.persistence.Entity
+
 public class GrowthChangeHistoryItem implements Entity {
     @EmbeddedId
 private Id id;

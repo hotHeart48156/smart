@@ -1,0 +1,73 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "com.smart.website.commons.lib";
+option java_outer_classname = "UserProto";
+
+service OrderGetUserMessage {
+    rpc Get (OrderToUserRequest) returns (OrderGetUserReply) {
+    }
+}
+service ProductGetUserMessage {
+    rpc Get (ProductToRequest) returns (ProductGetUserReply) {
+    }
+}
+
+service CouponGetUserMessage {
+    rpc Get (CouponToRequest) returns (CouponGetReply) {
+    }
+}
+service RedPacketGetUserMessage {
+    rpc Get (RedPackToRequest) returns (RedPackGetReply) {
+    }
+
+}
+service CommentGetUserMessage {
+}
+
+message OrderGetUserReply {
+    string userId = 1;
+    string address = 2;
+    string username = 3;
+    string realname = 4;
+    string role = 5;
+    string phone = 6;
+    string membername = 7;
+    string memberlevel = 8;
+    string integration = 9;
+
+}
+message OrderToUserRequest {
+    string userId = 1;
+    string integration = 2;
+    string growth = 3;
+}
+message ProductGetUserReply {
+    string userid = 1;
+}
+message ProductToRequest {
+    string userid = 1;
+}
+message CouponToRequest {
+    string userid = 1;
+
+
+}
+message CouponGetReply {
+    string userid = 1;
+    string username = 2;
+    string phone = 3;
+    string level = 4;
+}
+
+
+message RedPackToRequest {
+    string userid = 1;
+}
+message RedPackGetReply {
+    string userid = 1;
+    string username = 2;
+    string phone = 3;
+}
+
+
+

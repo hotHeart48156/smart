@@ -19,4 +19,5 @@ public class BrandStory implements ValueObject
 {
     @Column(name = "brandstory")
 private String   brandStory;
+
 }

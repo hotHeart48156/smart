@@ -10,8 +10,13 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 @AllArgsConstructor
-public enum  PromotionType implements AbstractType
-{
-@Column(name ="   promotionType")
-private  int   promotionType;
+public enum PromotionType implements AbstractType {
+    SHOOPINT(0), MANAGE(1);
+
+    @Column(name = "   promotionType")
+    private int promotionType;
+
+    public int getPromotionType() {
+        return promotionType;
+    }
 }

@@ -16,6 +16,8 @@ import javax.persistence.Embedded;
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+
 public class IntegrationChangeHistoryItem implements Entity {
     @Embedded
 private Id id;

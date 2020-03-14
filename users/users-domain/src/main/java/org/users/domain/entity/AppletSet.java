@@ -6,6 +6,8 @@ import lombok.Data;
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+
 public class AppletSet implements Entity {
     private String appid;
 

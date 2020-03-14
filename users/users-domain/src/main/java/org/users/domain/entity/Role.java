@@ -16,6 +16,8 @@ import java.util.Set;
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+
 public class Role {
     @EmbeddedId
 private RoleId roleId;

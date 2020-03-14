@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.smart.website.commons.lib";
+option java_outer_classname = "ProductProto";
+
+
+service OrderGetProductMessage {
+    rpc Get (OrderToProductRequest) returns (OrderGetProductReply) {
+    }
+
+}
+service CouponGetProductMessage {
+    rpc Get (CouponToProductRequest) returns (CouponGetProductReply) {
+    }
+
+}
+
+
+message OrderToProductRequest {
+    string productId = 1;
+}
+message OrderGetProductReply {
+    string productId = 1;
+    string productName = 2;
+    string productPic = 3;
+    string productPrice = 4;
+    string productSkuCode = 5;
+    string productSkuId = 6;
+    string productCategoryId = 7;
+    string productSalesAttribute = 8;
+    string productAttributes = 9;
+}
+
+message CouponToProductRequest {
+    string productId = 1;
+}
+message CouponGetProductReply {
+    string productId = 1;
+    string productName = 2;
+    string productAttributes = 3;
+
+
+}
+

@@ -14,6 +14,8 @@ import javax.persistence.EmbeddedId;
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+
 public class Tag implements Entity {
     @EmbeddedId
 private Id id;

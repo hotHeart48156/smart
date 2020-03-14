@@ -17,6 +17,8 @@ import javax.persistence.EmbeddedId;
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+
 public class MemberLevel implements Entity {
     @EmbeddedId
 private MemberLevelId id;

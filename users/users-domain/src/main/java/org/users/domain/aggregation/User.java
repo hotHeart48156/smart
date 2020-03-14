@@ -27,7 +27,7 @@ import java.util.Set;
  * @author "yangbiao"
  */
 @Data
-@Aggregate
+@Aggregate(repository = "UserRepository")
 
 public class User implements Aggregation {
     @NotNull

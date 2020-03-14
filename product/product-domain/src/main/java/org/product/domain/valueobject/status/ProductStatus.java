@@ -13,6 +13,5 @@ import javax.persistence.Embeddable;
 public class ProductStatus extends AbstractStatus
 {
 @Column(name ="   productStatus")
-private BigDecimal    productStatus;
 private int    productStatus;
 }

@@ -13,6 +13,5 @@ import javax.persistence.Embeddable;
 public class PreviewStatus extends AbstractStatus
 {
 @Column(name ="   previewStatus")
-private BigDecimal    previewStatus;
 private int    previewStatus;
 }

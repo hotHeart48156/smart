@@ -14,7 +14,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class CommentId extends AbstractId
 {
-    @Column(name = "id")
 @Column(name ="   commentId")
 private String   commentId;
 }

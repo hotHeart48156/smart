@@ -7,11 +7,15 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
 @AllArgsConstructor
-public enum  ChargeType implements AbstractType
-{
-@Column(name ="   chargeType")
-private  int   chargeType;
+public enum ChargeType implements AbstractType {
+    SHOOPINT(0), MANAGE(1);
+
+    @Column(name = "   chargeType")
+    private int chargeType;
+
+    public int getChargeType() {
+        return chargeType;
+    }
 }

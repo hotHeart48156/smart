@@ -14,7 +14,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class FeightTemplateId extends AbstractId
 {
-    @Column(name = "")
 @Column(name ="   feightTemplateId")
 private String   feightTemplateId;
 }

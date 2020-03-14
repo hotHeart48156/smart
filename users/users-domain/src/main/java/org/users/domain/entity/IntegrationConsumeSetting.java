@@ -12,6 +12,8 @@ import javax.persistence.EmbeddedId;
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+
 public class IntegrationConsumeSetting implements Entity {
     @EmbeddedId
 private Id id;

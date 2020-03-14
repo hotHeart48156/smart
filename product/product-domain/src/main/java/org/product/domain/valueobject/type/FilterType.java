@@ -7,11 +7,15 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
 @AllArgsConstructor
-public enum  FilterType implements AbstractType
-{
-@Column(name ="   filterType")
-private  int   filterType;
+public enum FilterType implements AbstractType {
+    SHOOPINT(0), MANAGE(1);
+
+    @Column(name = "   filterType")
+    private int filterType;
+
+    public int getFilterType() {
+        return filterType;
+    }
 }

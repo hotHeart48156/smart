@@ -1,6 +1,6 @@
 package org.product.domain.valueobject.address;
 
-import org.users.domain.customer.valueobject.ValueObject;
+import org.product.domain.valueobject.ValueObject;
 
 /**
  * @author "yangbiao"

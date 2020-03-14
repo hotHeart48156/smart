@@ -13,6 +13,5 @@ import javax.persistence.Embeddable;
 public class VerifyStatus extends AbstractStatus
 {
 @Column(name ="   verifyStatus")
-private BigDecimal    verifyStatus;
 private int    verifyStatus;
 }

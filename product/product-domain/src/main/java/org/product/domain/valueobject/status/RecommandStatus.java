@@ -13,6 +13,5 @@ import javax.persistence.Embeddable;
 public class RecommandStatus extends AbstractStatus
 {
 @Column(name ="   recommandStatus")
-private BigDecimal    recommandStatus;
 private int    recommandStatus;
 }

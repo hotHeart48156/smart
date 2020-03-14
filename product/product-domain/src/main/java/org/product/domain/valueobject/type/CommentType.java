@@ -7,11 +7,11 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
 @AllArgsConstructor
-public enum  CommentType implements AbstractType
-{
-@Column(name ="   commentType")
-private  int   commentType;
+public enum CommentType implements AbstractType {
+    SHOOPINT(0), MANAGE(1);
+
+    @Column(name = "   commentType")
+    private int commentType;
 }

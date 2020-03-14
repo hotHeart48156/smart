@@ -84,5 +84,7 @@
         <module>users</module>
         <module>config-server</module>
         <module>discover-server</module>
+        <module>commons</module>
+
     </modules>
 </project>

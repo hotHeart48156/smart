@@ -7,11 +7,15 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
 @AllArgsConstructor
-public enum  ProductAttributeInputType implements AbstractType
-{
-@Column(name ="   productAttributeInputType")
-private  int   productAttributeInputType;
+public enum ProductAttributeInputType implements AbstractType {
+    SHOOPINT(0), MANAGE(1);
+
+    @Column(name = "   productAttributeInputType")
+    private int productAttributeInputType;
+
+    public int getProductAttributeInputType() {
+        return productAttributeInputType;
+    }
 }

@@ -22,6 +22,8 @@ import javax.persistence.EmbeddedId;
  * 用户收藏商品或文章。
  */
 @Data
+@javax.persistence.Entity
+
 public class UserCollect implements Entity {
     @EmbeddedId
 private Id id;

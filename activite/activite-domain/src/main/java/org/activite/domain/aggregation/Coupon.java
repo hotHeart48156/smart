@@ -4,6 +4,7 @@ import lombok.Data;
 import org.activite.domain.valueobject.CouponMinPoint;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.Platform;
+import org.activite.domain.valueobject.ProductAttributes;
 import org.activite.domain.valueobject.amount.CouponAmount;
 import org.activite.domain.valueobject.code.CouponCode;
 import org.activite.domain.valueobject.count.CouponCount;
@@ -11,7 +12,9 @@ import org.activite.domain.valueobject.count.CouponPublishCount;
 import org.activite.domain.valueobject.count.CouponReceiverCount;
 import org.activite.domain.valueobject.count.CouponUsedCount;
 import org.activite.domain.valueobject.id.CouponId;
+import org.activite.domain.valueobject.id.ProductId;
 import org.activite.domain.valueobject.name.CouponName;
+import org.activite.domain.valueobject.name.ProductName;
 import org.activite.domain.valueobject.time.CouponEnableTime;
 import org.activite.domain.valueobject.time.EndTime;
 import org.activite.domain.valueobject.time.StartTime;
@@ -29,19 +32,26 @@ import javax.persistence.EmbeddedId;
 public class Coupon {
     @EmbeddedId
 
-private CouponId couponId;
+    private CouponId couponId;
     @Embedded
-private CouponType couponType;
+    private ProductId productId;
     @Embedded
-private CouponName couponName;
+
+    private ProductName productName;
     @Embedded
-private Platform platform;
+    private ProductAttributes productAttributes;
+
+    private CouponType couponType;
     @Embedded
-private CouponCount couponCount;
+    private CouponName couponName;
     @Embedded
-private CouponAmount couponAmount;
+    private Platform platform;
     @Embedded
-private CouponMinPoint couponMinPoint;
+    private CouponCount couponCount;
+    @Embedded
+    private CouponAmount couponAmount;
+    @Embedded
+    private CouponMinPoint couponMinPoint;
     @Embedded
 private StartTime startTime;
     @Embedded

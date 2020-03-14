@@ -19,7 +19,7 @@ public class AutoGen {
 
     public static void main(String[] args) {
         AutoGen autoGen=new AutoGen();
-        autoGen.entityToDto(" org.product.domain.entity","org.product.dto");
+        autoGen.entityToDto(" /org/product/domain/aggragate", "/org/product/dto");
     }
     public void entityToDto(String packagename, String destPackageName){
         List<String> className=getClassName(packagename);

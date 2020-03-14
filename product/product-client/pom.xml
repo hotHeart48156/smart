@@ -12,19 +12,10 @@
     <version>1.0-SNAPSHOT</version>
     <name>product-client</name>
     <dependencies>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.smart.website</groupId>
             <artifactId>product-domain</artifactId>
         </dependency>
     </dependencies>
+
 </project>

@@ -1,6 +1,7 @@
 package org.users.service;
 
 
+import net.devh.boot.grpc.server.service.GrpcService;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +10,11 @@ import org.users.api.UserApplication;
 import org.users.dto.CreateUserDto;
 import org.users.dto.*;
 import org.users.executor.command.*;
-
 /**
  * @author "yangbiao"
  */
 @Service
+@GrpcService
 public class UserApplicationImpl implements UserApplication {
     @Autowired
     private CommandGateway commandGateway;
