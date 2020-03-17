@@ -9,5 +9,4 @@ import org.users.domainevent.CreateUserEvent;
  */
 
 public class QueryProductMessage {
-    EventMessage eventMessage = GenericDomainEventMessage.asEventMessage(new CreateUserEvent()).withMetaData()
 }

@@ -1,6 +1,7 @@
 package org.activite.domain.aggregation;
 
 import lombok.Data;
+import org.activite.domain.repository.CouponResposiroty;
 import org.activite.domain.valueobject.CouponMinPoint;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.Platform;
@@ -21,15 +22,17 @@ import org.activite.domain.valueobject.time.StartTime;
 import org.activite.domain.valueobject.type.CouponType;
 import org.activite.domain.valueobject.type.CouponUserType;
 import org.activite.domain.valueobject.user.UserLevel;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
-@Data
-public class Coupon {
+@Entity
+public class Coupon extends AbstractAggregation{
     @EmbeddedId
 
     private CouponId couponId;
@@ -73,4 +76,8 @@ private CouponCode couponCode;
     @Embedded
 private UserLevel userLevel;
 
+    @Override
+    public JpaRepository getRespository() {
+        return CouponResposiroty;
+    }
 }

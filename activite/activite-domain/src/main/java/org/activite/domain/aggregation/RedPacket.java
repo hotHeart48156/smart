@@ -14,10 +14,12 @@ import org.activite.domain.valueobject.type.RedPacketType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
+@Entity
 public class RedPacket {
     @EmbeddedId
 private RedPacketId redPacketId;

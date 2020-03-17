@@ -8,11 +8,12 @@ import org.activite.domain.valueobject.time.EndTime;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
-
+@Entity
 public class Promotion {
  @EmbeddedId
  private PromotionId promotionId;

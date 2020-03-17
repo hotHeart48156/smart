@@ -15,10 +15,12 @@ import org.activite.domain.valueobject.time.StartTime;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
+@Entity
 public class Group {
     @EmbeddedId
 private GroupId groupId;

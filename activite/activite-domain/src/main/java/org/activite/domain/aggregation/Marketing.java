@@ -1,5 +1,6 @@
 package org.activite.domain.aggregation;
 
+import lombok.Data;
 import org.activite.domain.valueobject.ActivityGoods;
 import org.activite.domain.valueobject.ActivityUser;
 import org.activite.domain.valueobject.id.MarketingId;
@@ -14,10 +15,13 @@ import org.activite.domain.valueobject.user.UserLevel;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
+@Entity
+@Data
 public class Marketing {
     @EmbeddedId
 private MarketingId marketingId;

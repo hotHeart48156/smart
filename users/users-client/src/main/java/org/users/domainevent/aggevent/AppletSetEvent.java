@@ -1,9 +1,10 @@
 package org.users.domainevent.aggevent;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
 public class AppletSetEvent {
-    private AppletSetDto AppletSetDto;
+    private org.users.dto.entity.AppletSetDto AppletSetDto;
 }

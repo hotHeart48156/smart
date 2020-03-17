@@ -24,13 +24,10 @@ public class CacheService {
         r.save(t);
     }
 
-    public <T extends Entity, R extends JpaRepository> T query(String key, String region, T t) {
-        Collection<String> keys = cacheChannel.keys(region);
-        cacheChannel.get(region, keys);
-    }
+
 
     public <T extends Entity, R extends JpaRepository> void delete(String key) {
-        cacheChannel.
+
     }
 
 

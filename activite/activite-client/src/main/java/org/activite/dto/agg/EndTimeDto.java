@@ -1,5 +1,10 @@
 package org.activite.dto.agg;
 
+import lombok.Data;
+import org.activite.domain.aggregation.Marketing;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.time.EndTime;
+
 @Data
 public class EndTimeDto {
     private String ActiviteId;

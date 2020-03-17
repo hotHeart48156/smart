@@ -1,9 +1,10 @@
 package org.users.domainevent.aggevent;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
 public class MemberLevelIdEvent {
-    private MemberLevelIdDto MemberLevelIdDto;
+    private org.users.dto.agg.MemberLevelIdDto MemberLevelIdDto;
 }

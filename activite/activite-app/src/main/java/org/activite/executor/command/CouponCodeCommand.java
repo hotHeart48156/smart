@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class CouponCodeCommand {
-    private CouponCodeDto CouponCodeDto;
+    private org.activite.dto.agg.CouponCodeDto CouponCodeDto;
 }
