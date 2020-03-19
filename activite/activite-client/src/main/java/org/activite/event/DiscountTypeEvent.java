@@ -1,9 +1,10 @@
 package org.activite.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class DiscountTypeEvent {
-    private DiscountTypeDto DiscountTypeDto;
+public class DiscountTypeEvent  extends AbstractEvent {
+    private org.activite.dto.agg.DiscountTypeDto DiscountTypeDto;
 }

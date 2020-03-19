@@ -1,9 +1,10 @@
 package org.activite.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class SendTimeEvent {
-    private SendTimeDto SendTimeDto;
+public class SendTimeEvent   extends AbstractEvent {
+    private org.activite.dto.agg.SendTimeDto SendTimeDto;
 }

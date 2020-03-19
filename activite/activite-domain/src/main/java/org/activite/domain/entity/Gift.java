@@ -1,5 +1,6 @@
 package org.activite.domain.entity;
 
+import lombok.Data;
 import org.activite.domain.valueobject.ActivityGoods;
 import org.activite.domain.valueobject.ActivityUser;
 import org.activite.domain.valueobject.Note;
@@ -15,12 +16,16 @@ import org.activite.domain.valueobject.user.UserLevel;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 import java.util.List;
 
 /**
  * @author "yangbiao"
  */
-public class Gift {
+@Entity
+@Data
+
+public class Gift extends AbstractEntity {
     @EmbeddedId
 private GiftId giftId;
     @Embedded

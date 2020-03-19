@@ -1,5 +1,6 @@
 package org.activite.domain.aggregation;
 
+import lombok.Data;
 import org.activite.domain.valueobject.Title;
 import org.activite.domain.valueobject.id.PromotionId;
 import org.activite.domain.valueobject.status.PromotionStatus;
@@ -14,6 +15,7 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 @Entity
+@Data
 public class Promotion extends AbstractAggregation {
  @EmbeddedId
  private PromotionId promotionId;

@@ -1,9 +1,10 @@
 package org.activite.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class CouponEnableTimeEvent {
-    private CouponEnableTimeDto CouponEnableTimeDto;
+public class CouponEnableTimeEvent   extends AbstractEvent  {
+    private org.activite.dto.agg.CouponEnableTimeDto CouponEnableTimeDto;
 }

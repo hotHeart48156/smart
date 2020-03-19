@@ -1,5 +1,6 @@
 package org.activite.domain.entity;
 
+import lombok.Data;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.Pic;
 import org.activite.domain.valueobject.Url;
@@ -14,11 +15,15 @@ import org.activite.domain.valueobject.type.HomeAdvertiseType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
-public class HomeAdvertise {
+@Entity
+@Data
+
+public class HomeAdvertise extends AbstractEntity {
     @EmbeddedId
 private HomeAdvertiseId homeAdvertiseId;
     @Embedded

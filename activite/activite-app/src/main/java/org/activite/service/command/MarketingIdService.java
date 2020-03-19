@@ -1,6 +1,5 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.MarketingIdDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.MarketingIdCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

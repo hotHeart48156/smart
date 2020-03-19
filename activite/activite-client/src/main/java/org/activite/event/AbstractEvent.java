@@ -4,6 +4,7 @@ package org.activite.event;
  * @author yangbiao
  */
 
-public class AbstractEvent
+public abstract class AbstractEvent
 {
 }
+  extends AbstractEvent 

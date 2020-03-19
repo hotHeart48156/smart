@@ -1,5 +1,14 @@
 package org.activite.dto.entity;
 
+import lombok.Data;
+import org.activite.domain.entity.GroupMember;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.id.GroupId;
+import org.activite.domain.valueobject.id.ProductId;
+import org.activite.domain.valueobject.id.UserId;
+import org.activite.domain.valueobject.time.CreateTime;
+import org.activite.domain.valueobject.time.ExpireTime;
+
 @Data
 public class GroupMemberDto {
     private String groupId;

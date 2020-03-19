@@ -1,5 +1,6 @@
 package org.activite.domain.aggregation;
 
+import lombok.Data;
 import org.activite.domain.valueobject.count.GroupPeopleCount;
 import org.activite.domain.valueobject.count.GroupPeopleMaxCount;
 import org.activite.domain.valueobject.id.GroupId;
@@ -21,6 +22,7 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 @Entity
+@Data
 public class Group extends AbstractAggregation{
     @EmbeddedId
 private GroupId groupId;

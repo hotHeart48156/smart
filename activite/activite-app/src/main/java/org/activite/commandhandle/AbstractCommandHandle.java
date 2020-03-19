@@ -1,9 +1,11 @@
 package org.activite.commandhandle;
 
 /**
- * @author yangbiao
+import org.activite.executor.command.*;
+import org.springframework.stereotype.Component;
+@author yangbiao
  */
 
-public class AbstractCommandHandle
-{
+@Component
+public abstract class AbstractCommandHandle  {
 }

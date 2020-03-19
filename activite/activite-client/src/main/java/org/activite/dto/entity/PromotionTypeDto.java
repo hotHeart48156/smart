@@ -1,13 +1,26 @@
 package org.activite.dto.entity;
 
+import lombok.Data;
+import org.activite.domain.entity.PromotionType;
+import org.activite.domain.valueobject.Title;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.id.Id;
+import org.activite.domain.valueobject.is.IsIndex;
+import org.activite.domain.valueobject.status.PromotionStatus;
+import org.activite.domain.valueobject.time.CreateTime;
+import org.activite.domain.valueobject.time.EndTime;
+import org.activite.domain.valueobject.time.StartTime;
+
+import java.sql.Timestamp;
+
 @Data
 public class PromotionTypeDto {
     private String id;
     private String title;
     private String startTime;
     private String endTime;
-    private String createTime;
-    private String isIndex;
+    private Timestamp createTime;
+    private int isIndex;
     private String promotionStatus;
 
     public void accept(PromotionType promotiontype) {

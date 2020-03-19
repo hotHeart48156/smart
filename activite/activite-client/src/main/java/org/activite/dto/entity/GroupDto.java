@@ -1,5 +1,21 @@
 package org.activite.dto.entity;
 
+import lombok.Data;
+import org.activite.domain.aggregation.Group;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.count.GroupPeopleCount;
+import org.activite.domain.valueobject.count.GroupPeopleMaxCount;
+import org.activite.domain.valueobject.id.GroupId;
+import org.activite.domain.valueobject.id.ProductId;
+import org.activite.domain.valueobject.name.ProductName;
+import org.activite.domain.valueobject.price.GroupPrice;
+import org.activite.domain.valueobject.price.ProductPrice;
+import org.activite.domain.valueobject.status.GroupStatus;
+import org.activite.domain.valueobject.time.CoutinueTime;
+import org.activite.domain.valueobject.time.CreateTime;
+import org.activite.domain.valueobject.time.EndTime;
+import org.activite.domain.valueobject.time.StartTime;
+
 @Data
 public class GroupDto {
     private String groupId;

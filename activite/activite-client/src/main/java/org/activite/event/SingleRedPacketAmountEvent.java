@@ -1,9 +1,10 @@
 package org.activite.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class SingleRedPacketAmountEvent {
-    private SingleRedPacketAmountDto SingleRedPacketAmountDto;
+public class SingleRedPacketAmountEvent   extends AbstractEvent  {
+    private org.activite.dto.agg.SingleRedPacketAmountDto SingleRedPacketAmountDto;
 }

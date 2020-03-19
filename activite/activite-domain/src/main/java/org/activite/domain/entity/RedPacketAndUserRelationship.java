@@ -19,6 +19,7 @@ import javax.persistence.Entity;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
+
 public class RedPacketAndUserRelationship extends AbstractEntity{
  @EmbeddedId
 private Id id;

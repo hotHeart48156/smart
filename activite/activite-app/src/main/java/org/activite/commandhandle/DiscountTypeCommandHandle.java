@@ -2,8 +2,13 @@ package org.activite.commandhandle;
 
 import lombok.Value;
 
+import org.axonframework.commandhandling.CommandHandler;
+import org.activite.event.*;
+import org.activite.executor.command.*;
+import org.springframework.stereotype.Component;
 @Value
-public class DiscountTypeCommandHandle {
+@Component
+public class DiscountTypeCommandHandle   extends AbstractCommandHandle {
     @CommandHandler
     public void on(DiscountTypeCommand Command) {
         AggregateLifecycle.apply(new DiscountTypeEvent(Command.getDiscountTypeDto()));

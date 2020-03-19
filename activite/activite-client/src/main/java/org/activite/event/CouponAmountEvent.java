@@ -1,9 +1,10 @@
 package org.activite.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
 public class CouponAmountEvent {
-    private CouponAmountDto CouponAmountDto;
+    private org.activite.dto.agg.CouponAmountDto CouponAmountDto;
 }

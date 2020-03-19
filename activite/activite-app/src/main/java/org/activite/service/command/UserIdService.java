@@ -1,6 +1,5 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.UserIdDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.UserIdCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

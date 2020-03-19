@@ -1,5 +1,6 @@
 package org.activite.domain.aggregation;
 
+import lombok.Data;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.amount.RedPacketAmount;
 import org.activite.domain.valueobject.amount.RedPacketReceiveAmount;
@@ -20,6 +21,7 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 @Entity
+@Data
 public class RedPacket extends AbstractAggregation{
     @EmbeddedId
 private RedPacketId redPacketId;

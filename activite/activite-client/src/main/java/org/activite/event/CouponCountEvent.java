@@ -1,9 +1,10 @@
 package org.activite.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class CouponCountEvent {
-    private CouponCountDto CouponCountDto;
+public class CouponCountEvent   extends AbstractEvent {
+    private org.activite.dto.agg.CouponCountDto CouponCountDto;
 }

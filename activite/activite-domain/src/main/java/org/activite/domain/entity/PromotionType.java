@@ -1,5 +1,6 @@
 package org.activite.domain.entity;
 
+import lombok.Data;
 import org.activite.domain.valueobject.Title;
 import org.activite.domain.valueobject.id.Id;
 import org.activite.domain.valueobject.is.IsIndex;
@@ -10,11 +11,15 @@ import org.activite.domain.valueobject.time.StartTime;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  * @author "yangbiao"
  */
-public class PromotionType {
+@Entity
+@Data
+
+public class PromotionType  extends AbstractEntity{
     @EmbeddedId
     private Id id;
     @Embedded
