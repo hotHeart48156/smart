@@ -5,7 +5,6 @@ import org.axonframework.commandhandling.CommandExecutionException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.users.service.UserApplicationImpl;
 
 /**
  * @author "yangbiao"
