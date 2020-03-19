@@ -14,7 +14,7 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 @Entity
-public class Promotion {
+public class Promotion extends AbstractAggregation {
  @EmbeddedId
  private PromotionId promotionId;
  @Embedded

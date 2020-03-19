@@ -1,8 +1,8 @@
 package org.activite.executor.command;
 
 import lombok.Value;
-
+import org.activite.executor.AbstractCommand;
 @Value
-public class CouponNameCommand {
-    private CouponNameDto CouponNameDto;
+public class CouponNameCommand extends AbstractCommand {
+    private org.activite.dto.agg.CouponNameDto CouponNameDto;
 }

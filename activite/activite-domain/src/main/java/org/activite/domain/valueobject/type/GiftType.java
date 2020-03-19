@@ -7,11 +7,13 @@ import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
-@AllArgsConstructor
 public enum GiftType implements Type
-{
-@Column(type ="   giftType")
+{ENABLE(1),DISABLE（0);
+@Column(name ="   giftType")
 private  int   giftType;
+GiftType(int type){
+    this.giftType=type;
+}
+GiftType(){}
 }

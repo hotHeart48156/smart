@@ -1,8 +1,10 @@
 package org.activite.executor.command;
 
 import lombok.Value;
+import org.activite.executor.AbstractCommand;
 
+import org.activite.executor.AbstractCommand;
 @Value
-public class ActivityGoodsCommand {
-    private ActivityGoodsDto ActivityGoodsDto;
+public class ActivityGoodsCommand extends AbstractCommand {
+    private org.activite.dto.agg.ActivityGoodsDto ActivityGoodsDto;
 }

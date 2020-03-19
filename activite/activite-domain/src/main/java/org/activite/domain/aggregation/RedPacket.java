@@ -20,7 +20,7 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 @Entity
-public class RedPacket {
+public class RedPacket extends AbstractAggregation{
     @EmbeddedId
 private RedPacketId redPacketId;
     @Embedded

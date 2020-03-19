@@ -21,7 +21,7 @@ import javax.persistence.Entity;
  * @author "yangbiao"
  */
 @Entity
-public class Group {
+public class Group extends AbstractAggregation{
     @EmbeddedId
 private GroupId groupId;
     @Embedded

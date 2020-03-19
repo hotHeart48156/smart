@@ -76,8 +76,4 @@ private CouponCode couponCode;
     @Embedded
 private UserLevel userLevel;
 
-    @Override
-    public JpaRepository getRespository() {
-        return CouponResposiroty;
-    }
 }

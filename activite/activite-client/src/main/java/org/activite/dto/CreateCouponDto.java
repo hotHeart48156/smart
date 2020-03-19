@@ -1,4 +1,4 @@
-package org.activite.domain.aggregation;
+package org.activite.dto;
 
 /**
  * @author "yangbiao"

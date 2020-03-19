@@ -22,7 +22,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class Marketing {
+public class Marketing  extends AbstractAggregation{
     @EmbeddedId
 private MarketingId marketingId;
     @Embedded

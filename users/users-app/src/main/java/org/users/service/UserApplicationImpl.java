@@ -7,7 +7,12 @@ import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.users.api.UserApplication;
-import org.users.executor.command.*;
+import org.users.dto.agg.BirthdayDto;
+import org.users.dto.agg.GrowthDto;
+import org.users.dto.agg.JobDto;
+import org.users.dto.agg.PasswordDto;
+import org.users.dto.entity.AddressDto;
+
 /**
  * @author "yangbiao"
  */

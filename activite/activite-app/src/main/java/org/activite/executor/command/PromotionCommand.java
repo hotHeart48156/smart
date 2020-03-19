@@ -1,3 +1,7 @@
 package org.activite.executor.command;
-public class PromotionCommand  extends AbstractCommand
-{}
+
+import org.activite.executor.AbstractCommand;
+
+public class PromotionCommand
+extends AbstractCommand{import org.activite.executor.AbstractCommand;
+}

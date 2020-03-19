@@ -15,10 +15,7 @@
         <!-- COLA Framework -->
 
         <!-- COLA Framework End-->
-        <dependency>
-            <groupId>com.smart.website</groupId>
-            <artifactId>activite-client</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>

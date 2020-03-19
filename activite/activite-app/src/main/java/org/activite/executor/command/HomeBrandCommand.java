@@ -1,8 +1,10 @@
 package org.activite.executor.command;
 
 import lombok.Value;
+import org.activite.executor.AbstractCommand;
 
+import org.activite.executor.AbstractCommand;
 @Value
-public class HomeBrandCommand {
-    private HomeBrandDto HomeBrandDto;
+public class HomeBrandCommand extends AbstractCommand {
+    private org.activite.dto.entity.HomeBrandDto HomeBrandDto;
 }

@@ -9,47 +9,47 @@
         <outputRelativeToContentRoot value="true" />
         <module name="activite-domain" />
         <module name="product-controller" />
-        <module name="start" />
+        <module name="users-client" />
         <module name="product_side-app" />
         <module name="start (4)" />
         <module name="activity-start" />
-        <module name="start (7)" />
         <module name="product-client" />
         <module name="activite-infrastructure" />
-        <module name="start (1)" />
-        <module name="activite-app" />
+        <module name="commons" />
         <module name="start (6)" />
         <module name="discover-server" />
         <module name="product-infrastructure" />
-        <module name="users-client" />
+        <module name="users-controller" />
         <module name="activite-client" />
-        <module name="order-controller" />
         <module name="product_side-domain" />
+        <module name="order-infrastructure" />
+        <module name="users-infrastructure" />
         <module name="config-server" />
         <module name="order-app" />
         <module name="product_side-infrastructure" />
-        <module name="order-domain" />
         <module name="users-domain" />
-        <module name="product_side-client" />
+        <module name="start" />
         <module name="activite-controller" />
         <module name="order-start" />
         <module name="users-app" />
+        <module name="user-start" />
         <module name="product_side-controller" />
         <module name="product-domain" />
         <module name="product-start" />
         <module name="order-client" />
-        <module name="users-controller" />
+        <module name="activite-app" />
         <module name="product-app" />
-        <module name="commons" />
-        <module name="users-infrastructure" />
-        <module name="user-start" />
-        <module name="order-infrastructure" />
+        <module name="order-controller" />
+        <module name="start (2)" />
+        <module name="product_side-client" />
+        <module name="start (7)" />
+        <module name="order-domain" />
       </profile>
       <profile name="Annotation profile for demo" enabled="true">
-        <sourceOutputDir name="../../product/product-start/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../product/product-start/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../../users/user-start/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../users/user-start/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="start (2)" />
+        <module name="start (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
