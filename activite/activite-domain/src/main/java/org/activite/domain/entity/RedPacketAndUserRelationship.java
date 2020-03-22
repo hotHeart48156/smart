@@ -12,6 +12,7 @@ import org.activite.domain.valueobject.time.CreateTime;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
@@ -19,6 +20,7 @@ import javax.persistence.Entity;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
+@Table(name  ="smart.redpacket_and_user_relationship")
 
 public class RedPacketAndUserRelationship extends AbstractEntity{
  @EmbeddedId

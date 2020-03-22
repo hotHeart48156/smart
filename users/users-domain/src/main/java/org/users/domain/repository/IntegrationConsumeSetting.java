@@ -7,5 +7,5 @@ import org.users.domain.valueobject.id.Id;
 /**
  * @author "yangbiao"
  */
-public interface IntegrationConsumeSetting extends JpaRepository<Id, IntegrationConsumeSetting>, PagingAndSortingRepository<Id, IntegrationConsumeSetting> {
+public interface IntegrationConsumeSetting extends JpaRepository<Id, IntegrationConsumeSetting>, PagingAndSortingRepository<Id, IntegrationConsumeSetting>,Repository  {
 }

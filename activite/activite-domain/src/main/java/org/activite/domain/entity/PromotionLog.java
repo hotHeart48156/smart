@@ -9,12 +9,14 @@ import org.activite.domain.valueobject.name.ProductName;
 import org.activite.domain.valueobject.time.CreateTime;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Entity
 @Data
+@Table(name  ="smart.promotion_log")
 
 public class PromotionLog extends AbstractEntity{
     private Id id;

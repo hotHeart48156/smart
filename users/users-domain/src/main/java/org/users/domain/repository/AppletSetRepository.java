@@ -8,5 +8,5 @@ import org.users.domain.valueobject.id.Id;
 /**
  * @author "yangbiao"
  */
-public interface AppletSetRepository extends JpaRepository<Id, AppletSet>, PagingAndSortingRepository<Id, AppletSet> {
+public interface AppletSetRepository extends JpaRepository<Id, AppletSet>, PagingAndSortingRepository<Id, AppletSet> ,Repository {
 }

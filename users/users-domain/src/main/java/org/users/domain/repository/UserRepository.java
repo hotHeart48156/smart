@@ -12,7 +12,7 @@ import java.util.Optional;
 /**
  * @author "yangbiao"
  */
-public interface UserRepository extends JpaRepository<User, UserId>, PagingAndSortingRepository<User, UserId> {
+public interface UserRepository extends JpaRepository<User, UserId>, PagingAndSortingRepository<User, UserId> ,Repository {
 
     Optional<User> findById(WeixinOpenId openId);
 

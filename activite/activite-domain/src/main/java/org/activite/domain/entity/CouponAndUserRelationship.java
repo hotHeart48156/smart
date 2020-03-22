@@ -9,13 +9,14 @@ import org.activite.domain.valueobject.id.UserId;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Entity
 @Data
-
+@Table(name = "smart.coupon_and_user_relationship")
 public class CouponAndUserRelationship extends AbstractId {
      @EmbeddedId
 private Id id;

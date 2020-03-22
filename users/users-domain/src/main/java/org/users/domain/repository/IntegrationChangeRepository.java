@@ -8,5 +8,5 @@ import org.users.domain.valueobject.id.Id;
 /**
  * @author "yangbiao"
  */
-public interface IntegrationChangeRepository extends JpaRepository<Id, IntegrationChangeHistoryItem>, PagingAndSortingRepository<Id, IntegrationChangeHistoryItem> {
+public interface IntegrationChangeRepository extends JpaRepository<Id, IntegrationChangeHistoryItem>, PagingAndSortingRepository<Id, IntegrationChangeHistoryItem> ,Repository {
 }

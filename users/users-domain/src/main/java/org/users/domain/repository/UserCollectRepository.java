@@ -8,5 +8,5 @@ import org.users.domain.valueobject.id.Id;
 /**
  * @author "yangbiao"
  */
-public interface UserCollectRepository extends JpaRepository<Id, UserCollect>, PagingAndSortingRepository<Id, UserCollect> {
+public interface UserCollectRepository extends JpaRepository<Id, UserCollect>, PagingAndSortingRepository<Id, UserCollect>,Repository  {
 }
