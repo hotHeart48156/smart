@@ -1,5 +1,6 @@
 package org.order.controller.command.entity;
-import org.activite.executor.AbstractCommand;
+
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class EntityController{
