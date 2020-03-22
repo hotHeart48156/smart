@@ -7,6 +7,7 @@ import org.users.domain.valueobject.GoodsPic;
 import org.users.domain.valueobject.GoodsPrice;
 import org.users.domain.valueobject.ValueObjectFactory;
 import org.users.domain.valueobject.id.GoodsId;
+import org.users.domain.valueobject.id.UserCollectId;
 import org.users.domain.valueobject.id.UserId;
 import org.users.domain.valueobject.name.GoodsName;
 import org.users.domain.valueobject.type.CollectType;
@@ -23,7 +24,7 @@ public class UserCollectDto {
     private String createTime;
 
     public void accept(UserCollect usercollect) {
-        usercollect.setId(ValueObjectFactory.newInstance(Id.class, id));
+        usercollect.setId(ValueObjectFactory.newInstance(UserCollectId.class, id));
         usercollect.setMemberId(ValueObjectFactory.newInstance(UserId.class, memberId));
         usercollect.setGoodsId(ValueObjectFactory.newInstance(GoodsId.class, goodsId));
         usercollect.setGoodsName(ValueObjectFactory.newInstance(GoodsName.class, goodsName));

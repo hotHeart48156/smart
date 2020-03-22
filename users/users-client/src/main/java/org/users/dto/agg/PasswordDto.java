@@ -3,6 +3,7 @@ package org.users.dto.agg;
 import lombok.Data;
 import org.users.domain.aggregation.User;
 import org.users.domain.valueobject.ValueObjectFactory;
+import org.users.domain.valueobject.user.Password;
 
 @Data
 public class PasswordDto {

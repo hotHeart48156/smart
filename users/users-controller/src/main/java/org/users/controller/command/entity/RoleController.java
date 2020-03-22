@@ -1,7 +1,9 @@
 package  org.users.controller.command.entity;
-import org.activite.executor.AbstractCommand;
+
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.users.service.command.RoleService;
+
 public class RoleController{
     @Autowired
 private RoleService service;

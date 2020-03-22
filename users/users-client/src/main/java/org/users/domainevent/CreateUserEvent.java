@@ -1,18 +1,18 @@
 package org.users.domainevent;
 
 
-import lombok.EqualsAndHashCode;
 import lombok.Value;
+import org.users.dto.entity.CreateUserDto;
 
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode(callSuper = true)
 @Value
-public class CreateUserEvent extends AbstractEvent {
+public class CreateUserEvent  {
     private CreateUserDto createUserDto;
 
     public CreateUserEvent(CreateUserDto userDto) {
+        super();
         this.createUserDto = userDto;
     }
 }

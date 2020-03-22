@@ -2,6 +2,8 @@ package org.users.domain.entity;
 
 import lombok.Data;
 
+import javax.persistence.Id;
+
 /**
  * @author "yangbiao"
  */
@@ -9,6 +11,7 @@ import lombok.Data;
 @javax.persistence.Entity
 
 public class AppletSet implements Entity {
+    @Id
     private String appid;
 
     private String appsecret;

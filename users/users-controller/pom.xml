@@ -31,6 +31,10 @@
             <version>1.5.20</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.smart.website</groupId>
+            <artifactId>users-client</artifactId>
+        </dependency>
 
     </dependencies>
 

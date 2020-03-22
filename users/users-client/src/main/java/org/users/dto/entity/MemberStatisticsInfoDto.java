@@ -1,5 +1,12 @@
 package org.users.dto.entity;
 
+import lombok.Data;
+import org.users.domain.entity.MemberStatisticsInfo;
+import org.users.domain.valueobject.ValueObjectFactory;
+import org.users.domain.valueobject.count.*;
+import org.users.domain.valueobject.id.Id;
+import org.users.domain.valueobject.id.UserId;
+
 @Data
 public class MemberStatisticsInfoDto {
     private String id;
@@ -9,14 +16,14 @@ public class MemberStatisticsInfoDto {
     private String couponCount;
     private String commentCount;
     private String returnOrderCount;
-    private String LoginCount
-    private String AttentionCount
-    private String FansCount
-    private String CollectSubjectCount
-    private String CollectProductCount
-    private String CollectTopicCount
-    private String CollectCommentCount
-    private String InviteFriendCount
+    private String LoginCount;
+    private String AttentionCount;
+    private String FansCount;
+    private String CollectSubjectCount;
+    private String CollectProductCount;
+    private String CollectTopicCount;
+    private String CollectCommentCount;
+    private String InviteFriendCount;
 
     public void accept(MemberStatisticsInfo memberstatisticsinfo) {
         memberstatisticsinfo.setId(ValueObjectFactory.newInstance(Id.class, id));
@@ -26,13 +33,6 @@ public class MemberStatisticsInfoDto {
         memberstatisticsinfo.setCouponCount(ValueObjectFactory.newInstance(CouponCount.class, couponCount));
         memberstatisticsinfo.setCommentCount(ValueObjectFactory.newInstance(CommentCount.class, commentCount));
         memberstatisticsinfo.setReturnOrderCount(ValueObjectFactory.newInstance(ReturnOrderCount.class, returnOrderCount));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,LoginCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,AttentionCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,FansCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,CollectSubjectCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,CollectProductCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,CollectTopicCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,CollectCommentCoun));
-        memberstatisticsinfo.set(ValueObjectFactory.newInstance(. class ,InviteFriendCoun));
+       memberstatisticsinfo.setLoginCount(ValueObjectFactory.newInstance(org.users.domain.valueobject.count.LoginCount.class,LoginCount));
     }
 }

@@ -1,3 +1,8 @@
 package org.users.executor.query.aggre;
-public class UserQuery{
+
+import org.users.executor.AbstractCommand;
+
+public class UserQuery  extends AbstractCommand {
 }
+
+

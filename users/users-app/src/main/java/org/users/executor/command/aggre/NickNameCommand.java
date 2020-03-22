@@ -2,7 +2,8 @@ package  org.users.executor.command.aggre;
 
 import lombok.Value;
 
+import org.users.executor.AbstractCommand;
 @Value
-public class NickNameCommand{
+public class NickNameCommand  extends AbstractCommand {
 private org.users.dto.agg.NickNameDto NickNameDto;
 }
