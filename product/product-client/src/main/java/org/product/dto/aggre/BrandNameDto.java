@@ -1,5 +1,6 @@
 package org.product.dto.aggre;
 
+import org.product.domain.aggragate.Product;
 @Data
 public class BrandNameDto {
     private String ProductId;

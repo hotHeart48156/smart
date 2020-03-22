@@ -1,9 +1,9 @@
 package org.product.domain.valueobject.time;
 
-import java.sql.Timestamp;
+import org.product.domain.valueobject.ValueObject;
 
 /**
  * @author "yangbiao"
  */
-public abstract class AbstractTime {
+public abstract class AbstractTime implements ValueObject {
 }

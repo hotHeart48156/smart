@@ -1,5 +1,6 @@
 package org.product.dto.aggre;
 
+import org.product.domain.aggragate.Product;
 @Data
 public class VerifyStatusDto {
     private String ProductId;

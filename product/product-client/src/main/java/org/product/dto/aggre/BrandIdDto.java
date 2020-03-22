@@ -5,6 +5,7 @@ import org.product.domain.aggragate.Product;
 import org.product.domain.valueobject.ValueObjectFactory;
 import org.product.domain.valueobject.id.BrandId;
 
+import org.product.domain.aggragate.Product;
 @Data
 public class BrandIdDto {
     private String ProductId;
