@@ -1,11 +1,8 @@
-package org.order.commandhandle;
-
+package  org.order.commandhandle;
 import lombok.Value;
-
 @Value
-public class BillTypeCommandHandle {
-    @CommandHandler
-    public void on(BillTypeCommand Command) {
-        AggregateLifecycle.apply(new BillTypeEvent(Command.getBillTypeDto()));
-    }
-}
+public class BillTypeCommandHandle{
+@CommandHandler
+public void on (BillTypeCommand Command){
+AggregateLifecycle.apply(new BillTypeEvent(Command.getBillTypeDto()));
+}}

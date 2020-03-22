@@ -1,9 +1,6 @@
 package org.order.executor.command;
-
-/**
- * @author yangbiao
- */
-
-public abstract class AbstractCommand
-{
+import lombok.Value;
+@Value
+public class AbstractCommand{
+private AbstractDto  AbstractDto;
 }

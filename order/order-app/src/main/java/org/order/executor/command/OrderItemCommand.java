@@ -1,9 +1,6 @@
 package org.order.executor.command;
-
-/**
- * @author "yangbiao"
- */
-
-public class OrderItemCommand {
-    private String productId;
+import lombok.Value;
+@Value
+public class OrderItemCommand{
+private OrderItemDto  OrderItemDto;
 }
