@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class AddressEvent {
-    private org.product.dto.dto.AddressDto AddressDto;
+    private org.product.dto.entity.AddressDto AddressDto;
 }

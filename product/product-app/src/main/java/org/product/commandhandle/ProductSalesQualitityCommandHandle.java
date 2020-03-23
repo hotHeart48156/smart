@@ -1,5 +1,9 @@
 package  org.product.commandhandle;
+
 import lombok.Value;
+import org.product.command.ProductSalesQualitityCommand;
+import org.product.event.ProductSalesQualitityEvent;
+
 @Value
 public class ProductSalesQualitityCommandHandle{
 @CommandHandler
