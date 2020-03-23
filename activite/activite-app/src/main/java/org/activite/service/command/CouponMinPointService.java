@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.CouponMinPointDto;
+import org.activite.dto.agg.coupon.CouponMinPointDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.CouponMinPointCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

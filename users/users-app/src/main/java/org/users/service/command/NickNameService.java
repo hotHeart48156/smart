@@ -2,7 +2,6 @@ package  org.users.service.command;
 
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.users.dto.agg.NickNameDto;
 import org.users.executor.command.aggre.NickNameCommand;
 
 import org.springframework.stereotype.Service;

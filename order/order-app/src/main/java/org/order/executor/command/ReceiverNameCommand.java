@@ -1,6 +1,8 @@
 package org.order.executor.command;
+
 import lombok.Value;
+
 @Value
 public class ReceiverNameCommand{
-private ReceiverNameDto  ReceiverNameDto;
+private org.order.dto.aggredto.ReceiverNameDto ReceiverNameDto;
 }

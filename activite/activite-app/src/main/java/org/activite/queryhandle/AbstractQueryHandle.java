@@ -1,6 +1,6 @@
 package  org.activite.queryhandle;
 
-public class AbstractQueryHandle {
+public abstract class AbstractQueryHandle {
 
 
 }

@@ -1,17 +1,14 @@
 package org.users.dto.agg;
 
-import lombok.Data;
 import org.users.domain.aggregation.User;
 import org.users.domain.valueobject.ValueObjectFactory;
 import org.users.domain.valueobject.user.Birthday;
+import org.users.dto.agg.AbstractUserDto;
 
-@Data
-public class BirthdayDto {
-    private String UserId;
-    private String birthday;
-
-    public void accept(User user) {
-        user.setUserId(ValueObjectFactory.newInstance(org.users.domain.valueobject.id.UserId.class, this.UserId));
-        user.setBirthday(ValueObjectFactory.newInstance(Birthday.class, this.birthday));
-    }
+public class BirthdayDto  extends AbstractUserDto {
+private String birthday;
+@Override
+public void  execute(User user){
+user.setBirthday(ValueObjectFactory.newInstance(Birthday.class,birthday));
+}
 }

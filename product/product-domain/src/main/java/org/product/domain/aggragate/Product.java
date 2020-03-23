@@ -105,6 +105,8 @@ public class Product {
     private ProductCount productCount;
     @Embedded
     private ShowStatus showStatus;
+    @Embedded
+    private ProductLogo productLogo;
 
 
 }

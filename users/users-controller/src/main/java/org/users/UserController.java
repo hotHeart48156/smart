@@ -5,11 +5,9 @@ import org.axonframework.commandhandling.CommandExecutionException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.users.dto.agg.BirthdayDto;
-import org.users.dto.agg.GrowthDto;
-import org.users.dto.agg.JobDto;
-import org.users.dto.agg.PasswordDto;
+import org.users.dto.agg.*;
 import org.users.dto.entity.AddressDto;
+import org.users.dto.entity.CreateUserDto;
 
 /**
  * @author "yangbiao"
@@ -31,6 +29,7 @@ public class UserController {
         }
 
     }
+
     @PostMapping(value = "update/address")
     public void updateAddress(AddressDto addressDto) {
         try {
@@ -50,7 +49,7 @@ public class UserController {
         }
     }
     @PostMapping(value = "update/nickname")
-    public void updateNickname(NicknameDto nicknameDto) {
+    public void updateNickname(NickNameDto nicknameDto) {
         try {
             application.updateNickname(nicknameDto);
 
@@ -70,7 +69,7 @@ public class UserController {
     @PostMapping(value = "update/birthday")
     public void updateBirthday(BirthdayDto birthdayDto) {
         try {
-            application.updateBirthday(birthdayDto);
+            application.Birth(birthdayDto);
 
         }catch (CommandExecutionException e){
             log.warn("update address failure with message"+e.getMessage());

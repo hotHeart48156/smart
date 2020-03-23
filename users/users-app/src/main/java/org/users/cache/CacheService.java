@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import org.users.domain.entity.Entity;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 /**
  * @author yangbiao
@@ -39,10 +40,11 @@ public void update(CommandCache commandCache){
            commandCache.getR().save(cacheObject.getValue());
 }
 
+
     @Transactional
-    public <T extends Entity, R extends JpaRepository> T query(QueryCache queryCache) {
+    public <T extends Entity, R extends JpaRepository> List<T> query(QueryCache queryCache) {
         CacheObject cacheObject=cacheChannel.get(queryCache.getRegion(),queryCache.getKey());
-       return (T) cacheObject.getValue();
+        return (List<T>) cacheObject.getValue();
 
     }
 

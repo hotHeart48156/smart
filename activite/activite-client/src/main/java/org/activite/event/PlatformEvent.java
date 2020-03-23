@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class PlatformEvent   extends AbstractEvent {
-    private org.activite.dto.agg.PlatformDto PlatformDto;
+    private org.activite.dto.agg.redpacket.PlatformDto PlatformDto;
 }

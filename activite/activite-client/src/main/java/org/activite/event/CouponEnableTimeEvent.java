@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class CouponEnableTimeEvent   extends AbstractEvent  {
-    private org.activite.dto.agg.CouponEnableTimeDto CouponEnableTimeDto;
+    private org.activite.dto.agg.coupon.CouponEnableTimeDto CouponEnableTimeDto;
 }

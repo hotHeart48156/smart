@@ -1,7 +1,8 @@
 package org.users.executor;
 
 /**
- * @author OMEN
+ * @author "yangbiao"
  */
 public abstract class AbstractCommand {
+
 }

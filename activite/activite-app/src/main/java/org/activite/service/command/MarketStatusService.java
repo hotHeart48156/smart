@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.MarketStatusDto;
+import org.activite.dto.agg.marketing.MarketStatusDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.MarketStatusCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

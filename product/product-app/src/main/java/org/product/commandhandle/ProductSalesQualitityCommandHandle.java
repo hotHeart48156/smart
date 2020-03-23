@@ -1,7 +1,7 @@
 package  org.product.commandhandle;
 
 import lombok.Value;
-import org.product.command.ProductSalesQualitityCommand;
+import org.product.executor.command.ProductSalesQualitityCommand;
 import org.product.event.ProductSalesQualitityEvent;
 
 @Value

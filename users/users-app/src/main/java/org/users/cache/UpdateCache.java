@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 import org.users.domain.aggregation.Aggregation;
-import org.users.domain.entity.Entity;
+import org.users.dto.AbstractDto;
 
 /**
  * @author yangbiao
@@ -13,6 +13,6 @@ import org.users.domain.entity.Entity;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Component
-public class UpdateCache <T extends Entity,A extends Aggregation,R extends JpaRepository> extends Cache{
+public class UpdateCache <T extends AbstractDto,A extends Aggregation,R extends JpaRepository> extends Cache{
 
 }

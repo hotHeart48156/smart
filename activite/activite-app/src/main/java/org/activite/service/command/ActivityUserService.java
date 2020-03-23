@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.ActivityUserDto;
+import org.activite.dto.agg.marketing.ActivityUserDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.ActivityUserCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

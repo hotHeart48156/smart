@@ -4,5 +4,5 @@ import lombok.Value;
 import org.activite.executor.AbstractCommand;
 @Value
 public class CouponNameCommand extends AbstractCommand {
-    private org.activite.dto.agg.CouponNameDto CouponNameDto;
+    private org.activite.dto.agg.coupon.CouponNameDto CouponNameDto;
 }

@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class SmallTypeEvent   extends AbstractEvent {
-    private org.activite.dto.agg.SmallTypeDto SmallTypeDto;
+    private org.activite.dto.agg.marketing.SmallTypeDto SmallTypeDto;
 }

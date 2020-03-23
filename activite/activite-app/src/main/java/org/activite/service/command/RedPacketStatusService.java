@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.RedPacketStatusDto;
+import org.activite.dto.agg.redpacket.RedPacketStatusDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.RedPacketStatusCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

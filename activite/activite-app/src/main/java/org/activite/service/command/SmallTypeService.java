@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.SmallTypeDto;
+import org.activite.dto.agg.marketing.SmallTypeDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.SmallTypeCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

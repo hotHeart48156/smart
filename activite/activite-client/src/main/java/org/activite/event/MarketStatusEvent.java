@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class MarketStatusEvent   extends AbstractEvent {
-    private org.activite.dto.agg.MarketStatusDto MarketStatusDto;
+    private org.activite.dto.agg.marketing.MarketStatusDto MarketStatusDto;
 }

@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.SendTimeDto;
+import org.activite.dto.agg.redpacket.SendTimeDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.SendTimeCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

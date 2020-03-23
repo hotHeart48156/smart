@@ -8,7 +8,7 @@ import org.users.dto.AbstractDto;
  */
 
 public class CreateUserDto extends AbstractDto {
-    @Override
+
     public void accept(User user) {
 
     }

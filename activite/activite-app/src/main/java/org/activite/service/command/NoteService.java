@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.NoteDto;
+import org.activite.dto.agg.redpacket.NoteDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.NoteCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

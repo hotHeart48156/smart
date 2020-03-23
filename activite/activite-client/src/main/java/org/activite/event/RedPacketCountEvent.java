@@ -6,6 +6,6 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class RedPacketCountEvent {
-    private org.activite.dto.agg.RedPacketCountDto RedPacketCountDto;
+    private org.activite.dto.agg.redpacket.RedPacketCountDto RedPacketCountDto;
 }
   extends AbstractEvent 

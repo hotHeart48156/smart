@@ -1,7 +1,7 @@
 package  org.product.commandhandle;
 
 import lombok.Value;
-import org.product.command.FreightTemplateCommand;
+import org.product.executor.command.FreightTemplateCommand;
 import org.product.event.FreightTemplateEvent;
 
 @Value

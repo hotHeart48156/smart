@@ -1,7 +1,7 @@
 package org.users.executor.query.entity;
 
-import org.users.executor.AbstractCommand;
+import org.users.executor.AbstractQuery;
 
-public class IntegrationChangeHistoryItemQuery  extends AbstractCommand {
+public class IntegrationChangeHistoryItemQuery  extends AbstractQuery {
 } 
 

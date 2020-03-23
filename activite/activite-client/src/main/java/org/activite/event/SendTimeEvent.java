@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class SendTimeEvent   extends AbstractEvent {
-    private org.activite.dto.agg.SendTimeDto SendTimeDto;
+    private org.activite.dto.agg.redpacket.SendTimeDto SendTimeDto;
 }

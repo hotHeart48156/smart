@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.EndTimeDto;
+import org.activite.dto.agg.marketing.EndTimeDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.EndTimeCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

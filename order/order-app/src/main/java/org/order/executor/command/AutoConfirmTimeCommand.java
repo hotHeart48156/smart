@@ -1,6 +1,8 @@
 package org.order.executor.command;
+
 import lombok.Value;
+
 @Value
 public class AutoConfirmTimeCommand{
-private AutoConfirmTimeDto  AutoConfirmTimeDto;
+private org.order.dto.aggredto.AutoConfirmTimeDto AutoConfirmTimeDto;
 }

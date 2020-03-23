@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.CouponCodeDto;
+import org.activite.dto.agg.coupon.CouponCodeDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.CouponCodeCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

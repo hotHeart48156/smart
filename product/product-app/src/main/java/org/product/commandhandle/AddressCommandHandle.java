@@ -1,8 +1,8 @@
 package  org.product.commandhandle;
 
 import lombok.Value;
-import org.product.command.AddressCommand;
 import org.product.event.AddressEvent;
+import org.product.executor.command.entity.AddressCommand;
 
 @Value
 public class AddressCommandHandle{

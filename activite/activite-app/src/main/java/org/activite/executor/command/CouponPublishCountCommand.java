@@ -5,5 +5,5 @@ import lombok.Value;
 import org.activite.executor.AbstractCommand;
 @Value
 public class CouponPublishCountCommand extends AbstractCommand{
-    private org.activite.dto.agg.CouponPublishCountDto CouponPublishCountDto;
+    private org.activite.dto.agg.coupon.CouponPublishCountDto CouponPublishCountDto;
 }

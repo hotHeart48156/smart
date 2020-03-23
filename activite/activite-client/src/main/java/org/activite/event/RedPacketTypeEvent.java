@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class RedPacketTypeEvent   extends AbstractEvent {
-    private org.activite.dto.agg.RedPacketTypeDto RedPacketTypeDto;
+    private org.activite.dto.agg.redpacket.RedPacketTypeDto RedPacketTypeDto;
 }

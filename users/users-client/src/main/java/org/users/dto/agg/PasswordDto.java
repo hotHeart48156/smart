@@ -1,17 +1,13 @@
 package org.users.dto.agg;
 
-import lombok.Data;
 import org.users.domain.aggregation.User;
 import org.users.domain.valueobject.ValueObjectFactory;
 import org.users.domain.valueobject.user.Password;
 
-@Data
-public class PasswordDto {
-    private String UserId;
-    private String password;
-
-    public void accept(User user) {
-        user.setUserId(ValueObjectFactory.newInstance(org.users.domain.valueobject.id.UserId.class, this.UserId));
-        user.setPassword(ValueObjectFactory.newInstance(Password.class, this.password));
-    }
+public class PasswordDto  extends AbstractUserDto {
+private String password;
+@Override
+public void  execute(User user){
+user.setPassword(ValueObjectFactory.newInstance(Password.class,password));
+}
 }

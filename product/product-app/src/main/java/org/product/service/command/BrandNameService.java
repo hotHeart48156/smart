@@ -2,7 +2,6 @@ package org.product.service.command;
 
 import org.activite.executor.command.AbstractCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;
-import org.product.command.BrandNameCommand;
 import org.product.dto.aggre.brand.BrandNameDto;
 import org.springframework.beans.factory.annotation.Autowired;
 public class BrandNameService{

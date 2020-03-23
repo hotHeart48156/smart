@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class CouponReceiverCountEvent   extends AbstractEvent  {
-    private org.activite.dto.agg.CouponReceiverCountDto CouponReceiverCountDto;
+    private org.activite.dto.agg.coupon.CouponReceiverCountDto CouponReceiverCountDto;
 }

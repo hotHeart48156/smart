@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class UserLevelEvent   extends AbstractEvent {
-    private org.activite.dto.agg.UserLevelDto UserLevelDto;
+    private org.activite.dto.agg.marketing.UserLevelDto UserLevelDto;
 }

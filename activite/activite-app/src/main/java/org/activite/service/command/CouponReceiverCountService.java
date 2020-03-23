@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.CouponReceiverCountDto;
+import org.activite.dto.agg.coupon.CouponReceiverCountDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.CouponReceiverCountCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

@@ -1,8 +1,11 @@
 package org.users.executor;
 
-/**
- * @author "yangbiao"
- */
-public abstract class AbstractQuery {
+import lombok.Data;
 
+/**
+ * @author OMEN
+ */
+@Data
+public abstract class AbstractQuery {
+    private String id;
 }

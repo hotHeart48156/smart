@@ -1,10 +1,10 @@
 package org.activite.commandhandle;
 
 import lombok.Value;
-
+import org.activite.event.DiscountTypeEvent;
+import org.activite.executor.command.DiscountTypeCommand;
 import org.axonframework.commandhandling.CommandHandler;
-import org.activite.event.*;
-import org.activite.executor.command.*;
+import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.stereotype.Component;
 @Value
 @Component

@@ -22,6 +22,5 @@ public class EventHandle implements ApplicationListener<CanalUpdateEvent> {
         } catch (InvalidProtocolBufferException e) {
             e.printStackTrace();
         }
-        change.getRowDatasList().forEach(rowData -> );
     }
 }

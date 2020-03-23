@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.PlatformDto;
+import org.activite.dto.agg.redpacket.PlatformDto;
 import org.activite.executor.AbstractCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;

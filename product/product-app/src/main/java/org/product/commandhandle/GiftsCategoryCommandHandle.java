@@ -1,7 +1,7 @@
 package  org.product.commandhandle;
 
 import lombok.Value;
-import org.product.command.GiftsCategoryCommand;
+import org.product.executor.command.GiftsCategoryCommand;
 import org.product.event.GiftsCategoryEvent;
 
 @Value

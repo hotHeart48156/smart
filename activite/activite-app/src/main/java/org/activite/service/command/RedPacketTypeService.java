@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.RedPacketTypeDto;
+import org.activite.dto.agg.redpacket.RedPacketTypeDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.RedPacketTypeCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

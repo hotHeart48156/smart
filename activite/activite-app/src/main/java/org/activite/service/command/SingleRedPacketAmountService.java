@@ -1,6 +1,6 @@
 package  org.activite.service.command;
 
-import org.activite.dto.agg.SingleRedPacketAmountDto;
+import org.activite.dto.agg.redpacket.SingleRedPacketAmountDto;
 import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.SingleRedPacketAmountCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;

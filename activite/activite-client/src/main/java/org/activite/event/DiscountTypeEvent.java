@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class DiscountTypeEvent  extends AbstractEvent {
-    private org.activite.dto.agg.DiscountTypeDto DiscountTypeDto;
+    private org.activite.dto.agg.marketing.DiscountTypeDto DiscountTypeDto;
 }

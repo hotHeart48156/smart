@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class NoteEvent   extends AbstractEvent  {
-    private org.activite.dto.agg.NoteDto NoteDto;
+    private org.activite.dto.agg.redpacket.NoteDto NoteDto;
 }
