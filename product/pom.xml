@@ -9,7 +9,6 @@
         <groupId>com.smart.website</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.smart.website</groupId>
     <artifactId>product</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>

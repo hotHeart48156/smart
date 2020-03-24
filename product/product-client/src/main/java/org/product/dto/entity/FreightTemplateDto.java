@@ -9,12 +9,12 @@ import org.product.domain.valueobject.type.ChargeType;
 
 @Data
 public class FreightTemplateDto {
-    private String feightTemplateId;
+    private String freightTemplateId;
     private String chargeType;
     private String countFee;
 
     public void accept(FreightTemplate freighttemplate) {
-        freighttemplate.setFeightTemplateId(ValueObjectFactory.newInstance(FeightTemplateId.class, feightTemplateId));
+        freighttemplate.setFeightTemplateId(ValueObjectFactory.newInstance(FeightTemplateId.class, freightTemplateId));
         freighttemplate.setChargeType(ValueObjectFactory.newInstance(ChargeType.class, chargeType));
         freighttemplate.setCountFee(ValueObjectFactory.newInstance(CountFee.class, countFee));
     }

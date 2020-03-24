@@ -1,5 +1,12 @@
 package org.product.dto.entity;
 
+import lombok.Data;
+import org.product.domain.entity.MemberPrice;
+import org.product.domain.valueobject.MemberlLevel;
+import org.product.domain.valueobject.ValueObjectFactory;
+import org.product.domain.valueobject.id.MemberPriceId;
+import org.product.domain.valueobject.id.ProductId;
+
 @Data
 public class MemberPriceDto {
     private String memberPriceId;

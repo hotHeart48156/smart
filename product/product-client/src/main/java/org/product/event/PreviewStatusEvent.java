@@ -1,9 +1,11 @@
 package org.product.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
+import org.product.dto.aggre.product.PreviewStatusDto;
 
 @Value
 @AllArgsConstructor
 public class PreviewStatusEvent {
-    private PreviewStatusDto PreviewStatusDto;
+    private org.product.dto.aggre.product.PreviewStatusDto PreviewStatusDto;
 }

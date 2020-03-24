@@ -16,10 +16,7 @@
             <groupId>com.smart.website</groupId>
             <artifactId>product-client</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.smart.website</groupId>
-            <artifactId>product-infrastructure</artifactId>
-        </dependency>
+
         <!-- JSR 303 Validation -->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
@@ -123,16 +120,11 @@
         </dependency>
         <dependency>
             <groupId>org.axonframework</groupId>
-            <artifactId>axon-spring-boot-starter</artifactId>
-            <version>4.1.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.axonframework</groupId>
             <artifactId>axon-modelling</artifactId>
             <version>4.1.1</version>
             <scope>compile</scope>
         </dependency>
+
         <!-- JSR 303 Validation End-->
     </dependencies>
 

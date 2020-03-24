@@ -3,6 +3,7 @@ package org.product.dto.entity;
 import lombok.Data;
 import org.product.domain.entity.CommentAndProductRelationship;
 import org.product.domain.valueobject.ValueObjectFactory;
+import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
 
 @Data
