@@ -47,7 +47,6 @@
                 <configuration>
                     <protoSourceRoot>${project.basedir}/src/</protoSourceRoot>
                     <protocArtifact>com.google.protobuf:protoc:3.2.0:exe:${os.detected.classifier}</protocArtifact>
-                    <outputDirectory>${project.basedir}/src/main/java/org/smart/website/commons/lib/</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>

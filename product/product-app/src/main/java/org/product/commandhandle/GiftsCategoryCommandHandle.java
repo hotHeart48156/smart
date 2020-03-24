@@ -1,8 +1,8 @@
 package  org.product.commandhandle;
 
 import lombok.Value;
-import org.product.executor.command.GiftsCategoryCommand;
 import org.product.event.GiftsCategoryEvent;
+import org.product.executor.command.entity.GiftsCategoryCommand;
 
 @Value
 public class GiftsCategoryCommandHandle{
