@@ -1,12 +1,9 @@
 package  org.activite.controller.update;
-import org.activite.executor.AbstractCommand;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-public class NoteServiceController{
+@RestController(value="/update")public class NoteServiceController{
     @Autowired
 private NoteServiceService service;
 @ApiOperation("updateNoteService)
-@PostMapping("/update/NoteService/")
+@PostMapping(value=" entityFile ")
 public  void  update(NoteServiceDto  dto){
 service.NoteService (dto) 
 }

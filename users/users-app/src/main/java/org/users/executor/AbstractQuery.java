@@ -8,4 +8,6 @@ import lombok.Data;
 @Data
 public abstract class AbstractQuery {
     private String id;
+
+
 }

@@ -1,12 +1,9 @@
 package  org.activite.controller.update;
-import org.activite.executor.AbstractCommand;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-public class CouponMinPointServiceController{
+@RestController(value="/update")public class CouponMinPointServiceController{
     @Autowired
 private CouponMinPointServiceService service;
 @ApiOperation("updateCouponMinPointService)
-@PostMapping("/update/CouponMinPointService/")
+@PostMapping(value=" entityFile ")
 public  void  update(CouponMinPointServiceDto  dto){
 service.CouponMinPointService (dto) 
 }

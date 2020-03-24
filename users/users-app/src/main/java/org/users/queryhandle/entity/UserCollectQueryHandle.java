@@ -17,6 +17,6 @@ private CacheService service ;
     UserCollectRepository repository;
  @QueryHandler
 public List<UserCollect>query(UserCollectQuery query) {
-     service.query(new QueryCache(query.getId(), repository));
+   return   service.query(new QueryCache(query.getId(), repository));
 
  }}

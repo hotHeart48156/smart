@@ -1,12 +1,9 @@
 package  org.activite.controller.update;
-import org.activite.executor.AbstractCommand;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-public class RedPacketStockServiceController{
+@RestController(value="/update")public class RedPacketStockServiceController{
     @Autowired
 private RedPacketStockServiceService service;
 @ApiOperation("updateRedPacketStockService)
-@PostMapping("/update/RedPacketStockService/")
+@PostMapping(value=" entityFile ")
 public  void  update(RedPacketStockServiceDto  dto){
 service.RedPacketStockService (dto) 
 }

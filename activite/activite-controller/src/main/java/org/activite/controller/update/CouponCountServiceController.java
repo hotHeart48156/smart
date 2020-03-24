@@ -1,12 +1,9 @@
 package  org.activite.controller.update;
-
-import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-public class CouponCountServiceController{
+@RestController(value="/update")public class CouponCountServiceController{
     @Autowired
 private CouponCountServiceService service;
 @ApiOperation("updateCouponCountService)
-@PostMapping("/update/CouponCountService/")
+@PostMapping(value=" entityFile ")
 public  void  update(CouponCountServiceDto  dto){
 service.CouponCountService (dto) 
 }

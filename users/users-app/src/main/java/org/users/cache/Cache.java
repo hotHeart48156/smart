@@ -20,6 +20,10 @@ public abstract class Cache <T extends AbstractDto,R extends JpaRepository> {
     private T t;
     @Autowired
     RedisTemplate redisTemplate;
+
+    public <T extends AbstractDto, R extends JpaRepository> Cache(T t, R r) {
+    }
+
     public void genRegion(){
         region="user";
     }
@@ -33,4 +37,5 @@ public abstract class Cache <T extends AbstractDto,R extends JpaRepository> {
     public Cache(T t){
         this.t=t;
     }
+    public Cache(){}
 }

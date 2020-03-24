@@ -1,12 +1,13 @@
 package  org.activite.controller.update;
 
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-public class ActivityGoodsServiceController{
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController(value="/update")public class ActivityGoodsServiceController{
     @Autowired
 private ActivityGoodsServiceService service;
 @ApiOperation("updateActivityGoodsService)
-@PostMapping("/update/ActivityGoodsService/")
+@PostMapping(value=" entityFile ")
 public  void  update(ActivityGoodsServiceDto  dto){
 service.ActivityGoodsService (dto) 
 }

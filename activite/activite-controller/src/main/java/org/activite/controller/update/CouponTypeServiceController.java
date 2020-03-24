@@ -1,16 +1,10 @@
 package  org.activite.controller.update;
-
-import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-
-public class CouponTypeServiceController{
+@RestController(value="/update")public class CouponTypeServiceController{
     @Autowired
 private CouponTypeServiceService service;
 @ApiOperation("updateCouponTypeService)
-@PostMapping(value="/update/CouponTypeService/")
+@PostMapping(value=" entityFile ")
 public  void  update(CouponTypeServiceDto  dto){
 service.CouponTypeService (dto) 
 }
-@PostMapping(value = "")
 }
