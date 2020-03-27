@@ -25,7 +25,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class Product {
+public class Product implements Aggregation {
     @EmbeddedId
     private ProductId productId;
     @Embedded

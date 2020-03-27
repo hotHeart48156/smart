@@ -1,3 +1,3 @@
 package  org.activite.executor.query.aggre;
-public class RedPacketQuery{
+public class RedPacketQuery  extends AbstractAggregationQuery{
 }

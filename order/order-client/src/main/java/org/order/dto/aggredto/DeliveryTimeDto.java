@@ -4,9 +4,10 @@ import lombok.Data;
 import org.order.domain.aggregation.Order;
 import org.order.domain.vaueobject.ValueObjectFactory;
 import org.order.domain.vaueobject.time.DeliveryTime;
+import org.order.dto.AbstractDto;
 
 @Data
-public class DeliveryTimeDto {
+public class DeliveryTimeDto   extends AbstractDto {
     private String OrderId;
     private String deliverTime;
 

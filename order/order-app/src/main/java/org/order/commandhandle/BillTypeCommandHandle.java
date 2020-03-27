@@ -1,8 +1,24 @@
 package  org.order.commandhandle;
+
 import lombok.Value;
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.modelling.command.AggregateLifecycle;
+import org.order.cache.CacheService;
+import org.order.cache.UpdateCache;
+import org.order.domain.repository.OrderRepository;
+import org.order.event.BillTypeEvent;
+import org.order.executor.command.BillTypeCommand;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
 @Value
-public class BillTypeCommandHandle{
+public class BillTypeCommandHandle  extends AbstractCommandHandle{
+ @Autowired
+private     CacheService cacheService;
+@Autowired
+private  OrderRepository repository;
 @CommandHandler
-public void on (BillTypeCommand Command){
-AggregateLifecycle.apply(new BillTypeEvent(Command.getBillTypeDto()));
+public void on (BillTypeCommand command){
+cacheService.update(new UpdateCache(command.getBillTypeDto(),repository));
+AggregateLifecycle.apply(new BillTypeEvent(command.getBillTypeDto()));
 }}

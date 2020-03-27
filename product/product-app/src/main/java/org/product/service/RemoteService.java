@@ -6,4 +6,5 @@ package org.product.service;
 
 public class RemoteService {
 
+
 }

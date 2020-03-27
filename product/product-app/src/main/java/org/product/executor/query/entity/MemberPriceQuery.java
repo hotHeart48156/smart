@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class MemberPriceQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class MemberPriceQuery  extends AbstractQuery {
 }

@@ -16,7 +16,7 @@ import org.order.domain.vaueobject.status.SendAddressStatus;
 import org.order.domain.vaueobject.time.CreateTime;
 
 @Data
-public class CompanyAddressDto {
+public class CompanyAddressDto   extends AbstractEntityDto{
     private String addressId;
     private String addressName;
     private String sendAddressStatus;

@@ -15,7 +15,7 @@ import org.activite.domain.valueobject.time.StartTime;
 import org.activite.domain.valueobject.type.HomeAdvertiseType;
 
 @Data
-public class HomeAdvertiseDto {
+public class HomeAdvertiseDto   extends AbstractEntityDto{
     private String homeAdvertiseId;
     private String homeAdvertiseName;
     private String homeAdvertiseType;

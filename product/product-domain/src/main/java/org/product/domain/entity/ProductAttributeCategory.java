@@ -13,7 +13,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class ProductAttributeCategory {
+public class ProductAttributeCategory   implements  org.product.domain.entity.Entity{
      @EmbeddedId
     private Id id;
      @Embedded

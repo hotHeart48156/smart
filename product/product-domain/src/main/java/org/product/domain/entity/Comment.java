@@ -19,7 +19,7 @@ import java.util.List;
  */
 @Data
 @Entity
-public class Comment {
+public class Comment   implements org.product.domain.entity.Entity {
 
      @EmbeddedId
     private Id id;

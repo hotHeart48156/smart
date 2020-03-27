@@ -85,6 +85,7 @@
         <module>config-server</module>
         <module>discover-server</module>
         <module>commons</module>
+        <module>product-appp</module>
 
     </modules>
 </project>

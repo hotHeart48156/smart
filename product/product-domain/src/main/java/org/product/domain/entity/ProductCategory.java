@@ -18,7 +18,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class ProductCategory {
+public class ProductCategory   implements  org.product.domain.entity.Entity{
      @EmbeddedId
     private ProductCategoryId productCategoryId;
      @Embedded

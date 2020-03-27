@@ -4,7 +4,6 @@ import lombok.Data;
 import org.product.domain.valueobject.*;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.name.BrandName;
-import org.product.domain.valueobject.name.Name;
 import org.product.domain.valueobject.status.FactoryStatus;
 import org.product.domain.valueobject.status.ShowStatus;
 
@@ -19,7 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Data
 @Table(name = "brand")
-public class Brand {
+public class Brand  implements Aggregation{
     @EmbeddedId
     private Id brandId;
     @Embedded

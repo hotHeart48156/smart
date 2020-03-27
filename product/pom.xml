@@ -28,33 +28,43 @@
     <dependencyManagement>
         <dependencies>
             <!--Framework-->
-
+            <dependency>
+                <groupId>org.axonframework</groupId>
+                <artifactId>axon-spring-boot-starter</artifactId>
+                <version>4.1.1</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.axonframework</groupId>
+                        <artifactId>axon-server-connector</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
 
             <!--Framework End-->
             <!--Project modules-->
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>product-controller</artifactId>
+                <artifactId>users-controller</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>product-client</artifactId>
+                <artifactId>users-client</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>product-app</artifactId>
+                <artifactId>users-app</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>product-domain</artifactId>
+                <artifactId>users-domain</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>product-infrastructure</artifactId>
+                <artifactId>users-infrastructure</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <!--Project modules End-->
@@ -100,11 +110,7 @@
                 <artifactId>reflections</artifactId>
                 <version>0.9.10</version>
             </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.12.6</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
@@ -118,15 +124,53 @@
             <!-- Misc End -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>2.2.2.RELEASE</version>
-                <scope>test</scope>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>2.1.9.RELEASE</version>
             </dependency>
             <dependency>
-                <groupId>org.axonframework</groupId>
-                <artifactId>axon-spring-boot-starter</artifactId>
-                <version>4.1.1</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>2.1.9.RELEASE</version>
+                <scope>test</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-oauth2</artifactId>
+                <version>2.1.2.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.social</groupId>
+                <artifactId>spring-social-config</artifactId>
+                <version>1.1.6.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.social</groupId>
+                <artifactId>spring-social-core</artifactId>
+                <version>1.1.6.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.social</groupId>
+                <artifactId>spring-social-security</artifactId>
+                <version>1.1.6.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>20030203.000129</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>2.1.9.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>20030211.134440</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
@@ -139,10 +183,13 @@
                 <version>0.7.0</version>
             </dependency>
             <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
-            <version>2.3.3.RELEASE</version>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>2.3.3.RELEASE</version>
+
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 

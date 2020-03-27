@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class PromotionLogQuery{
+public class PromotionLogQuery  extends AbstractEntityQuery{
 }

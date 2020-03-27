@@ -33,7 +33,7 @@ import java.util.List;
  * @author "yangbiao"
  */
 @Data
-public class Order {
+public class Order implements Aggregation {
     //基本信息
 
     @Embedded

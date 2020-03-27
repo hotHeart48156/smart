@@ -4,9 +4,10 @@ import lombok.Data;
 import org.order.domain.aggregation.Order;
 import org.order.domain.vaueobject.ValueObjectFactory;
 import org.order.domain.vaueobject.name.ReceiverName;
+import org.order.dto.AbstractDto;
 
 @Data
-public class ReceiverNameDto {
+public class ReceiverNameDto   extends AbstractDto {
     private String OrderId;
     private String receiverName;
 

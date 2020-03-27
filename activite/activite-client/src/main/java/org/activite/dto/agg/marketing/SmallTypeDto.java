@@ -1,12 +1,14 @@
 package org.activite.dto.agg.marketing;
 
-@Data
-public class SmallTypeDto {
-    private String ActiviteId;
-    private String smallType;
+import lombok.Data;
+import org.activite.domain.aggregation.Marketing;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.type.SmallType;
 
-    public void accept(Marketing marketing) {
-        marketing.setActiviteId(ValueObjectFactory.newInstance(ActiviteId.class, this.ActiviteId));
-        marketing.setSmallType(ValueObjectFactory.newInstance(SmallType.class, this.smallType));
-    }
+@Data
+public class  SmallTypeDto  extends AbstractMarketingDto{
+private String smallType;
+public void accept(Marketing marketing){
+marketing.setSmallType(ValueObjectFactory.newInstance(SmallType.class ,this.smallType));
+}
 }

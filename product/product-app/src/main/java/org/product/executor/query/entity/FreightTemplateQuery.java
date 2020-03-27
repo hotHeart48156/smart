@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class FreightTemplateQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class FreightTemplateQuery  extends AbstractQuery {
 }

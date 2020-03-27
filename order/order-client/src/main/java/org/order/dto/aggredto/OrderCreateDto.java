@@ -15,6 +15,7 @@ import org.order.domain.vaueobject.phone.PhoneNumber;
 import org.order.domain.vaueobject.time.CreateTime;
 import org.order.domain.vaueobject.type.OrderType;
 import org.order.domain.vaueobject.type.SourceType;
+import org.order.dto.AbstractDto;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.List;
  * @author "yangbiao"
  */
 
-public class OrderCreateDto {
+public class OrderCreateDto   extends AbstractDto {
     @NotNull
     private String userId;
 
@@ -68,7 +69,6 @@ public class OrderCreateDto {
         address.setPostCode(ValueObjectFactory.newInstance(PostCode.class, postcode));
         address.setDetailAddress(ValueObjectFactory.newInstance(DetailAddress.class, detail));
         address.setProvince(ValueObjectFactory.newInstance(Province.class, province));
-        order.setAddress(address);
         order.setUserId(ValueObjectFactory.newInstance(UserId.class, userId));
         order.setUserName(ValueObjectFactory.newInstance(UserName.class, username));
         order.setReceiverPhone(ValueObjectFactory.newInstance(PhoneNumber.class, numberPhone));

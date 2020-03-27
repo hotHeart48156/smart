@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class CommentAndProductRelationshipQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class CommentAndProductRelationshipQuery  extends AbstractQuery {
 }

@@ -5,9 +5,8 @@ import org.product.domain.entity.GiftAndProductRelationship;
 import org.product.domain.valueobject.ValueObjectFactory;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
-
 @Data
-public class GiftAndProductRelationshipDto {
+public class GiftAndProductRelationshipDto   extends AbstractEntityDto{
     private String id;
     private String giftId;
     private String productId;

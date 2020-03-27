@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class AddressQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class AddressQuery  extends AbstractQuery {
 }

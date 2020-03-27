@@ -12,7 +12,7 @@ import org.order.domain.vaueobject.id.AddressId;
 import org.order.domain.vaueobject.time.CreateTime;
 
 @Data
-public class AddressDto {
+public class AddressDto   extends AbstractEntityDto{
     private String addressId;
     private String city;
     private String detailAddress;

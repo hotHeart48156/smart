@@ -14,7 +14,7 @@ import javax.persistence.EmbeddedId;
 @Data
 @javax.persistence.Entity
 
-public class FreightTemplate implements Entity {
+public class FreightTemplate    implements  Entity{
      @EmbeddedId
     private FeightTemplateId feightTemplateId;
      @Embedded

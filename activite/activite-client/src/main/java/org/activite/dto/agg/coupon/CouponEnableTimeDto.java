@@ -6,12 +6,9 @@ import org.activite.domain.valueobject.ValueObjectFactory;
 import org.activite.domain.valueobject.time.CouponEnableTime;
 
 @Data
-public class CouponEnableTimeDto {
-    private String ActiviteId;
-    private String couponEnableTime;
-
-    public void accept(Coupon coupon) {
-        coupon.setActiviteId(ValueObjectFactory.newInstance(ActiviteId.class, this.ActiviteId));
-        coupon.setCouponEnableTime(ValueObjectFactory.newInstance(CouponEnableTime.class, this.couponEnableTime));
-    }
+public class  CouponEnableTimeDto  extends AbstractCouponDto{
+private String couponEnableTime;
+public void accept(Coupon coupon){
+coupon.setCouponEnableTime(ValueObjectFactory.newInstance(CouponEnableTime.class ,this.couponEnableTime));
+}
 }

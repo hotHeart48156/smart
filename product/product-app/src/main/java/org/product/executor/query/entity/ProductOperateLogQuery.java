@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class ProductOperateLogQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class ProductOperateLogQuery  extends AbstractQuery {
 }

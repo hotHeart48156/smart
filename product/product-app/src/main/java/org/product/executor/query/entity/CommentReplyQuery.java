@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class CommentReplyQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class CommentReplyQuery  extends AbstractQuery {
 }

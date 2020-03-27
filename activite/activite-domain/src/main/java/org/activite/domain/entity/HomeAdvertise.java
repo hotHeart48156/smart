@@ -15,17 +15,16 @@ import org.activite.domain.valueobject.type.HomeAdvertiseType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
-@Entity
+@javax.persistence.Entity
 @Data
 @Table(name  ="smart.home_advertise")
 
-public class HomeAdvertise extends AbstractEntity {
+public class HomeAdvertise extends Entity {
     @EmbeddedId
 private HomeAdvertiseId homeAdvertiseId;
     @Embedded

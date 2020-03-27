@@ -8,9 +8,8 @@ import org.product.domain.valueobject.VerifyMan;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
 import org.product.domain.valueobject.time.CreateTime;
-
 @Data
-public class ProductVerifyRecordDto {
+public class ProductVerifyRecordDto   extends AbstractEntityDto{
     private String id;
     private String productId;
     private String createTime;

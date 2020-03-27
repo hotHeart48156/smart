@@ -19,7 +19,7 @@ import javax.persistence.EmbeddedId;
  * @author "yangbiao"
  */
 @Data
-public class ProductAttribute implements Entity{
+public class ProductAttribute   implements  Entity{
      @EmbeddedId
     private ProductAttributeId productAttributeId;
      @Embedded

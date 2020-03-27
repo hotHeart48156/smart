@@ -1,12 +1,14 @@
 package org.activite.dto.agg.coupon;
 
-@Data
-public class CouponUsedCountDto {
-    private String ActiviteId;
-    private String couponUsedCount;
+import lombok.Data;
+import org.activite.domain.aggregation.Coupon;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.count.CouponUsedCount;
 
-    public void accept(Coupon coupon) {
-        coupon.setActiviteId(ValueObjectFactory.newInstance(ActiviteId.class, this.ActiviteId));
-        coupon.setCouponUsedCount(ValueObjectFactory.newInstance(CouponUsedCount.class, this.couponUsedCount));
-    }
+@Data
+public class  CouponUsedCountDto  extends AbstractCouponDto{
+private String couponUsedCount;
+public void accept(Coupon coupon){
+coupon.setCouponUsedCount(ValueObjectFactory.newInstance(CouponUsedCount.class ,this.couponUsedCount));
+}
 }

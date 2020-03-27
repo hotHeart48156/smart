@@ -10,9 +10,8 @@ import org.product.domain.valueobject.name.ProductCategoryName;
 import org.product.domain.valueobject.status.IndexStatus;
 import org.product.domain.valueobject.status.NavStatus;
 import org.product.domain.valueobject.status.ShowStatus;
-
 @Data
-public class ProductCategoryDto {
+public class ProductCategoryDto   extends AbstractEntityDto{
     private String productCategoryId;
     private String productCategoryParentId;
     private String productCategoryName;

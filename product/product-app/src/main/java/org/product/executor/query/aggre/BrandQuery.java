@@ -1,3 +1,7 @@
 package  org.product.executor.query.aggre;
-public class BrandQuery{
+
+import lombok.Value;
+
+@Value
+public class BrandQuery extends AbstractAggregationQuery{
 }

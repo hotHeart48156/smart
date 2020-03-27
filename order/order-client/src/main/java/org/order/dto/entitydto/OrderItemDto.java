@@ -24,7 +24,7 @@ import org.order.domain.vaueobject.time.CreateTime;
  * @author yangbiao
  */
 @Data
-public class OrderItemDto {
+public class OrderItemDto   extends AbstractEntityDto{
     private String orderItemId;
     private String orderId;
     private String productId;

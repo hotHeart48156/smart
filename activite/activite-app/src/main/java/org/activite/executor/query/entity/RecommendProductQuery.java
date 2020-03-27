@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class RecommendProductQuery{
+public class RecommendProductQuery  extends AbstractEntityQuery{
 }

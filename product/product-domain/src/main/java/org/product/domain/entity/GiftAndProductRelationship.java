@@ -13,7 +13,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class GiftAndProductRelationship {
+public class GiftAndProductRelationship   implements  org.product.domain.entity.Entity{
     @EmbeddedId
     private Id id;
     @Embedded

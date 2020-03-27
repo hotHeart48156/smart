@@ -1,5 +1,6 @@
 package org.order.dto;
 
+import lombok.Data;
 import org.order.domain.aggregation.Order;
 import org.order.domain.entity.Address;
 import org.order.domain.vaueobject.ValueObjectFactory;
@@ -22,8 +23,8 @@ import java.util.List;
 /**
  * @author "yangbiao"
  */
-
-public class OrderCreateDto {
+@Data
+public class OrderCreateDto extends AbstractDto{
     @NotNull
     private String userId;
 
@@ -62,18 +63,17 @@ public class OrderCreateDto {
 
     public void accept(Order order) {
         Address address = new Address();
-        address.setAddressId(ValueObjectFactory.getInstance(AddressId.class));
-        address.setCity(ValueObjectFactory.getInstance(City.class, city.getClass()));
-        address.setCreateTime(ValueObjectFactory.getInstance(CreateTime.class));
-        address.setPostCode(ValueObjectFactory.getInstance(PostCode.class, postcode.getClass()));
-        address.setDetailAddress(ValueObjectFactory.getInstance(DetailAddress.class, detail.getClass()));
-        address.setProvince(ValueObjectFactory.getInstance(Province.class, province.getClass()));
-        order.setAddress(address);
-        order.setUserId(ValueObjectFactory.getInstance(UserId.class, userId.getClass()));
-        order.setUserName(ValueObjectFactory.getInstance(UserName.class, username.getClass()));
-        order.setReceiverPhone(ValueObjectFactory.getInstance(PhoneNumber.class, numberPhone.getClass()));
-        order.setReceiverName(ValueObjectFactory.getInstance(ReceiverName.class, receiverName.getClass()));
-        order.setOrderType(ValueObjectFactory.getInstance(OrderType.class, orderType.getClass()));
-        order.setSourceType(ValueObjectFactory.getInstance(SourceType.class, sourceType.getClass()));
+        address.setAddressId(ValueObjectFactory.newInstance(AddressId.class));
+        address.setCity(ValueObjectFactory. newInstance(City.class, city ));
+        address.setCreateTime(ValueObjectFactory. newInstance(CreateTime.class));
+        address.setPostCode(ValueObjectFactory. newInstance(PostCode.class, postcode ));
+        address.setDetailAddress(ValueObjectFactory. newInstance(DetailAddress.class, detail ));
+        address.setProvince(ValueObjectFactory. newInstance(Province.class, province ));
+        order.setUserId(ValueObjectFactory. newInstance(UserId.class, userId ));
+        order.setUserName(ValueObjectFactory. newInstance(UserName.class, username ));
+        order.setReceiverPhone(ValueObjectFactory. newInstance(PhoneNumber.class, numberPhone ));
+        order.setReceiverName(ValueObjectFactory. newInstance(ReceiverName.class, receiverName ));
+        order.setOrderType(ValueObjectFactory. newInstance(OrderType.class, orderType ));
+        order.setSourceType(ValueObjectFactory. newInstance(SourceType.class, sourceType ));
     }
 }

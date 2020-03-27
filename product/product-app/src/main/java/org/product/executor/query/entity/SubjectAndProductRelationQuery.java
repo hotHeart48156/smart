@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class SubjectAndProductRelationQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class SubjectAndProductRelationQuery  extends AbstractQuery {
 }

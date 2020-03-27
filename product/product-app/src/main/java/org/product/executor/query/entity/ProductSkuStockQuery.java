@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class ProductSkuStockQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class ProductSkuStockQuery  extends AbstractQuery {
 }

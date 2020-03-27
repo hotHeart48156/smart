@@ -1,12 +1,14 @@
 package org.activite.dto.agg.redpacket;
 
-@Data
-public class SingleRedPacketAmountDto {
-    private String ActiviteId;
-    private String singleRedPacketAmount;
+import lombok.Data;
+import org.activite.domain.aggregation.RedPacket;
+import org.activite.domain.valueobject.ValueObjectFactory;
+import org.activite.domain.valueobject.amount.SingleRedPacketAmount;
 
-    public void accept(RedPacket redpacket) {
-        redpacket.setActiviteId(ValueObjectFactory.newInstance(ActiviteId.class, this.ActiviteId));
-        redpacket.setSingleRedPacketAmount(ValueObjectFactory.newInstance(SingleRedPacketAmount.class, this.singleRedPacketAmount));
-    }
+@Data
+public class  SingleRedPacketAmountDto  extends AbstractRedPacketDto{
+private String singleRedPacketAmount;
+public void accept(RedPacket redpacket){
+redpacket.setSingleRedPacketAmount(ValueObjectFactory.newInstance(SingleRedPacketAmount.class ,this.singleRedPacketAmount));
+}
 }

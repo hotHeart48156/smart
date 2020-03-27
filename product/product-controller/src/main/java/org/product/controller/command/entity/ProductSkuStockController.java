@@ -1,13 +1,18 @@
-package org.product.controller.command.entity;
-import org.activite.executor.AbstractCommand;
-import org.springframework.beans.factory.annotation.Autowired;
+package  org.product.controller.command.entity;
 
+import org.product.dto.entity.ProductSkuStockDto;
+import org.product.service.command.entity.ProductSkuStockService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController(value="/update")
 public class ProductSkuStockController{
     @Autowired
 private ProductSkuStockService service;
-@ApiOperation("updateProductSkuStock)
-@PostMapping("/update/ProductSkuStock/")
+@PostMapping(value=" entityFile ")
 public  void  update(ProductSkuStockDto  dto){
-service.ProductSkuStock (dto) 
+service.ProductSkuStock (dto); 
 }
 }

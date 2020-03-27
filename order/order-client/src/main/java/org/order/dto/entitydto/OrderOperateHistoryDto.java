@@ -11,7 +11,7 @@ import org.order.domain.vaueobject.status.OrderStatus;
 import org.order.domain.vaueobject.time.CreateTime;
 
 @Data
-public class OrderOperateHistoryDto {
+public class OrderOperateHistoryDto   extends AbstractEntityDto{
     private String orderOperateHistoryId;
     private String orderId;
     private String operateMan;

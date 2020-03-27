@@ -1,8 +1,22 @@
-package  org.order.commandhandle;
-import lombok.Value;
+package  org.order.commandhandle;import lombok.Value;
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.modelling.command.AggregateLifecycle;
+import org.order.cache.CacheService;
+import org.order.cache.UpdateCache;
+import org.order.domain.repository.OrderRepository;
+import org.order.event.DeliveryMessageEvent;
+import org.order.executor.command.DeliveryMessageCommand;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
 @Value
-public class DeliveryMessageCommandHandle{
+public class DeliveryMessageCommandHandle  extends AbstractCommandHandle{
+ @Autowired
+private     CacheService cacheService;
+@Autowired
+private  OrderRepository repository;
 @CommandHandler
-public void on (DeliveryMessageCommand Command){
-AggregateLifecycle.apply(new DeliveryMessageEvent(Command.getDeliveryMessageDto()));
+public void on (DeliveryMessageCommand command){
+cacheService.update(new UpdateCache(command.getDeliveryMessageDto(),repository));
+AggregateLifecycle.apply(new DeliveryMessageEvent(command.getDeliveryMessageDto()));
 }}

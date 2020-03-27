@@ -8,9 +8,8 @@ import org.product.domain.valueobject.address.DetailAddress;
 import org.product.domain.valueobject.address.Province;
 import org.product.domain.valueobject.address.Region;
 import org.product.domain.valueobject.id.Id;
-
 @Data
-public class AddressDto {
+public class AddressDto   extends AbstractEntityDto{
     private String id;
     private String province;
     private String city;

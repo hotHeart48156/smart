@@ -14,7 +14,7 @@ import javax.persistence.EmbeddedId;
  */
 @javax.persistence.Entity
 @Data
-public class ProductFullReduction {
+public class ProductFullReduction implements org.product.domain.entity.Entity {
      @EmbeddedId
     private Id id;
      @Embedded

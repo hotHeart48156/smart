@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class ProductVerifyRecordQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class ProductVerifyRecordQuery  extends AbstractQuery {
 }

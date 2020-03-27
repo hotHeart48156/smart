@@ -14,7 +14,7 @@ import org.activite.domain.valueobject.time.StartTime;
 import java.sql.Timestamp;
 
 @Data
-public class PromotionTypeDto {
+public class PromotionTypeDto   extends AbstractEntityDto{
     private String id;
     private String title;
     private String startTime;

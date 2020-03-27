@@ -20,7 +20,7 @@ import org.order.domain.vaueobject.time.CreateTime;
 import org.order.domain.vaueobject.time.ModifyTime;
 
 @Data
-public class CartItemDto {
+public class CartItemDto   extends AbstractEntityDto{
     private String cartItemId;
     private String productId;
     private String productSkuId;

@@ -23,7 +23,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class Group extends AbstractAggregation{
+public class Group extends Aggregation {
     @EmbeddedId
 private GroupId groupId;
     @Embedded

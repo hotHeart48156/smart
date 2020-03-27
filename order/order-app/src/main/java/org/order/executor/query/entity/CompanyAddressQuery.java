@@ -1,3 +1,3 @@
 package  org.order.executor.query.entity;
-public class CompanyAddressQuery{
+public class CompanyAddressQuery  extends AbstractQuery{
 }

@@ -1,9 +1,10 @@
 package org.product.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
 public class GiftPointEvent {
-    private GiftPointDto GiftPointDto;
+    private org.product.dto.aggre.product.GiftPointDto GiftPointDto;
 }

@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class GroupMemberQuery{
+public class GroupMemberQuery  extends AbstractEntityQuery{
 }

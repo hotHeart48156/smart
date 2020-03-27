@@ -1,8 +1,10 @@
 package org.activite.dto.agg.marketing;
 
+import org.activite.dto.AbstractDto;
+
 /**
- * @author yangbiao
+@author yangbiao
  */
 
-public abstract class AbstractMarketingDto {
+public abstract class AbstractMarketingDto  extends AbstractDto {
 }

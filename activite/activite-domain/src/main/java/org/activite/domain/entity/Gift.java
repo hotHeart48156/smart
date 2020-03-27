@@ -16,18 +16,17 @@ import org.activite.domain.valueobject.user.UserLevel;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.List;
 
 /**
  * @author "yangbiao"
  */
-@Entity
+@javax.persistence.Entity
 @Data
 @Table(name = "smart.gift")
 
-public class Gift extends AbstractEntity {
+public class Gift extends Entity {
     @EmbeddedId
 private GiftId giftId;
     @Embedded

@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class RedPacketAndUserRelationshipQuery{
+public class RedPacketAndUserRelationshipQuery  extends AbstractEntityQuery{
 }

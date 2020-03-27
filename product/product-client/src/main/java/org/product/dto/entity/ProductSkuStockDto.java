@@ -6,9 +6,8 @@ import org.product.domain.valueobject.SkuCode;
 import org.product.domain.valueobject.ValueObjectFactory;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
-
 @Data
-public class ProductSkuStockDto {
+public class ProductSkuStockDto   extends AbstractEntityDto{
     private String id;
     private String productId;
     private String skuCode;

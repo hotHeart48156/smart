@@ -1,9 +1,10 @@
 package org.product.event;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
 @AllArgsConstructor
 public class ProductLadderEvent {
-    private ProductLadderDto ProductLadderDto;
+    private org.product.dto.entity.ProductLadderDto ProductLadderDto;
 }

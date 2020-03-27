@@ -1,6 +1,8 @@
 package org.order.executor.command;
+
 import lombok.Value;
+
 @Value
-public class DeleteStatusCommand{
-private DeleteStatusDto  DeleteStatusDto;
+public class DeleteStatusCommand  extends AbstractCommand{
+private org.order.dto.aggredto.DeleteStatusDto DeleteStatusDto;
 }

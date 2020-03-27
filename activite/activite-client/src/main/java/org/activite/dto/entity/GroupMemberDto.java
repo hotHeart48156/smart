@@ -10,7 +10,7 @@ import org.activite.domain.valueobject.time.CreateTime;
 import org.activite.domain.valueobject.time.ExpireTime;
 
 @Data
-public class GroupMemberDto {
+public class GroupMemberDto   extends AbstractEntityDto{
     private String groupId;
     private String userId;
     private String createTime;

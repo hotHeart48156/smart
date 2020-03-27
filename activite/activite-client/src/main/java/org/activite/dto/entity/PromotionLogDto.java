@@ -4,7 +4,7 @@ import lombok.Data;
 import org.activite.domain.entity.PromotionLog;
 
 @Data
-public class PromotionLogDto {
+public class PromotionLogDto   extends AbstractEntityDto{
     public void accept(PromotionLog promotionlog) {
     }
 }

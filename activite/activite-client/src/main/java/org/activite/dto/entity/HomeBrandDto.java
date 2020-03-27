@@ -8,7 +8,7 @@ import org.activite.domain.valueobject.name.BrandName;
 import org.activite.domain.valueobject.status.RecommendStatus;
 
 @Data
-public class HomeBrandDto {
+public class HomeBrandDto   extends AbstractEntityDto{
     private String brandId;
     private String brandName;
     private String recommendStatus;

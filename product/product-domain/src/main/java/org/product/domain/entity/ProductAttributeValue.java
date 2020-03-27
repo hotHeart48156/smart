@@ -3,5 +3,5 @@ package org.product.domain.entity;
 /**
  * @author "yangbiao"
  */
-public class ProductAttributeValue {
+public class ProductAttributeValue  implements org.product.domain.entity.Entity{
 }

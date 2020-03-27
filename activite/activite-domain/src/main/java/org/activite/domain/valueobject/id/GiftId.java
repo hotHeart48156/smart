@@ -1,8 +1,9 @@
 package org.activite.domain.valueobject.id;
 
-import javax.persistence.Column;
-import lombok.Value;
 import lombok.AllArgsConstructor;
+import lombok.Value;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
@@ -10,7 +11,7 @@ import javax.persistence.Embeddable;
 @Value
 @Embeddable
 @AllArgsConstructor
-public class GiftId extends AbstractId extends AbstractId
+public class GiftId extends AbstractId
 {
 @Column(name ="   giftId")
 private  Long   giftId;

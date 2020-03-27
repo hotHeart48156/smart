@@ -1,4 +1,6 @@
 package org.product.executor.command.aggre.brand;
 
-public abstract class AbstractBrandCommand{
+import org.product.executor.AbstractCommand;
+
+public abstract class AbstractBrandCommand extends AbstractCommand {
 }

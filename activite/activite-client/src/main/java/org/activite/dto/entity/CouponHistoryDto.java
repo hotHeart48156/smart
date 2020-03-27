@@ -5,7 +5,7 @@ import org.activite.domain.entity.CouponHistory;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.OrderSn;
 import org.activite.domain.valueobject.ValueObjectFactory;
-import org.activite.domain.valueobject.id.Id;
+import org.activite.domain.valueobject.id.CouponId;
 import org.activite.domain.valueobject.id.OrderId;
 import org.activite.domain.valueobject.id.UserId;
 import org.activite.domain.valueobject.name.UserNickName;
@@ -19,7 +19,7 @@ import org.activite.domain.valueobject.type.CouponGetType;
 import java.sql.Timestamp;
 
 @Data
-public class CouponHistoryDto {
+public class CouponHistoryDto   extends AbstractEntityDto{
     private String couponId;
     private String userId;
     private String userNickName;
@@ -34,11 +34,11 @@ public class CouponHistoryDto {
     private String note;
 
     public void accept(CouponHistory couponhistory) {
-        couponhistory.setCouponId(ValueObjectFactory.newInstance(Id.class, this.couponId));
+        couponhistory.setCouponId(ValueObjectFactory.newInstance(CouponId.class, this.couponId));
         couponhistory.setUserId(ValueObjectFactory.newInstance(UserId.class, userId));
         couponhistory.setUserNickName(ValueObjectFactory.newInstance(UserNickName.class, userNickName));
         couponhistory.setCouponGetType(ValueObjectFactory.newInstance(CouponGetType.class, couponGetType));
-        couponhistory.setCreateTime(ValueObjectFactory.newInstance(CreateTime.class, new Timestamp()));
+        couponhistory.setCreateTime(ValueObjectFactory.newInstance(CreateTime.class, new Timestamp(System.currentTimeMillis())));
         couponhistory.setCouponUseStatus(ValueObjectFactory.newInstance(CouponUseStatus.class, couponUseStatus));
         couponhistory.setCouponUseTime(ValueObjectFactory.newInstance(CouponUseTime.class, couponUseTime));
         couponhistory.setOrderSn(ValueObjectFactory.newInstance(OrderSn.class, orderSn));

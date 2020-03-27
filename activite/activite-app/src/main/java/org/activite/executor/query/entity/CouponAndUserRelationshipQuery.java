@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class CouponAndUserRelationshipQuery{
+public class CouponAndUserRelationshipQuery  extends AbstractEntityQuery{
 }

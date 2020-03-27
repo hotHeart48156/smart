@@ -14,7 +14,7 @@ import javax.persistence.EmbeddedId;
 @javax.persistence.Entity
 
 @Data
-public class CommentAndProductRelationship {
+public class CommentAndProductRelationship implements org.product.domain.entity.Entity{
      @EmbeddedId
     private Id id;
      @Embedded

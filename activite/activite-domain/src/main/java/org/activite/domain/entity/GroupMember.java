@@ -9,17 +9,16 @@ import org.activite.domain.valueobject.time.ExpireTime;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
-@Entity
+@javax.persistence.Entity
 @Data
 @Table(name  ="smart.group_member")
 
-public class GroupMember extends AbstractEntity {
+public class GroupMember extends Entity {
     @EmbeddedId
 private GroupId groupId;
     @Embedded

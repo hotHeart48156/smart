@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class HomeAdvertiseQuery{
+public class HomeAdvertiseQuery  extends AbstractEntityQuery{
 }

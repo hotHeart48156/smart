@@ -9,9 +9,8 @@ import org.product.domain.valueobject.id.ProductId;
 import org.product.domain.valueobject.name.MemberName;
 import org.product.domain.valueobject.name.ProductName;
 import org.product.domain.valueobject.time.CreateTime;
-
 @Data
-public class CommentDto {
+public class CommentDto   extends AbstractEntityDto{
     private String id;
     private String productId;
     private String memberName;

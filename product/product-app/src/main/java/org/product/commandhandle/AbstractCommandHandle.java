@@ -1,3 +1,4 @@
-package  org.product.commandhandle;
-public abstract class AbstractCommandHandle{
+package org.product.commandhandle;
+
+public interface AbstractCommandHandle {
 }

@@ -1,3 +1,3 @@
 package  org.activite.executor.query.aggre;
-public class GroupQuery{
+public class GroupQuery  extends AbstractAggregationQuery{
 }

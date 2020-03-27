@@ -10,9 +10,8 @@ import org.product.domain.valueobject.id.CommentReplalyId;
 import org.product.domain.valueobject.name.MemberName;
 import org.product.domain.valueobject.time.CreateTime;
 import org.product.domain.valueobject.type.CommentType;
-
 @Data
-public class CommentReplyDto {
+public class CommentReplyDto   extends AbstractEntityDto{
     private String commentReplalyId;
     private String commentId;
     private String memberName;

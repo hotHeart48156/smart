@@ -6,5 +6,5 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class GiftAndProductRelationshipEvent {
-    private GiftAndProductRelationshipDto GiftAndProductRelationshipDto;
+    private org.product.dto.entity.GiftAndProductRelationshipDto GiftAndProductRelationshipDto;
 }

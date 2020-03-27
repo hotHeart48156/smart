@@ -18,7 +18,7 @@ import org.activite.domain.valueobject.user.UserLevel;
 import java.sql.Timestamp;
 
 @Data
-public class GiftDto {
+public class GiftDto   extends AbstractEntityDto{
     private String giftId;
     private String giftName;
     private String giftStatus;
@@ -41,7 +41,7 @@ public class GiftDto {
         gift.setSmallType(ValueObjectFactory.newInstance(SmallType.class, smallType));
         gift.setUserLevel(ValueObjectFactory.newInstance(UserLevel.class, userLevel));
         gift.setStartTime(ValueObjectFactory.newInstance(StartTime.class, startTime));
-        gift.setEndTime(ValueObjectFactory.newInstance(EndTime.class, new Timestamp()));
+        gift.setEndTime(ValueObjectFactory.newInstance(EndTime.class, new Timestamp(System.currentTimeMillis())));
         gift.setNote(ValueObjectFactory.newInstance(Note.class, note));
     }
 }

@@ -8,9 +8,8 @@ import org.product.domain.valueobject.id.ProductId;
 import org.product.domain.valueobject.id.UserId;
 import org.product.domain.valueobject.name.MemberName;
 import org.product.domain.valueobject.name.ProductName;
-
 @Data
-public class ProductConsultDto {
+public class ProductConsultDto   extends AbstractEntityDto{
     private String id;
     private String productId;
     private String productName;

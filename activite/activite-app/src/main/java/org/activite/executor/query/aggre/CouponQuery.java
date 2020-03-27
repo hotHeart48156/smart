@@ -1,3 +1,3 @@
 package  org.activite.executor.query.aggre;
-public class CouponQuery{
+public class CouponQuery  extends AbstractAggregationQuery{
 }

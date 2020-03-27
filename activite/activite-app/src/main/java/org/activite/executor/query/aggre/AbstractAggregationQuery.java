@@ -1,3 +1,6 @@
 package  org.activite.executor.query.aggre;
-public class AbstractAggregationQuery{
+
+import org.activite.executor.AbstractQuery;
+
+public abstract class AbstractAggregationQuery extends AbstractQuery {
 }

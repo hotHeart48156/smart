@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class ProductAttributeCategoryQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class ProductAttributeCategoryQuery  extends AbstractQuery {
 }

@@ -7,9 +7,8 @@ import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
 import org.product.domain.valueobject.price.FullPrice;
 import org.product.domain.valueobject.price.ReducePrice;
-
 @Data
-public class ProductFullReductionDto {
+public class ProductFullReductionDto   extends AbstractEntityDto{
     private String id;
     private String productId;
     private String fullPrice;

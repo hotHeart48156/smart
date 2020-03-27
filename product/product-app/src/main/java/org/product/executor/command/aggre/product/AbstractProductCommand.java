@@ -1,4 +1,7 @@
 package org.product.executor.command.aggre.product;
 
-public abstract class AbstractProductCommand{
+import org.product.executor.AbstractCommand;
+
+public abstract class AbstractProductCommand extends AbstractCommand {
 }
+

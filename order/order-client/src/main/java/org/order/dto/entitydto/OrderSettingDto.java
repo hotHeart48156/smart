@@ -7,7 +7,7 @@ import org.order.domain.vaueobject.id.OrderSettingId;
 import org.order.domain.vaueobject.time.*;
 
 @Data
-public class OrderSettingDto {
+public class OrderSettingDto   extends AbstractEntityDto{
     private String orderSettingId;
     private String flashOrderOverTime;
     private String normalOrderOverTime;

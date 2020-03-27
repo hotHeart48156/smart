@@ -1,12 +1,14 @@
 package org.activite.dto.agg.marketing;
 
-@Data
-public class ActivityUserDto {
-    private String ActiviteId;
-    private String activityUser;
+import lombok.Data;
+import org.activite.domain.aggregation.Marketing;
+import org.activite.domain.valueobject.ActivityUser;
+import org.activite.domain.valueobject.ValueObjectFactory;
 
-    public void accept(Marketing marketing) {
-        marketing.setActiviteId(ValueObjectFactory.newInstance(ActiviteId.class, this.ActiviteId));
-        marketing.setActivityUser(ValueObjectFactory.newInstance(ActivityUser.class, this.activityUser));
-    }
+@Data
+public class  ActivityUserDto  extends AbstractMarketingDto{
+private String activityUser;
+public void accept(Marketing marketing){
+marketing.setActivityUser(ValueObjectFactory.newInstance(ActivityUser.class ,this.activityUser));
+}
 }

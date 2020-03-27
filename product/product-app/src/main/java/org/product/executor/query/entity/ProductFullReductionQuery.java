@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class ProductFullReductionQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class ProductFullReductionQuery  extends AbstractQuery {
 }

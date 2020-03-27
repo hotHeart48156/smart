@@ -14,7 +14,7 @@ import javax.persistence.Entity;
  */
 @Data
 @Entity
-public class MemberPrice {
+public class MemberPrice   implements org.product.domain.entity.Entity {
      @EmbeddedId
     private MemberPriceId memberPriceId;
      @Embedded
@@ -22,6 +22,6 @@ public class MemberPrice {
      @Embedded
     private MemberlLevel memberlLevel;
      @Embedded
-    private MemberPrice memberPrice;
+    private org.product.domain.valueobject.MemberPrice memberPrice;
 
 }

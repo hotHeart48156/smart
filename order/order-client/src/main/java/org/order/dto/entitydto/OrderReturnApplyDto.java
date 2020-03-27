@@ -22,7 +22,7 @@ import org.order.domain.vaueobject.time.HandleTime;
 import org.order.domain.vaueobject.time.ReceiverTime;
 
 @Data
-public class OrderReturnApplyDto {
+public class OrderReturnApplyDto   extends AbstractEntityDto{
     private String orderReturnApplyId;
     private String orderId;
     private String companyAddressId;

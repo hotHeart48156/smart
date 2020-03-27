@@ -4,9 +4,10 @@ import lombok.Data;
 import org.order.domain.aggregation.Order;
 import org.order.domain.vaueobject.ValueObjectFactory;
 import org.order.domain.vaueobject.status.ConfirmStatus;
+import org.order.dto.AbstractDto;
 
 @Data
-public class ConfirmStatusDto {
+public class ConfirmStatusDto   extends AbstractDto {
     private String OrderId;
     private String confirmStatus;
 

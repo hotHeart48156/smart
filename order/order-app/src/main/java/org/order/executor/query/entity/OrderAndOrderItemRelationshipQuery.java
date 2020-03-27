@@ -1,3 +1,3 @@
 package  org.order.executor.query.entity;
-public class OrderAndOrderItemRelationshipQuery{
+public class OrderAndOrderItemRelationshipQuery  extends AbstractQuery{
 }

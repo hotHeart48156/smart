@@ -10,7 +10,7 @@ import org.order.domain.vaueobject.time.CreateTime;
 import org.order.domain.vaueobject.type.ReturnReasonType;
 
 @Data
-public class OrderReturnReasonDto {
+public class OrderReturnReasonDto   extends AbstractEntityDto{
     private String orderId;
     private String id;
     private String returnReasonStatus;

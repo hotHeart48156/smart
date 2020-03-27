@@ -15,7 +15,7 @@ import javax.persistence.EmbeddedId;
  */
 @Data
 @javax.persistence.Entity
-public class Address implements Entity {
+public class Address    implements  Entity{
     @EmbeddedId
 private Id id;
     @Embedded

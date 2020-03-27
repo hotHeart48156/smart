@@ -16,16 +16,15 @@ import org.activite.domain.valueobject.type.CouponGetType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
-@Entity
+@javax.persistence.Entity
 @Data
 @Table(name  ="smart.coupon_history")
-public class CouponHistory extends AbstractEntity{
+public class CouponHistory extends Entity {
     @EmbeddedId
 private CouponId couponId;
     @Embedded

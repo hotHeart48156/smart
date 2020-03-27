@@ -1,3 +1,6 @@
 package  org.order.executor.query.aggre;
-public class OrderQuery{
+
+import org.order.executor.query.entity.AbstractQuery;
+
+public class OrderQuery extends AbstractQuery {
 }

@@ -6,12 +6,9 @@ import org.activite.domain.valueobject.ValueObjectFactory;
 import org.activite.domain.valueobject.amount.CouponAmount;
 
 @Data
-public class CouponAmountDto {
-    private String ActiviteId;
-    private String couponAmount;
-
-    public void accept(Coupon coupon) {
-        coupon.setCouponId(ValueObjectFactory.newInstance(ActiviteId.class, this.ActiviteId));
-        coupon.setCouponAmount(ValueObjectFactory.newInstance(CouponAmount.class, this.couponAmount));
-    }
+public class  CouponAmountDto  extends AbstractCouponDto{
+private String couponAmount;
+public void accept(Coupon coupon){
+coupon.setCouponAmount(ValueObjectFactory.newInstance(CouponAmount.class ,this.couponAmount));
+}
 }

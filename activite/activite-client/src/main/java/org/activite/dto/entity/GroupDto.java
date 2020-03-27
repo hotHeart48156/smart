@@ -17,7 +17,7 @@ import org.activite.domain.valueobject.time.EndTime;
 import org.activite.domain.valueobject.time.StartTime;
 
 @Data
-public class GroupDto {
+public class GroupDto   extends AbstractEntityDto{
     private String groupId;
     private String productId;
     private String productName;

@@ -1,13 +1,18 @@
-package org.product.controller.command.entity;
-import org.activite.executor.AbstractCommand;
-import org.springframework.beans.factory.annotation.Autowired;
+package  org.product.controller.command.entity;
 
+import org.product.dto.entity.GiftsCategoryDto;
+import org.product.service.command.entity.GiftsCategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController(value="/update")
 public class GiftsCategoryController{
     @Autowired
 private GiftsCategoryService service;
-@ApiOperation("updateGiftsCategory)
-@PostMapping("/update/GiftsCategory/")
-public  void  update(GiftsCategoryDto  dto){
-service.GiftsCategory (dto) 
+@PostMapping(value=" entityFile ")
+public  void  update(GiftsCategoryDto dto){
+service.GiftsCategory (dto); 
 }
 }

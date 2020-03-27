@@ -5,9 +5,8 @@ import org.product.domain.entity.ProductAttributeCategory;
 import org.product.domain.valueobject.ValueObjectFactory;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductAttributeCategoryId;
-
 @Data
-public class ProductAttributeCategoryDto {
+public class ProductAttributeCategoryDto   extends AbstractEntityDto{
     private String id;
     private String productAttributeCategoryId;
 

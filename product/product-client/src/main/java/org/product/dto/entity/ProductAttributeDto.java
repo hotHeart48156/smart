@@ -13,9 +13,8 @@ import org.product.domain.valueobject.type.AttributeType;
 import org.product.domain.valueobject.type.FilterType;
 import org.product.domain.valueobject.type.ProductAttributeInputType;
 import org.product.domain.valueobject.type.ProductAttributeSelectType;
-
 @Data
-public class ProductAttributeDto {
+public class ProductAttributeDto   extends AbstractEntityDto{
     private String productAttributeId;
     private String productAttributeCategoryId;
     private String productAttributeName;

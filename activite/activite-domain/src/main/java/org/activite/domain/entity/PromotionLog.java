@@ -8,17 +8,16 @@ import org.activite.domain.valueobject.id.UserId;
 import org.activite.domain.valueobject.name.ProductName;
 import org.activite.domain.valueobject.time.CreateTime;
 
-import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
-@Entity
+@javax.persistence.Entity
 @Data
 @Table(name  ="smart.promotion_log")
 
-public class PromotionLog extends AbstractEntity{
+public class PromotionLog extends Entity {
     private Id id;
     private UserId userId;
     private ProductId productId;

@@ -1,3 +1,3 @@
 package  org.activite.executor.query.entity;
-public class CouponHistoryQuery{
+public class CouponHistoryQuery  extends AbstractEntityQuery{
 }

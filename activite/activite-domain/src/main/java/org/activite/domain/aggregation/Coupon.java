@@ -31,7 +31,7 @@ import javax.persistence.Entity;
  */
 @Entity
 @Data
-public class Coupon extends AbstractAggregation{
+public class Coupon extends Aggregation {
     @EmbeddedId
 
     private CouponId couponId;

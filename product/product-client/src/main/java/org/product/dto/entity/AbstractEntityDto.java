@@ -1,8 +1,11 @@
 package org.product.dto.entity;
 
+import org.product.dto.AbstractDto;
+
 /**
- * @author yangbiao
+ * import org.product.domain.entity.*;
+@author yangbiao
  */
 
-public abstract class AbstractEntityDto {
+public abstract class AbstractEntityDto   extends AbstractDto {
 }

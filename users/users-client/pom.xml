@@ -6,7 +6,6 @@
         <groupId>com.smart.website</groupId>
         <artifactId>users</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>users-client</artifactId>
     <version>1.0-SNAPSHOT</version>

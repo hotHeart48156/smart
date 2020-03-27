@@ -6,9 +6,8 @@ import org.product.domain.valueobject.ValueObjectFactory;
 import org.product.domain.valueobject.count.ProductCount;
 import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.price.ProductPrice;
-
 @Data
-public class ProductLadderDto {
+public class ProductLadderDto   extends AbstractEntityDto{
     private String id;
     private String productCount;
     private String productPrice;

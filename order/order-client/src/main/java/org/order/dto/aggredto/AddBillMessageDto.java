@@ -5,6 +5,7 @@ import org.order.domain.vaueobject.BillContent;
 import org.order.domain.vaueobject.BillHead;
 import org.order.domain.vaueobject.ValueObjectFactory;
 import org.order.domain.vaueobject.type.BillType;
+import org.order.dto.AbstractDto;
 
 import javax.validation.constraints.NotNull;
 
@@ -12,7 +13,7 @@ import javax.validation.constraints.NotNull;
  * @author "yangbiao"
  */
 
-public class AddBillMessageDto {
+public class AddBillMessageDto extends AbstractDto {
     @NotNull
     private String billType;
 

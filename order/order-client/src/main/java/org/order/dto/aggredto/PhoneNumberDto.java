@@ -3,12 +3,13 @@ package org.order.dto.aggredto;
 import org.order.domain.aggregation.Order;
 import org.order.domain.vaueobject.ValueObjectFactory;
 import org.order.domain.vaueobject.phone.PhoneNumber;
+import org.order.dto.AbstractDto;
 
 /**
  * @author "yangbiao"
  */
 
-public class PhoneNumberDto {
+public class PhoneNumberDto   extends AbstractDto {
     private String orderId;
     private String phone;
 

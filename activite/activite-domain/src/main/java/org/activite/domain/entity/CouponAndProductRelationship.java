@@ -9,16 +9,15 @@ import org.activite.domain.valueobject.name.ProductName;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
-@Entity
+@javax.persistence.Entity
 @Data
 @Table(name = "smart.CouponAndProductRelationship")
-public class CouponAndProductRelationship extends AbstractEntity {
+public class CouponAndProductRelationship extends Entity {
  @EmbeddedId
 private Id id;
  @Embedded

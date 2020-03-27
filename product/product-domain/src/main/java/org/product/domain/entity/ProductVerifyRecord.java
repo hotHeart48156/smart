@@ -7,6 +7,8 @@ import org.product.domain.valueobject.id.Id;
 import org.product.domain.valueobject.id.ProductId;
 import org.product.domain.valueobject.time.CreateTime;
 
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
 /**
@@ -14,10 +16,17 @@ import javax.persistence.Entity;
  */
 @Data
 @Entity
-public class ProductVerifyRecord {
+public class ProductVerifyRecord   implements org.product.domain.entity.Entity {
+    
+
+       @EmbeddedId
     private Id id;
+       @Embedded
     private ProductId productId;
+       @Embedded
     private CreateTime createTime;
+       @Embedded
     private VerifyMan verifyMan;
+       @Embedded
     private Detail detail;
 }

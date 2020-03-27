@@ -1,3 +1,6 @@
 package org.product.executor.query.entity;
-public class GiftsCategoryQuery{
+
+import org.product.executor.AbstractQuery;
+
+public class GiftsCategoryQuery  extends AbstractQuery {
 }
