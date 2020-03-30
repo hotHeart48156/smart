@@ -1,17 +1,19 @@
 package org.activite.domain.valueobject.status;
 
-import javax.persistence.Column;
-import lombok.Value;
 import lombok.AllArgsConstructor;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
 @AllArgsConstructor
 public enum RecommendStatus implements Status
 {
-@Column(status ="   recommendStatus")
+    RECOMMEND(1),UNRECOMMEDN(0);
+@Column(name="recommendStatus")
 private  int   recommendStatus;
+
+
 }

@@ -2,8 +2,6 @@ package org.activite.dto.entity;
 
 import lombok.Data;
 import org.activite.domain.entity.Gift;
-import org.activite.domain.valueobject.ActivityGoods;
-import org.activite.domain.valueobject.ActivityUser;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.ValueObjectFactory;
 import org.activite.domain.valueobject.id.GiftId;

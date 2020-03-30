@@ -13,7 +13,7 @@ import javax.persistence.Embeddable;
 @Value
 @Embeddable
 @AllArgsConstructor
-public class UserLevel extends ValueObject {
-    @Column("level")
+public class UserLevel implements ValueObject {
+    @Column(name ="level")
     private String level;
 }

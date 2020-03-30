@@ -12,6 +12,8 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 public enum ActivityStatus implements Status
 {
-@Column(status ="   activityStatus")
+    VALID(1),INVALID(0);
+
+    @Column(name ="   activityStatus")
 private  int   activityStatus;
 }

@@ -4,10 +4,10 @@ package org.product.cache;
  * @author yangbiao
  */
 
+import org.product.domain.aggragate.Aggregation;
 import org.product.dto.AbstractDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
-import org.users.domain.aggregation.Aggregation;
 
 
 @Component

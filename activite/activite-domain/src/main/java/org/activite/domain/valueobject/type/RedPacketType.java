@@ -1,17 +1,18 @@
 package org.activite.domain.valueobject.type;
 
-import javax.persistence.Column;
-import lombok.Value;
 import lombok.AllArgsConstructor;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
+
 @Embeddable
 @AllArgsConstructor
 public enum RedPacketType implements Type
 {
-@Column(type ="   redPacketType")
+    NORMAL(1),FESTIVAL(2);
+@Column(name ="   redPacketType")
 private  int   redPacketType;
 }

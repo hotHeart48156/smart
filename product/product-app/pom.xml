@@ -15,6 +15,7 @@
         <dependency>
             <groupId>com.smart.website</groupId>
             <artifactId>product-client</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- JSR 303 Validation -->
@@ -30,11 +31,7 @@
             <groupId>org.glassfish.web</groupId>
             <artifactId>javax.el</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.smart.website</groupId>
-            <artifactId>commons</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
         <dependency>
             <groupId>com.alibaba.otter</groupId>
             <artifactId>canal.client</artifactId>
@@ -123,6 +120,10 @@
             <artifactId>axon-modelling</artifactId>
             <version>4.1.1</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
         </dependency>
 
         <!-- JSR 303 Validation End-->

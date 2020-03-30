@@ -11,6 +11,8 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 public enum CouponType implements Type
 {
-@Column(type ="   couponType")
+UNIVERSAL(1),CATEGORY(2),PORDUCT(3);
+@Column(name="   couponType")
 private  int   couponType;
+
 }

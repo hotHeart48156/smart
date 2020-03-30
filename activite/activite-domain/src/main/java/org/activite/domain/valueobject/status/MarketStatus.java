@@ -1,17 +1,18 @@
 package org.activite.domain.valueobject.status;
 
-import javax.persistence.Column;
-import lombok.Value;
 import lombok.AllArgsConstructor;
+
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
+
 @Embeddable
 @AllArgsConstructor
 public enum MarketStatus implements Status
 {
-@Column(status ="   marketStatus")
+    VALID(1),INVALID(0);
+@Column(name ="   marketStatus")
 private  int   marketStatus;
 }

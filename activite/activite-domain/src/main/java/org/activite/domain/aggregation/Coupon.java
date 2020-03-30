@@ -19,7 +19,6 @@ import org.activite.domain.valueobject.time.CouponEnableTime;
 import org.activite.domain.valueobject.time.EndTime;
 import org.activite.domain.valueobject.time.StartTime;
 import org.activite.domain.valueobject.type.CouponType;
-import org.activite.domain.valueobject.type.CouponUserType;
 import org.activite.domain.valueobject.user.UserLevel;
 
 import javax.persistence.Embedded;
@@ -58,8 +57,7 @@ public class Coupon extends Aggregation {
 private StartTime startTime;
     @Embedded
 private EndTime endTime;
-    @Embedded
-private CouponUserType couponUserType;
+
     @Embedded
 private Note note;
     @Embedded

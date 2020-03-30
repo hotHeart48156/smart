@@ -1,8 +1,6 @@
 package org.activite.domain.entity;
 
 import lombok.Data;
-import org.activite.domain.valueobject.ActivityGoods;
-import org.activite.domain.valueobject.ActivityUser;
 import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.id.GiftId;
 import org.activite.domain.valueobject.id.GoodsId;
@@ -33,10 +31,7 @@ private GiftId giftId;
 private GiftName giftName;
     @Embedded
 private GiftStatus giftStatus;
-    @Embedded
-private ActivityUser activityUser;
-    @Embedded
-private ActivityGoods activityGoods;
+
     @Embedded
 private GiftType giftType;
     @Embedded

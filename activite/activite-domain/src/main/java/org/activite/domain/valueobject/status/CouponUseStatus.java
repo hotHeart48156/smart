@@ -1,17 +1,22 @@
 package org.activite.domain.valueobject.status;
 
 import javax.persistence.Column;
-import lombok.Value;
-import lombok.AllArgsConstructor;
 import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
-@AllArgsConstructor
 public enum CouponUseStatus implements Status
 {
-@Column(status ="   couponUseStatus")
+UNUSED(0),USED(1),EXPIRED(2);
+@Column(name ="   couponUseStatus")
 private  int   couponUseStatus;
+
+    CouponUseStatus(int status) {
+        this.couponUseStatus=status;
+    }
+
+    public int getCouponUseStatus() {
+        return couponUseStatus;
+    }
 }

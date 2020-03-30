@@ -1,17 +1,25 @@
 package org.activite.domain.valueobject.type;
 
 import javax.persistence.Column;
-import lombok.Value;
-import lombok.AllArgsConstructor;
 import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
-@Value
 @Embeddable
-@AllArgsConstructor
-public enum ActiviteType implements Type implements Type
+public enum ActiviteType implements Type
 {
-@Column(type ="   activiteType")
+CATEGORY(1),PRODUCT(2);
+@Column(name ="activiteType")
 private  int   activiteType;
+
+
+   ActiviteType(int type) {
+        this.activiteType=type;
+    }
+    ActiviteType() {
+    }
+
+    public int getActiviteType() {
+        return activiteType;
+    }
 }

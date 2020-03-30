@@ -1,8 +1,6 @@
 package org.activite.domain.aggregation;
 
 import lombok.Data;
-import org.activite.domain.valueobject.ActivityGoods;
-import org.activite.domain.valueobject.ActivityUser;
 import org.activite.domain.valueobject.id.MarketingId;
 import org.activite.domain.valueobject.name.MarketingName;
 import org.activite.domain.valueobject.status.MarketStatus;
@@ -29,10 +27,7 @@ private MarketingId marketingId;
 private MarketingName marketingName;
     @Embedded
 private MarketStatus marketStatus;
-    @Embedded
-private ActivityUser activityUser;
-    @Embedded
-private ActivityGoods activityGoods;
+
     @Embedded
 private DiscountType discountType;
     @Embedded

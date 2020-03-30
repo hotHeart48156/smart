@@ -2,7 +2,6 @@ package org.activite.dto.agg.marketing;
 
 import lombok.Data;
 import org.activite.domain.aggregation.Marketing;
-import org.activite.domain.valueobject.ActivityGoods;
 import org.activite.domain.valueobject.ValueObjectFactory;
 
 @Data
