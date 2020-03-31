@@ -1,6 +1,5 @@
 package org.order;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,8 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Frank Zhang
  */
-@SpringBootApplication(scanBasePackages = {"org.order", "com.alibaba.cola"})
-@MapperScan("org.order.repository")
+@SpringBootApplication(scanBasePackages = {"org.order"})
 public class Application {
 
     public static void main(String[] args) {

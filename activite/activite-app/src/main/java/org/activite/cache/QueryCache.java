@@ -1,7 +1,7 @@
 package org.activite.cache;
 
 import lombok.Data;
-import org.product.domain.aggragate.Aggregation;
+import org.activite.domain.aggregation.Aggregation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 

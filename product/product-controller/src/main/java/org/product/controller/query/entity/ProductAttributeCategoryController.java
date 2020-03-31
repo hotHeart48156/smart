@@ -1,4 +1,4 @@
-package  org.product.controller.query.entity;
+package org.product.controller.query.entity;
 import org.product.dto.entity.ProductAttributeCategoryDto;
 import org.product.service.command.entity.ProductAttributeCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;

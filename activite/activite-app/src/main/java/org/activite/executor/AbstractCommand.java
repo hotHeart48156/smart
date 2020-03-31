@@ -6,4 +6,5 @@ package org.activite.executor;
 
 public abstract class AbstractCommand
 {
+
 }

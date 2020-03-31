@@ -1,5 +1,6 @@
 package  org.order.service.command;
 import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.order.dto.aggredto.DeliverySnDto;
 import org.order.executor.command.AbstractCommand;
 import org.order.executor.command.DeliverySnCommand;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ public class DeliverySnService{
 @Autowired
 private CommandGateway commandGateway;
 public void DeliverySn(DeliverySnDto dto){
+
 AbstractCommand command=new DeliverySnCommand(dto);
 commandGateway.sendAndWait(command);
 }

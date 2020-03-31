@@ -44,27 +44,27 @@
             <!--Project modules-->
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>users-controller</artifactId>
+                <artifactId>product-controller</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>users-client</artifactId>
+                <artifactId>product-client</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>users-app</artifactId>
+                <artifactId>product-app</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>users-domain</artifactId>
+                <artifactId>product-domain</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.smart.website</groupId>
-                <artifactId>users-infrastructure</artifactId>
+                <artifactId>product-infrastructure</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <!--Project modules End-->

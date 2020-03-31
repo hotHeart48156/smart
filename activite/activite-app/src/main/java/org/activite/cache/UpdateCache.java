@@ -18,8 +18,9 @@ public class UpdateCache <T extends AbstractDto,A extends Aggregation,R extends 
     private R r;
 
 
-    public UpdateCache(R r){
+    public UpdateCache(T t,R r){
         this.r=r;
+        super.setT(t);
     }
 
 }

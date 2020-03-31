@@ -5,7 +5,7 @@ import org.activite.cache.CacheService;
 import org.activite.cache.UpdateCache;
 import org.activite.domain.repository.CouponRepository;
 import org.activite.event.CouponCountEvent;
-import org.activite.executor.test.CouponCountCommand;
+import org.activite.executor.command.aggregation.coupon.CouponCountCommand;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.beans.factory.annotation.Autowired;

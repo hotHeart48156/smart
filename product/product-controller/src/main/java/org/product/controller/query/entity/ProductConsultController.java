@@ -1,4 +1,4 @@
-package  org.product.controller.query.entity;
+package org.product.controller.query.entity;
 import org.product.dto.entity.ProductConsultDto;
 import org.product.service.command.entity.ProductConsultService;
 import org.springframework.beans.factory.annotation.Autowired;

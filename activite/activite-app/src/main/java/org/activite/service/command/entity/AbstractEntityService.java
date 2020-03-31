@@ -1,5 +1,7 @@
 package  org.activite.service.command.entity;
 
-public abstract class AbstractEntityService{
+import org.activite.service.AbstractService;
+
+public abstract class AbstractEntityService extends AbstractService {
 
 }

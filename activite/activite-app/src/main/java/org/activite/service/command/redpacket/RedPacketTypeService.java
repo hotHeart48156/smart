@@ -1,6 +1,7 @@
 package  org.activite.service.command.redpacket;
 
 import org.activite.dto.agg.redpacket.RedPacketTypeDto;
+import org.activite.executor.AbstractCommand;
 import org.activite.executor.command.aggregation.redpacket.RedPacketTypeCommand;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;

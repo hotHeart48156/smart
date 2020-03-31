@@ -5,7 +5,7 @@ import org.activite.cache.CacheService;
 import org.activite.cache.UpdateCache;
 import org.activite.domain.repository.RedPacketRepository;
 import org.activite.event.RedPacketCountEvent;
-import org.activite.executor.test.RedPacketCountCommand;
+import org.activite.executor.command.aggregation.redpacket.RedPacketCountCommand;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.springframework.beans.factory.annotation.Autowired;

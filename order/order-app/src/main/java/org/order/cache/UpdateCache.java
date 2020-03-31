@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
  * @author yangbiao
  */
 @EqualsAndHashCode(callSuper = true)
-@Data
 @Component
 public class UpdateCache <T extends AbstractDto,A extends Aggregation,R extends JpaRepository> extends Cache{
     private R r;

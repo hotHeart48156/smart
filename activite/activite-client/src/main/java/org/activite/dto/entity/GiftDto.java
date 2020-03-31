@@ -33,8 +33,6 @@ public class GiftDto   extends AbstractEntityDto{
         gift.setGiftId(ValueObjectFactory.newInstance(GiftId.class, giftId));
         gift.setGiftName(ValueObjectFactory.newInstance(GiftName.class, giftName));
         gift.setGiftStatus(ValueObjectFactory.newInstance(GiftStatus.class, giftStatus));
-        gift.setActivityUser(ValueObjectFactory.newInstance(ActivityUser.class, activityUser));
-        gift.setActivityGoods(ValueObjectFactory.newInstance(ActivityGoods.class, activityGoods));
         gift.setGiftType(ValueObjectFactory.newInstance(GiftType.class, giftType));
         gift.setSmallType(ValueObjectFactory.newInstance(SmallType.class, smallType));
         gift.setUserLevel(ValueObjectFactory.newInstance(UserLevel.class, userLevel));

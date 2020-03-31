@@ -2,6 +2,7 @@ package org.activite.dto.entity;
 
 import lombok.Data;
 import org.activite.domain.entity.HomeAdvertise;
+import org.activite.domain.valueobject.Note;
 import org.activite.domain.valueobject.Pic;
 import org.activite.domain.valueobject.Url;
 import org.activite.domain.valueobject.ValueObjectFactory;

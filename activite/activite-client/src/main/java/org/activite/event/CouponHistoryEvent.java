@@ -5,7 +5,6 @@ import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class CouponHistoryEvent {
+public class CouponHistoryEvent   extends AbstractEvent  {
     private org.activite.dto.entity.CouponHistoryDto CouponHistoryDto;
 }
-  extends AbstractEvent   extends AbstractEvent 

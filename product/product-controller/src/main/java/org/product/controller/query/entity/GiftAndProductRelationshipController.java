@@ -1,4 +1,4 @@
-package  org.product.controller.query.entity;
+package org.product.controller.query.entity;
 
 import org.product.dto.entity.GiftAndProductRelationshipDto;
 import org.product.service.command.entity.GiftAndProductRelationshipService;

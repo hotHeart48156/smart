@@ -1,4 +1,4 @@
-package  org.product.controller.query.entity;
+package org.order.controller.query.entity;
 
 import org.order.dto.entitydto.OrderSettingDto;
 import org.order.service.command.OrderSettingService;

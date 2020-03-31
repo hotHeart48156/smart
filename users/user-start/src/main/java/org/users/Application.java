@@ -1,6 +1,5 @@
 package org.users;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,8 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Frank Zhang
  */
-@SpringBootApplication(scanBasePackages = {"org.users", "com.alibaba.cola"})
-@MapperScan("org.users.repository")
+@SpringBootApplication(scanBasePackages = {"org.users"})
 
 public class Application {
 

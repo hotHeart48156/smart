@@ -1,7 +1,7 @@
 package  org.order.service.command;
 
 import org.axonframework.commandhandling.gateway.CommandGateway;
-import org.order.dto.aggredto.OrderCreateDto;
+import org.order.dto.OrderCreateDto;
 import org.order.executor.command.AbstractCommand;
 import org.order.executor.command.OrderCreateCommand;
 import org.springframework.beans.factory.annotation.Autowired;

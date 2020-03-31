@@ -1,15 +1,14 @@
 package org.order.cache;
 
 import lombok.Data;
+import org.order.dto.AbstractDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.support.atomic.RedisAtomicLong;
-import org.users.dto.AbstractDto;
 
 import java.util.Date;
 import java.util.Objects;
-
 /**
  * @author yangbiao
  */

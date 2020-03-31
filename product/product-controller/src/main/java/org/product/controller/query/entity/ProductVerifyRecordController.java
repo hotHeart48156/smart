@@ -1,4 +1,4 @@
-package  org.product.controller.query.entity;
+package org.product.controller.query.entity;
 
 import org.product.dto.entity.ProductVerifyRecordDto;
 import org.product.service.command.entity.ProductVerifyRecordService;

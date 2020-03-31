@@ -7,4 +7,3 @@ package org.activite.event;
 public abstract class AbstractEvent
 {
 }
-  extends AbstractEvent 

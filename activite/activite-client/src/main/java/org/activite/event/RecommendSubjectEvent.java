@@ -5,7 +5,6 @@ import lombok.Value;
 
 @Value
 @AllArgsConstructor
-public class RecommendSubjectEvent {
+public class RecommendSubjectEvent extends AbstractEvent {
     private org.activite.dto.entity.RecommendSubjectDto RecommendSubjectDto;
 }
-  extends AbstractEvent   extends AbstractEvent 
