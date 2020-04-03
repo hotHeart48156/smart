@@ -22,16 +22,16 @@
         <module name="activite-infrastructure" />
         <module name="users-client" />
         <module name="activite-app" />
+        <module name="discover-server" />
         <module name="activite-domain" />
-        <module name="product-domain" />
         <module name="order-app" />
-        <module name="users-controller" />
+        <module name="users-app" />
         <module name="order-start" />
         <module name="activite-controller" />
         <module name="commons" />
         <module name="order-domain" />
         <module name="users-infrastructure" />
-        <module name="order-controller" />
+        <module name="product-domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

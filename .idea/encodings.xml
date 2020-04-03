@@ -18,6 +18,12 @@
     <file url="file://$PROJECT_DIR$/activite/activity-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activite/activity-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/mail/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/message/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/protobuf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/sms/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
@@ -51,6 +57,7 @@
     <file url="file://$PROJECT_DIR$/product/product-start" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product/product-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product/product-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/protobuf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/users" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/users/user-start" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/users/user-start/src/main/java" charset="UTF-8" />
