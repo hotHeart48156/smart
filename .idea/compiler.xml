@@ -6,38 +6,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="activite-client" />
-        <module name="start (2)" />
-        <module name="config-server" />
-        <module name="order-controller" />
-        <module name="order-client" />
-        <module name="start (1)" />
-        <module name="product-infrastructure" />
-        <module name="users-domain" />
-        <module name="product-app" />
-        <module name="product-controller" />
-        <module name="product-client" />
-        <module name="users-controller" />
-        <module name="order-infrastructure" />
-        <module name="activity-start" />
-        <module name="activite-infrastructure" />
-        <module name="users-client" />
-        <module name="activite-app" />
-        <module name="discover-server" />
         <module name="activite-domain" />
+        <module name="product-controller" />
+        <module name="users-client" />
+        <module name="activity-start" />
+        <module name="oss" />
+        <module name="protobuf (1)" />
+        <module name="product-client" />
+        <module name="activite-infrastructure" />
+        <module name="start (1)" />
+        <module name="security" />
+        <module name="protobuf" />
+        <module name="activite-app" />
+        <module name="product-infrastructure" />
+        <module name="discover-server" />
+        <module name="mail" />
+        <module name="activite-client" />
+        <module name="sms" />
+        <module name="config-server" />
         <module name="order-app" />
-        <module name="users-app" />
-        <module name="order-start" />
-        <module name="activite-controller" />
-        <module name="commons" />
         <module name="order-domain" />
+        <module name="users-domain" />
+        <module name="activite-controller" />
+        <module name="order-start" />
+        <module name="users-app" />
+        <module name="order-client" />
+        <module name="users-controller" />
+        <module name="product-app" />
+        <module name="order-controller" />
+        <module name="start (2)" />
         <module name="users-infrastructure" />
-        <module name="product-domain" />
+        <module name="message" />
+        <module name="order-infrastructure" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activite" target="1.8" />
-      <module name="activite-app" target="8" />
+      <module name="activite-app" target="1.8" />
       <module name="activite-client" target="1.8" />
       <module name="activite-controller" target="1.8" />
       <module name="activite-domain" target="1.8" />
@@ -47,6 +52,8 @@
       <module name="config-server" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="discover-server" target="1.8" />
+      <module name="mail" target="1.7" />
+      <module name="message" target="1.8" />
       <module name="order" target="1.8" />
       <module name="order-app" target="1.8" />
       <module name="order-client" target="1.8" />
@@ -54,19 +61,24 @@
       <module name="order-domain" target="1.8" />
       <module name="order-infrastructure" target="1.8" />
       <module name="order-start" target="1.8" />
+      <module name="oss" target="1.8" />
       <module name="product" target="1.8" />
       <module name="product-app" target="1.8" />
       <module name="product-client" target="1.8" />
       <module name="product-controller" target="1.8" />
       <module name="product-domain" target="1.8" />
       <module name="product-infrastructure" target="1.8" />
+      <module name="protobuf" target="1.8" />
+      <module name="protobuf (1)" target="1.7" />
+      <module name="security" target="1.7" />
+      <module name="sms" target="1.7" />
       <module name="start (1)" target="1.8" />
       <module name="start (2)" target="1.8" />
       <module name="users" target="1.8" />
       <module name="users-app" target="1.8" />
       <module name="users-client" target="1.8" />
       <module name="users-controller" target="1.8" />
-      <module name="users-domain" target="8" />
+      <module name="users-domain" target="1.8" />
       <module name="users-infrastructure" target="1.8" />
     </bytecodeTargetLevel>
   </component>

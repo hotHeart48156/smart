@@ -10,6 +10,7 @@
     <artifactId>product-domain</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>product-domain</name>
+    <packaging>pom</packaging>
     <dependencies>
         <!-- COLA Framework -->
 
