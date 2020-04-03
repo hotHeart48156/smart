@@ -12,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/discover-server/discover-server.iml" filepath="$PROJECT_DIR$/discover-server/discover-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" group="order and modules" />
       <module fileurl="file://$PROJECT_DIR$/order/order-app/order-app.iml" filepath="$PROJECT_DIR$/order/order-app/order-app.iml" group="order and modules" />
       <module fileurl="file://$PROJECT_DIR$/order/order-client/order-client.iml" filepath="$PROJECT_DIR$/order/order-client/order-client.iml" group="order and modules" />
