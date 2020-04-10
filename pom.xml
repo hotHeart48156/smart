@@ -24,12 +24,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -86,6 +80,11 @@
         <module>discover-server</module>
         <module>commons</module>
         <module>protobuf</module>
+        <module>eureka-server</module>
+        <module>gateway</module>
+        <module>monitor</module>
+        <module>zipkin</module>
+        <module>test</module>
 
     </modules>
 </project>

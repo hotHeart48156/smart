@@ -35,7 +35,7 @@ public class UserDetailService implements DetailService {
                 if (StringUtils.isEmpty(s)) {
                     throw new UsernameNotFoundException("user not find");
                 }
-                User userEntity = repository.findById(ValueObjectFactory.newInstance(UserName.class, s.getClass())).get();
+                User userEntity = repository.findByUserName(ValueObjectFactory.newInstance(UserName.class, s.getClass())).get();
                 Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
 
                 return new UserDetails() {

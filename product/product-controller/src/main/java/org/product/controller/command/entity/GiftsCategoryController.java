@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GiftsCategoryController{
     @Autowired
 private GiftsCategoryService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" giftCategory")
 public  void  update(GiftsCategoryDto dto){
 service.GiftsCategory (dto); 
 }

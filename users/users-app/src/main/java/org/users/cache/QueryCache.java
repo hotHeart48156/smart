@@ -1,6 +1,5 @@
 package org.users.cache;
 
-import lombok.Data;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 import org.users.domain.aggregation.Aggregation;
@@ -9,7 +8,6 @@ import org.users.domain.aggregation.Aggregation;
  * @author yangbiao
  */
 @Component
-@Data
 public class QueryCache <A extends Aggregation,R extends JpaRepository> extends Cache  {
 
     private R r;
@@ -19,6 +17,12 @@ public class QueryCache <A extends Aggregation,R extends JpaRepository> extends 
         this.key=key;
     }
 
+    public R getR() {
+        return r;
+    }
 
-
+    @Override
+    public String getKey() {
+        return key;
+    }
 }

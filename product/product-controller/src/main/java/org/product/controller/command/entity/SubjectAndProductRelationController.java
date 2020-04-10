@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SubjectAndProductRelationController{
     @Autowired
 private SubjectAndProductRelationService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" SubjectAndProduct")
 public  void  update(SubjectAndProductRelationDto  dto){
 service.SubjectAndProductRelation (dto); 
 }

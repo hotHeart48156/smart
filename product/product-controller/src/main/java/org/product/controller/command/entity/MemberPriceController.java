@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MemberPriceController{
     @Autowired
 private MemberPriceService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" memberPrice")
 public  void  update(MemberPriceDto  dto){
 service.MemberPrice (dto); 
 }

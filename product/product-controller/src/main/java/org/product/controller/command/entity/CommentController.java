@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommentController{
     @Autowired
 private CommentService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" comment")
 public  void  update(CommentDto  dto){
 service.Comment (dto); 
 }

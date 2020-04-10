@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductLadderController{
     @Autowired
 private ProductLadderService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productLadder")
 public  void  update(ProductLadderDto  dto){
 service.ProductLadder (dto); 
 }

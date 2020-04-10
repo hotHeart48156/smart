@@ -9,10 +9,10 @@
         <groupId>com.smart.website</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>users</artifactId>
+    <artifactId>users-start</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>users</name>
+    <name>users-start</name>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -27,11 +27,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-log4j12</artifactId>
-                <version> 2.0.0-alpha1</version>
-            </dependency>
+
             <!--Framework-->
             <dependency>
                 <groupId>org.axonframework</groupId>
@@ -70,6 +66,11 @@
             <dependency>
                 <groupId>com.smart.website</groupId>
                 <artifactId>users-infrastructure</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.smart.website</groupId>
+                <artifactId>users-start</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <!--Project modules End-->

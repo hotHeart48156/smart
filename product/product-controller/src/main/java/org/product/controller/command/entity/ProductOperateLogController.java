@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductOperateLogController{
     @Autowired
 private ProductOperateLogService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productOperateLog")
 public  void  update(ProductOperateLogDto  dto){
 service.ProductOperateLog (dto); 
 }

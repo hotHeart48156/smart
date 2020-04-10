@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductConsultController{
     @Autowired
 private ProductConsultService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productConsult")
 public  void  update(ProductConsultDto  dto){
 service.ProductConsult (dto); 
 }

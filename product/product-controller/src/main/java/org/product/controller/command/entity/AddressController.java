@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AddressController{
     @Autowired
 private AddressService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" address")
 public  void  update(AddressDto  dto){
 service.Address (dto); 
 }

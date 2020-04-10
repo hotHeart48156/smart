@@ -14,7 +14,7 @@ import java.util.Optional;
  */
 public interface UserRepository extends JpaRepository<User, UserId>, PagingAndSortingRepository<User, UserId> ,Repository {
 
-    Optional<User> findById(WeixinOpenId openId);
+    Optional<User> findByOpenId(WeixinOpenId openId);
 
-    Optional<User> findById(UserName userName);
+    Optional<User> findByUserName(UserName userName);
 }

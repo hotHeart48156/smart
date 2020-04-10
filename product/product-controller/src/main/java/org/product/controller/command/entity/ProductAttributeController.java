@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductAttributeController{
     @Autowired
 private ProductAttributeService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productAttribute")
 public  void  update(ProductAttributeDto  dto){
 service.ProductAttribute (dto); 
 }

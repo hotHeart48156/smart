@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: yangbiao
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  mail:
+    host: stmp.qq.com
+    username: 2680323775@qq.com
+    protocol: stmp
+    password: dvbqcjcaayspecij
+
+

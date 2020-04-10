@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductVerifyRecordController{
     @Autowired
 private ProductVerifyRecordService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productVerifyRecord")
 public  void  update(ProductVerifyRecordDto  dto){
 service.ProductVerifyRecord (dto); 
 }

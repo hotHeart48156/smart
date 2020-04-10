@@ -21,27 +21,8 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
- */
-
-/**
  * @author "yangbiao"
  * @date 2019122312:44
- * manage.provide,token
- *
- * import org.springframework.security.authentication.ProviderManager;
- *
- *   filter,interceptor,entrypoint,logout
- *
- * import org.springframework.security.web.DefaultSecurityFilterChain;
- * import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
- * import org.springframework.security.web.access.channel.RetryWithHttpEntryPoint;
- * import org.springframework.security.web.authentication.logout.LogoutFilter;
- *
- *  vote,config
- *
- * import org.springframework.security.access.SecurityConfig;
- * import org.springframework.security.concurrent.DelegatingSecurityContextCallable;
  */
 public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
     private AuthenticationManager authenticationManager;

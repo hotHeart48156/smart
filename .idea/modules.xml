@@ -2,45 +2,51 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/activite/activite.iml" filepath="$PROJECT_DIR$/activite/activite.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/activite/activite-app/activite-app.iml" filepath="$PROJECT_DIR$/activite/activite-app/activite-app.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/activite/activite-client/activite-client.iml" filepath="$PROJECT_DIR$/activite/activite-client/activite-client.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" filepath="$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" filepath="$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" filepath="$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/activite/activity-start/activity-start.iml" filepath="$PROJECT_DIR$/activite/activity-start/activity-start.iml" group="activite and modules" />
-      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite.iml" filepath="$PROJECT_DIR$/activite/activite.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-app/activite-app.iml" filepath="$PROJECT_DIR$/activite/activite-app/activite-app.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-client/activite-client.iml" filepath="$PROJECT_DIR$/activite/activite-client/activite-client.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" filepath="$PROJECT_DIR$/activite/activite-controller/activite-controller.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" filepath="$PROJECT_DIR$/activite/activite-domain/activite-domain.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" filepath="$PROJECT_DIR$/activite/activite-infrastructure/activite-infrastructure.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activity-start/activity-start.iml" filepath="$PROJECT_DIR$/activite/activity-start/activity-start.iml" group="demo and modules/activite and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" group="demo and modules/commons and modules" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" group="demo and modules" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" group="demo and modules" />
       <module fileurl="file://$PROJECT_DIR$/discover-server/discover-server.iml" filepath="$PROJECT_DIR$/discover-server/discover-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commons/mail/mail.iml" filepath="$PROJECT_DIR$/commons/mail/mail.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commons/message/message.iml" filepath="$PROJECT_DIR$/commons/message/message.iml" />
-      <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/order/order-app/order-app.iml" filepath="$PROJECT_DIR$/order/order-app/order-app.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/order/order-client/order-client.iml" filepath="$PROJECT_DIR$/order/order-client/order-client.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/order/order-controller/order-controller.iml" filepath="$PROJECT_DIR$/order/order-controller/order-controller.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/order/order-domain/order-domain.iml" filepath="$PROJECT_DIR$/order/order-domain/order-domain.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/order/order-infrastructure/order-infrastructure.iml" filepath="$PROJECT_DIR$/order/order-infrastructure/order-infrastructure.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/order/order-start/order-start.iml" filepath="$PROJECT_DIR$/order/order-start/order-start.iml" group="order and modules" />
-      <module fileurl="file://$PROJECT_DIR$/commons/oss/oss.iml" filepath="$PROJECT_DIR$/commons/oss/oss.iml" />
-      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/product/product-app/product-app.iml" filepath="$PROJECT_DIR$/product/product-app/product-app.iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/product/product-client/product-client.iml" filepath="$PROJECT_DIR$/product/product-client/product-client.iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/product/product-controller/product-controller.iml" filepath="$PROJECT_DIR$/product/product-controller/product-controller.iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/product/product-domain/product-domain.iml" filepath="$PROJECT_DIR$/product/product-domain/product-domain.iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/product/product-infrastructure/product-infrastructure.iml" filepath="$PROJECT_DIR$/product/product-infrastructure/product-infrastructure.iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/commons/protobuf/protobuf.iml" filepath="$PROJECT_DIR$/commons/protobuf/protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" group="demo and modules" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" group="demo and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/mail/mail.iml" filepath="$PROJECT_DIR$/commons/mail/mail.iml" group="demo and modules/commons and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/message/message.iml" filepath="$PROJECT_DIR$/commons/message/message.iml" group="demo and modules/commons and modules" />
+      <module fileurl="file://$PROJECT_DIR$/monitor/monitor.iml" filepath="$PROJECT_DIR$/monitor/monitor.iml" group="demo and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-app/order-app.iml" filepath="$PROJECT_DIR$/order/order-app/order-app.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-client/order-client.iml" filepath="$PROJECT_DIR$/order/order-client/order-client.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-controller/order-controller.iml" filepath="$PROJECT_DIR$/order/order-controller/order-controller.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-domain/order-domain.iml" filepath="$PROJECT_DIR$/order/order-domain/order-domain.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-infrastructure/order-infrastructure.iml" filepath="$PROJECT_DIR$/order/order-infrastructure/order-infrastructure.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/order/order-start/order-start.iml" filepath="$PROJECT_DIR$/order/order-start/order-start.iml" group="demo and modules/order and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/oss/oss.iml" filepath="$PROJECT_DIR$/commons/oss/oss.iml" group="demo and modules/commons and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-app/product-app.iml" filepath="$PROJECT_DIR$/product/product-app/product-app.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-client/product-client.iml" filepath="$PROJECT_DIR$/product/product-client/product-client.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-controller/product-controller.iml" filepath="$PROJECT_DIR$/product/product-controller/product-controller.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-domain/product-domain.iml" filepath="$PROJECT_DIR$/product/product-domain/product-domain.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-infrastructure/product-infrastructure.iml" filepath="$PROJECT_DIR$/product/product-infrastructure/product-infrastructure.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-start/product-start.iml" filepath="$PROJECT_DIR$/product/product-start/product-start.iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/protobuf/protobuf.iml" filepath="$PROJECT_DIR$/commons/protobuf/protobuf.iml" group="demo and modules/commons and modules" />
       <module fileurl="file://$PROJECT_DIR$/protobuf/protobuf (1).iml" filepath="$PROJECT_DIR$/protobuf/protobuf (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/commons/security/security.iml" filepath="$PROJECT_DIR$/commons/security/security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commons/sms/sms.iml" filepath="$PROJECT_DIR$/commons/sms/sms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/product/product-start/start (1).iml" filepath="$PROJECT_DIR$/product/product-start/start (1).iml" group="product and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/user-start/start (2).iml" filepath="$PROJECT_DIR$/users/user-start/start (2).iml" group="users and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/users.iml" filepath="$PROJECT_DIR$/users/users.iml" group="users and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/users-app/users-app.iml" filepath="$PROJECT_DIR$/users/users-app/users-app.iml" group="users and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/users-client/users-client.iml" filepath="$PROJECT_DIR$/users/users-client/users-client.iml" group="users and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/users-controller/users-controller.iml" filepath="$PROJECT_DIR$/users/users-controller/users-controller.iml" group="users and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/users-domain/users-domain.iml" filepath="$PROJECT_DIR$/users/users-domain/users-domain.iml" group="users and modules" />
-      <module fileurl="file://$PROJECT_DIR$/users/users-infrastructure/users-infrastructure.iml" filepath="$PROJECT_DIR$/users/users-infrastructure/users-infrastructure.iml" group="users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/security/security.iml" filepath="$PROJECT_DIR$/commons/security/security.iml" group="demo and modules/commons and modules" />
+      <module fileurl="file://$PROJECT_DIR$/commons/sms/sms.iml" filepath="$PROJECT_DIR$/commons/sms/sms.iml" group="demo and modules/commons and modules" />
+      <module fileurl="file://$PROJECT_DIR$/product/product-start/start (1).iml" filepath="$PROJECT_DIR$/product/product-start/start (1).iml" group="demo and modules/product and modules" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" group="demo and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users.iml" filepath="$PROJECT_DIR$/users/users.iml" group="demo and modules/users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-app/users-app.iml" filepath="$PROJECT_DIR$/users/users-app/users-app.iml" group="demo and modules/users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-client/users-client.iml" filepath="$PROJECT_DIR$/users/users-client/users-client.iml" group="demo and modules/users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-controller/users-controller.iml" filepath="$PROJECT_DIR$/users/users-controller/users-controller.iml" group="demo and modules/users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-domain/users-domain.iml" filepath="$PROJECT_DIR$/users/users-domain/users-domain.iml" group="demo and modules/users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-infrastructure/users-infrastructure.iml" filepath="$PROJECT_DIR$/users/users-infrastructure/users-infrastructure.iml" group="demo and modules/users and modules" />
+      <module fileurl="file://$PROJECT_DIR$/users/users-start/users-start.iml" filepath="$PROJECT_DIR$/users/users-start/users-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin/zipkin.iml" filepath="$PROJECT_DIR$/zipkin/zipkin.iml" group="demo and modules" />
     </modules>
   </component>
 </project>

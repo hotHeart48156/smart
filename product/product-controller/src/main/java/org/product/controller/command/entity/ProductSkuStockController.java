@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductSkuStockController{
     @Autowired
 private ProductSkuStockService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productSkuStock")
 public  void  update(ProductSkuStockDto  dto){
 service.ProductSkuStock (dto); 
 }

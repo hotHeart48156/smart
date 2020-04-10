@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductAttributeCategoryController{
     @Autowired
 private ProductAttributeCategoryService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productAttributeCategory")
 public  void  update(ProductAttributeCategoryDto  dto){
 service.ProductAttributeCategory (dto); 
 }

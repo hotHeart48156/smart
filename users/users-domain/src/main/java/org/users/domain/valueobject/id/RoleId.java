@@ -10,7 +10,7 @@ import javax.persistence.Column;
 /**
  * @author "yangbiao"
  */
-@EqualsAndHashCode()
+@EqualsAndHashCode(callSuper = false)
 @Value
 @Embeddable
 

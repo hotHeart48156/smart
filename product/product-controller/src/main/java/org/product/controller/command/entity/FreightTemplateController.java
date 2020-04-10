@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FreightTemplateController{
     @Autowired
 private FreightTemplateService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" freighttemplate")
 public  void  update(FreightTemplateDto dto){
 service.FreightTemplate (dto); 
 }

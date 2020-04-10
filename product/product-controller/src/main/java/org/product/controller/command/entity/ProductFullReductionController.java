@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductFullReductionController{
     @Autowired
 private ProductFullReductionService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" productFullReduction")
 public  void  update(ProductFullReductionDto  dto){
 service.ProductFullReduction (dto); 
 }

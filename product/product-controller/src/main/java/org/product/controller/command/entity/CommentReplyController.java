@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommentReplyController{
     @Autowired
 private CommentReplyService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" commentreply")
 public  void  update(CommentReplyDto dto){
 service.CommentReply (dto); 
 }

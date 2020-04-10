@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GiftsController{
     @Autowired
 private GiftsService service;
-@PostMapping(value=" entityFile ")
+@PostMapping(value=" gift")
 public  void  update(GiftsDto  dto){
 service.Gifts (dto); 
 }
