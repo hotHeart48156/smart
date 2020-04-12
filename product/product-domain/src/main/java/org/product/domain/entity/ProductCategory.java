@@ -12,12 +12,15 @@ import org.product.domain.valueobject.status.ShowStatus;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Entity
 @Data
+@Table(name = "productCategory")
+
 public class ProductCategory   implements  org.product.domain.entity.Entity{
      @EmbeddedId
     private ProductCategoryId productCategoryId;

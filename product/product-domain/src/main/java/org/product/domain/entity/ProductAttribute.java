@@ -14,11 +14,15 @@ import org.product.domain.valueobject.type.ProductAttributeSelectType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Data
+@javax.persistence.Entity
+@Table(name = "productAttribute")
+
 public class ProductAttribute   implements  Entity{
      @EmbeddedId
     private ProductAttributeId productAttributeId;

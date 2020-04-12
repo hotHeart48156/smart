@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class ProductVerifyRecordController{
     @Autowired
 private ProductVerifyRecordService service;
-@PostMapping(value=" productVerifyRecord")
+@PostMapping(value=" /update/productVerifyRecord")
 public  void  update(ProductVerifyRecordDto  dto){
 service.ProductVerifyRecord (dto); 
 }

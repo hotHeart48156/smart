@@ -2,12 +2,9 @@ package org.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
-
 /**
  * Spring Boot Starter
  * <p>
@@ -16,14 +13,14 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
  * @author Frank Zhang
  */
 @SpringBootApplication(
-        scanBasePackages = {"org.product"},exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-
+        scanBasePackages = {"org.product"})
 @EnableResourceServer
 @EnableCaching
 @EnableOAuth2Client
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SpringApplication.run(Application.class, args);
     }
 }

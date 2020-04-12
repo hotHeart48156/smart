@@ -3,3 +3,15 @@ server:
 spring:
   application:
     name: product
+  cache:
+    type: none
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+
+
+j2cache:
+  config-location: classpath:/config/j2cache-${spring.profiles.active}.properties
+  open-spring-cache: true
+  redis-client:  jedis

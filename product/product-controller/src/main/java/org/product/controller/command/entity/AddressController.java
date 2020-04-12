@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class AddressController{
     @Autowired
 private AddressService service;
-@PostMapping(value=" address")
+@PostMapping(value="/update/address")
 public  void  update(AddressDto  dto){
 service.Address (dto); 
 }

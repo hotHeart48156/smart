@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class CommentReplyController{
     @Autowired
 private CommentReplyService service;
-@PostMapping(value=" commentreply")
+@PostMapping(value="/update/commentreply")
 public  void  update(CommentReplyDto dto){
 service.CommentReply (dto); 
 }

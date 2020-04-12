@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class MemberPriceController{
     @Autowired
 private MemberPriceService service;
-@PostMapping(value=" memberPrice")
+@PostMapping(value=" /update/memberPrice")
 public  void  update(MemberPriceDto  dto){
 service.MemberPrice (dto); 
 }

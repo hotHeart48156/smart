@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class ProductAttributeController{
     @Autowired
 private ProductAttributeService service;
-@PostMapping(value=" productAttribute")
+@PostMapping(value=" /update/productAttribute")
 public  void  update(ProductAttributeDto  dto){
 service.ProductAttribute (dto); 
 }

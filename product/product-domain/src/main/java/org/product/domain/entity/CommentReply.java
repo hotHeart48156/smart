@@ -11,12 +11,15 @@ import org.product.domain.valueobject.type.CommentType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @javax.persistence.Entity
 @Data
+@Table(name = "commentReply")
+
 public class CommentReply implements org.product.domain.entity.Entity {
      @EmbeddedId
     private CommentReplalyId commentReplalyId;

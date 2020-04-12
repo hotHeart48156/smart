@@ -10,12 +10,15 @@ import org.product.domain.valueobject.time.CreateTime;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Data
 @Entity
+@Table(name = "productVerifyRecord")
+
 public class ProductVerifyRecord   implements org.product.domain.entity.Entity {
     
 

@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class FreightTemplateController{
     @Autowired
 private FreightTemplateService service;
-@PostMapping(value=" freighttemplate")
+@PostMapping(value=" /update/freighttemplate")
 public  void  update(FreightTemplateDto dto){
 service.FreightTemplate (dto); 
 }

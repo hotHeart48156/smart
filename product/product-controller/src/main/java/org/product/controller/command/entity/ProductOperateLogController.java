@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class ProductOperateLogController{
     @Autowired
 private ProductOperateLogService service;
-@PostMapping(value=" productOperateLog")
+@PostMapping(value=" /update/productOperateLog")
 public  void  update(ProductOperateLogDto  dto){
 service.ProductOperateLog (dto); 
 }

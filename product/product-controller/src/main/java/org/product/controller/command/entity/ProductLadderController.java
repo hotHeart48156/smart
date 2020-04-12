@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class ProductLadderController{
     @Autowired
 private ProductLadderService service;
-@PostMapping(value=" productLadder")
+@PostMapping(value=" /update/productLadder")
 public  void  update(ProductLadderDto  dto){
 service.ProductLadder (dto); 
 }

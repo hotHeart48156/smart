@@ -7,12 +7,14 @@ import org.product.domain.valueobject.type.ChargeType;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Data
 @javax.persistence.Entity
+@Table(name = "FreightTemplate")
 
 public class FreightTemplate    implements  Entity{
      @EmbeddedId

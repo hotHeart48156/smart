@@ -7,8 +7,8 @@
         select * from customer where customer_id = #{id}
     </select>
     <resultMap type="org.activite.database.dataobject.CustomerDO" id="customerMap">
-         <result property="customerId" column="emp_no"/>
-         <result property="memberId" column="salary"/>
-         <result property="globalId" column="from_date"/>
-     </resultMap>
+        <result property="customerId" column="emp_no"/>
+        <result property="memberId" column="salary"/>
+        <result property="globalId" column="from_date"/>
+    </resultMap>
 </mapper>

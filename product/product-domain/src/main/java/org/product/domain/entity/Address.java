@@ -9,12 +9,14 @@ import org.product.domain.valueobject.id.Id;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Data
 @javax.persistence.Entity
+@Table(name = "address")
 public class Address    implements  Entity{
     @EmbeddedId
 private Id id;

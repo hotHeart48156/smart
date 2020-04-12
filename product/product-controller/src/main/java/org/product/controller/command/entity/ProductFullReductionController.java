@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class ProductFullReductionController{
     @Autowired
 private ProductFullReductionService service;
-@PostMapping(value=" productFullReduction")
+@PostMapping(value=" /update/productFullReduction")
 public  void  update(ProductFullReductionDto  dto){
 service.ProductFullReduction (dto); 
 }

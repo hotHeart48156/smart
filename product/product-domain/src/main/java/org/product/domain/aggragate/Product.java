@@ -19,12 +19,14 @@ import org.product.domain.valueobject.type.PromotionType;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @Entity
 @Data
+@Table(name = "product")
 public class Product implements Aggregation {
     @EmbeddedId
     private ProductId productId;

@@ -12,6 +12,7 @@ import org.product.domain.valueobject.time.CreateTime;
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.List;
 
 /**
@@ -19,6 +20,7 @@ import java.util.List;
  */
 @Data
 @Entity
+@Table(name = "comment")
 public class Comment   implements org.product.domain.entity.Entity {
 
      @EmbeddedId

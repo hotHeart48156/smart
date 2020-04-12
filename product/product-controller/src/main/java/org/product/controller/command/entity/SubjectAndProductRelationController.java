@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class SubjectAndProductRelationController{
     @Autowired
 private SubjectAndProductRelationService service;
-@PostMapping(value=" SubjectAndProduct")
+@PostMapping(value=" /update/SubjectAndProduct")
 public  void  update(SubjectAndProductRelationDto  dto){
 service.SubjectAndProductRelation (dto); 
 }

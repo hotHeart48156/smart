@@ -8,12 +8,15 @@ import org.product.domain.valueobject.price.ReducePrice;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Table;
 
 /**
  * @author "yangbiao"
  */
 @javax.persistence.Entity
 @Data
+@Table(name = "productFullReduction")
+
 public class ProductFullReduction implements org.product.domain.entity.Entity {
      @EmbeddedId
     private Id id;

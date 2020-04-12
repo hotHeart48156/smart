@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController(value="/update")
+@RestController
 public class GiftsCategoryController{
     @Autowired
 private GiftsCategoryService service;
-@PostMapping(value=" giftCategory")
+@PostMapping(value="/update/giftCategory")
 public  void  update(GiftsCategoryDto dto){
 service.GiftsCategory (dto); 
 }

@@ -7,6 +7,7 @@ import org.product.domain.valueobject.id.ProductId;
 
 import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Table;
 
 /**
  * @author yangbiao
@@ -14,6 +15,7 @@ import javax.persistence.EmbeddedId;
 @javax.persistence.Entity
 
 @Data
+@Table(name = "commenteAndProductRelationship")
 public class CommentAndProductRelationship implements org.product.domain.entity.Entity{
      @EmbeddedId
     private Id id;
