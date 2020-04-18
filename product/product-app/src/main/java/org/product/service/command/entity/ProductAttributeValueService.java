@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class ProductAttributeValueService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductAttributeValue(ProductAttributeValueDto dto){
+public void productAttributeValue(ProductAttributeValueDto dto){
 AbstractCommand command=new ProductAttributeValueCommand(dto);
 commandGateway.sendAndWait(command);
 }

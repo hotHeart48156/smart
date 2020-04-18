@@ -15,7 +15,6 @@ import javax.persistence.Table;
 @Entity
 @Data
 @Table(name = "productAttribyteCategory")
-
 public class ProductAttributeCategory   implements  org.product.domain.entity.Entity{
      @EmbeddedId
     private Id id;

@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.PromotionTypeCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class PromotionTypeCommandHandle{
+@Component
+public class PromotionTypeCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

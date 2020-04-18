@@ -8,9 +8,11 @@ import org.product.domain.repository.entity.ProductOperateLogRepository;
 import org.product.event.ProductOperateLogEvent;
 import org.product.executor.command.entity.ProductOperateLogCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class ProductOperateLogCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

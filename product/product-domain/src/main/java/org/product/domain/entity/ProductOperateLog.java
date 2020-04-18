@@ -1,5 +1,8 @@
 package org.product.domain.entity;
 
+import org.product.domain.valueobject.id.ProductId;
+
+import javax.persistence.EmbeddedId;
 import javax.persistence.Table;
 
 /**
@@ -9,4 +12,6 @@ import javax.persistence.Table;
 @Table(name = "productOperateLog")
 
 public class ProductOperateLog implements org.product.domain.entity.Entity{
+    @EmbeddedId
+    private ProductId productId;
 }

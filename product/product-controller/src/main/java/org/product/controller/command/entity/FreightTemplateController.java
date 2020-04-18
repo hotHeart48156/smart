@@ -13,6 +13,6 @@ public class FreightTemplateController{
 private FreightTemplateService service;
 @PostMapping(value=" /update/freighttemplate")
 public  void  update(FreightTemplateDto dto){
-service.FreightTemplate (dto); 
+service.freightTemplate (dto);
 }
 }

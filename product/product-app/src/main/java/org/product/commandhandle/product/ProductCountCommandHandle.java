@@ -11,8 +11,13 @@ import org.product.executor.command.aggre.product.ProductCountCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductCountCommandHandle{
+@Component
+
+public class ProductCountCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

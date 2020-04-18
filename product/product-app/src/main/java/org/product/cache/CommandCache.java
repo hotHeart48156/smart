@@ -4,6 +4,7 @@ package org.product.cache;
  * @author yangbiao
  */
 
+import lombok.AllArgsConstructor;
 import org.product.domain.aggragate.Aggregation;
 import org.product.dto.AbstractDto;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
+@AllArgsConstructor
 public class CommandCache<T extends AbstractDto,A extends Aggregation,R extends JpaRepository> extends Cache {
 
 

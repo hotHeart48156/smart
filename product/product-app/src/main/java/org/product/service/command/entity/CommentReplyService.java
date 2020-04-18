@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class CommentReplyService{
 @Autowired
 private CommandGateway commandGateway;
-public void CommentReply(CommentReplyDto dto){
+public void commentReply(CommentReplyDto dto){
 AbstractCommand command=new CommentReplyCommand(dto);
 commandGateway.sendAndWait(command);
 }

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class GiftsService{
 @Autowired
 private CommandGateway commandGateway;
-public void Gifts(GiftsDto dto){
+public void gifts(GiftsDto dto){
 AbstractCommand command=new GiftsCommand(dto);
 commandGateway.sendAndWait(command);
 }

@@ -9,9 +9,11 @@ import org.product.domain.repository.entity.FreightTemplateRepository;
 import org.product.event.FreightTemplateEvent;
 import org.product.executor.command.entity.FreightTemplateCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class FreightTemplateCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

@@ -1,10 +1,10 @@
 package org.product.domain.valueobject.id;
 
-import lombok.Value;
-import javax.persistence.Embeddable;
 import lombok.AllArgsConstructor;
+import lombok.Value;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
@@ -14,5 +14,5 @@ import javax.persistence.Column;
 public class ProductCategoryParentId extends AbstractId
 {
 @Column(name ="   productCategoryParentId")
-private String   productCategoryParentId;
+private Long   productCategoryParentId;
 }

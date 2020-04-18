@@ -13,6 +13,6 @@ public class SubjectAndProductRelationController{
 private SubjectAndProductRelationService service;
 @PostMapping(value=" /update/SubjectAndProduct")
 public  void  update(SubjectAndProductRelationDto  dto){
-service.SubjectAndProductRelation (dto); 
+service.subjectAndProductRelation (dto);
 }
 }

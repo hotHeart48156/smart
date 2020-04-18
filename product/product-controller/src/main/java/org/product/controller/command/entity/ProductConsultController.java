@@ -13,6 +13,6 @@ public class ProductConsultController{
 private ProductConsultService service;
 @PostMapping(value=" /update/productConsult")
 public  void  update(ProductConsultDto  dto){
-service.ProductConsult (dto); 
+service.productConsult (dto);
 }
 }

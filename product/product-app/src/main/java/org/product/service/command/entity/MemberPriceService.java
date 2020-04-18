@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class MemberPriceService{
 @Autowired
 private CommandGateway commandGateway;
-public void MemberPrice(MemberPriceDto dto){
+public void memberPrice(MemberPriceDto dto){
 AbstractCommand command=new MemberPriceCommand(dto);
 commandGateway.sendAndWait(command);
 }

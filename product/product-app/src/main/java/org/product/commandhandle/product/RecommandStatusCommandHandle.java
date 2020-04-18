@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.RecommandStatusCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class RecommandStatusCommandHandle{
+@Component
+public class RecommandStatusCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

@@ -11,7 +11,12 @@ import org.product.executor.command.entity.SubjectAndProductRelationCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class SubjectAndProductRelationCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

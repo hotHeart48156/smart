@@ -10,7 +10,12 @@ import org.product.executor.command.entity.ProductConsultCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class ProductConsultCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

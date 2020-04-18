@@ -13,6 +13,6 @@ public class ProductSkuStockController{
 private ProductSkuStockService service;
 @PostMapping(value=" /update/productSkuStock")
 public  void  update(ProductSkuStockDto  dto){
-service.ProductSkuStock (dto); 
+service.productSkuStock (dto);
 }
 }

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class ProductLadderService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductLadder(ProductLadderDto dto){
+public void productLadder(ProductLadderDto dto){
 AbstractCommand command=new ProductLadderCommand(dto);
 commandGateway.sendAndWait(command);
 }

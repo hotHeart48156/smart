@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class ProductFullReductionService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductFullReduction(ProductFullReductionDto dto){
+public void productFullReduction(ProductFullReductionDto dto){
 AbstractCommand command=new ProductFullReductionCommand(dto);
 commandGateway.sendAndWait(command);
 }

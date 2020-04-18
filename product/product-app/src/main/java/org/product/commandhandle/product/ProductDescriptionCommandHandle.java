@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.ProductDescriptionCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductDescriptionCommandHandle{
+@Component
+public class ProductDescriptionCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

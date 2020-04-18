@@ -2,7 +2,10 @@ package org.product.executor.command.aggre.product;
 
 import lombok.Value;
 import org.product.executor.AbstractCommand;
+import org.springframework.stereotype.Component;
+
 @Value
-public class ProductPromotionPerLimitCommand  extends AbstractCommand {
+@Component
+public class ProductPromotionPerLimitCommand  extends AbstractProductCommand {
 private org.product.dto.aggre.product.ProductPromotionPerLimitDto ProductPromotionPerLimitDto;
 }

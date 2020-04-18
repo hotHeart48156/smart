@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class AddressService{
 @Autowired
 private CommandGateway commandGateway;
-public void Address(AddressDto dto){
+public void address(AddressDto dto){
 AbstractCommand command=new AddressCommand(dto);
 commandGateway.sendAndWait(command);
 }

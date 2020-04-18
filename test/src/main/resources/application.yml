@@ -20,5 +20,8 @@ spring:
     username: 2680323775@qq.com
     protocol: stmp
     password: dvbqcjcaayspecij
+j2cache:
+  config-location: classpath:/j2cache.properties
+  open-spring-cache: true
 
 

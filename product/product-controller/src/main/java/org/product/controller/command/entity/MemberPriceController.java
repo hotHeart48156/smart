@@ -13,6 +13,6 @@ public class MemberPriceController{
 private MemberPriceService service;
 @PostMapping(value=" /update/memberPrice")
 public  void  update(MemberPriceDto  dto){
-service.MemberPrice (dto); 
+service.memberPrice (dto);
 }
 }

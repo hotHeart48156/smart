@@ -16,5 +16,5 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 public class GiftId extends AbstractId {
     @Column(name ="   giftId")
- String   id;
+ Long   id;
 }

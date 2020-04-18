@@ -9,9 +9,11 @@ import org.product.domain.repository.entity.CommentAndProductRelationshipReposit
 import org.product.event.CommentAndProductRelationshipEvent;
 import org.product.executor.command.entity.CommentAndProductRelationshipCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class CommentAndProductRelationshipCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

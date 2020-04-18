@@ -2,8 +2,11 @@ package  org.product.executor.command.entity;
 
 import lombok.Value;
 import org.product.dto.entity.ProductLadderDto;
-import org.product.executor.AbstractCommand;
+import org.product.executor.command.aggre.product.AbstractProductCommand;
+import org.springframework.stereotype.Component;
+
 @Value
-public class ProductLadderCommand  extends AbstractCommand{
-private ProductLadderDto  ProductLadderDto;
+@Component
+public class ProductLadderCommand  extends AbstractProductCommand {
+private ProductLadderDto productLadderDto;
 }

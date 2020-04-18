@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class ProductVerifyRecordService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductVerifyRecord(ProductVerifyRecordDto dto){
+public void productVerifyRecord(ProductVerifyRecordDto dto){
 AbstractCommand command=new ProductVerifyRecordCommand(dto);
 commandGateway.sendAndWait(command);
 }

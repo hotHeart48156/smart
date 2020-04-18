@@ -13,6 +13,6 @@ public class ProductOperateLogController{
 private ProductOperateLogService service;
 @PostMapping(value=" /update/productOperateLog")
 public  void  update(ProductOperateLogDto  dto){
-service.ProductOperateLog (dto); 
+service.productOperateLog (dto);
 }
 }

@@ -1,10 +1,10 @@
 package org.product.domain.valueobject.id;
 
-import lombok.Value;
-import javax.persistence.Embeddable;
 import lombok.AllArgsConstructor;
+import lombok.Value;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 /**
  * @author "yangbiao"
  */
@@ -14,5 +14,5 @@ import javax.persistence.Column;
 public class UserId extends AbstractId
 {
 @Column(name ="   memberId")
-private String   memberId;
+private Long   memberId;
 }

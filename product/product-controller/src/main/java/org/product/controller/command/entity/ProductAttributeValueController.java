@@ -13,6 +13,6 @@ public class ProductAttributeValueController{
 private ProductAttributeValueService service;
 @PostMapping(value=" /update/productAttributeValue")
 public  void  update(ProductAttributeValueDto  dto){
-service.ProductAttributeValue (dto); 
+service.productAttributeValue (dto);
 }
 }

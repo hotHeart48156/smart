@@ -13,6 +13,6 @@ public class AddressController{
 private AddressService service;
 @PostMapping(value="/update/address")
 public  void  update(AddressDto  dto){
-service.Address (dto); 
+service.address (dto);
 }
 }

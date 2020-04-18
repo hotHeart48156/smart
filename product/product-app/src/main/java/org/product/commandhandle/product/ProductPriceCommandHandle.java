@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.ProductPriceCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductPriceCommandHandle{
+@Component
+public class ProductPriceCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

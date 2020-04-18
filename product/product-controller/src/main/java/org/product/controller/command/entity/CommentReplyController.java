@@ -13,6 +13,6 @@ public class CommentReplyController{
 private CommentReplyService service;
 @PostMapping(value="/update/commentreply")
 public  void  update(CommentReplyDto dto){
-service.CommentReply (dto); 
+service.commentReply (dto);
 }
 }

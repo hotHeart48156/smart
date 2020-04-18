@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.PublishStatusCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class PublishStatusCommandHandle{
+@Component
+public class PublishStatusCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

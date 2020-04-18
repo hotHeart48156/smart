@@ -1,8 +1,10 @@
 package  org.product.executor.command.entity;
 
 import lombok.Value;
-import org.product.executor.AbstractCommand;
+import org.springframework.stereotype.Component;
+
 @Value
-public class CommentReplyCommand  extends AbstractCommand{
+@Component
+public class CommentReplyCommand  extends AbstractEntityCommand {
 private org.product.dto.entity.CommentReplyDto CommentReplyDto;
 }

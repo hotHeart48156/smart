@@ -13,6 +13,6 @@ public class ProductVerifyRecordController{
 private ProductVerifyRecordService service;
 @PostMapping(value=" /update/productVerifyRecord")
 public  void  update(ProductVerifyRecordDto  dto){
-service.ProductVerifyRecord (dto); 
+service.productVerifyRecord (dto);
 }
 }

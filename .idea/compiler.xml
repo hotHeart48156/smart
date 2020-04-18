@@ -8,11 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="activite-domain" />
         <module name="test" />
-        <module name="config-server" />
         <module name="product-controller" />
         <module name="users-client" />
         <module name="monitor" />
-        <module name="product-app" />
         <module name="activity-start" />
         <module name="oss" />
         <module name="product-client" />
@@ -25,24 +23,27 @@
         <module name="discover-server" />
         <module name="mail" />
         <module name="activite-client" />
-        <module name="order-app" />
+        <module name="sms" />
+        <module name="order-infrastructure" />
+        <module name="config-server" />
         <module name="zipkin" />
-        <module name="order-domain" />
+        <module name="order-app" />
         <module name="users-domain" />
         <module name="activite-controller" />
         <module name="order-start" />
         <module name="users-app" />
         <module name="eureka-server" />
+        <module name="product-domain" />
         <module name="product-start" />
         <module name="order-client" />
         <module name="users-controller" />
-        <module name="sms" />
+        <module name="product-app" />
         <module name="order-controller" />
         <module name="users-start" />
         <module name="gateway" />
         <module name="users-infrastructure" />
         <module name="message" />
-        <module name="order-infrastructure" />
+        <module name="order-domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

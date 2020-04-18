@@ -1,8 +1,10 @@
 package org.product.executor.command.aggre.product;
 
 import lombok.Value;
-import org.product.executor.AbstractCommand;
+import org.springframework.stereotype.Component;
+
 @Value
-public class ProductNameCommand  extends AbstractCommand {
+@Component
+public class ProductNameCommand  extends AbstractProductCommand {
 private org.product.dto.aggre.product.ProductNameDto ProductNameDto;
 }

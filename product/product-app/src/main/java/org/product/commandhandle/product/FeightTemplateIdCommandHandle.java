@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.FeightTemplateIdCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class FeightTemplateIdCommandHandle{
+@Component
+public class FeightTemplateIdCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private CacheService cacheService;
 @Autowired

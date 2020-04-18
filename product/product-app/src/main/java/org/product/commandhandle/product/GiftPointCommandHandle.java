@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.GiftPointCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class GiftPointCommandHandle{
+@Component
+public class GiftPointCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

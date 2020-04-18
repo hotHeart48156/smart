@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class ProductConsultService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductConsult(ProductConsultDto dto){
+public void productConsult(ProductConsultDto dto){
 AbstractCommand command=new ProductConsultCommand(dto);
 commandGateway.sendAndWait(command);
 }

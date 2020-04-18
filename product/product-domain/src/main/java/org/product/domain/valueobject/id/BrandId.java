@@ -14,5 +14,5 @@ import javax.persistence.Column;
 public class BrandId extends AbstractId
 {
 @Column(name ="   brandId")
-private String   brandId;
+private Long   brandId;
 }

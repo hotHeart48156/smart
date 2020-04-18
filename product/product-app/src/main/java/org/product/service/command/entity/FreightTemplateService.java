@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class FreightTemplateService{
 @Autowired
 private CommandGateway commandGateway;
-public void FreightTemplate(FreightTemplateDto dto){
+public void freightTemplate(FreightTemplateDto dto){
 AbstractCommand command=new FreightTemplateCommand(dto);
 commandGateway.sendAndWait(command);
 }

@@ -13,6 +13,6 @@ public class ProductLadderController{
 private ProductLadderService service;
 @PostMapping(value=" /update/productLadder")
 public  void  update(ProductLadderDto  dto){
-service.ProductLadder (dto); 
+service.productLadder (dto);
 }
 }

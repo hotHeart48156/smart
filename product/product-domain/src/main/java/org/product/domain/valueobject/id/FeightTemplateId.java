@@ -15,5 +15,5 @@ import javax.persistence.Embeddable;
 public class FeightTemplateId extends AbstractId
 {
 @Column(name ="   feightTemplateId")
-String   feightTemplateId;
+Long   feightTemplateId;
 }

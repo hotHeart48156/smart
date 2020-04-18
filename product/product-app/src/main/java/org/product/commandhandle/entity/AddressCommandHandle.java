@@ -9,9 +9,12 @@ import org.product.domain.repository.entity.AddressRepository;
 import org.product.event.AddressEvent;
 import org.product.executor.command.entity.AddressCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
+
+
+
+@Component
 public class AddressCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

@@ -1,8 +1,7 @@
 package  org.product.commandhandle.product;
-import lombok.Value;
 
+import org.product.commandhandle.AbstractCommandHandle;
 
-@Value
-public class AbstractProductCommandHandle{
+public abstract class AbstractProductCommandHandle implements AbstractCommandHandle {
 
 }

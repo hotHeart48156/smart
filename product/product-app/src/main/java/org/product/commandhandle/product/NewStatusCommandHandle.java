@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.NewStatusCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class NewStatusCommandHandle{
+@Component
+public class NewStatusCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

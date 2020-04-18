@@ -9,8 +9,11 @@ import org.product.executor.command.aggre.product.ProductCategoryIdCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductCategoryIdCommandHandle{
+@Component
+public class ProductCategoryIdCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

@@ -1,8 +1,11 @@
 package  org.product.executor.command.entity;
 
 import lombok.Value;
-import org.product.executor.AbstractCommand;
+import org.product.executor.command.aggre.product.AbstractProductCommand;
+import org.springframework.stereotype.Component;
+
 @Value
-public class ProductAttributeCommand  extends AbstractCommand{
-private org.product.dto.entity.ProductAttributeDto ProductAttributeDto;
+@Component
+public class ProductAttributeCommand  extends AbstractProductCommand {
+private org.product.dto.entity.ProductAttributeDto productAttributeDto;
 }

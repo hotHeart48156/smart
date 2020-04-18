@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.ProductPromotionPerLimitComman
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductPromotionPerLimitCommandHandle{
+@Component
+public class ProductPromotionPerLimitCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

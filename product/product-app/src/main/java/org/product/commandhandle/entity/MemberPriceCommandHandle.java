@@ -11,7 +11,10 @@ import org.product.executor.command.entity.MemberPriceCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-@Value
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class MemberPriceCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

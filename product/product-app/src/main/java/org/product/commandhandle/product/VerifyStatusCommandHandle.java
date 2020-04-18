@@ -9,8 +9,11 @@ import org.product.executor.command.aggre.product.VerifyStatusCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class VerifyStatusCommandHandle{
+@Component
+public class VerifyStatusCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

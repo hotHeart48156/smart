@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class BrandStoryService  extends AbstractBrandService{
 @Autowired
 private CommandGateway commandGateway;
-public void BrandStory(BrandStoryDto dto){
+public void brandStory(BrandStoryDto dto){
 AbstractCommand command=new BrandStoryCommand(dto);
 commandGateway.sendAndWait(command);
 }

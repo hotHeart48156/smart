@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class LetterService  extends AbstractBrandService{
 @Autowired
 private CommandGateway commandGateway;
-public void Letter(LetterDto dto){
+public void letter(LetterDto dto){
 AbstractCommand command=new LetterCommand(dto);
 commandGateway.sendAndWait(command);
 }

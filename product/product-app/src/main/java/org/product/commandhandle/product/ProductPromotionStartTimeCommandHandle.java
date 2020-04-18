@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.ProductPromotionStartTimeComma
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductPromotionStartTimeCommandHandle{
+@Component
+public class ProductPromotionStartTimeCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

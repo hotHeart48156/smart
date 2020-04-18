@@ -8,9 +8,11 @@ import org.product.domain.repository.entity.CommentReplyRepository;
 import org.product.event.CommentReplyEvent;
 import org.product.executor.command.entity.CommentReplyCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class CommentReplyCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

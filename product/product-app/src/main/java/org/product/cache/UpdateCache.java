@@ -1,5 +1,6 @@
 package org.product.cache;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.product.domain.aggragate.Aggregation;
@@ -14,6 +15,8 @@ import org.springframework.stereotype.Component;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Component
+@AllArgsConstructor
+
 public class UpdateCache <T extends AbstractDto,A extends Aggregation,R extends JpaRepository> extends Cache{
     private R r;
 

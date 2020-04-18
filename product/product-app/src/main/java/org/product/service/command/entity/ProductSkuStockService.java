@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class ProductSkuStockService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductSkuStock(ProductSkuStockDto dto){
+public void productSkuStock(ProductSkuStockDto dto){
 AbstractCommand command=new ProductSkuStockCommand(dto);
 commandGateway.sendAndWait(command);
 }

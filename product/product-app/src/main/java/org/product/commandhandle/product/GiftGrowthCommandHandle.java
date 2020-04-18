@@ -9,10 +9,10 @@ import org.product.domain.repository.aggregation.ProductRepository;
 import org.product.event.GiftGrowthEvent;
 import org.product.executor.command.aggre.product.GiftGrowthCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
-public class GiftGrowthCommandHandle{
+@Component
+public class GiftGrowthCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

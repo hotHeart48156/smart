@@ -9,8 +9,11 @@ import org.product.executor.command.aggre.product.TitleCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class TitleCommandHandle{
+@Component
+public class TitleCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

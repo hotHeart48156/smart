@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.ProductSubtitleCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductSubtitleCommandHandle{
+@Component
+public class ProductSubtitleCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

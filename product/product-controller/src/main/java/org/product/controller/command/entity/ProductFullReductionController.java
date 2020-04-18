@@ -13,6 +13,6 @@ public class ProductFullReductionController{
 private ProductFullReductionService service;
 @PostMapping(value=" /update/productFullReduction")
 public  void  update(ProductFullReductionDto  dto){
-service.ProductFullReduction (dto); 
+service.productFullReduction (dto);
 }
 }

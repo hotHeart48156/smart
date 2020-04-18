@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class ProductOperateLogService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductOperateLog(ProductOperateLogDto dto){
+public void productOperateLog(ProductOperateLogDto dto){
 AbstractCommand command=new ProductOperateLogCommand(dto);
 commandGateway.sendAndWait(command);
 }

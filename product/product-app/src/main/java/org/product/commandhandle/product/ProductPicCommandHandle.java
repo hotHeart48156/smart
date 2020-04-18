@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.ProductPicCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class ProductPicCommandHandle{
+@Component
+public class ProductPicCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

@@ -13,6 +13,6 @@ public class ProductCategoryController{
 private ProductCategoryService service;
 @PostMapping(value=" /update/productCategory")
 public  void  update(ProductCategoryDto  dto){
-service.ProductCategory (dto); 
+service.productCategory (dto);
 }
 }

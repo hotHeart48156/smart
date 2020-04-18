@@ -14,5 +14,5 @@ import javax.persistence.Embeddable;
 public class Id extends AbstractId
 {
 @Column(name ="   id")
- String   id;
+ Long   id;
 }

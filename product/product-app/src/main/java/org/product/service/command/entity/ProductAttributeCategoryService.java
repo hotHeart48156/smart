@@ -9,11 +9,10 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-
 public class ProductAttributeCategoryService{
 @Autowired
 private CommandGateway commandGateway;
-public void ProductAttributeCategory(ProductAttributeCategoryDto dto){
+public void productAttributeCategory(ProductAttributeCategoryDto dto){
 AbstractCommand command=new ProductAttributeCategoryCommand(dto);
 commandGateway.sendAndWait(command);
 }

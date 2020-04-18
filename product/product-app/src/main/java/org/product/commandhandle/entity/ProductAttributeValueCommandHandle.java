@@ -9,9 +9,11 @@ import org.product.domain.repository.entity.ProductAttributeValueRepository;
 import org.product.event.ProductAttributeValueEvent;
 import org.product.executor.command.entity.ProductAttributeValueCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class ProductAttributeValueCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;

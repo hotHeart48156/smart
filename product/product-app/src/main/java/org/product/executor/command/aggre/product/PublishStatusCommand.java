@@ -2,7 +2,10 @@ package org.product.executor.command.aggre.product;
 
 import lombok.Value;
 import org.product.executor.AbstractCommand;
+import org.springframework.stereotype.Component;
+
 @Value
-public class PublishStatusCommand  extends AbstractCommand {
+@Component
+public class PublishStatusCommand  extends AbstractProductCommand {
 private org.product.dto.aggre.product.PublishStatusDto PublishStatusDto;
 }

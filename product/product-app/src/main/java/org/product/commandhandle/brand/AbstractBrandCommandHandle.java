@@ -1,6 +1,8 @@
 package  org.product.commandhandle.brand;
 
-public abstract class AbstractBrandCommandHandle{
+import org.product.commandhandle.AbstractCommandHandle;
+
+public abstract class AbstractBrandCommandHandle implements AbstractCommandHandle {
  }
 
 

@@ -11,8 +11,11 @@ import org.product.executor.command.aggre.product.UsePointLimitCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
+import org.springframework.stereotype.Component;
 @Value
-public class UsePointLimitCommandHandle{
+@Component
+public class UsePointLimitCommandHandle extends AbstractProductCommandHandle{
  @Autowired
 private     CacheService cacheService;
 @Autowired

@@ -11,7 +11,12 @@ import org.product.executor.command.entity.ProductVerifyRecordCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;
 @Value
+
+
+@Component
 public class ProductVerifyRecordCommandHandle  extends AbstractEntityCommandHandle{
  @Autowired
 private     CacheService cacheService;
